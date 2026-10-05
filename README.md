@@ -45,3 +45,23 @@ Original concept: https://kicchomen.github.io/game-idea-lab/sensor-shift-concept
 Publicly shipped files are only the static prototype, original concept PNG, entry/iframe-preview pages, tests, and README. Pages serves main/root with HTTPS. No external analytics or credentials are used.
 
 Verified in a desktop Chromium browser against the published URL: default 0° collision (2.6s), +35° success (3.5s), reset to 0.0s, +34° success after pause/resume, persisted trial history, and working 320/390/500px iframe layouts without horizontal overflow. The 320px iframe also reached success. Physical mobile touch and cross-browser behavior remain untested.
+
+## Footstep Echo / 足あとエコー
+
+A turn-based puzzle about cooperating with the position you occupied four turns ago. Open `games/footstep-echo/index.html`. No dependencies, network calls, storage, authentication, analytics or timer. Touch-friendly directional buttons and Wait, keyboard arrows/Space, undo, reset, hints, two rooms and replay. The echo can overlap the player; only the echo presses the switch. The gate stays passable while the player occupies it, so it cannot trap the player. Blocked input is not a turn.
+
+### Idea selection
+
+Compared drawing a bounce surface, routing parcels, and a delayed-footstep puzzle. Chose delayed footsteps because the core can be tested with five tap buttons and visible before/after states, without reflex timing or extra resource systems.
+
+### PDCA
+
+Plan: test whether a player's own past route can become a cooperative partner.
+Do: implement a four-turn position queue and two single-switch rooms.
+Check: Node search finds solutions of 11 and 13 turns. Independent review found room 2's hint incorrectly counted five moves as four; four actually reaches the square before the door. Live desktop button play cleared room 1; focusing the lower D-pad scrolled the top of the board out of view.
+Act: correct the hint, describe Wait as advancing the record (the echo may remain on the same square), give grid rows equal heights, shrink the board to at most 360px, and replace the tall D-pad with one horizontal row of 54px-high buttons.
+Re-check: 14 deterministic engine/controller tests pass. Live final responsive and Blogger-embed verification is recorded below after completion. These tests are not evidence of first-time human comprehension or physical-phone touch behavior.
+
+Run `node --test tests/footstep-echo.test.cjs`. Covers delay oracle, waits, blocked attempts, gate occupancy, shortest solutions, undo snapshots, reset, key repeats, win/next/replay. Existing Sensor Shift tests remain unchanged and pass.
+
+Assets: original generated cover and explanatory concept diagram. Published JPEG derivatives under `assets/footstep-echo/`; article HTML is a reusable template, not a published Blogger post. Diagram is schematic rather than an exact level screenshot.
