@@ -65,3 +65,9 @@ Re-check: 14 deterministic engine/controller tests pass. Live final responsive a
 Run `node --test tests/footstep-echo.test.cjs`. Covers delay oracle, waits, blocked attempts, gate occupancy, shortest solutions, undo snapshots, reset, key repeats, win/next/replay. Existing Sensor Shift tests remain unchanged and pass.
 
 Assets: original generated cover and explanatory concept diagram. Published JPEG derivatives under `assets/footstep-echo/`; article HTML is a reusable template, not a published Blogger post. Diagram is schematic rather than an exact level screenshot.
+
+### Final browser verification (2026-10-05)
+
+Verified live in the cloud desktop Chromium browser, using the published `?v=2` asset revision: room 1 solved in 11 turns through visible buttons; Undo returns from success to turn 10; room 2 solved in 13 turns; replay and reset return to zero. The 320px iframe also clears room 1. Visually inspected 320px, 390px and 480px embeds and the Blogger smartphone preview: no horizontal clipping observed, controls are a single row, grid rows are equal-height. A room was completed inside the Blogger smartphone preview iframe. This is simulated narrow-screen coverage, not a physical-phone or cross-browser test. DOM geometry measurement inside the iframe was unavailable, so fit claims here are visual rather than a measured overflow assertion.
+
+Blogger article was saved as a separate draft; it has not been published. Saved HTML contains ordinary HTTPS asset URLs, no data URIs. The existing Sensor Shift draft and prototype were preserved. Final static deploy (before this documentation-only change): `8b97c467427f00da19b7dd96b681329c56357813`, Pages build passed. Newly versioned CSS/JS and iframe links avoid stale caches observed during iteration.
