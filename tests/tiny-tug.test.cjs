@@ -260,3 +260,27 @@ test('paused restart begins a fresh mission; timeout displays retry and retry re
   assert.equal(h.snapshot().rescued, 0); assert.equal(h.elements.time.textContent, 90);
   assert.equal(h.elements.hull.textContent, '●●●●●'); assert.equal(h.elements.restart.hidden, true);
 });
+
+test('actual sharp steering can strike the trailing ship while the tug clears the reef', () => {
+  function roundReef(radius) {
+    const game = ready(); let collision = null;
+    function go(x, y) {
+      let steps = 0;
+      while (E.distance(game.tug, { x, y }) > 1.5 && game.status === 'playing' && !collision && steps++ < 3000) {
+        E.advance(game, { x: (x - game.tug.x) / 18, y: (y - game.tug.y) / 18 }, E.STEP);
+        if (game.hits) collision = { text: game.notice.text, clearance: E.distance(game.tug, L.reefs[0]) - game.tug.radius - L.reefs[0].radius };
+      }
+      assert.ok(steps < 3000, 'Scripted corner route did not converge');
+    }
+    go(67,245); go(95,219); go(120,219);
+    assert.deepEqual(game.tow, [0]);
+    for (let angle = Math.PI - .08; angle >= 0 && !collision; angle -= .08) go(167 + radius * Math.cos(angle), 219 - radius * Math.sin(angle));
+    return { game, collision };
+  }
+  const tight = roundReef(47), wide = roundReef(48);
+  assert.ok(tight.collision); assert.match(tight.collision.text, /ロープが切れ/);
+  assert.ok(tight.collision.clearance > 8, 'The tug itself must be clear of the reef');
+  assert.equal(tight.game.hull, 4); assert.deepEqual(tight.game.tow, []);
+  assert.equal(tight.game.boats[0].status, 'waiting');
+  assert.equal(wide.collision, null); assert.equal(wide.game.hull, 5); assert.deepEqual(wide.game.tow, [0]);
+});

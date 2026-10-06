@@ -78,3 +78,28 @@ Assets: original generated cover and explanatory concept diagram. Published JPEG
 Verified live in the cloud desktop Chromium browser, using the published `?v=2` asset revision: room 1 solved in 11 turns through visible buttons; Undo returns from success to turn 10; room 2 solved in 13 turns; replay and reset return to zero. The 320px iframe also clears room 1. Visually inspected 320px, 390px and 480px embeds and the Blogger smartphone preview: no horizontal clipping observed, controls are a single row, grid rows are equal-height. A room was completed inside the Blogger smartphone preview iframe. This is simulated narrow-screen coverage, not a physical-phone or cross-browser test. DOM geometry measurement inside the iframe was unavailable, so fit claims here are visual rather than a measured overflow assertion.
 
 Blogger article was saved as a separate draft; it has not been published. Saved HTML contains ordinary HTTPS asset URLs, no data URIs. The existing Sensor Shift draft and prototype were preserved. Final static deploy (before this documentation-only change): `8b97c467427f00da19b7dd96b681329c56357813`, Pages build passed. Newly versioned CSS/JS and iframe links avoid stale caches observed during iteration.
+
+
+## Tiny Tug / ちいさなタグボート
+
+Live: https://kicchomen.github.io/game-idea-lab/games/tiny-tug/?v=2
+
+A direct-control real-time rescue game. Approach stranded boats to attach automatically (maximum three), guide the convoy around reefs, then enter the bottom-left harbor to deliver it. Rescue all six within 90 simulated seconds. Five hull points; touching a reef damages the hull, and a trailing boat hitting a reef detaches that boat and those behind it. Detached cargo can be recovered after 1.6 seconds. Releasing input brakes. No dependencies, gameplay network requests, accounts, analytics, audio or storage.
+
+Controls: arrows/WASD, relative drag over the sea, or held direction buttons. P/Escape pauses. Blur/hidden-page interruption pauses and clears held inputs; resuming requires an explicit action. Pause offers restart. Success/failure offers retry. Touch support is implemented; physical mobile touch remains untested.
+
+### Idea and scope
+
+Compared rescue skipper, market caller and creature caretaker experiences before choosing towing. This adds continuous direct steering and the growing spatial responsibility of a convoy, rather than another edit-one-parameter/replay or turn-based puzzle. `assets/tiny-tug/design-notes.md` compares the core structures and explains immediate feel, ten-minute decisions, and proposed longer-term expansion. The one-lagoon trial does not implement archipelago missions, tides, equipment or campaign progression. Concept artwork is illustrative, not a gameplay screenshot.
+
+### Verification and PDCA (2026-10-06)
+
+Run `node --test tests/*.test.cjs`: 38 tests pass, including 22 Tiny Tug checks and 16 existing checks. Tiny Tug covers deterministic fixed-step input at 30/60/144 fps, inertia, normalized diagonal controls, attachment/capacity, convoy following, delivery, collisions, recoverable detach, pause, timeout/hull failure, retry, and mocked controller input/interruption flows. The controller tests are not visual browser tests.
+
+Steering-only production-engine runs: two groups of three delivered in 25.34 simulated seconds; six individual returns in 44.53 seconds, both hull 5/5. A radius-47 turn hits a trailing boat at 10.325 seconds while the tug retains 8.04 units of reef clearance; radius 48 stays safe. The generous 90-second limit is intentional for learning. These routes do not establish first-time comprehension or sustained challenge.
+
+Plan: test whether a longer convoy changes steering and the decision to return. Do: build a lagoon, six boats and three reefs. Check: independent input routes demonstrate tail corner-cutting and both delivery strategies. Initial layout review found an over-tall briefing. Live browser play found that tall direction controls could scroll the HUD/upper sea away. Act: shorten the briefing, add restart from pause and a tail-risk regression, keep direction targets at least 44px, and compact the steering controls into one row.
+
+Live cloud Chromium checks of v1: actual keyboard and held on-screen steering, attachment with visible rope, one-boat harbor delivery, pause/resume, restart, natural timeout and retry. 320px and 390px documents had equal scrollWidth/clientWidth; the 520px iframe also had no horizontal overflow. Measured direction targets were 44×44px. The shortened 390px ready card fitted inside the sea. The compact v2 row was then implemented in response to the observed vertical scrolling issue; the final delivery report records its re-check. Full six-boat success and hull-depletion failure are covered by engine tests, not claimed as live browser playthroughs.
+
+Blogger draft: separate article with two generated images and one playable iframe. Both images converted to standard Blogger HTTPS CDN URLs and loaded in preview. Full source was read back after save/reload; no data URIs or duplicate images remain. Smartphone preview operated the game and delivered one boat with hull 5/5. This is cloud-desktop narrow-screen coverage, not physical-phone, cross-browser or novice-human validation. The Blogger post remains a draft. Existing Sensor Shift and Footstep Echo files are preserved.

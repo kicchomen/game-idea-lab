@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#102c3b">
   <meta name="description" content="小さなタグボートで6隻を救助する、90秒のブラウザゲーム。つなぐほど長くなる船列を、岩を避けて港へ連れ帰ろう。PC・スマートフォン対応。">
   <title>ちいさなタグボート | Game Idea Lab</title>
-  <link rel="stylesheet" href="style.css?v=1">
-  <script src="engine.js?v=1" defer></script>
-  <script src="game.js?v=1" defer></script>
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="engine.js?v=2" defer></script>
+  <script src="game.js?v=2" defer></script>
 </head>
 <body>
   <main class="shell">
@@ -45,13 +45,15 @@
       </div>
       <div id="notice" class="notice" role="status" aria-live="polite">まずは港の上にいる1隻へ</div>
       <div class="controls">
-        <div class="control-copy"><b id="control-title">ゆっくり曲がろう</b><span>海をドラッグ / 矢印 / WASD</span><span class="key-tip">手を離すと減速・停止</span><button id="pause" class="secondary" type="button" disabled>一時停止 <span>Ⅱ</span></button></div>
-        <div class="dpad" aria-label="操船ボタン">
-          <button class="direction up" data-x="0" data-y="-1" aria-label="上へ進む" type="button">↑</button>
-          <button class="direction left" data-x="-1" data-y="0" aria-label="左へ進む" type="button">←</button>
-          <span class="dpad-center" aria-hidden="true">✦</span>
-          <button class="direction right" data-x="1" data-y="0" aria-label="右へ進む" type="button">→</button>
-          <button class="direction down" data-x="0" data-y="1" aria-label="下へ進む" type="button">↓</button>
+        <div class="control-copy"><b id="control-title">ゆっくり曲がろう</b><span>海をドラッグ / 矢印 / WASD</span><span class="key-tip">手を離すと減速・停止</span></div>
+        <div class="control-row">
+          <div class="dpad" aria-label="操船ボタン">
+            <button class="direction left" data-x="-1" data-y="0" aria-label="左へ進む" type="button">←</button>
+            <button class="direction up" data-x="0" data-y="-1" aria-label="上へ進む" type="button">↑</button>
+            <button class="direction down" data-x="0" data-y="1" aria-label="下へ進む" type="button">↓</button>
+            <button class="direction right" data-x="1" data-y="0" aria-label="右へ進む" type="button">→</button>
+          </div>
+          <button id="pause" class="secondary" type="button" disabled>一時停止 <span>Ⅱ</span></button>
         </div>
       </div>
     </section>
