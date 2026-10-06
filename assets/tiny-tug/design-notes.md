@@ -35,3 +35,8 @@ One lagoon and a short timed rescue mission test direct steering, automatic atta
 Independent steering simulations cleared six single-boat trips in 44.53 seconds and two three-boat trips in 25.34 seconds, hull 5/5. A tight turn kept the tug clear but hit the tail; a slightly wider turn retained the convoy. These tests establish mechanical behavior, not player enjoyment.
 
 Live cloud-browser controls attached and delivered a boat, displayed hull 5/5 and rescued 1/6, and paused/restarted correctly. Browser inspection found tall D-pad controls caused the upper board/HUD to leave a short viewport during steering. This observation prompted a compact horizontal control layout. Final responsive verification is recorded in the README. No human or physical-phone playtesting is claimed.
+
+
+## Publication-stage design assessment (2026-10-06)
+
+The current trial is too easy to establish whether return timing becomes a meaningful game decision. Mechanical function is verified; satisfying difficulty and longer-term game viability remain open. Publication preserves the current prototype as a core-mechanic experiment. No gameplay, timer, level or feature changes were made for publication. Any future balancing must test a specific decision pressure instead of equating technical completion with demonstrated fun.

@@ -1,0 +1,22 @@
+{
+  "status": "published",
+  "published_date": "2026-10-06",
+  "verified_at_utc": "2026-10-06T11:05:26Z",
+  "title": "ちいさなタグボート｜助けるほど、帰り道がむずかしくなる",
+  "article_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post.html",
+  "playable_url": "https://kicchomen.github.io/game-idea-lab/games/tiny-tug/?v=2",
+  "prototype_commit": "c3e6d6e2c6b72971efde956a147a883ac31588e6",
+  "scope": "Publication and minimal experiment-framing correction; no gameplay or asset changes",
+  "checks": {
+    "published_list_count": 1,
+    "remaining_draft_count": 2,
+    "images": 2,
+    "images_loaded": true,
+    "image_natural_width": 1600,
+    "iframes": 1,
+    "live_embedded_rescue": "1 of 6 delivered, hull 5/5, paused",
+    "smartphone_preview": "365px article content width equals scroll width; both images and iframe fit",
+    "physical_mobile_device_test": false
+  },
+  "design_assessment": "Difficulty is too low to establish meaningful return-versus-more decisions. Game viability and sustained challenge remain unresolved."
+}

@@ -102,4 +102,10 @@ Plan: test whether a longer convoy changes steering and the decision to return. 
 
 Live cloud Chromium checks of v1: actual keyboard and held on-screen steering, attachment with visible rope, one-boat harbor delivery, pause/resume, restart, natural timeout and retry. 320px and 390px documents had equal scrollWidth/clientWidth; the 520px iframe also had no horizontal overflow. Measured direction targets were 44×44px. The shortened 390px ready card fitted inside the sea. The compact v2 row was then implemented in response to the observed vertical scrolling issue; the final delivery report records its re-check. Full six-boat success and hull-depletion failure are covered by engine tests, not claimed as live browser playthroughs.
 
-Blogger draft: separate article with two generated images and one playable iframe. Both images converted to standard Blogger HTTPS CDN URLs and loaded in preview. Full source was read back after save/reload; no data URIs or duplicate images remain. Smartphone preview operated the game and delivered one boat with hull 5/5. This is cloud-desktop narrow-screen coverage, not physical-phone, cross-browser or novice-human validation. The Blogger post remains a draft. Existing Sensor Shift and Footstep Echo files are preserved.
+Blogger draft: separate article with two generated images and one playable iframe. Both images converted to standard Blogger HTTPS CDN URLs and loaded in preview. Full source was read back after save/reload; no data URIs or duplicate images remain. Smartphone preview operated the game and delivered one boat with hull 5/5. This is cloud-desktop narrow-screen coverage, not physical-phone, cross-browser or novice-human validation. The Blogger post was subsequently published on 2026-10-06 after approval. Existing Sensor Shift and Footstep Echo files and drafts are preserved.
+
+### Published article (2026-10-06)
+
+https://game-idea-lab.blogspot.com/2026/10/blog-post.html
+
+The current prototype is deliberately published as a core-mechanic experiment. Its difficulty is too low to establish satisfying return-versus-more decisions; game viability and sustained challenge remain unresolved. Article framing now states these limits explicitly. Publication did not change game code, layout, images, or rules. See `assets/tiny-tug/publication.json` for publication checks.
