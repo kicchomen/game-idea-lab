@@ -117,3 +117,8 @@ Stop expanding if players cannot describe the core risk. Improve that decision a
 ## Live browser verification (2026-10-07)
 
 Pages workflows37555980862 and37556068086 succeeded for the implementation and QA harness commits. Actual cloud Chromium UI operation inside a390px iframe completed all six nights at41 coins, retried the same seed, completed a no-stock failure at12, and started a different market. Keyboard activation was used for the full route; mouse buy/refund controls were exercised at320/360/390px iframe widths. The scrollbar leaves client widths305/345/375 respectively, each equal to scrollWidth. Stock buttons measured44×46px. Screenshots stored alongside these notes. Physical phone touch, other browsers and novice understanding remain untested.
+
+
+## Publication
+
+Published2026-10-07 13:49 JST at https://game-idea-lab.blogspot.com/2026/10/blog-post_07.html (Blogger2227938574447171811). Two generated JPEGs were imported through the Blogger editor's built-in image conversion and saved as Blogger CDN URLs. Full article source reread exactly matches the saved file; no data URIs remain. Smartphone preview operated embedded buy/refund/open controls. Narrow standalone preview tested320,359 (slightly narrower than360) and390 CSS widths; article elements stayed within the viewport. Blogger's own diagonal preview watermark overflowed at320, which is not part of the published article. Public title, thumbnail, both images and playable iframe were verified. Public2/draft2 preserves the two earlier drafts. Physical phone touch and novice playtesting remain unverified.

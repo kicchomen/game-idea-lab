@@ -116,3 +116,10 @@ The current prototype is deliberately published as a core-mechanic experiment. I
 New experience: a night-market buyer managing scarce stock, known orders and uncertain late arrivals. Six nights, three goods, six slots. Static dependency-free mobile/PC prototype. Open `games/night-market/index.html`. Gameplay uses no accounts, network requests, analytics or storage.
 
 Run `node --test tests/*.test.cjs`. Design comparisons, balance experiments, PDCA changes and limits are recorded in `assets/night-market/design-notes.md`. Generated images are concept art, not gameplay screenshots. Deployment and browser verification are recorded separately in `assets/night-market/publication.json`; a staged prototype is not evidence that the Blogger article is published.
+
+
+### Published Night Market article (2026-10-07)
+
+https://game-idea-lab.blogspot.com/2026/10/blog-post_07.html
+
+Published13:49 JST.54 automated tests pass across all prototypes. The new prototype's independent review corrections, actual narrow-browser success/failure/retry checks, image CDN verification and Blogger readback are recorded in `assets/night-market/publication.json`. There are now two published Blogger articles and two preserved earlier drafts.

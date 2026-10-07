@@ -2,9 +2,9 @@
   "game": "night-market",
   "blog_id": "3556407006374124911",
   "post_id": "2227938574447171811",
-  "status": "draft",
-  "public_url": null,
-  "published_at": null,
+  "status": "published",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_07.html",
+  "published_at": "2026-10-07T13:49:00+09:00",
   "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/night-market/",
   "prototype_commit": "033586239027a57dfa5c8ff69f3e050dbe39ab4e",
   "qa_commit": "f753df8323b4caadd73f7c16ee00f0a15cd569e3",
@@ -47,9 +47,31 @@
     },
     "buy_refund": "clicked at every tested width"
   },
-  "remaining": [
-    "Blogger image CDN upload",
-    "article save/readback",
-    "Blogger preview and live publication verification"
-  ]
+  "remaining": [],
+  "article_title": "夜市の仕入れ番｜売り切るか、もうひと勝負か",
+  "article_sha256": "3ffdb76456024ec3471a0913cae5b68f8a03f1170f87456c770002ffd84e04c0",
+  "blogger_checks": {
+    "saved_readback_exact": true,
+    "images": 2,
+    "cdn": "blogger.googleusercontent.com",
+    "data_uris": 0,
+    "iframes": 1,
+    "published_title_verified": true,
+    "thumbnail_loaded": true,
+    "all_article_images_loaded": true,
+    "live_embed_buy_refund": true,
+    "list_counts": {
+      "published": 2,
+      "drafts": 2
+    },
+    "article_preview_viewports": [
+      320,
+      359,
+      390
+    ],
+    "article_preview_overflow": 0,
+    "preview_overlay_note": "Blogger preview watermark itself overflowed at320; article elements stayed within viewport.359px test is slightly narrower than requested360.",
+    "preview_mobile_embedded_open_action": true,
+    "physical_phone_test": false
+  }
 }
