@@ -1,0 +1,101 @@
+{
+  "seed": "2026-10-07",
+  "goods": [
+    "お茶",
+    "ご飯",
+    "果物"
+  ],
+  "nights": [
+    {
+      "night": 1,
+      "basket": [
+        1,
+        2,
+        3
+      ],
+      "actions": [
+        "open",
+        "serve",
+        "serve",
+        "close"
+      ],
+      "expectedCash": 17
+    },
+    {
+      "night": 2,
+      "basket": [
+        4,
+        2,
+        0
+      ],
+      "actions": [
+        "open",
+        "serve",
+        "serve",
+        "close"
+      ],
+      "expectedCash": 22
+    },
+    {
+      "night": 3,
+      "basket": [
+        0,
+        2,
+        2
+      ],
+      "actions": [
+        "open",
+        "serve",
+        "serve",
+        "close"
+      ],
+      "expectedCash": 27
+    },
+    {
+      "night": 4,
+      "basket": [
+        2,
+        1,
+        1
+      ],
+      "actions": [
+        "open",
+        "serve",
+        "serve",
+        "close"
+      ],
+      "expectedCash": 32
+    },
+    {
+      "night": 5,
+      "basket": [
+        1,
+        1,
+        1
+      ],
+      "actions": [
+        "open",
+        "skip",
+        "serve",
+        "close"
+      ],
+      "expectedCash": 35
+    },
+    {
+      "night": 6,
+      "basket": [
+        2,
+        1,
+        1
+      ],
+      "actions": [
+        "open",
+        "skip",
+        "skip",
+        "invite",
+        "serve"
+      ],
+      "expectedCash": 41
+    }
+  ]
+}
