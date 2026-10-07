@@ -1,0 +1,55 @@
+{
+  "game": "night-market",
+  "blog_id": "3556407006374124911",
+  "post_id": "2227938574447171811",
+  "status": "draft",
+  "public_url": null,
+  "published_at": null,
+  "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/night-market/",
+  "prototype_commit": "033586239027a57dfa5c8ff69f3e050dbe39ab4e",
+  "qa_commit": "f753df8323b4caadd73f7c16ee00f0a15cd569e3",
+  "pages_workflow_ids": [
+    37555980862,
+    37556068086
+  ],
+  "pages_conclusions": [
+    "success",
+    "success"
+  ],
+  "automated_tests": 54,
+  "independent_review": "pass after balance, responsive-control and active-customer fixes",
+  "browser_checks": {
+    "observed_at": "2026-10-07T12:28:00+09:00",
+    "environment": "cloud desktop Chromium; no physical phone or novice human test",
+    "success": "390px iframe, actual UI keyboard controls through six nights; cash17,22,27,32,35,41",
+    "failure": "same-seed retry then no-stock six nights; cash12, failure displayed",
+    "new_seed": "fresh market rendered round1/cash12",
+    "widths": [
+      {
+        "iframe": 320,
+        "client": 305,
+        "scroll": 305
+      },
+      {
+        "iframe": 360,
+        "client": 345,
+        "scroll": 345
+      },
+      {
+        "iframe": 390,
+        "client": 375,
+        "scroll": 375
+      }
+    ],
+    "buttons": {
+      "width": 44,
+      "height": 46
+    },
+    "buy_refund": "clicked at every tested width"
+  },
+  "remaining": [
+    "Blogger image CDN upload",
+    "article save/readback",
+    "Blogger preview and live publication verification"
+  ]
+}

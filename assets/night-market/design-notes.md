@@ -112,3 +112,8 @@ Next human-playtest questions:
 5. Is the vertical distance between the queue and action buttons tolerable on a phone?
 
 Stop expanding if players cannot describe the core risk. Improve that decision and its feedback before adding a campaign.
+
+
+## Live browser verification (2026-10-07)
+
+Pages workflows37555980862 and37556068086 succeeded for the implementation and QA harness commits. Actual cloud Chromium UI operation inside a390px iframe completed all six nights at41 coins, retried the same seed, completed a no-stock failure at12, and started a different market. Keyboard activation was used for the full route; mouse buy/refund controls were exercised at320/360/390px iframe widths. The scrollbar leaves client widths305/345/375 respectively, each equal to scrollWidth. Stock buttons measured44×46px. Screenshots stored alongside these notes. Physical phone touch, other browsers and novice understanding remain untested.
