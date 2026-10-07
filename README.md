@@ -109,3 +109,10 @@ Blogger draft: separate article with two generated images and one playable ifram
 https://game-idea-lab.blogspot.com/2026/10/blog-post.html
 
 The current prototype is deliberately published as a core-mechanic experiment. Its difficulty is too low to establish satisfying return-versus-more decisions; game viability and sustained challenge remain unresolved. Article framing now states these limits explicitly. Publication did not change game code, layout, images, or rules. See `assets/tiny-tug/publication.json` for publication checks.
+
+
+## Night Market / 夜市の仕入れ番
+
+New experience: a night-market buyer managing scarce stock, known orders and uncertain late arrivals. Six nights, three goods, six slots. Static dependency-free mobile/PC prototype. Open `games/night-market/index.html`. Gameplay uses no accounts, network requests, analytics or storage.
+
+Run `node --test tests/*.test.cjs`. Design comparisons, balance experiments, PDCA changes and limits are recorded in `assets/night-market/design-notes.md`. Generated images are concept art, not gameplay screenshots. Deployment and browser verification are recorded separately in `assets/night-market/publication.json`; a staged prototype is not evidence that the Blogger article is published.

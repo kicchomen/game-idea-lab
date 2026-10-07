@@ -1,0 +1,10 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#102522"><meta name="description" content="注文を読み、仕入れを決め、最後の客に賭ける。６夜で40円を目指す小さな夜市経営ゲーム。"><title>夜市の仕入れ番 | 小さなゲーム実験室</title><link rel="stylesheet" href="style.css"></head>
+<body><main>
+<header><a href="../../index.html" class="back">← ゲーム実験室</a><p class="eyebrow">A SIX-NIGHT MARKET / 思考型ミニゲーム</p><h1>夜市の仕入れ番</h1><p class="intro">売り切るか、もうひと客に賭けるか。</p></header>
+<section class="rules"><h2>６夜で、手元に40円。</h2><p>最初は12円。注文を見て６枠のかごに仕入れ、２人に接客。最後は２円払って延長するか、閉店するかを選びます。<strong>売れ残りは毎夜すべて廃棄。</strong>時間制限はありません。</p></section>
+<div id="app"></div><p id="notice" class="notice" role="status" aria-live="polite" aria-atomic="true"></p>
+<section class="guide"><details><summary>遊び方・読み合いのヒント</summary><ol><li>２人の注文は確定。商品は単品では売れず、注文の全品が必要です。</li><li>仕入れの「−」は開店前だけ全額返金。かごは合計６個まで。</li><li>接客は左から順番。あえて１人目を見送り、在庫を残すこともできます。</li><li>夜更けの３候補はそれぞれ1/3。重複した注文はそのぶん来やすくなります。</li><li>延長は２円。売れない注文が来ても返金されません。閉店すれば追加費用なし。</li><li>６夜目の閉店後、仕入れ・延長料を引いた手元のお金が40円以上なら成功です。</li></ol><p>同じ夜市では注文も来客も同じ。別の夜市で新しい並びを試せます。</p></details></section>
+<footer>時間制限なし · 試作版 / 保存・通信・広告なし<br>仕入れと撤退の判断を試す、小さな経営ゲーム</footer>
+</main><script src="engine.js"></script><script src="game.js"></script></body></html>
