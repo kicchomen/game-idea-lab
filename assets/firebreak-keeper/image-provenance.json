@@ -1,0 +1,9 @@
+{
+  "created_at": "2026-10-08",
+  "method": "built-in image generation",
+  "cover": "Wide Japanese indie game concept cover titled 火の見の番人 / 消すか、先回りするか。 Two blue keepers, three houses, forest fire and cleared firebreak; fictional turn-based strategy, stylized paper diorama, no real emergency instructions.",
+  "concept": "Three illustrated tactical alternatives: 風を読む / 火を消す / 先回りする. Paper forest map, wind and dotted threatened tiles, water extinguishing a tree, clearing a firebreak. No fixed-sequence arrows, no real firefighting claims.",
+  "inspection": "Both generated images were visually inspected. Title/labels are legible and correctly spelled. They are explicitly labeled concept illustrations; map and character art are not screenshots.",
+  "derivatives": ["cover.jpg: 1400x788", "concept.jpg: 1400x933"],
+  "blogger": "Normal HTML editing triggered Blogger automatic Base64 image upload; standard blogger.googleusercontent.com HTTPS URLs read back."
+}
