@@ -123,3 +123,36 @@ Run `node --test tests/*.test.cjs`. Design comparisons, balance experiments, PDC
 https://game-idea-lab.blogspot.com/2026/10/blog-post_07.html
 
 Published13:49 JST.54 automated tests pass across all prototypes. The new prototype's independent review corrections, actual narrow-browser success/failure/retry checks, image CDN verification and Blogger readback are recorded in `assets/night-market/publication.json`. There are now two published Blogger articles and two preserved earlier drafts.
+# Firebreak Keeper / 火の見の番人
+
+Dependency-free static game. Open `games/firebreak-keeper/index.html` on a static server. No package installation/build required. Proposed public path: `/game-idea-lab/games/firebreak-keeper/`.
+
+Role: lead two crews around a fictional forest map, rescue three groups and extinguish every fire before shift change while keeping burned forest to at most eight cells. Turns advance only when pressing the wind/next-turn button. Each crew has two actions per turn. Movement, 3×3 water spray, permanent single-cell firebreaks, rescue and well refill are implemented. Three missions, full-state undo, failure, retry and next-mission flows are included. It is not real-world emergency guidance.
+
+Run `node --test tests/firebreak*.test.cjs`. All 33 engine/controller tests pass. Tests cover complete production-engine victories on all three missions, deterministic replay, movement, fire blocking, AP limits and repeated invalid input, water footprint/consumption/empty-center targeting, wet-land timing, permanent firebreaks, rescue deduplication, refill, forecast purity/exactness, lateral spread, burnout, house failure, safe crew retreat, deadline failure, terminal input and restart. 29 engine tests and 4 mocked-DOM controller tests pass. Controller tests also cover complete UI command flow, terminal control locking, undo from success/failure, retry, repeated input and key-repeat, mission switching and next-mission reset. Neither suite is visual browser automation.
+
+Source: `engine.js` is shared by the browser and Node tests. `app.js` is DOM-only UI. `style.css` has no external fonts or assets. No gameplay network requests, account, analytics, real-time clock or storage. Browser-native focus, button activation and screen-reader labels are supplied; the dense grid still needs human accessibility testing. A Z shortcut provides undo; repeated keydown is ignored. Touch is implemented but not yet tested on physical phones.
+
+See `assets/firebreak-keeper/design-notes.md` for selection rationale, mechanic details, iteration and open questions. Artwork, publication and live browser evidence are added by the publishing task.
+
+## Mission 1 browser route
+
+Coordinates are 1-based: left to right columns 1–7, top to bottom rows 1–7.
+
+TURN 1: A / 移動 / column 2 row 5; A / 救助 / column 2 row 4. Select B / 移動 / column 6 row 5; B / 救助 / column 6 row 4. Press 次のターンへ.
+
+TURN 2: select A / 移動 / column 3 row 4; A / 放水 / column 3 row 2. Select B / 移動 / column 5 row 4; B / 放水 / column 5 row 2. Press 次のターンへ.
+
+TURN 3: select A / 移動 / column 4 row 5; A / 救助 / column 4 row 6. Success appears. Use ひと手戻す in the result overlay to return to the pre-rescue state, then rescue again. もう一度挑戦 resets the mission. 次の任務へ starts mission 2.
+
+For an intentional failure: repeatedly advance wind without taking actions until an unrescued house ignites. The result overlay offers undo and retry. No asynchronous timers advance the state on their own.
+
+## Suggested embed
+
+Use width 100%, height 1120px, scrolling allowed, and title `火の見の番人を試遊`. Include a full-screen link. This initial recommendation requires visual checking at 320/390/500px widths; it is not a measured browser result.
+
+## Published Firebreak Keeper article (2026-10-08)
+
+https://game-idea-lab.blogspot.com/2026/10/blog-post_08.html
+
+Published 11:25 JST. All 87 repository tests pass. Live cloud Chromium play reached success, failure, undo, retry and next mission. Game iframe and Blogger article were checked at 320/360/390 CSS pixels; no horizontal overflow. Both generated images are on Blogger CDN. Full saved HTML matches local source. Physical phone, cross-browser and novice-human fun remain unverified. Details: assets/firebreak-keeper/publication.json. Existing two unpublished drafts preserved.

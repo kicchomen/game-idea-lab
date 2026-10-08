@@ -1,0 +1,77 @@
+{
+  "game": "firebreak-keeper",
+  "blog_id": "3556407006374124911",
+  "post_id": "1517983666088192901",
+  "status": "published",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_08.html",
+  "published_at": "2026-10-08T11:25:00+09:00",
+  "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/firebreak-keeper/",
+  "prototype_commit": "31cd714a2ff148a0a525bb47ab4d06b00a5e6762",
+  "pages_workflow_ids": [
+    37716876013
+  ],
+  "pages_conclusions": [
+    "success"
+  ],
+  "automated_tests": 87,
+  "new_engine_tests": 29,
+  "new_mock_controller_tests": 4,
+  "independent_review": "PASS after burned-forest limit, terminal-control lock and article turn-limit clarification",
+  "article_sha256": "2c80711729ac84139d11337846d37c583afeccf3968c305873acd0fa31cd6050",
+  "browser_checks": {
+    "environment": "cloud desktop Chromium; narrow CSS viewport, not physical phone or novice human play",
+    "success": "320px iframe: mission1,3 turns,10 actions,3 groups rescued,zero active fires,zero burned tiles",
+    "failure": "mission2: actual advance-wind clicks with no interventions; house reached before rescue",
+    "retry": "failure retry restores turn1,zero rescued,3 fires; success undo restores rescue2 then re-rescue wins; next mission starts mission2",
+    "other_actions": "360px firebreak+undo;390px keyboard Enter movement, mission3 refill and keyboard undo restoring water1/AP2",
+    "game_widths": [
+      {
+        "client": 320,
+        "scroll": 320
+      },
+      {
+        "client": 360,
+        "scroll": 360
+      },
+      {
+        "client": 390,
+        "scroll": 390
+      }
+    ],
+    "article_preview_widths": [
+      {
+        "client": 320,
+        "scroll": 320
+      },
+      {
+        "client": 360,
+        "scroll": 360
+      },
+      {
+        "client": 390,
+        "scroll": 390
+      }
+    ],
+    "article_embed": "actual movement/rescue/turn progression in Blogger preview; actual movement in published embed",
+    "note": "Some pointer locator clicks below the visible nested frame did not activate; focused keyboard activation succeeded. No claim of physical touch validation."
+  },
+  "blogger_checks": {
+    "saved_readback_exact": true,
+    "images": 2,
+    "cdn": "blogger.googleusercontent.com",
+    "data_uris": 0,
+    "iframes": 1,
+    "published_title_verified": true,
+    "thumbnail_loaded": true,
+    "both_images_loaded": true,
+    "post_count": 5,
+    "published_count": 3,
+    "preserved_draft_count": 2
+  },
+  "remaining": [],
+  "limitations": [
+    "Physical-phone touch and cross-browser testing not performed",
+    "First-time human comprehension and sustained fun are unverified",
+    "Fire dynamics are fictional, not real emergency guidance"
+  ]
+}
