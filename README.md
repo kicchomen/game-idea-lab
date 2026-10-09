@@ -156,3 +156,19 @@ Use width 100%, height 1120px, scrolling allowed, and title `火の見の番人�
 https://game-idea-lab.blogspot.com/2026/10/blog-post_08.html
 
 Published 11:25 JST. All 87 repository tests pass. Live cloud Chromium play reached success, failure, undo, retry and next mission. Game iframe and Blogger article were checked at 320/360/390 CSS pixels; no horizontal overflow. Both generated images are on Blogger CDN. Full saved HTML matches local source. Physical phone, cross-browser and novice-human fun remain unverified. Details: assets/firebreak-keeper/publication.json. Existing two unpublished drafts preserved.
+
+## Hush Courier / ねむりの谷の配達人
+
+A short real-time stealth timing experiment: cross a sleeping giant's valley and deliver three parcels without waking it. Open `games/hush-courier/index.html`. Static, dependency-free; no game network calls, accounts, audio, analytics or storage. The implemented core is walking/running, accumulated noise/suspicion, terrain-limited temporary hiding, a visible breathing/observation cycle, three automatic deliveries, dawn deadline, success/failure, pause and retry. It is a core demo, not a completed or human-validated game.
+
+Keyboard: arrows / A D to move, Shift to run, Space to hide near a house's green bushes, P/Escape to pause. Four held touch buttons supply the same actions. Stop for 0.65 seconds at a house to deliver. Hiding lasts at most 3.5 seconds; release to recover. The cycle is 4.5 seconds asleep, 1 second warning, 3 seconds observing. Blur and hidden-page interruptions pause and clear all controls; resume is explicit. Pointer release/cancel/leave/lost capture releases input.
+
+`node --test tests/hush*.test.cjs`: 27 tests pass (21 shared production-engine, 6 mocked-DOM controller). Full suite at creation: 114 tests pass. Covers input-only success, reckless running failure, stationary non-success, dawn failure, exact mechanics, determinism, repeat input, pause, interruption, retry and reset. Mocked controller checks are not visual browser evidence. Physical mobile, cross-browser, first-time-human comprehension and sustained fun remain untested.
+
+Source: `games/hush-courier/engine.js` is the actual shared browser/Node engine; `game.js` handles input and canvas drawing. Detailed comparisons, scope and PDCA: `assets/hush-courier/design-notes.md`. Canvas and controls are designed to fit 320px. Suggested iframe height: 860px, width 100%, scrolling allowed, with a full-screen link; this recommendation requires live visual verification.
+
+### Browser route for verification
+
+Start. Hold right + Shift 2.6 seconds, reaching the first house at x=145. Release and wait for its lamp. Around elapsed 5.25 seconds, hold Space until the giant sleeps again at 8.5 seconds. Release Space; run right 3 seconds to house 2. Stop for delivery. Hide from about 13.75 to 17 seconds. Run right about 3.23 seconds to house 3, release, and delivery completes at about 20.88 seconds. Use the cycle ribbon and houses to adjust by eye; each house tolerates ±18 units for delivery. This route is verified by engine and mocked controller; live browser verification is recorded separately by publication work.
+
+Failure route: hold the run-right button continuously after starting. The giant wakes at about 5.83 seconds. Retry returns the courier, packages, timer, suspicion and hiding breath to initial state.

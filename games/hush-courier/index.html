@@ -1,0 +1,12 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#142e37"><title>ねむりの谷の配達人 | Game Idea Lab</title><link rel="stylesheet" href="style.css"></head><body><main>
+<header><a href="../../">GAME IDEA LAB</a><span>09 / 小さな遊びの実験</span></header>
+<section class="title"><p>HUSH COURIER</p><h1>ねむりの谷の配達人</h1><div>おやすみを、起こさずに届けよう。</div></section>
+<div class="hud"><span id="parcels">お届け 0 / 3</span><span id="time">夜明けまで 55秒</span><button id="pause" disabled aria-label="一時停止">Ⅱ</button></div>
+<section class="stage" aria-label="巨人が眠る谷のゲーム画面"><canvas id="world" width="480" height="340" role="img" aria-label="谷の道、3軒の家、配達人、巨人。状態は画面下の文章でも表示されます"></canvas>
+<div id="overlay" class="overlay"><div class="card"><p class="eyebrow" id="overline">月あかりの配達便</p><h2 id="heading">巨人の寝息が、道しるべ。</h2><p id="description">眠る間に進み、目を開ける前に家の茂みへ。茂みで「隠れる」を押し続けよう。</p><button id="primary">配達をはじめる</button><button id="restart" class="secondary" hidden>最初から</button></div></div></section>
+<div class="phase"><span id="phase">静かな谷</span><span id="hint">3軒の前で止まると自動で配達</span></div>
+<div class="meters"><label>気配 <progress id="suspicion" value="0" max="100"></progress></label><label>隠れる息 <progress id="breath" value="3.5" max="3.5"></progress></label></div>
+<div class="controls" aria-label="押している間だけ操作"><button data-control="left" aria-label="左にそっと歩く">←<small>もどる</small></button><button data-control="right">→<small>そっと</small></button><button data-control="sprint" class="sprint">⇢<small>走る</small></button><button data-control="hide" class="hide">♧<small>隠れる</small></button></div>
+<p class="instruction">押し続けて操作 · 家の前で止まるとお届け<br>← → / A D 移動 · Shift 走る · Space 隠れる · P 停止</p>
+<details><summary>谷の歩き方 / この試作について</summary><p>緑の茂みで隠れると、巨人の視線を避けられます。息は3.5秒ぶん。押し続けると息切れするので、眠ったら離して回復。走る足音や見つかることで気配が増え、100になると失敗です。</p><p>3軒に55秒以内に配達。家の前で約0.7秒止まると自動配達します。隠れながらでも届けられます。画面を離れると一時停止します。</p><p>本作は「進む・待つ・隠れる」の手触りを試す短い実験。音声なしで遊べます。実機スマホ・初見の人による面白さの評価は未実施です。</p></details>
+<footer>THE VALLEY IS ASLEEP. STEP LIGHTLY.</footer></main><script src="engine.js"></script><script src="game.js"></script></body></html>

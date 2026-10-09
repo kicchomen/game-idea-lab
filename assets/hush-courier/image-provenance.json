@@ -1,0 +1,22 @@
+{
+  "created_at": "2026-10-09",
+  "tool": "built-in image generation",
+  "purpose": "Original illustrative cover and 3-panel concept explanation; not gameplay screenshots",
+  "cover": {
+    "path": "cover.jpg",
+    "original": "cover-original.png",
+    "text": "ねむりの谷の配達人",
+    "review": "Title correct; orange-hood courier, sleeping stone giant; illustrative houses not exact level layout"
+  },
+  "concept": {
+    "path": "concept.jpg",
+    "original": "concept-original.png",
+    "text": [
+      "寝ている間に進む",
+      "目覚めの気配を読む",
+      "隠れてやり過ごす"
+    ],
+    "review": "All captions correct; cottage bushes match hide locations; illustration differs from actual game"
+  },
+  "implementation_caveat": "No game audio; giant phases communicated visually; not microphone input"
+}

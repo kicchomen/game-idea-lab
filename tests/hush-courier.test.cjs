@@ -1,0 +1,28 @@
+'use strict';
+const {test}=require('node:test'), assert=require('node:assert/strict');
+const E=require('../games/hush-courier/engine.js');
+const playing=()=>E.start(E.create());
+function advance(s,n,input={}){for(let i=0;i<n;i++)E.step(s,input);return s;}
+function route(s){const log=[];for(let i=0;i<3301&&s.status==='playing';i++){const cycle=Math.floor(s.time/E.CYCLE);const target=Math.min(cycle,2);let input={};if(E.phase(s)==='watch'||(s.time%E.CYCLE>=5.25&&E.cover(s)>=0))input={hide:true};else if(!s.delivered[target]&&s.x<E.HOMES[target])input={right:true,run:true};E.step(s,input);log.push({...s,delivered:[...s.delivered]});}return log;}
+test('new state is ready, independent, and cannot advance before start',()=>{const a=E.create(),b=E.create();advance(a,100,{right:true});assert.equal(a.time,0);a.delivered[0]=true;assert.equal(b.delivered[0],false);});
+test('fixed-step movement: quiet 18/s and run 45/s',()=>{const a=playing(),b=playing();advance(a,60,{right:true});advance(b,60,{right:true,run:true});assert.ok(Math.abs(a.x-46)<1e-8);assert.equal(b.x,73);});
+test('opposed directions cancel and world bounds clamp',()=>{const s=playing();advance(s,60,{left:true,right:true,run:true});assert.equal(s.x,28);advance(s,60,{left:true});assert.equal(s.x,28);assert.equal(s.running,false);});
+test('sleep, warning and sight have exact public boundaries',()=>{assert.equal(E.phase({time:4.49}),'sleep');assert.equal(E.phase({time:4.5}),'warning');assert.equal(E.phase({time:5.5}),'watch');assert.equal(E.phase({time:8.5}),'sleep');});
+test('running accumulates noise, quiet resting dissipates it',()=>{const s=playing();advance(s,120,{right:true,run:true});assert.ok(Math.abs(s.suspicion-24)<1e-8);advance(s,60);assert.ok(Math.abs(s.suspicion-10)<1e-8);});
+test('hiding requires actual terrain proximity',()=>{const s=playing();advance(s,60,{hide:true});assert.equal(s.hidden,false);assert.equal(s.breath,3.5);s.x=145;advance(s,60,{hide:true});assert.equal(s.hidden,true);assert.ok(Math.abs(s.breath-2.5)<1e-8);});
+test('hiding overrides movement and run controls',()=>{const s=playing();s.x=145;advance(s,30,{right:true,run:true,hide:true});assert.equal(s.x,145);assert.equal(s.running,false);assert.equal(s.hidden,true);});
+test('terrain is not passive invisibility',()=>{const s=playing();s.x=145;s.tick=330;s.time=5.5;advance(s,60);assert.ok(Math.abs(s.suspicion-36)<1e-8);});
+test('temporary hiding survives one complete observation window',()=>{const s=playing();s.x=145;s.tick=330;s.time=5.5;advance(s,179,{hide:true});assert.equal(s.status,'playing');assert.equal(s.suspicion,0);assert.ok(s.breath<.6);});
+test('holding hide indefinitely exhausts breath without auto-recharge',()=>{const s=playing();s.x=145;advance(s,300,{hide:true});assert.ok(s.breath<=E.DT);assert.equal(s.hidden,false);const before=s.breath;advance(s,20,{hide:true});assert.equal(s.breath,before);advance(s,30);assert.ok(s.breath>before);});
+test('moving through a house does not deliver; stopping does',()=>{const s=playing();advance(s,156,{right:true,run:true});assert.equal(s.x,145);assert.deepEqual(s.delivered,[false,false,false]);advance(s,40);assert.deepEqual(s.delivered,[true,false,false]);advance(s,120);assert.deepEqual(s.delivered,[true,false,false]);});
+test('delivery can happen while hidden',()=>{const s=playing();s.x=145;advance(s,40,{hide:true});assert.equal(s.delivered[0],true);});
+test('moving interrupts partial delivery',()=>{const s=playing();s.x=145;advance(s,20);assert.ok(s.delivery>0);E.step(s,{left:true});assert.equal(s.delivery,0);});
+test('real input-only timing route delivers all three and wins',()=>{const s=playing(),log=route(s);assert.equal(s.status,'won');assert.deepEqual(s.delivered,[true,true,true]);assert.ok(s.time>17&&s.time<22);assert.ok(log.some(x=>x.hidden));assert.ok(log.some(x=>x.suspicion>20));});
+test('production route is deterministic without seeds or wall clock',()=>{const a=playing(),b=playing();assert.deepEqual(route(a),route(b));});
+test('running recklessly triggers waking failure',()=>{const s=playing();advance(s,1000,{right:true,run:true});assert.equal(s.status,'lost');assert.equal(s.reason,'巨人が目を覚ました');assert.ok(s.time<7);});
+test('stationary input cannot win and eventually fails',()=>{for(const input of [{},{hide:true},{run:true}]){const s=playing();advance(s,3400,input);assert.equal(s.status,'lost');assert.equal(s.delivered.filter(Boolean).length,0);}});
+test('deadline is a separate failure condition for careful non-delivery',()=>{const s=playing();for(let i=0;i<3400&&s.status==='playing';i++){const watching=E.phase(s)==='watch';// Simulate a courier sheltering at house 1, never visiting the others.
+if(s.x<145)E.step(s,{right:true,run:true});else E.step(s,{hide:watching||s.time%E.CYCLE>5.25});}assert.equal(s.status,'lost');assert.equal(s.reason,'夜明けの鐘が鳴った');assert.equal(s.time,55);});
+test('pause freezes all engine state and explicit resume continues',()=>{const s=playing();advance(s,30,{right:true});E.pause(s);const snapshot=JSON.stringify(s);advance(s,500,{right:true,run:true});assert.equal(JSON.stringify(s),snapshot);E.resume(s);E.step(s,{right:true});assert.equal(s.tick,31);});
+test('terminal states ignore repeat input and cannot resume',()=>{const s=playing();route(s);const snapshot=JSON.stringify(s);advance(s,500,{right:true,run:true});E.start(s);E.resume(s);E.pause(s);assert.equal(JSON.stringify(s),snapshot);});
+test('reset is a fully fresh state following win or failure',()=>{const s=playing();route(s);const fresh=E.create();assert.equal(fresh.x,28);assert.equal(fresh.tick,0);assert.equal(fresh.suspicion,0);assert.equal(fresh.breath,3.5);assert.deepEqual(fresh.delivered,[false,false,false]);});
