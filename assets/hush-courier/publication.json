@@ -1,1 +1,88 @@
-{"game":"hush-courier","blog_id":"3556407006374124911","post_id":"5603664971834539949","status":"draft_in_progress","public_url":null,"published_at":null,"prototype_url":"https://kicchomen.github.io/game-idea-lab/games/hush-courier/","started_at":"2026-10-09T10:18:00+09:00","remaining":["Pages deploy","Browser verification","Blogger images/save/readback","Publish and live verification"]}
+{
+  "game": "hush-courier",
+  "blog_id": "3556407006374124911",
+  "post_id": "5603664971834539949",
+  "status": "published",
+  "title": "ねむりの谷の配達人｜急ぎたい。でも、起こしたくない",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_09.html",
+  "published_at": "2026-10-09T11:16:00+09:00",
+  "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/hush-courier/?v=2",
+  "prototype_commit": "9c50893f9623c71c429e8dd5d1a0f65ad239be15",
+  "pages_workflow_ids": [
+    37871718298,
+    37873201091
+  ],
+  "pages_conclusions": [
+    "success",
+    "success"
+  ],
+  "automated_tests": 116,
+  "new_engine_tests": 21,
+  "new_mock_controller_tests": 6,
+  "new_source_layout_tests": 2,
+  "independent_review": "PASS: engine/controller, article/image pixels, responsive source fix",
+  "article_sha256": "205585fef685a6557c1bb0bc8a88f29cb13a21605550a56437c1eb5599c30e88",
+  "browser_checks": {
+    "environment": "Cloud desktop Chromium, ordinary resize/browser zoom; no physical phone",
+    "success": "Actual keyboard inputs delivered all3 in21.5 simulated seconds; repeated after CSSv2 in320px Blogger preview with288px game",
+    "failure": "Continuous running produced discovery failure; repeated in corrected288px embed",
+    "retry": "Success/failure retries restore0/3,55seconds; pause/resume and stationary delivery confirmed",
+    "pointer": "320px standalone Run long-press moved to first cottage; release then stationary yielded1/3",
+    "article_widths": [
+      320,
+      360,
+      390
+    ],
+    "article_scroll_widths": [
+      320,
+      360,
+      390
+    ],
+    "embed_widths": [
+      288,
+      328,
+      358
+    ],
+    "embed_scroll_widths": [
+      288,
+      328,
+      358
+    ],
+    "standalone_widths": [
+      320,
+      360,
+      390
+    ],
+    "standalone_scroll_widths": [
+      320,
+      360,
+      390
+    ],
+    "fixed_pause_card": {
+      "embed_width": 288,
+      "stage_height": 240,
+      "card_height": 200.59375
+    },
+    "fixed_ready_card_height": 169.1875,
+    "fixed_win_card_height": 151.59375
+  },
+  "blogger_checks": {
+    "saved_reload_exact": true,
+    "images": 2,
+    "cdn": "blogger.googleusercontent.com",
+    "data_uris": 0,
+    "title_verified": true,
+    "thumbnail_loaded": true,
+    "both_images_loaded": true,
+    "public_embedded_start_pause_verified": true,
+    "post_count": 6,
+    "published_count": 4,
+    "preserved_draft_count": 2
+  },
+  "remaining": [],
+  "limitations": [
+    "Physical phone and Safari not tested",
+    "First-time human understanding and sustained fun unverified",
+    "Mock controller/source tests are not visual tests"
+  ]
+}
