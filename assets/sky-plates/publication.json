@@ -1,0 +1,45 @@
+{
+  "game": "sky-plates",
+  "blog_id": "3556407006374124911",
+  "post_id": "8325798801934045638",
+  "status": "draft",
+  "title": "空中サーカスの皿まわし｜次に助けるのは、どのお皿？",
+  "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/sky-plates/?v=2",
+  "prototype_commit": "f2d4ea2fdfd1d3dd4033edcbbd811695abee1066",
+  "pages_workflow_id": 38013774407,
+  "pages_conclusion": "success",
+  "automated_tests": 138,
+  "independent_review": "PASS",
+  "browser_checks": {
+    "desktop_success": "Actual keyboard play completed45 seconds,40points,18refills",
+    "desktop_failure_retry_pause": "Verified in cloud Chromium",
+    "article_widths_verified": [
+      320,
+      360,
+      390
+    ],
+    "article_320_scroll_width": 313,
+    "embed_320_width": 280,
+    "embed_320_start": "Verified",
+    "remaining": "Publish and verify public page; physical phone/novice tests not performed",
+    "article_scroll_widths": [
+      313,
+      353,
+      383
+    ],
+    "standalone_widths": [
+      320,
+      360,
+      390
+    ],
+    "standalone_scroll_widths": [
+      313,
+      353,
+      383
+    ],
+    "pointer_360": "Actual1100ms pointer hold raised second plate from63 to96 and score0 to1; release and pause verified",
+    "responsive_operations": "320start/restart;360select/hold/pause;390start/resume/select/pause"
+  },
+  "updated_at": "2026-10-10T01:48:00Z",
+  "article_sha256": "f7937c846970e57f617b9146dd674fc3ea6bffab1348c27b4764a34e7ce7d81d"
+}

@@ -1,1 +1,18 @@
-{"created_at":"2026-10-10","method":"OpenAI built-in image generation","cover":{"file":"cover.jpg","width":1400,"height":788,"description":"Original painterly cloud-circus concept: one performer, four fixed poles and teal/peach/lavender/pink spinning plates; no text"},"concept":{"file":"concept.jpg","width":1400,"height":933,"description":"Three-step Japanese concept diagram: 揺れを見る→移動する→長押しで回す; four plates for45seconds"},"inspection":"Actual pixels inspected. Four plates and stated45seconds match implementation. Art is labelled concept, not screenshot.","original_png_status":"Original PNGs retained in creation workspace. Remote PNG preservation unverified; no retry of uncertain upload. Optimized JPEG derivatives are the required published/repository images."}
+{
+  "created_at": "2026-10-10",
+  "method": "OpenAI built-in image generation",
+  "cover": {
+    "file": "cover.jpg",
+    "width": 1400,
+    "height": 788,
+    "description": "Original painterly cloud-circus concept: one performer, four fixed poles and teal/peach/lavender/pink spinning plates; no text"
+  },
+  "concept": {
+    "file": "concept.jpg",
+    "width": 1400,
+    "height": 933,
+    "description": "Three-step Japanese concept diagram: 揺れを見る→移動する→長押しで回す; four plates for45seconds"
+  },
+  "inspection": "Actual pixels inspected. Four plates and stated45seconds match implementation. Art is labelled concept, not screenshot.",
+  "original_png_status": "Creation workspace was replaced on 2026-10-10 around01:44UTC. Original PNGs were not recovered or confirmed saved remotely. No uncertain upload was retried. Required optimized JPEG derivatives are preserved in Git and Blogger CDN."
+}
