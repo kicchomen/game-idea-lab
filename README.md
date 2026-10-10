@@ -185,3 +185,9 @@ Published11:16 JST. Live trial: https://kicchomen.github.io/game-idea-lab/games/
 New continuous prioritization game: one performer moves between four spinning plates, holds to restore rotation, and keeps them all alive for45seconds. Low-rotation recovery rewards more applause. Static dependency-free DOM/Canvas2D game in games/sky-plates. Keyboard1–4/Space/P/Escape, target buttons and held pointer input. No accounts, analytics, network gameplay calls or storage. Read assets/sky-plates/design-notes.md for scope, prior-game comparison and PDCA.
 
 138 engine/controller tests pass, including22 new checks. Independent source/article/image review passed. Actual desktop play on initialPages version reached45-second success (40applause/18refills), idlefailure, retry and pause/resume. These are not novicehuman or physical-phone evidence. Final mobile/article/publication verification is recorded separately; prototype distribution alone does not mean Blogger article published.
+
+### Published Sky Plates article (2026-10-10)
+
+https://game-idea-lab.blogspot.com/2026/10/blog-post_10.html
+
+Published 10:55 JST. Article and standalone checked at 320/360/390 CSS px; live pointer hold/release, success/failure/retry/pause verified. Two optimized JPEG images preserved in Git and Blogger CDN. Original PNGs were not recovered after the creation workspace was replaced; no uncertain upload was repeated. Public title, thumbnail, both images, link and embedded start/pause verified. Five public posts and two preserved earlier drafts. See assets/sky-plates/publication.json and browser-qa.md.
