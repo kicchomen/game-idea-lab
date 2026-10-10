@@ -178,3 +178,10 @@ Failure route: hold the run-right button continuously after starting. The giant 
 https://game-idea-lab.blogspot.com/2026/10/blog-post_09.html
 
 Published11:16 JST. Live trial: https://kicchomen.github.io/game-idea-lab/games/hush-courier/?v=2 . Actual browser keyboard play reached success in21.5s, failure, pause/resume and retry. On-screen long-press and one delivery verified at320px; full3-home success repeated in the repaired288px Blogger embed. Both original images and lightweight derivatives are saved; Blogger CDN copies and saved HTML reload matched. All116 tests pass; independent source/article/image review passed. 4public posts and2earlier drafts remain. See assets/hush-courier/publication.json and browser-verification.md.
+
+
+## Sky Plates / 空中サーカスの皿まわし
+
+New continuous prioritization game: one performer moves between four spinning plates, holds to restore rotation, and keeps them all alive for45seconds. Low-rotation recovery rewards more applause. Static dependency-free DOM/Canvas2D game in games/sky-plates. Keyboard1–4/Space/P/Escape, target buttons and held pointer input. No accounts, analytics, network gameplay calls or storage. Read assets/sky-plates/design-notes.md for scope, prior-game comparison and PDCA.
+
+138 engine/controller tests pass, including22 new checks. Independent source/article/image review passed. Actual desktop play on initialPages version reached45-second success (40applause/18refills), idlefailure, retry and pause/resume. These are not novicehuman or physical-phone evidence. Final mobile/article/publication verification is recorded separately; prototype distribution alone does not mean Blogger article published.
