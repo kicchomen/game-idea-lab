@@ -1,0 +1,46 @@
+✔ controller initial view contains 36 labels, one roving tabindex, hidden-cell secrecy and tool state (4.074776ms)
+✔ tap tools and cells call production engine; repeat taps are free (3.803798ms)
+✔ all three fixed command routes produce actual controller victories and scores (24.05842ms)
+✔ success freezes board and tool inputs; undo returns to active excavation (7.512044ms)
+✔ chip failure supports undo, retry and clean resource restoration (3.250017ms)
+✔ budget loss and one-work auto-switch cannot leave an unaffordable tool selected (6.220091ms)
+✔ next site, last-site wrap, selector and restart reset stale UI and history (13.248768ms)
+✔ keyboard cell navigation stays bounded and Enter/Space activate once (4.373465ms)
+✔ keyboard tool change preserves board focus after DOM replacement (2.708101ms)
+✔ held key defaults and shortcuts are gated while native result buttons stay activatable (6.959473ms)
+✔ non-cell page arrows and space retain normal scrolling/activation semantics (1.122788ms)
+✔ static UI has responsive six-column sizing, no gameplay network/storage and matching script references (0.676988ms)
+✔ independent random command/undo invariants across 600 runs (9488.86164ms)
+✔ independently derived border: omitting any required soil prevents that extraction (0.883709ms)
+✔ 300 varied visible-information-only routes win, with no hidden-map decisions (130.353415ms)
+✔ controller covered-cell labels and titles remain generic after reveals and undos (36.320589ms)
+✔ controller re-render preserves keyboard focus and rejects all held gameplay shortcuts (18.615685ms)
+✔ controller retry from loss, undo, and site change clear stale result/history (3.614964ms)
+✔ third-chip failure wins precedence even on the final extraction, and undo restores it (1.200885ms)
+✔ three deterministic sites have disjoint connected specimens and valid starts (3.15957ms)
+✔ invalid site IDs safely default; fresh states share no mutable cell or history data (0.548865ms)
+✔ neighbor geometry has no edge wrapping, with 4 and 8 modes (0.25282ms)
+✔ brush opens one cell safely and spends two work (0.179269ms)
+✔ pick spends one work, creates one visible chip only when it hits bone (0.496076ms)
+✔ repeated, invalid and unaffordable inputs leave all simulation state unchanged (0.638831ms)
+✔ covered view does not leak bones, clues, identifiers or continuation directions (0.174012ms)
+✔ soil numbers count diagonal, visible, concealed and chipped bone equally (0.509366ms)
+✔ visible bone continuations are exact and edge-safe (0.276466ms)
+✔ all bones exposed is insufficient: extraction needs the full orthogonal soil border (1.125202ms)
+✔ diagonal-only soil is not required and repeated collection cannot duplicate rewards (2.269832ms)
+✔ fixed production-input routes win all three sites, third site at exact zero budget (7.61605ms)
+✔ every site is solvable using only already-visible bone directions, no hidden map guesses (4.539139ms)
+✔ using only brush exhausts the budget on all sites before extraction (1.140905ms)
+✔ using only pick on covered bones loses on exactly the third chip (0.233772ms)
+✔ one or two chips can still succeed, preserving the stated quality tradeoff (1.112763ms)
+✔ zero work with an unfinished specimen fails even without chips (0.409405ms)
+✔ undo restores whole state across excavation, loss, extraction and success (24.981884ms)
+✔ terminal actions are frozen and retry is an independent clean state (1.673456ms)
+ℹ tests 38
+ℹ suites 0
+ℹ pass 38
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 9769.458347

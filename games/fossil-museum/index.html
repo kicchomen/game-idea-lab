@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="ja">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="light"><title>砂の下の博物館｜試遊</title><link rel="stylesheet" href="style.css?v=1"></head>
+<body><main>
+<header><p class="eyebrow">GAME IDEA LAB / FIELD NOTES 011</p><h1>砂の下の博物館</h1><p class="intro">白い骨をたどり、砂の中から取り出そう。</p></header>
+<div class="site-row"><label for="site">発掘地点</label><select id="site"></select></div>
+<p id="site-note" class="site-note"></p>
+<div class="hud" aria-label="調査の状況"><div><small>作業力</small><strong id="energy"></strong></div><div><small>取り出した標本</small><strong id="collected"></strong></div><div><small>欠け / 上限</small><strong id="chips"></strong></div></div>
+<div class="tools" id="tools" aria-label="発掘道具"><button type="button" data-tool="brush" aria-pressed="true"><span>② ブラシ</span><small>安全 · 作業力 −2</small></button><button type="button" data-tool="pick" aria-pressed="false"><span>① 小づるはし</span><small>速い · 作業力 −1</small></button></div>
+<div class="plot-wrap"><div class="plot-label"><span>EXCAVATION PLOT</span><span>6 × 6</span></div><div id="board" class="board" role="group" aria-label="発掘区画。矢印キーで移動、EnterまたはSpaceで掘る"></div></div>
+<p id="message" class="message" role="status" aria-live="polite"></p>
+<section id="result" class="result" aria-labelledby="result-title" hidden><span id="result-mark" aria-hidden="true"></span><h2 id="result-title"></h2><p id="result-detail"></p><div class="result-actions"><button id="result-undo">ひと手戻す</button><button id="retry">もう一度</button><button id="next">次の地点へ</button></div></section>
+<div id="specimens" class="specimens" aria-label="標本の発掘状況"></div>
+<div class="actions"><button id="undo">↶ ひと手戻す</button><button id="restart">最初から</button></div>
+<details><summary>骨の読み方・操作</summary><div class="rules"><p>白い線がマスの端まで届いていたら、その先にも骨があります。骨はブラシで丁寧に。骨に小づるはしを使うと1か所欠けます。</p><p>標本を取り出すには、骨を全部見つけ、その上下左右に接する砂もすべて掘ります。斜めだけに接する砂は不要です。取り出せた標本は緑色に変わります。</p><p>開いた砂の数字は、周囲8マスの骨の数。すでに見えている骨も数えます。0の周囲には骨がありません。白い線と数字を手がかりに、砂は小づるはしで速く掘ろう。</p><p>2つの標本を取り出せば成功。欠け3か所、または未完成で作業力0になると失敗。使うのは操作ごとの作業力で、考えている間に減ることはありません。いつでもひと手戻せます。</p><p>PC：①小づるはし / ②ブラシ。区画にフォーカスして矢印で移動、Enter / Spaceで掘る。Zでひと手戻す。タッチ：道具を選んでマスをタップ。</p></div></details>
+<footer>遊びの核を試す実験版。実際の発掘方法を教えるものではありません。博物館づくり・保存・通信は未実装です。</footer>
+</main><script src="engine.js?v=1"></script><script src="app.js?v=1"></script></body>
+</html>

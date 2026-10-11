@@ -1,0 +1,9 @@
+{
+ "created_at":"2026-10-11T01:06:00Z",
+ "generator":"OpenAI built-in image generation",
+ "role":"Original concept illustration; not a screenshot or real excavation guidance",
+ "cover":{"original":"cover-original.png","web":"cover.jpg","dimensions":[1400,788],"prompt_summary":"Warm sandstone excavation grid; archaeologist brushes an ammonite, hand pick beside; Japanese title 砂の下の博物館"},
+ "concept":{"original":"concept-original.png","web":"concept.jpg","dimensions":[1086,1448],"prompt_summary":"Three vertical panels: 手がかりを読む / 道具を選ぶ, 速く掘る・そっと払う / 化石をつなぐ. Brush, small pick, fish and ammonite fossils"},
+ "inspection":"Both original outputs visually inspected. Japanese headings correct. Grid is schematic, not a literal level layout; no claimed museum-building implementation.",
+ "optimization":"JPEG quality85, max1400px width; originals retained"
+}

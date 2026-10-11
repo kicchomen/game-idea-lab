@@ -191,3 +191,10 @@ New continuous prioritization game: one performer moves between four spinning pl
 https://game-idea-lab.blogspot.com/2026/10/blog-post_10.html
 
 Published 10:55 JST. Article and standalone checked at 320/360/390 CSS px; live pointer hold/release, success/failure/retry/pause verified. Two optimized JPEG images preserved in Git and Blogger CDN. Original PNGs were not recovered after the creation workspace was replaced; no uncertain upload was repeated. Public title, thumbnail, both images, link and embedded start/pause verified. Five public posts and two preserved earlier drafts. See assets/sky-plates/publication.json and browser-qa.md.
+
+
+## Fossil Museum / 砂の下の博物館
+
+A turn-based excavation experiment: trace the visible continuations of two fossils, read neighboring bone counts, and use the quick small pick on soil and the careful brush on fossils. Both the fossil shape and its orthogonal soil border must be exposed to recover a specimen. Three fixed 6×6 sites, limited work, up to two chips, undo/retry and keyboard/tap controls. No timer, accounts, analytics, gameplay network requests or storage. Museum-building is a proposed wider game, not implemented here.
+
+Open `games/fossil-museum/index.html`. Run `node --test tests/fossil*.test.cjs`; full suite `node --test tests/*.test.cjs`. Design comparisons, PDCA and limits are in `assets/fossil-museum/design-notes.md`. Article and publication verification are tracked in `assets/fossil-museum/publication.json`; a staged prototype does not mean a published article.

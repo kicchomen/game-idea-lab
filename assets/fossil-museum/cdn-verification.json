@@ -1,0 +1,27 @@
+{
+  "direct_download_attempt": {
+    "cover": {
+      "error": "<urlopen error timed out>"
+    },
+    "concept": {
+      "error": "HTTP Error 404: Not Found"
+    }
+  },
+  "browser_preview": {
+    "observed_at": "2026-10-11T01:13:30Z",
+    "images": [
+      {
+        "asset": "cover.jpg",
+        "complete": true,
+        "natural_width": 1400
+      },
+      {
+        "asset": "concept.jpg",
+        "complete": true,
+        "natural_width": 1086
+      }
+    ],
+    "cdn_urls_match_saved_html": true
+  },
+  "byte_comparison": "Not completed: browser downloadMedia timed out; neither failed direct-download attempt means browser images failed."
+}
