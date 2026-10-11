@@ -2,7 +2,7 @@
   "game": "fossil-museum",
   "blog_id": "3556407006374124911",
   "post_id": "6004115168095843624",
-  "status": "draft",
+  "status": "published",
   "title": "砂の下の博物館｜速く掘る？ そっと払う？",
   "observed_existing": {
     "published": 5,
@@ -10,5 +10,42 @@
     "main": "8b9af357578f77edc33bfe60b967f740690df474",
     "open_prs": 0
   },
-  "updated_at": "2026-10-11T01:07:20Z"
+  "updated_at": "2026-10-11T01:07:20Z",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_11.html",
+  "trial_url": "https://kicchomen.github.io/game-idea-lab/games/fossil-museum/",
+  "published_at": "2026-10-11T13:59:00+09:00",
+  "verified_at": "2026-10-11T05:01:37Z",
+  "prototype_commit": "1b6e194db9b89e2ed8ec7357b211e628bfa77198",
+  "pages_run_id": 38112545361,
+  "verification": {
+    "tests_passed": 176,
+    "independent_review": "PASS",
+    "saved_html_exact_characters": 2251,
+    "standalone_css_widths": [
+      320,
+      360,
+      390
+    ],
+    "preview_css_widths": [
+      320,
+      360,
+      390
+    ],
+    "public_css_widths": [
+      320,
+      360,
+      390
+    ],
+    "public_title": true,
+    "public_thumbnail": true,
+    "public_images": 2,
+    "public_embed_operated": true,
+    "public_posts": 6,
+    "preserved_drafts": 2
+  },
+  "limitations": [
+    "Desktop Chromium responsive sizing, not a physical phone test",
+    "No novice-human playtest or long-term fun validation",
+    "Museum building and collection persistence not implemented"
+  ]
 }

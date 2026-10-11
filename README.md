@@ -198,3 +198,9 @@ Published 10:55 JST. Article and standalone checked at 320/360/390 CSS px; live 
 A turn-based excavation experiment: trace the visible continuations of two fossils, read neighboring bone counts, and use the quick small pick on soil and the careful brush on fossils. Both the fossil shape and its orthogonal soil border must be exposed to recover a specimen. Three fixed 6×6 sites, limited work, up to two chips, undo/retry and keyboard/tap controls. No timer, accounts, analytics, gameplay network requests or storage. Museum-building is a proposed wider game, not implemented here.
 
 Open `games/fossil-museum/index.html`. Run `node --test tests/fossil*.test.cjs`; full suite `node --test tests/*.test.cjs`. Design comparisons, PDCA and limits are in `assets/fossil-museum/design-notes.md`. Article and publication verification are tracked in `assets/fossil-museum/publication.json`; a staged prototype does not mean a published article.
+
+### Published Fossil Museum article (2026-10-11)
+
+https://game-idea-lab.blogspot.com/2026/10/blog-post_11.html
+
+Published 13:59 JST. Actual browser success, chip failure, retry, terminal undo, keyboard Enter/Z and site selection verified. Standalone, saved Blogger preview and public article checked at 320/360/390 CSS px, including embedded excavation and undo. Both Blogger CDN images load; public title, canonical URL and cover thumbnail verified. 176 tests pass and independent review passed. Six published posts and two unchanged earlier drafts. See assets/fossil-museum/browser-qa.md and publication.json for evidence and limitations.
