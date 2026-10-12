@@ -204,3 +204,20 @@ Open `games/fossil-museum/index.html`. Run `node --test tests/fossil*.test.cjs`;
 https://game-idea-lab.blogspot.com/2026/10/blog-post_11.html
 
 Published 13:59 JST. Actual browser success, chip failure, retry, terminal undo, keyboard Enter/Z and site selection verified. Standalone, saved Blogger preview and public article checked at 320/360/390 CSS px, including embedded excavation and undo. Both Blogger CDN images load; public title, canonical URL and cover thumbnail verified. 176 tests pass and independent review passed. Six published posts and two unchanged earlier drafts. See assets/fossil-museum/browser-qa.md and publication.json for evidence and limitations.
+
+
+## Spark Shield / 火花の盾
+
+Trial: https://kicchomen.github.io/game-idea-lab/games/spark-shield/
+
+Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_12.html
+
+A small knight banks sparks by blocking a larger automaton, then decides when to counterattack without exhausting stamina. Turn-based telegraphed combat, five actions, three opponents, undo/retry, keyboard1–5/Z and large tap buttons. No dependencies, storage, analytics, network gameplay or timer. Four stamina and three sparks;14turns per fight. Travel, equipment and growth are concepts, not implemented.
+
+### Verification and PDCA — 2026-10-12
+
+210 whole-suite tests pass (34new), including independent reachable-state arithmetic comparisons and undo checks. Independent review found the first advanced enemy unwinnable, so HP30 became23. The second enemy HP22 allowed no winning routes using the simple strike; HP20 widens the available winning routes while preserving the need to dodge. The final enemy is explicitly an advanced extra. Repeated Enter/Space on an action button is suppressed; ordinary keyboard activation remains. See assets/spark-shield/independent-design.md and design-notes.md.
+
+Actual cloud Chromium: copper guard/guard/rest/guard/burst/strike wins in6turns withHP9; four rests lose; retry and terminal undo work. Standalone, saved Blogger preview and public article were operated at320/360/390CSSpx with no horizontal overflow. These are responsive desktop checks, not physical-phone or novice-human tests. Both original concept images are identified as illustrations, uploaded through normal Blogger compose paste and served by responsive CDN URLs. Published post3307005946088725543 at2026-10-12T10:40:00+09:00.
+
+Publication state, image provenance, precise browser checks and all test output are in assets/spark-shield/. Source delivery commit5cdc7d4fa886a849cfdbfe6e831cdab1c14a593a passed Pages run38191277410 before browser tests. No claim of proven long-term fun.

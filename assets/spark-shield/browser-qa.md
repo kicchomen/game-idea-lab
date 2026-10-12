@@ -14,4 +14,15 @@ Cloud Chromium actual visible controls, not a mocked test or physical phone.
 
 Blogger full-screen preview at exactly320/360/390: clientWidth=scrollWidth312/352/382; both CDN images complete; guard and undo operated inside nested game at all widths. No horizontal overflow. Native200% zoom/window resizing only, no DevTools or permission changes.
 
-Remaining: public article and thumbnail verification.
+## Public verification
+
+Published https://game-idea-lab.blogspot.com/2026/10/blog-post_12.html at2026-10-12T10:40:00+09:00, post3307005946088725543.
+- title and canonical exact; OG image uses uploaded cover and w1200-h630 derivative.
+- 2 complete CDN images with responsive srcset and WebP derivatives.
+- Public iframe copper six-action victory, HP9; retry and guard/undo worked.
+- Exactly320/360/390px public article clientWidth=scrollWidth312/352/382; image loads and embedded guard/undo passed each.
+- Preview and public image/screenshots visually inspected; text and controls fit.
+- Blogger list7published,2drafts. Old SensorShift and FootstepEcho drafts preserved.
+
+Physical phones, mobile Safari, novice-human comprehension and long-term retention remain untested. No remaining publication blocker.
+

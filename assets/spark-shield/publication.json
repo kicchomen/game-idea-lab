@@ -2,7 +2,7 @@
   "game": "spark-shield",
   "blog_id": "3556407006374124911",
   "post_id": "3307005946088725543",
-  "status": "draft",
+  "status": "published",
   "title": "火花の盾｜受けた一撃を、反撃の力に",
   "trial_url": "https://kicchomen.github.io/game-idea-lab/games/spark-shield/",
   "prototype_commit": "5cdc7d4fa886a849cfdbfe6e831cdab1c14a593a",
@@ -13,10 +13,7 @@
     "main": "4bc2f921ce3b4e8fe56db1f6173fa93a1a7e56f0",
     "open_prs": 0
   },
-  "updated_at": "2026-10-12T01:29:17.179440+00:00",
-  "pending": [
-    "publication and public verification"
-  ],
+  "updated_at": "2026-10-12T01:44:46.236515+00:00",
   "verification": {
     "tests_passed": 210,
     "independent_review": "PASS",
@@ -30,6 +27,25 @@
       360,
       390
     ],
-    "saved_html_readback": true
-  }
+    "saved_html_readback": true,
+    "public_css_widths": [
+      320,
+      360,
+      390
+    ],
+    "public_title": true,
+    "public_thumbnail": true,
+    "public_images": 2,
+    "public_embed_operated": true,
+    "public_posts": 7,
+    "preserved_drafts": 2
+  },
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_12.html",
+  "published_at": "2026-10-12T10:40:00+09:00",
+  "verified_at": "2026-10-12T01:44:46.236515+00:00",
+  "limitations": [
+    "Desktop Chromium responsive sizing, not a physical-phone test",
+    "No novice-human or long-term fun test",
+    "Three fixed opponents; travel, equipment progression and save not implemented"
+  ]
 }
