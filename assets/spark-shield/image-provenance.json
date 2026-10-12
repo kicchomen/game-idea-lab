@@ -1,0 +1,26 @@
+{
+  "generated_on": "2026-10-12",
+  "generator": "OpenAI image generation",
+  "purpose": "Original concept artwork, not gameplay screenshot",
+  "images": [
+    {
+      "file": "cover-original.png",
+      "sha256": "af106b2370fe62d79e56db47785ecb5cfadf0eb04db4d1edc1caba6eb0d8a353"
+    },
+    {
+      "file": "concept-original.png",
+      "sha256": "2ed2d7c71856fe2b611dc868ddb642af548b8f962c495213d3b0ba60cf0994d7"
+    },
+    {
+      "file": "cover.jpg",
+      "sha256": "2c3747350f73f88b25089ca6d3ed78170becb51f904fc3861decefb3ee69a16f"
+    },
+    {
+      "file": "concept.jpg",
+      "sha256": "d593b7be020a884952b1e5b3ebd78ea1ade38e870c13f836d15cd0a2846bf1c9"
+    }
+  ],
+  "design": "Small scarf-wearing knight with three-socket shield fighting a bronze automaton; diagram shows reading telegraph, blocking, then returning sparks",
+  "inspection": "Both generated images visually inspected by author and independent reviewer; Japanese text and 3 shield sockets confirmed",
+  "delivery": "Blogger compose-view normal clipboard upload; stored blogger.googleusercontent.com image URLs; responsive width derivatives request WebP; JPEG derivatives retained in repository"
+}

@@ -1,0 +1,35 @@
+{
+  "game": "spark-shield",
+  "blog_id": "3556407006374124911",
+  "post_id": "3307005946088725543",
+  "status": "draft",
+  "title": "火花の盾｜受けた一撃を、反撃の力に",
+  "trial_url": "https://kicchomen.github.io/game-idea-lab/games/spark-shield/",
+  "prototype_commit": "5cdc7d4fa886a849cfdbfe6e831cdab1c14a593a",
+  "pages_run_id": 38191277410,
+  "observed_existing": {
+    "published": 6,
+    "drafts": 2,
+    "main": "4bc2f921ce3b4e8fe56db1f6173fa93a1a7e56f0",
+    "open_prs": 0
+  },
+  "updated_at": "2026-10-12T01:29:17.179440+00:00",
+  "pending": [
+    "publication and public verification"
+  ],
+  "verification": {
+    "tests_passed": 210,
+    "independent_review": "PASS",
+    "standalone_css_widths": [
+      320,
+      360,
+      390
+    ],
+    "preview_css_widths": [
+      320,
+      360,
+      390
+    ],
+    "saved_html_readback": true
+  }
+}
