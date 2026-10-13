@@ -228,3 +228,8 @@ Publication state, image provenance, precise browser checks and all test output 
 Three visitors, five bags and a limited inspection budget. Read testimony, inspect hidden marks, provisionally assign bags and return all three together. Three fixed cases, relational clues, undo of assignment/return (not inspections), retry and native keyboard/touch controls. No timer, accounts, storage or gameplay network calls. Pure engine and DOM controller; dependency-free static delivery.
 
 Open games/lost-property/index.html. Design comparison, scope and PDCA are in assets/lost-property/design-notes.md. Independent logical/engine/controller checks are recorded separately. Live browser and publication status will be recorded in publication.json; prototype deployment is not article publication. Fixed puzzles, no novice-human or physical-phone validation.
+
+Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_13.html
+Trial: https://kicchomen.github.io/game-idea-lab/games/lost-property/
+
+Published2026-10-13T17:57:00+09:00, post8001755356304616392.242tests pass including32new. Independent source/logical and live responsive browser reviews pass. Actual public Blogger page at320/360/390CSSpx has no horizontal overflow; CDN images, title, thumbnail and embedded success/failure/retry were checked. No physical-phone or novice-human fun claim. See assets/lost-property/publication.json and browser-qa.md.

@@ -1,26 +1,108 @@
 {
   "game": "lost-property",
   "title": "忘れ物窓口の探偵｜一人の証言が、三人をつなぐ",
-  "status": "draft_saved_validation_in_progress",
+  "status": "published",
   "blog_id": "3556407006374124911",
   "reserved_editor_post_id": "8001755356304616392",
   "editor_url": "https://www.blogger.com/blog/post/edit/3556407006374124911/8001755356304616392",
-  "editor_state": "Same draft ID reused; title, two Blogger CDN images and article HTML saved and reloaded",
-  "public_url": null,
+  "editor_state": "Published same saved draft; listing8published2drafts",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_13.html",
   "trial_url": "https://kicchomen.github.io/game-idea-lab/games/lost-property/",
   "planned_trial_url": "https://kicchomen.github.io/game-idea-lab/games/lost-property/",
-  "remote_main_verified": "0e742d17b0f973845e6af58a06a7c5b173894564",
-  "remote_tree": "05ea988372f83571c008b0df6b3ac362fb31148b",
+  "remote_main_verified": "47962a6fcf65278f2ae38ac7014148590093b018",
+  "remote_tree": "b521df3523ad24fd7ace44a770bcff152f79bdae",
   "git_result": "Explicit retry approval received. Main advanced with expected-head lease; both Pages deployments succeeded.",
   "tests_passed": 242,
   "new_tests_passed": 32,
   "independent_review": "Source and mock DOM pass; separate cloud browser320/360/390 pass",
   "browser_attempt": "Live PC703 all3 cases success; failure/Undo/retry success. Independent320/360/390 no horizontal overflow, success/failure/retry verified. Physical smartphone touch and human novice testing not performed.",
-  "remaining": [
-    "Article narrow-width and embed validation",
-    "Publish same Blogger draft; public page/title/images/embed confirmation",
-    "Final registry and remote verification"
+  "remaining": [],
+  "updated_at": "2026-10-13T08:59:00Z",
+  "prototype_commit": "8962cff025b3df64db2739d8d58da009b77bff6c",
+  "post_id": "8001755356304616392",
+  "published_at": "2026-10-13T17:57:00+09:00",
+  "pages_run_id": 38372429369,
+  "verification": {
+    "tests_passed": 242,
+    "new_tests": 32,
+    "independent_source_review": "pass",
+    "independent_browser_review": "pass",
+    "standalone_css_widths": [
+      320,
+      360,
+      390,
+      703
+    ],
+    "article_body_before_publication_css_widths": [
+      320,
+      360,
+      390
+    ],
+    "blogger_native_preview_css_width": 412,
+    "public_blogger_css_widths": [
+      320,
+      360,
+      390
+    ],
+    "public_document_widths": [
+      305,
+      345,
+      375
+    ],
+    "public_scroll_widths": [
+      305,
+      345,
+      375
+    ],
+    "saved_html_readback": true,
+    "public_title_verified": true,
+    "public_thumbnail_verified": true,
+    "public_images_loaded": 2,
+    "public_embed_success_failure_retry_verified": true,
+    "physical_smartphone_test": false,
+    "novice_human_test": false,
+    "screenshots_visually_reviewed": true
+  },
+  "images": [
+    {
+      "role": "cover",
+      "source_file": "assets/lost-property/cover.jpg",
+      "origin": "AI-generated concept illustration; visually checked; clearly labeled in article",
+      "blogger_cdn_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnkik6BApseuewkNAQaG8ngtTa2Ywpuap6WT7UoS7N7v0EFkaY7znuDdqKBBMrRFw2aZcmQ-K2BMb2ZpGuLetXsW7q69E72klzGVBC-r62n5RiBES4Tvc-YHW-xdX4sT5j3hn4cuROrnFKX4Ezc2UcOP2ksjWR8stb30lj-Ii5ee-mn48Z8ZAJl8kzXJc/s1600/clipboard.jpeg",
+      "upload_method": "Blogger Compose clipboard image upload",
+      "natural_width": 1440,
+      "natural_height": 810
+    },
+    {
+      "role": "concept",
+      "source_file": "assets/lost-property/concept.jpg",
+      "origin": "AI-generated concept illustration; visually checked; clearly labeled in article",
+      "blogger_cdn_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlIZHbDDwf_0LtwfgUhlQ-29dy9xO1o-busKoKKi77_RlB75HpazAVEfdTgv9-16xTSw2Kmicq9WtLI3ocR7X-_Noe0Xy2ue2ekpIOEZSVsB7uXngtELTHNUAeGZMeWzekCX8YaH4jQfdbxP9rMEUXRTFvwsaa_V3IkLZ7qzhHF1m8W3hyphenhyphenu36H0_vlRuQ/s1600/clipboard.jpeg",
+      "upload_method": "Blogger Compose clipboard image upload",
+      "natural_width": 1440,
+      "natural_height": 960
+    }
   ],
-  "updated_at": "2026-10-13T08:52:00Z",
-  "prototype_commit": "8962cff025b3df64db2739d8d58da009b77bff6c"
+  "limitations": [
+    "Three fixed cases can be memorized",
+    "Retry and Undo permit brute-force exploration",
+    "Physical phone touch and novice-human enjoyment remain untested"
+  ],
+  "history": [
+    {
+      "at": "2026-10-13T01:43:00Z",
+      "state": "paused",
+      "reason": "Git create_tree was cancelled; no commit/ref change then. Recovery ZIP preserved."
+    },
+    {
+      "at": "2026-10-13T08:31:55Z",
+      "state": "retry_authorized",
+      "reason": "User explicitly approved Git retry, verification and publication."
+    },
+    {
+      "at": "2026-10-13T08:57:00Z",
+      "state": "published",
+      "post_id": "8001755356304616392"
+    }
+  ]
 }
