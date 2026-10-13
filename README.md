@@ -221,3 +221,10 @@ A small knight banks sparks by blocking a larger automaton, then decides when to
 Actual cloud Chromium: copper guard/guard/rest/guard/burst/strike wins in6turns withHP9; four rests lose; retry and terminal undo work. Standalone, saved Blogger preview and public article were operated at320/360/390CSSpx with no horizontal overflow. These are responsive desktop checks, not physical-phone or novice-human tests. Both original concept images are identified as illustrations, uploaded through normal Blogger compose paste and served by responsive CDN URLs. Published post3307005946088725543 at2026-10-12T10:40:00+09:00.
 
 Publication state, image provenance, precise browser checks and all test output are in assets/spark-shield/. Source delivery commit5cdc7d4fa886a849cfdbfe6e831cdab1c14a593a passed Pages run38191277410 before browser tests. No claim of proven long-term fun.
+
+
+## Lost Property / 忘れ物窓口の探偵
+
+Three visitors, five bags and a limited inspection budget. Read testimony, inspect hidden marks, provisionally assign bags and return all three together. Three fixed cases, relational clues, undo of assignment/return (not inspections), retry and native keyboard/touch controls. No timer, accounts, storage or gameplay network calls. Pure engine and DOM controller; dependency-free static delivery.
+
+Open games/lost-property/index.html. Design comparison, scope and PDCA are in assets/lost-property/design-notes.md. Independent logical/engine/controller checks are recorded separately. Live browser and publication status will be recorded in publication.json; prototype deployment is not article publication. Fixed puzzles, no novice-human or physical-phone validation.

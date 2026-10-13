@@ -1,0 +1,12 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>忘れ物窓口の探偵｜試遊</title><link rel="stylesheet" href="style.css"></head><body><main>
+<header><p class="eyebrow">LOST & FOUND · 小さな推理実験</p><h1>忘れ物窓口の探偵</h1><p>調べる → 仮置き → 3人へ返す</p></header>
+<label class="case-label" for="case">案件</label><select id="case" aria-label="案件を選ぶ"><option value="0">1 · ふたつの赤い袋</option><option value="1">2 · 重なる証言</option><option value="2">3 · だれかと同じ</option></select>
+<p class="rule">3人の袋は必ずここにあります。<b>1人に1点、同じ袋は2人に渡せません。</b>残り2点は保管します。色と素材は見えますが、内側の印は調査で分かります。</p>
+<div class="section-head"><h2>忘れ物棚</h2><strong id="budget"></strong></div><section id="shelf" aria-label="忘れ物の袋"></section>
+<div class="section-head"><h2>3人の証言</h2><span>仮置きは何度でも</span></div><section id="people" aria-label="証言と仮置き"></section>
+<p class="note">同じ袋を選び直すと、前の人の仮置きが外れます。調査結果・回数は「ひと手戻す」では戻りません。</p>
+<button id="submit" class="primary">3人へ返却する</button><p id="status" role="status" aria-live="polite"></p>
+<div class="actions"><button id="undo">ひと手戻す</button><button id="reset">再挑戦</button><button id="next" hidden>次の案件</button></div>
+<details><summary>困ったときのヒント</summary><p id="hint"></p></details>
+<footer>時間制限なし · 調査0でも返却できます<br>固定3案件の試作。実際の忘れ物対応の手順ではありません。</footer>
+</main><script src="engine.js"></script><script src="app.js"></script></body></html>
