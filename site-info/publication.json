@@ -1,0 +1,107 @@
+{
+  "updated_at": "2026-10-13T09:43:30Z",
+  "blog_id": "3556407006374124911",
+  "baseline_commit": "ff0aad40734445ec5c1a92802b631ea047f4abcc",
+  "pages": [
+    {
+      "title": "運営者情報・お問い合わせ",
+      "id": "1669935045518798176",
+      "url": "https://game-idea-lab.blogspot.com/p/blog-page.html",
+      "source": "about.html"
+    },
+    {
+      "title": "プライバシーポリシー",
+      "id": "7286908266860859499",
+      "url": "https://game-idea-lab.blogspot.com/p/blog-page_13.html",
+      "source": "privacy.html"
+    },
+    {
+      "title": "遊べる作品一覧",
+      "id": "844576656208859196",
+      "url": "https://game-idea-lab.blogspot.com/p/blog-page_355.html",
+      "source": "catalog.html"
+    }
+  ],
+  "navigation": "Top PageList for home/static pages; one HTML1 widget in footer above Attribution, four HTTPS links, visible and clickable on live articles and phone preview.",
+  "settings_verified": {
+    "analytics_measurement_id": "empty in Blogger settings",
+    "comments": "Google account required",
+    "https_redirect": true,
+    "custom_robots": false,
+    "adsense": "not linked or in registered Sites; no application submitted"
+  },
+  "contact_source": "https://cruiser-biyori.blogspot.com/p/blog-page.html",
+  "privacy_reference": "https://cruiser-biyori.blogspot.com/p/blog-page_04.html",
+  "game_smoke_test": "All 8 published articles, iframes and standalone URLs loaded; core state update verified. Detailed QA below.",
+  "limitations": [
+    "Physical smartphone not tested",
+    "Not full playthrough of every game",
+    "No AdSense approval guarantee"
+  ],
+  "games": [
+    {
+      "title": "忘れ物窓口の探偵",
+      "article": "https://game-idea-lab.blogspot.com/2026/10/blog-post_13.html",
+      "game": "https://kicchomen.github.io/game-idea-lab/games/lost-property/"
+    },
+    {
+      "title": "火花の盾",
+      "article": "https://game-idea-lab.blogspot.com/2026/10/blog-post_12.html",
+      "game": "https://kicchomen.github.io/game-idea-lab/games/spark-shield/"
+    },
+    {
+      "title": "砂の下の博物館",
+      "article": "https://game-idea-lab.blogspot.com/2026/10/blog-post_11.html",
+      "game": "https://kicchomen.github.io/game-idea-lab/games/fossil-museum/"
+    },
+    {
+      "title": "空中サーカスの皿まわし",
+      "article": "https://game-idea-lab.blogspot.com/2026/10/blog-post_10.html",
+      "game": "https://kicchomen.github.io/game-idea-lab/games/sky-plates/?v=2"
+    },
+    {
+      "title": "ねむりの谷の配達人",
+      "article": "https://game-idea-lab.blogspot.com/2026/10/blog-post_09.html",
+      "game": "https://kicchomen.github.io/game-idea-lab/games/hush-courier/?v=2"
+    },
+    {
+      "title": "火の見の番人",
+      "article": "https://game-idea-lab.blogspot.com/2026/10/blog-post_08.html",
+      "game": "https://kicchomen.github.io/game-idea-lab/games/firebreak-keeper/"
+    },
+    {
+      "title": "夜市の仕入れ番",
+      "article": "https://game-idea-lab.blogspot.com/2026/10/blog-post_07.html",
+      "game": "https://kicchomen.github.io/game-idea-lab/games/night-market/"
+    },
+    {
+      "title": "ちいさなタグボート",
+      "article": "https://game-idea-lab.blogspot.com/2026/10/blog-post.html",
+      "game": "https://kicchomen.github.io/game-idea-lab/games/tiny-tug/?v=2"
+    }
+  ],
+  "verification": {
+    "fixed_pages_live": "3 normal prose pages, no duplicates; catalog 8 headings and16 matching URLs",
+    "fixed_pages_phone_preview": {
+      "frame_width": 412,
+      "content_width": 397,
+      "scroll_width": 397,
+      "horizontal_overflow": false,
+      "menu_navigation": "works"
+    },
+    "article_footer": "Live tiny-tug article: HTML1 belongs to #footer, visible at x0 width703; single widget; all4 links legible, privacy click reaches correct policy.",
+    "all_eight_game_smoke_tests": "pass",
+    "physical_phone": false,
+    "article_footer_phone": {
+      "article": "lost-property",
+      "preview_frame_width": 412,
+      "content_width": 397,
+      "footer_width": 397,
+      "horizontal_overflow": false,
+      "visible_links": 4,
+      "duplicate_widgets": 0,
+      "contact_click": "correct published page"
+    }
+  },
+  "status": "published_verified"
+}
