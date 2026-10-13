@@ -1,0 +1,26 @@
+{
+  "game": "lost-property",
+  "title": "忘れ物窓口の探偵｜一人の証言が、三人をつなぐ",
+  "status": "draft_saved_validation_in_progress",
+  "blog_id": "3556407006374124911",
+  "reserved_editor_post_id": "8001755356304616392",
+  "editor_url": "https://www.blogger.com/blog/post/edit/3556407006374124911/8001755356304616392",
+  "editor_state": "Same draft ID reused; title, two Blogger CDN images and article HTML saved and reloaded",
+  "public_url": null,
+  "trial_url": "https://kicchomen.github.io/game-idea-lab/games/lost-property/",
+  "planned_trial_url": "https://kicchomen.github.io/game-idea-lab/games/lost-property/",
+  "remote_main_verified": "0e742d17b0f973845e6af58a06a7c5b173894564",
+  "remote_tree": "05ea988372f83571c008b0df6b3ac362fb31148b",
+  "git_result": "Explicit retry approval received. Main advanced with expected-head lease; both Pages deployments succeeded.",
+  "tests_passed": 242,
+  "new_tests_passed": 32,
+  "independent_review": "Source and mock DOM pass; separate cloud browser320/360/390 pass",
+  "browser_attempt": "Live PC703 all3 cases success; failure/Undo/retry success. Independent320/360/390 no horizontal overflow, success/failure/retry verified. Physical smartphone touch and human novice testing not performed.",
+  "remaining": [
+    "Article narrow-width and embed validation",
+    "Publish same Blogger draft; public page/title/images/embed confirmation",
+    "Final registry and remote verification"
+  ],
+  "updated_at": "2026-10-13T08:52:00Z",
+  "prototype_commit": "8962cff025b3df64db2739d8d58da009b77bff6c"
+}
