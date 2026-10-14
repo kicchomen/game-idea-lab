@@ -1,24 +1,28 @@
 {
   "game": "windbird",
   "title": "風待ちの渡り鳥｜羽を休める場所が、次の一歩をつくる",
-  "status": "prototype_deployed_blogger_pending",
+  "status": "blogger_draft_saved_preview_testing",
   "blog_id": "3556407006374124911",
-  "post_id": null,
+  "post_id": "712458916780914918",
   "public_url": null,
   "trial_url": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
   "base_commit": "79e25110b6e02dd1892862ebba8c065fab099870",
   "existing_posts": {
     "published": 8,
-    "drafts": null,
-    "scheduled": null,
-    "public_inventory_checked_at": "2026-10-14T13:39:22.325772+00:00",
-    "draft_inventory": "Pending dedicated connected Blogger browser; earlier observed 2 drafts at 2026-10-14T01:00:50Z"
+    "drafts": 2,
+    "scheduled": 0,
+    "observed_at_before_new_draft": "2026-10-14T13:56:20.313824+00:00",
+    "windbird_duplicate": false,
+    "old_drafts_unchanged": [
+      "1057707127785703864",
+      "6862408650449844535"
+    ]
   },
   "observed_at": "2026-10-14T01:00:50Z",
   "tests_passed": 301,
   "remaining": [
-    "Blogger draft inventory",
-    "Blogger normal image upload/CDN and saved draft readback",
+    "Complete saved Blogger preview responsive/embed QA",
+    "Article CDN source Git/Pages verification",
     "Blogger publication and public title/images/embed/mobile QA"
   ],
   "limitations": [
@@ -26,7 +30,7 @@
     "No novice-human or long-term fun validation"
   ],
   "independent_review": "PASS source, production engine and mock DOM; separate actual Chromium automation and screenshot review completed by recovery task",
-  "updated_at": "2026-10-14T13:45:51.431365+00:00",
+  "updated_at": "2026-10-14T14:17:48.339993+00:00",
   "transfer": {
     "status": "verified",
     "library_file_id": "libfile_a36473c958508191bc4b3f7191713214",
@@ -65,18 +69,6 @@
     "baseline_results": "browser-results-baseline.json",
     "final_320_results": "browser-results-320.json"
   },
-  "blocker": {
-    "action": "Blogger inventory, normal image upload, save/reload and publication",
-    "target": "blog 3556407006374124911",
-    "status": "pending",
-    "reason": "No connected Chrome or IAB tab surface is available to this task; native Mac screen operations are reserved for the concurrent marine task",
-    "attempts": [
-      "CUA browser inventory empty",
-      "createBrowserTab chrome: Browser is not available",
-      "createBrowserTab iab: Browser is not available"
-    ],
-    "external_mutation_attempted": false
-  },
   "article_template_verification": {
     "scope": "Local source article inserted into existing fetched Blogger theme, with local images and game. Not a saved Blogger draft or CDN check.",
     "css_widths": [
@@ -112,5 +104,38 @@
     "horizontal_overflow": false,
     "all_visible_button_heights_at_least_44px": true,
     "page_errors": []
-  }
+  },
+  "editor_url": "https://www.blogger.com/blog/post/edit/3556407006374124911/712458916780914918",
+  "images": [
+    {
+      "role": "cover",
+      "source_file": "assets/windbird/cover.jpg",
+      "blogger_cdn_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKTE-0WEPjMqwMVfNqpPm9GCtbgMEuVviJ2kgyWgaEIIv-X6KYvCaSo_GkilD_9QFjZshmh_zm1rIUCyOduHU3D_z0lK4pkuRaF0qpxubt5l1miKxsm8N_Bmonu32r-P5K0u9RcT2U0TxaQd5qJosH6_m0Tk2C4r3IhHTpQeLfMIRyHFFXjoPhkLoeQ6M/s1600/cover.jpg",
+      "upload_method": "Blogger Insert image > Upload from computer > native file picker",
+      "natural_width": 1439,
+      "natural_height": 810
+    },
+    {
+      "role": "concept",
+      "source_file": "assets/windbird/concept.jpg",
+      "blogger_cdn_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWbuxPDlBYuOexpUfJLpWXaHeVEXlENjTjZbiYATprs8YwlCZ7I_4RbPXdY0UvZiUFx2Gq6ZXZ_-vJzwwv2o_H_r96XALpqTboC4YRvZ1Y6Fks-RzB85No82et_VYXSEkfYzerTERM9LjfZhHbOVOM3OQJLky7SNtijF9Xt3M1xrt5mHuOlpmdvZXz03Q/s1600/concept.jpg",
+      "upload_method": "Blogger Insert image > Upload from computer > native file picker",
+      "natural_width": 1440,
+      "natural_height": 960
+    }
+  ],
+  "saved_html_readback": "blogger-save-verification.json",
+  "editor_state": "New draft saved and reloaded; full HTML exactly matches source; preview visible",
+  "history": [
+    {
+      "at": "2026-10-14T13:51:00Z",
+      "state": "native_screen_handoff_authorized",
+      "note": "Marine task released Mac screen control; only newly created game tabs used"
+    },
+    {
+      "at": "2026-10-14T14:17:48.339993+00:00",
+      "state": "draft_saved_reloaded",
+      "post_id": "712458916780914918"
+    }
+  ]
 }
