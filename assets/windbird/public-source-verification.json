@@ -1,0 +1,21 @@
+{
+  "checked_at": "2026-10-14T14:37:30.960428+00:00",
+  "post_id": "712458916780914918",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html",
+  "published_at": "2026-10-14T23:29:04.990+09:00",
+  "title": "風待ちの渡り鳥｜羽を休める場所が、次の一歩をつくる",
+  "feed_html_exact_trim_match": true,
+  "source_html_sha256": "37f5532b6f2ed499ac8b8d63d4e6509a64a69dd574c01c0b30f730024b615249",
+  "native_mac_chrome_public_title_cover_concept_visible": true,
+  "native_listing": {
+    "published": 9,
+    "drafts": 2,
+    "scheduled": 0
+  },
+  "old_draft_ids_unchanged": [
+    "1057707127785703864",
+    "6862408650449844535"
+  ],
+  "screen_control_released": true,
+  "screen_control_note": "No more OS-level UI actions; only isolated browser QA and Git operations continue. Other blog tabs were not edited."
+}

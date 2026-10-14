@@ -68,3 +68,14 @@ Bloggerプレビューの`blogger-clickTrap`が通常クリックを阻止する
 320pxではHTML全体のscrollWidth341px、本文body320px。プレビュー専用の斜め「プレビュー」リボンが21px外へ出ることを要素境界から特定。本文（右端304px）と試遊（右端306px）は320px内に収まる。プレビュー用の装飾と公開記事の表示を分ける。`blogger-preview-qa.json`。
 
 CDN対応記事コミット25e84e267ffdedba3dd96f4ef94b244fa233f895はremote main一致、Pages run38579464876成功。配信されたarticle.htmlがCDN対応の正本と全byte一致、SHA25637f5532b6f2ed499ac8b8d63d4e6509a64a69dd574c01c0b30f730024b615249。`article-pages-verification.json`。
+
+
+## 公開完了と公開実ページ
+
+同じ投稿712458916780914918をネイティブChromeで公開し、一覧9公開2下書き予約0を確認。旧2下書きは維持。公開フィードの日時は2026-10-14T23:29:04.990+09:00、実URL https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html 。公開フィードの全本文が正本とtrim完全一致。Mac Chromeで公開タイトル・画像の実表示を目視。
+
+公開記事そのものを独立した実ChromiumでPC1100と320/360/390CSSpxで検査。iframe実幅812/290/330/360px。title/canonical一致、CDN2画像（1439×810、1440×960）読込、単独リンクを実クリックして正しい試遊画面へ移動。全体document/client/body幅が一致し、横はみ出しなし。プレビュー専用clickTrap/リボンは公開記事に存在しない。
+
+各幅の公開埋込みで、通常クリックによる開始、方向ボタンの実マウス保持＋Spaceによる羽ばたき、P停止、やり直し、実キー入力による着地成功、自然海落下失敗、再挑戦と初期化を確認。表示スクリーンショットを目視。`blogger-public-qa.json`、`public-source-verification.json`。
+
+これらは実デスクトップブラウザと狭幅エミュレーション。スマートフォン実機、初見人間、長期の面白さは未検証。画面操作は解放済み。既存の別ブログのタブは編集しておらず、その後の作業はGitと独立ブラウザのみ。

@@ -1,10 +1,10 @@
 {
   "game": "windbird",
   "title": "風待ちの渡り鳥｜羽を休める場所が、次の一歩をつくる",
-  "status": "ready_to_publish",
+  "status": "published_verified",
   "blog_id": "3556407006374124911",
   "post_id": "712458916780914918",
-  "public_url": null,
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html",
   "trial_url": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
   "base_commit": "79e25110b6e02dd1892862ebba8c065fab099870",
   "existing_posts": {
@@ -20,16 +20,13 @@
   },
   "observed_at": "2026-10-14T01:00:50Z",
   "tests_passed": 301,
-  "remaining": [
-    "Blogger publication and public title/images/embed/mobile QA",
-    "Final publication ledger Git/Pages verification"
-  ],
+  "remaining": [],
   "limitations": [
     "No physical phone test",
     "No novice-human or long-term fun validation"
   ],
   "independent_review": "PASS source, production engine and mock DOM; separate actual Chromium automation and screenshot review completed by recovery task",
-  "updated_at": "2026-10-14T14:26:13.606189+00:00",
+  "updated_at": "2026-10-14T14:39:16.561256+00:00",
   "transfer": {
     "status": "verified",
     "library_file_id": "libfile_a36473c958508191bc4b3f7191713214",
@@ -124,7 +121,7 @@
     }
   ],
   "saved_html_readback": "blogger-save-verification.json",
-  "editor_state": "New draft saved and reloaded; full HTML exactly matches source; preview visible",
+  "editor_state": "Native publish confirmed on same post; listing9published2drafts0scheduled",
   "history": [
     {
       "at": "2026-10-14T13:51:00Z",
@@ -135,11 +132,68 @@
       "at": "2026-10-14T14:17:48.339993+00:00",
       "state": "draft_saved_reloaded",
       "post_id": "712458916780914918"
+    },
+    {
+      "at": "2026-10-14T23:29:04.990+09:00",
+      "state": "published",
+      "post_id": "712458916780914918",
+      "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html"
+    },
+    {
+      "at": "2026-10-14T14:39:16.561256+00:00",
+      "state": "published_public_qa_passed",
+      "widths": [
+        1100,
+        320,
+        360,
+        390
+      ]
     }
   ],
   "saved_preview_verification": "blogger-preview-qa.json",
   "article_commit": "25e84e267ffdedba3dd96f4ef94b244fa233f895",
   "article_pages_run_id": 38579464876,
   "article_pages_status": "success",
-  "article_pages_verified": "article-pages-verification.json"
+  "article_pages_verified": "article-pages-verification.json",
+  "published_at": "2026-10-14T23:29:04.990+09:00",
+  "existing_posts_after": {
+    "published": 9,
+    "drafts": 2,
+    "scheduled": 0,
+    "old_drafts_unchanged": [
+      "1057707127785703864",
+      "6862408650449844535"
+    ]
+  },
+  "prepublication_verified_commit": "8a326b2997e89f65eecd6c28b96930477afa3875",
+  "prepublication_pages_run_id": 38580547713,
+  "prepublication_pages_status": "success",
+  "public_verification": {
+    "report": "blogger-public-qa.json",
+    "source_report": "public-source-verification.json",
+    "css_widths": [
+      1100,
+      320,
+      360,
+      390
+    ],
+    "iframe_widths": [
+      812,
+      290,
+      330,
+      360
+    ],
+    "title_and_canonical": true,
+    "cdn_images_loaded": 2,
+    "public_body_exact_match": true,
+    "normal_pointer_start_and_held_control": true,
+    "pause": true,
+    "embedded_success_failure_retry": true,
+    "standalone_link_click": true,
+    "horizontal_overflow": false,
+    "screenshots_visually_reviewed": true,
+    "physical_phone": false
+  },
+  "native_screen_control_released_at": "2026-10-14T14:39:16.561256+00:00",
+  "native_screen_control": "Released; other blog tabs unchanged; no further OS UI actions"
 }

@@ -1,0 +1,117 @@
+{
+  "at": "2026-10-14T14:35:14.337Z",
+  "post_id": "712458916780914918",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html",
+  "browser": "149.0.7827.55",
+  "mode": "Actual public Blogger article with real pointer and keyboard input, live Pages iframe, CDN images and standalone link; responsive desktop browser emulation, no physical phone.",
+  "records": [
+    {
+      "width": 1100,
+      "client": 1100,
+      "scroll": 1100,
+      "bodyScroll": 1100,
+      "previewRibbons": [],
+      "images": [
+        {
+          "width": 1439,
+          "height": 810,
+          "cdn": true
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "cdn": true
+        }
+      ],
+      "iframeWidth": 812,
+      "link": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
+      "previewDecorationOverflow": 0,
+      "pointerAndPause": true,
+      "won": 17.158333333333,
+      "failureRetryReset": true,
+      "linkClick": true,
+      "canonical": "https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html"
+    },
+    {
+      "width": 320,
+      "client": 320,
+      "scroll": 320,
+      "bodyScroll": 320,
+      "previewRibbons": [],
+      "images": [
+        {
+          "width": 1439,
+          "height": 810,
+          "cdn": true
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "cdn": true
+        }
+      ],
+      "iframeWidth": 290,
+      "link": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
+      "previewDecorationOverflow": 0,
+      "pointerAndPause": true,
+      "won": 17.191666666666332,
+      "failureRetryReset": true,
+      "linkClick": true,
+      "canonical": "https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html"
+    },
+    {
+      "width": 360,
+      "client": 360,
+      "scroll": 360,
+      "bodyScroll": 360,
+      "previewRibbons": [],
+      "images": [
+        {
+          "width": 1439,
+          "height": 810,
+          "cdn": true
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "cdn": true
+        }
+      ],
+      "iframeWidth": 330,
+      "link": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
+      "previewDecorationOverflow": 0,
+      "pointerAndPause": true,
+      "won": 17.158333333333,
+      "failureRetryReset": true,
+      "linkClick": true,
+      "canonical": "https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html"
+    },
+    {
+      "width": 390,
+      "client": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "previewRibbons": [],
+      "images": [
+        {
+          "width": 1439,
+          "height": 810,
+          "cdn": true
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "cdn": true
+        }
+      ],
+      "iframeWidth": 360,
+      "link": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
+      "previewDecorationOverflow": 0,
+      "pointerAndPause": true,
+      "won": 17.158333333333,
+      "failureRetryReset": true,
+      "linkClick": true,
+      "canonical": "https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html"
+    }
+  ]
+}
