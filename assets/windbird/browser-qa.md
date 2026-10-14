@@ -37,3 +37,12 @@ PC 1100pxと320/360/390pxで本文・画像2点が表示され、横はみ出し
 残るBlogger操作は、下書き再照合、通常画像アップロードとCDN化、article.htmlの2プレースホルダー置換、保存・再読込、プレビュー検査、公開と公開実表示、ID/URL/公開日時の保存。これらが終わるまで公開検査の合格として扱わない。
 
 再現用: Playwrightを利用できる環境で `node tests/windbird-browser.cjs`。必要なら `PLAYWRIGHT_MODULE_PATH`を指定。`WINDBIRD_BASE_URL`で配信先、`WINDBIRD_QA_OUTPUT`で作業用出力先、`WINDBIRD_QA_WIDTHS=320`で修正箇所の検査を指定できる。
+
+
+## Git / Pages 実配信
+
+今回26ファイルだけをコミットc20f006cd80fe69cb9200fbffc6ba313b55ac8eeで保存。非force push成功、remote mainと一致。Pages run38574039406が同じhead_shaでsuccess、Pages buildはbuilt。
+
+実配信のゲームHTML/CSS/app.js/engine.js、cover.jpg、concept.jpg、responsive iframe harnessの7ファイルをSHA256照合し、ローカルと全byte一致。`pages-file-verification.json`。
+
+配信URLを実Chromiumで開き、320px単独とiframeで羽ばたき/滑空/上昇気流の成功（ともに17.27秒）、自然海落下失敗、再挑戦、初期化を再確認。44pxボタン、横はみ出しなし、page errorなし。`pages-browser-results-320.json`。旧2下書きへの操作は行っておらず、Blogger通常アップロード/保存/公開は現在のブロッカーで未実施。

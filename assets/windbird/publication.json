@@ -1,7 +1,7 @@
 {
   "game": "windbird",
   "title": "風待ちの渡り鳥｜羽を休める場所が、次の一歩をつくる",
-  "status": "browser_verified_publication_pending",
+  "status": "prototype_deployed_blogger_pending",
   "blog_id": "3556407006374124911",
   "post_id": null,
   "public_url": null,
@@ -19,7 +19,6 @@
   "remaining": [
     "Blogger draft inventory",
     "Blogger normal image upload/CDN and saved draft readback",
-    "Git push/Pages commit verification",
     "Blogger publication and public title/images/embed/mobile QA"
   ],
   "limitations": [
@@ -27,7 +26,7 @@
     "No novice-human or long-term fun validation"
   ],
   "independent_review": "PASS source, production engine and mock DOM; separate actual Chromium automation and screenshot review completed by recovery task",
-  "updated_at": "2026-10-14T13:39:22.325772+00:00",
+  "updated_at": "2026-10-14T13:45:51.431365+00:00",
   "transfer": {
     "status": "verified",
     "library_file_id": "libfile_a36473c958508191bc4b3f7191713214",
@@ -97,5 +96,21 @@
     "success_failure_retry_in_narrow_embeds": true,
     "horizontal_overflow": false,
     "report": "article-template-qa.json"
+  },
+  "prototype_commit": "c20f006cd80fe69cb9200fbffc6ba313b55ac8ee",
+  "remote_main_verified": "c20f006cd80fe69cb9200fbffc6ba313b55ac8ee",
+  "remote_main_verified_at": "2026-10-14T13:45:51.431365+00:00",
+  "pages_run_id": 38574039406,
+  "pages_run_url": "https://github.com/kicchomen/game-idea-lab/actions/runs/38574039406",
+  "pages_status": "success",
+  "pages_files_verified": "pages-file-verification.json",
+  "pages_live_browser_verification": {
+    "report": "pages-browser-results-320.json",
+    "standalone_css_width": 320,
+    "iframe_css_width": 320,
+    "success_failure_retry": true,
+    "horizontal_overflow": false,
+    "all_visible_button_heights_at_least_44px": true,
+    "page_errors": []
   }
 }
