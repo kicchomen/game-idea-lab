@@ -1,0 +1,178 @@
+{
+  "at": "2026-10-14T13:39:14.476Z",
+  "mode": "Local article template inserted into fetched existing public Blogger theme; scripts removed; local source images substituted. Not a Blogger draft or CDN verification.",
+  "browser": "149.0.7827.55",
+  "results": [
+    {
+      "viewport": 1100,
+      "client": 1100,
+      "scroll": 1100,
+      "article": 810,
+      "images": [
+        {
+          "width": 1439,
+          "height": 810
+        },
+        {
+          "width": 1440,
+          "height": 960
+        }
+      ],
+      "frame": 812,
+      "standaloneLink": true
+    },
+    {
+      "viewport": 320,
+      "client": 320,
+      "scroll": 320,
+      "article": 288,
+      "images": [
+        {
+          "width": 1439,
+          "height": 810
+        },
+        {
+          "width": 1440,
+          "height": 960
+        }
+      ],
+      "frame": 290,
+      "successFailureRetry": true,
+      "overlay": {
+        "overlay": {
+          "x": 16,
+          "y": 154,
+          "width": 256,
+          "height": 166.65625,
+          "top": 154,
+          "right": 272,
+          "bottom": 320.65625,
+          "left": 16
+        },
+        "next": {
+          "x": 99,
+          "y": 274.328125,
+          "width": 90,
+          "height": 44,
+          "top": 274.328125,
+          "right": 189,
+          "bottom": 318.328125,
+          "left": 99
+        },
+        "start": {
+          "x": 67,
+          "y": 225.328125,
+          "width": 154,
+          "height": 44,
+          "top": 225.328125,
+          "right": 221,
+          "bottom": 269.328125,
+          "left": 67
+        }
+      },
+      "standaloneLink": true
+    },
+    {
+      "viewport": 360,
+      "client": 360,
+      "scroll": 360,
+      "article": 328,
+      "images": [
+        {
+          "width": 1439,
+          "height": 810
+        },
+        {
+          "width": 1440,
+          "height": 960
+        }
+      ],
+      "frame": 330,
+      "successFailureRetry": true,
+      "overlay": {
+        "overlay": {
+          "x": 16,
+          "y": 154,
+          "width": 296,
+          "height": 193.328125,
+          "top": 154,
+          "right": 312,
+          "bottom": 347.328125,
+          "left": 16
+        },
+        "next": {
+          "x": 119,
+          "y": 287.65625,
+          "width": 90,
+          "height": 44,
+          "top": 287.65625,
+          "right": 209,
+          "bottom": 331.65625,
+          "left": 119
+        },
+        "start": {
+          "x": 87,
+          "y": 238.65625,
+          "width": 154,
+          "height": 44,
+          "top": 238.65625,
+          "right": 241,
+          "bottom": 282.65625,
+          "left": 87
+        }
+      },
+      "standaloneLink": true
+    },
+    {
+      "viewport": 390,
+      "client": 390,
+      "scroll": 390,
+      "article": 358,
+      "images": [
+        {
+          "width": 1439,
+          "height": 810
+        },
+        {
+          "width": 1440,
+          "height": 960
+        }
+      ],
+      "frame": 360,
+      "successFailureRetry": true,
+      "overlay": {
+        "overlay": {
+          "x": 24,
+          "y": 169,
+          "width": 310,
+          "height": 200,
+          "top": 169,
+          "right": 334,
+          "bottom": 369,
+          "left": 24
+        },
+        "next": {
+          "x": 134,
+          "y": 312,
+          "width": 90,
+          "height": 44,
+          "top": 312,
+          "right": 224,
+          "bottom": 356,
+          "left": 134
+        },
+        "start": {
+          "x": 102,
+          "y": 260,
+          "width": 154,
+          "height": 44,
+          "top": 260,
+          "right": 256,
+          "bottom": 304,
+          "left": 102
+        }
+      },
+      "standaloneLink": true
+    }
+  ]
+}

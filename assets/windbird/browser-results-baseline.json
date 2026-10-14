@@ -1,0 +1,776 @@
+{
+  "at": "2026-10-14T13:34:46.048Z",
+  "browser": "149.0.7827.55",
+  "base": "http://127.0.0.1:58879/",
+  "mode": "Actual isolated headless Chromium with real RAF; responsive/touch emulation, no physical phone",
+  "errors": [],
+  "records": [
+    {
+      "check": "standalone-1100-ready",
+      "width": 1100,
+      "client": 1100,
+      "scroll": 1100,
+      "controls": [
+        {
+          "width": 155,
+          "height": 44
+        },
+        {
+          "width": 155,
+          "height": 44
+        },
+        {
+          "width": 248,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 274,
+        "y": 181,
+        "width": 552,
+        "height": 361.328125,
+        "top": 181,
+        "right": 826,
+        "bottom": 542.328125,
+        "left": 274
+      },
+      "start": {
+        "x": 505,
+        "y": 384.65625,
+        "width": 90,
+        "height": 44,
+        "top": 384.65625,
+        "right": 595,
+        "bottom": 428.65625,
+        "left": 505
+      }
+    },
+    {
+      "check": "PC-held-pointer-keyboard-left-flap-P-Escape-pause-resume",
+      "pass": true,
+      "limitation": "Headless tab switching did not produce native window blur; interruption remains source/mock-DOM coverage"
+    },
+    {
+      "check": "PC-course-1",
+      "result": {
+        "course": 0,
+        "x": 1460,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 90.43333333333348,
+        "time": 17.24166666666633,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 2.5749999999999935,
+        "nearMiss": 0
+      }
+    },
+    {
+      "check": "PC-course-2",
+      "result": {
+        "course": 1,
+        "x": 1660,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 90.58333333333348,
+        "time": 18.64166666666625,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 3.8166666666666558,
+        "nearMiss": 0
+      }
+    },
+    {
+      "check": "PC-course-3",
+      "result": {
+        "course": 2,
+        "x": 1880,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 56.91666666667058,
+        "time": 21.824999999999402,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 5.166666666666713,
+        "nearMiss": 0
+      }
+    },
+    {
+      "check": "standalone-1100-won",
+      "width": 1100,
+      "client": 1100,
+      "scroll": 1100,
+      "controls": [
+        {
+          "width": 155,
+          "height": 44
+        },
+        {
+          "width": 155,
+          "height": 44
+        },
+        {
+          "width": 248,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 274,
+        "y": 181,
+        "width": 552,
+        "height": 361.328125,
+        "top": 181,
+        "right": 826,
+        "bottom": 542.328125,
+        "left": 274
+      },
+      "start": {
+        "x": 473,
+        "y": 349.65625,
+        "width": 154,
+        "height": 44,
+        "top": 349.65625,
+        "right": 627,
+        "bottom": 393.65625,
+        "left": 473
+      }
+    },
+    {
+      "check": "1100-natural-sea-failure-retry-reset",
+      "pass": true
+    },
+    {
+      "check": "standalone-320-ready",
+      "width": 320,
+      "client": 320,
+      "scroll": 320,
+      "controls": [
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 127.109375,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 16,
+        "y": 154,
+        "width": 288,
+        "height": 188,
+        "top": 154,
+        "right": 304,
+        "bottom": 342,
+        "left": 16
+      },
+      "start": {
+        "x": 115,
+        "y": 263.5,
+        "width": 90,
+        "height": 38,
+        "top": 263.5,
+        "right": 205,
+        "bottom": 301.5,
+        "left": 115
+      }
+    },
+    {
+      "check": "320-Chromium-simultaneous-touch-emulation-release",
+      "pass": true
+    },
+    {
+      "check": "standalone-320-success",
+      "result": {
+        "course": 0,
+        "x": 1460,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 90.24166666666682,
+        "time": 17.21666666666633,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 2.558333333333327,
+        "nearMiss": 0
+      }
+    },
+    {
+      "check": "standalone-320-won",
+      "width": 320,
+      "client": 320,
+      "scroll": 320,
+      "controls": [
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 127.109375,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 16,
+        "y": 154,
+        "width": 288,
+        "height": 188,
+        "top": 154,
+        "right": 304,
+        "bottom": 342,
+        "left": 16
+      },
+      "start": {
+        "x": 83,
+        "y": 242,
+        "width": 154,
+        "height": 38,
+        "top": 242,
+        "right": 237,
+        "bottom": 280,
+        "left": 83
+      }
+    },
+    {
+      "check": "320-natural-sea-failure-retry-reset",
+      "pass": true
+    },
+    {
+      "check": "standalone-360-ready",
+      "width": 360,
+      "client": 360,
+      "scroll": 360,
+      "controls": [
+        {
+          "width": 88.328125,
+          "height": 44
+        },
+        {
+          "width": 88.328125,
+          "height": 44
+        },
+        {
+          "width": 141.34375,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 24,
+        "y": 169,
+        "width": 312,
+        "height": 201.328125,
+        "top": 169,
+        "right": 336,
+        "bottom": 370.328125,
+        "left": 24
+      },
+      "start": {
+        "x": 135,
+        "y": 286.65625,
+        "width": 90,
+        "height": 44,
+        "top": 286.65625,
+        "right": 225,
+        "bottom": 330.65625,
+        "left": 135
+      }
+    },
+    {
+      "check": "360-Chromium-simultaneous-touch-emulation-release",
+      "pass": true
+    },
+    {
+      "check": "standalone-360-success",
+      "result": {
+        "course": 0,
+        "x": 1460,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 90.73333333333349,
+        "time": 17.224999999999664,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 2.5499999999999936,
+        "nearMiss": 0
+      }
+    },
+    {
+      "check": "standalone-360-won",
+      "width": 360,
+      "client": 360,
+      "scroll": 360,
+      "controls": [
+        {
+          "width": 88.328125,
+          "height": 44
+        },
+        {
+          "width": 88.328125,
+          "height": 44
+        },
+        {
+          "width": 141.34375,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 24,
+        "y": 169,
+        "width": 312,
+        "height": 201.328125,
+        "top": 169,
+        "right": 336,
+        "bottom": 370.328125,
+        "left": 24
+      },
+      "start": {
+        "x": 103,
+        "y": 260.65625,
+        "width": 154,
+        "height": 44,
+        "top": 260.65625,
+        "right": 257,
+        "bottom": 304.65625,
+        "left": 103
+      }
+    },
+    {
+      "check": "360-natural-sea-failure-retry-reset",
+      "pass": true
+    },
+    {
+      "check": "standalone-390-ready",
+      "width": 390,
+      "client": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "width": 96.65625,
+          "height": 44
+        },
+        {
+          "width": 96.671875,
+          "height": 44
+        },
+        {
+          "width": 154.671875,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 24,
+        "y": 170,
+        "width": 342,
+        "height": 221.328125,
+        "top": 170,
+        "right": 366,
+        "bottom": 391.328125,
+        "left": 24
+      },
+      "start": {
+        "x": 150,
+        "y": 297.65625,
+        "width": 90,
+        "height": 44,
+        "top": 297.65625,
+        "right": 240,
+        "bottom": 341.65625,
+        "left": 150
+      }
+    },
+    {
+      "check": "390-Chromium-simultaneous-touch-emulation-release",
+      "pass": true
+    },
+    {
+      "check": "standalone-390-success",
+      "result": {
+        "course": 0,
+        "x": 1460,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 90.24166666666682,
+        "time": 17.249999999999662,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 2.5749999999999935,
+        "nearMiss": 0
+      }
+    },
+    {
+      "check": "standalone-390-won",
+      "width": 390,
+      "client": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "width": 96.65625,
+          "height": 44
+        },
+        {
+          "width": 96.671875,
+          "height": 44
+        },
+        {
+          "width": 154.671875,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 24,
+        "y": 170,
+        "width": 342,
+        "height": 221.328125,
+        "top": 170,
+        "right": 366,
+        "bottom": 391.328125,
+        "left": 24
+      },
+      "start": {
+        "x": 118,
+        "y": 262.65625,
+        "width": 154,
+        "height": 44,
+        "top": 262.65625,
+        "right": 272,
+        "bottom": 306.65625,
+        "left": 118
+      }
+    },
+    {
+      "check": "390-natural-sea-failure-retry-reset",
+      "pass": true
+    },
+    {
+      "check": "iframe-320-ready",
+      "width": 320,
+      "client": 320,
+      "scroll": 320,
+      "controls": [
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 127.109375,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 16,
+        "y": 154,
+        "width": 288,
+        "height": 188,
+        "top": 154,
+        "right": 304,
+        "bottom": 342,
+        "left": 16
+      },
+      "start": {
+        "x": 115,
+        "y": 263.5,
+        "width": 90,
+        "height": 38,
+        "top": 263.5,
+        "right": 205,
+        "bottom": 301.5,
+        "left": 115
+      }
+    },
+    {
+      "check": "iframe-320-success",
+      "result": {
+        "course": 0,
+        "x": 1460,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 90.46666666666682,
+        "time": 17.32499999999966,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 2.6083333333333267,
+        "nearMiss": 0
+      }
+    },
+    {
+      "check": "iframe-320-natural-sea-failure-retry-reset",
+      "pass": true
+    },
+    {
+      "check": "iframe-320-reset",
+      "width": 320,
+      "client": 320,
+      "scroll": 320,
+      "controls": [
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 127.109375,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 16,
+        "y": 154,
+        "width": 288,
+        "height": 188,
+        "top": 154,
+        "right": 304,
+        "bottom": 342,
+        "left": 16
+      },
+      "start": {
+        "x": 115,
+        "y": 263.5,
+        "width": 90,
+        "height": 38,
+        "top": 263.5,
+        "right": 205,
+        "bottom": 301.5,
+        "left": 115
+      }
+    },
+    {
+      "check": "iframe-360-ready",
+      "width": 360,
+      "client": 360,
+      "scroll": 360,
+      "controls": [
+        {
+          "width": 88.328125,
+          "height": 44
+        },
+        {
+          "width": 88.328125,
+          "height": 44
+        },
+        {
+          "width": 141.34375,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 24,
+        "y": 169,
+        "width": 312,
+        "height": 201.328125,
+        "top": 169,
+        "right": 336,
+        "bottom": 370.328125,
+        "left": 24
+      },
+      "start": {
+        "x": 135,
+        "y": 286.65625,
+        "width": 90,
+        "height": 44,
+        "top": 286.65625,
+        "right": 225,
+        "bottom": 330.65625,
+        "left": 135
+      }
+    },
+    {
+      "check": "iframe-360-success",
+      "result": {
+        "course": 0,
+        "x": 1460,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 90.16666666666681,
+        "time": 17.258333333332995,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 2.5749999999999935,
+        "nearMiss": 0
+      }
+    },
+    {
+      "check": "iframe-360-natural-sea-failure-retry-reset",
+      "pass": true
+    },
+    {
+      "check": "iframe-360-reset",
+      "width": 360,
+      "client": 360,
+      "scroll": 360,
+      "controls": [
+        {
+          "width": 88.328125,
+          "height": 44
+        },
+        {
+          "width": 88.328125,
+          "height": 44
+        },
+        {
+          "width": 141.34375,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 24,
+        "y": 169,
+        "width": 312,
+        "height": 201.328125,
+        "top": 169,
+        "right": 336,
+        "bottom": 370.328125,
+        "left": 24
+      },
+      "start": {
+        "x": 135,
+        "y": 286.65625,
+        "width": 90,
+        "height": 44,
+        "top": 286.65625,
+        "right": 225,
+        "bottom": 330.65625,
+        "left": 135
+      }
+    },
+    {
+      "check": "iframe-390-ready",
+      "width": 390,
+      "client": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "width": 96.65625,
+          "height": 44
+        },
+        {
+          "width": 96.671875,
+          "height": 44
+        },
+        {
+          "width": 154.671875,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 24,
+        "y": 170,
+        "width": 342,
+        "height": 221.328125,
+        "top": 170,
+        "right": 366,
+        "bottom": 391.328125,
+        "left": 24
+      },
+      "start": {
+        "x": 150,
+        "y": 297.65625,
+        "width": 90,
+        "height": 44,
+        "top": 297.65625,
+        "right": 240,
+        "bottom": 341.65625,
+        "left": 150
+      }
+    },
+    {
+      "check": "iframe-390-success",
+      "result": {
+        "course": 0,
+        "x": 1460,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 90.05000000000015,
+        "time": 17.133333333333002,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 2.5416666666666603,
+        "nearMiss": 0
+      }
+    },
+    {
+      "check": "iframe-390-natural-sea-failure-retry-reset",
+      "pass": true
+    },
+    {
+      "check": "iframe-390-reset",
+      "width": 390,
+      "client": 390,
+      "scroll": 390,
+      "controls": [
+        {
+          "width": 96.65625,
+          "height": 44
+        },
+        {
+          "width": 96.671875,
+          "height": 44
+        },
+        {
+          "width": 154.671875,
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 24,
+        "y": 170,
+        "width": 342,
+        "height": 221.328125,
+        "top": 170,
+        "right": 366,
+        "bottom": 391.328125,
+        "left": 24
+      },
+      "start": {
+        "x": 150,
+        "y": 297.65625,
+        "width": 90,
+        "height": 44,
+        "top": 297.65625,
+        "right": 240,
+        "bottom": 341.65625,
+        "left": 150
+      }
+    }
+  ]
+}

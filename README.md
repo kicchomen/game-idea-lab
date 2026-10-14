@@ -233,3 +233,16 @@ Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_13.html
 Trial: https://kicchomen.github.io/game-idea-lab/games/lost-property/
 
 Published2026-10-13T17:57:00+09:00, post8001755356304616392.242tests pass including32new. Independent source/logical and live responsive browser reviews pass. Actual public Blogger page at320/360/390CSSpx has no horizontal overflow; CDN images, title, thumbnail and embedded success/failure/retry were checked. No physical-phone or novice-human fun claim. See assets/lost-property/publication.json and browser-qa.md.
+
+## Windbird / 風待ちの渡り鳥
+
+A direct-control continuous flying experiment: flap to spend energy and gain altitude, glide to regain energy while descending, and rest in visible thermals before passing dark storm clouds and landing on an island. Three fixed courses, left/right + held flap, pause, explicit resume, success/failure and retry. No dependencies, build step, accounts, storage, audio, analytics or gameplay network calls.
+
+Open `games/windbird/index.html`. The 120Hz pure engine is shared with Node tests, while DOM controls and Canvas rendering live in `app.js`. Keyboard arrows/A/D, Space, P/Escape and three touch-friendly held buttons. Interruption clears input and pauses. Physical-phone testing and novice-human comprehension remain unverified.
+
+Design comparisons and PDCA: `assets/windbird/design-notes.md`; independent checks: `assets/windbird/independent-design.md` and `tests/windbird-independent.test.cjs`. Publication and live-browser status are recorded in `assets/windbird/publication.json`. A staged prototype is not a published Blogger article.
+
+
+### Recovery browser checks — 2026-10-14
+
+301 simulation/unit/mock-controller tests pass. Actual isolated headless Chromium at 1100px completed all three courses with keyboard input; pointer hold, flap/glide/thermals, P/Escape pause/resume, natural sea failure, retry and reset pass. 320/360/390px standalone and iframe checks passed with no horizontal overflow; simultaneous touch was browser emulation. The 320px overlay buttons were enlarged from 38px to 44px and rechecked. Local article rendering inside the fetched existing Blogger theme also passed at these widths, including narrower 290px gameplay content. This is not a saved Blogger draft/CDN/public-article check. See `assets/windbird/browser-qa.md` and `publication.json` for completed checks and pending publication. Physical-phone, novice-human and long-term testing remain unverified.

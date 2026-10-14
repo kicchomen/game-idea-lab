@@ -1,0 +1,20 @@
+const test=require('node:test'),assert=require('node:assert/strict'),E=require('../games/windbird/engine');
+function run(policy,course=0){let s=E.start(E.fresh(course));for(let n=0;n<6000&&s.status==='playing';n++)E.step(s,policy(s));return s;}
+test('fresh has no shared state',()=>{let a=E.fresh(),b=E.fresh();a.energy=0;assert.equal(b.energy,100);assert.equal(a.status,'ready');});
+test('ready paused and terminal states never advance',()=>{for(const status of ['ready','paused','won','lost']){const s={...E.fresh(),status};const before=JSON.stringify(s);E.step(s,{right:true,flap:true});assert.equal(JSON.stringify(s),before);}});
+test('launch pause resume preserve flight state',()=>{let s=E.start(E.fresh());E.step(s,{right:true});let x=s.x,t=s.time;E.pause(s);E.step(s,{right:true});assert.equal(s.x,x);assert.equal(s.time,t);E.start(s);E.step(s,{right:true});assert.ok(s.x>x);});
+test('right and left accelerate in their own direction',()=>{let s=E.start(E.fresh());for(let i=0;i<120;i++)E.step(s,{right:true});assert.ok(s.x>100);for(let i=0;i<120;i++)E.step(s,{left:true});assert.ok(s.vx<0);});
+test('both horizontal buttons cancel target velocity',()=>{let s=E.start(E.fresh());for(let i=0;i<60;i++)E.step(s,{left:true,right:true});assert.equal(s.x,45);});
+test('flapping costs energy and raises bird',()=>{let s=E.start(E.fresh());for(let i=0;i<120;i++)E.step(s,{flap:true});assert.ok(s.energy<70);assert.ok(s.y<165);});
+test('gliding recovers energy but loses height',()=>{let s=E.start(E.fresh());s.energy=10;for(let i=0;i<120;i++)E.step(s,{});assert.ok(s.energy>18);assert.ok(s.y>165);});
+test('thermal lifts without flapping and restores more energy',()=>{let s=E.start(E.fresh());s.x=280;s.energy=20;for(let i=0;i<120;i++)E.step(s,{});assert.ok(s.y<165);assert.ok(s.energy>37);assert.equal(s.flapping,false);});
+test('energy and sky clamp remain bounded',()=>{let s=E.start(E.fresh());s.x=280;for(let i=0;i<1200;i++)E.step(s,{flap:true});assert.ok(s.y>=18);assert.ok(s.energy>=0&&s.energy<=100);});
+test('no-input sea failure happens naturally',()=>{let s=run(()=>({}));assert.equal(s.status,'lost');assert.match(s.reason,/海/);});
+test('reckless right glide and right flap fail',()=>{for(let course=0;course<3;course++)for(const flap of [false,true])assert.equal(run(()=>({right:true,flap}),course).status,'lost');});
+test('course1 input sequence succeeds without state patching',()=>{let s=run(s=>({right:true,flap:s.time>=5.8&&s.time<7.5}));assert.equal(s.status,'won');assert.equal(s.y,272);assert.ok(s.time<16);});
+test('same input is deterministic',()=>{const p=s=>({right:true,flap:s.time>=5.8&&s.time<7.5});assert.deepEqual(run(p),run(p));});
+test('entering island below surface fails rather than snapping upward',()=>{let s=E.start(E.fresh());s.x=1381;s.y=300;s.vy=-20;E.step(s,{});assert.equal(s.status,'lost');assert.match(s.reason,/崖/);});
+test('island downward crossing succeeds',()=>{let s=E.start(E.fresh());s.x=1381;s.y=271.9;s.vy=30;E.step(s,{});assert.equal(s.status,'won');});
+test('deadline failure exists while resting in thermal',()=>{let s=E.start(E.fresh());s.x=280;s.time=41.999;E.step(s,{});assert.equal(s.status,'lost');assert.match(s.reason,/日暮れ/);});
+test('retry resets all course state',()=>{let s=run(()=>({}));let r=E.fresh(s.course);assert.deepEqual(r,E.fresh());});
+test('invalid dt is ignored',()=>{for(let dt of [0,-1,NaN,Infinity]){let s=E.start(E.fresh()),b={...s};E.step(s,{right:true},dt);assert.deepEqual(s,b);}});

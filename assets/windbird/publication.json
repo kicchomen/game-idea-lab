@@ -1,0 +1,101 @@
+{
+  "game": "windbird",
+  "title": "風待ちの渡り鳥｜羽を休める場所が、次の一歩をつくる",
+  "status": "browser_verified_publication_pending",
+  "blog_id": "3556407006374124911",
+  "post_id": null,
+  "public_url": null,
+  "trial_url": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
+  "base_commit": "79e25110b6e02dd1892862ebba8c065fab099870",
+  "existing_posts": {
+    "published": 8,
+    "drafts": null,
+    "scheduled": null,
+    "public_inventory_checked_at": "2026-10-14T13:39:22.325772+00:00",
+    "draft_inventory": "Pending dedicated connected Blogger browser; earlier observed 2 drafts at 2026-10-14T01:00:50Z"
+  },
+  "observed_at": "2026-10-14T01:00:50Z",
+  "tests_passed": 301,
+  "remaining": [
+    "Blogger draft inventory",
+    "Blogger normal image upload/CDN and saved draft readback",
+    "Git push/Pages commit verification",
+    "Blogger publication and public title/images/embed/mobile QA"
+  ],
+  "limitations": [
+    "No physical phone test",
+    "No novice-human or long-term fun validation"
+  ],
+  "independent_review": "PASS source, production engine and mock DOM; separate actual Chromium automation and screenshot review completed by recovery task",
+  "updated_at": "2026-10-14T13:39:22.325772+00:00",
+  "transfer": {
+    "status": "verified",
+    "library_file_id": "libfile_a36473c958508191bc4b3f7191713214",
+    "file_name": "Windbird_20261014_reviewed_v2.zip",
+    "size_bytes": 5542075,
+    "sha256": "c0f49551ab8d739383ab8d3d4dcf06d175ebc2029f5796fabfac62863f094513",
+    "manifest_entries_verified": 21
+  },
+  "browser_verification": {
+    "mode": "Actual isolated headless Chromium, real RAF and keyboard/mouse inputs; narrow viewports and CDP touch emulation",
+    "desktop_css_width": 1100,
+    "standalone_css_widths": [
+      320,
+      360,
+      390
+    ],
+    "iframe_css_widths": [
+      320,
+      360,
+      390
+    ],
+    "desktop_courses_won": [
+      1,
+      2,
+      3
+    ],
+    "success_failure_retry": true,
+    "P_Escape_pause_explicit_resume": true,
+    "pointer_hold": true,
+    "simultaneous_touch_emulation": true,
+    "horizontal_overflow": false,
+    "controls_min_height_px_after_fix": 44,
+    "browser": "149.0.7827.55",
+    "physical_phone": false,
+    "native_window_blur": "Not reproduced in headless environment; source/mock DOM coverage only",
+    "baseline_results": "browser-results-baseline.json",
+    "final_320_results": "browser-results-320.json"
+  },
+  "blocker": {
+    "action": "Blogger inventory, normal image upload, save/reload and publication",
+    "target": "blog 3556407006374124911",
+    "status": "pending",
+    "reason": "No connected Chrome or IAB tab surface is available to this task; native Mac screen operations are reserved for the concurrent marine task",
+    "attempts": [
+      "CUA browser inventory empty",
+      "createBrowserTab chrome: Browser is not available",
+      "createBrowserTab iab: Browser is not available"
+    ],
+    "external_mutation_attempted": false
+  },
+  "article_template_verification": {
+    "scope": "Local source article inserted into existing fetched Blogger theme, with local images and game. Not a saved Blogger draft or CDN check.",
+    "css_widths": [
+      1100,
+      320,
+      360,
+      390
+    ],
+    "iframe_widths": [
+      812,
+      290,
+      330,
+      360
+    ],
+    "images_loaded": 2,
+    "standalone_link": true,
+    "success_failure_retry_in_narrow_embeds": true,
+    "horizontal_overflow": false,
+    "report": "article-template-qa.json"
+  }
+}

@@ -1,0 +1,331 @@
+{
+  "at": "2026-10-14T13:36:55.252Z",
+  "browser": "149.0.7827.55",
+  "base": "http://127.0.0.1:59216/",
+  "mode": "Actual isolated headless Chromium with real RAF; responsive/touch emulation, no physical phone",
+  "errors": [],
+  "records": [
+    {
+      "check": "standalone-320-ready",
+      "width": 320,
+      "client": 320,
+      "scroll": 320,
+      "controls": [
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 127.109375,
+          "height": 44
+        }
+      ],
+      "visibleButtons": [
+        {
+          "text": "飛び立つ",
+          "height": 44
+        },
+        {
+          "text": "◀ 左",
+          "height": 44
+        },
+        {
+          "text": "右 ▶",
+          "height": 44
+        },
+        {
+          "text": "羽ばたく ↑",
+          "height": 44
+        },
+        {
+          "text": "一時停止",
+          "height": 44
+        },
+        {
+          "text": "やり直す",
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 16,
+        "y": 154,
+        "width": 288,
+        "height": 188,
+        "top": 154,
+        "right": 304,
+        "bottom": 342,
+        "left": 16
+      },
+      "start": {
+        "x": 115,
+        "y": 260.5,
+        "width": 90,
+        "height": 44,
+        "top": 260.5,
+        "right": 205,
+        "bottom": 304.5,
+        "left": 115
+      }
+    },
+    {
+      "check": "320-Chromium-simultaneous-touch-emulation-release",
+      "pass": true
+    },
+    {
+      "check": "standalone-320-success",
+      "result": {
+        "course": 0,
+        "x": 1460,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 90.35833333333348,
+        "time": 17.249999999999662,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 2.56666666666666,
+        "nearMiss": 0
+      },
+      "thermal": true,
+      "glide": true,
+      "flapping": true
+    },
+    {
+      "check": "standalone-320-won",
+      "width": 320,
+      "client": 320,
+      "scroll": 320,
+      "controls": [
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 127.109375,
+          "height": 44
+        }
+      ],
+      "visibleButtons": [
+        {
+          "text": "同じ航路を再挑戦",
+          "height": 44
+        },
+        {
+          "text": "次の航路",
+          "height": 44
+        },
+        {
+          "text": "◀ 左",
+          "height": 44
+        },
+        {
+          "text": "右 ▶",
+          "height": 44
+        },
+        {
+          "text": "羽ばたく ↑",
+          "height": 44
+        },
+        {
+          "text": "一時停止",
+          "height": 44
+        },
+        {
+          "text": "やり直す",
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 16,
+        "y": 154,
+        "width": 288,
+        "height": 188,
+        "top": 154,
+        "right": 304,
+        "bottom": 342,
+        "left": 16
+      },
+      "start": {
+        "x": 83,
+        "y": 236,
+        "width": 154,
+        "height": 44,
+        "top": 236,
+        "right": 237,
+        "bottom": 280,
+        "left": 83
+      }
+    },
+    {
+      "check": "320-natural-sea-failure-retry-reset",
+      "pass": true
+    },
+    {
+      "check": "iframe-320-ready",
+      "width": 320,
+      "client": 320,
+      "scroll": 320,
+      "controls": [
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 127.109375,
+          "height": 44
+        }
+      ],
+      "visibleButtons": [
+        {
+          "text": "飛び立つ",
+          "height": 44
+        },
+        {
+          "text": "◀ 左",
+          "height": 44
+        },
+        {
+          "text": "右 ▶",
+          "height": 44
+        },
+        {
+          "text": "羽ばたく ↑",
+          "height": 44
+        },
+        {
+          "text": "一時停止",
+          "height": 44
+        },
+        {
+          "text": "やり直す",
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 16,
+        "y": 154,
+        "width": 288,
+        "height": 188,
+        "top": 154,
+        "right": 304,
+        "bottom": 342,
+        "left": 16
+      },
+      "start": {
+        "x": 115,
+        "y": 260.5,
+        "width": 90,
+        "height": 44,
+        "top": 260.5,
+        "right": 205,
+        "bottom": 304.5,
+        "left": 115
+      }
+    },
+    {
+      "check": "iframe-320-success",
+      "result": {
+        "course": 0,
+        "x": 1460,
+        "y": 272,
+        "vx": 0,
+        "vy": 0,
+        "energy": 90.09166666666681,
+        "time": 17.233333333332997,
+        "status": "won",
+        "reason": "島へ無事に着地！",
+        "flapping": false,
+        "inThermal": false,
+        "used": 2.56666666666666,
+        "nearMiss": 0
+      },
+      "thermal": true,
+      "glide": true,
+      "flapping": true
+    },
+    {
+      "check": "iframe-320-natural-sea-failure-retry-reset",
+      "pass": true
+    },
+    {
+      "check": "iframe-320-reset",
+      "width": 320,
+      "client": 320,
+      "scroll": 320,
+      "controls": [
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 79.4375,
+          "height": 44
+        },
+        {
+          "width": 127.109375,
+          "height": 44
+        }
+      ],
+      "visibleButtons": [
+        {
+          "text": "飛び立つ",
+          "height": 44
+        },
+        {
+          "text": "◀ 左",
+          "height": 44
+        },
+        {
+          "text": "右 ▶",
+          "height": 44
+        },
+        {
+          "text": "羽ばたく ↑",
+          "height": 44
+        },
+        {
+          "text": "一時停止",
+          "height": 44
+        },
+        {
+          "text": "やり直す",
+          "height": 44
+        }
+      ],
+      "overlay": {
+        "x": 16,
+        "y": 154,
+        "width": 288,
+        "height": 188,
+        "top": 154,
+        "right": 304,
+        "bottom": 342,
+        "left": 16
+      },
+      "start": {
+        "x": 115,
+        "y": 260.5,
+        "width": 90,
+        "height": 44,
+        "top": 260.5,
+        "right": 205,
+        "bottom": 304.5,
+        "left": 115
+      }
+    }
+  ]
+}

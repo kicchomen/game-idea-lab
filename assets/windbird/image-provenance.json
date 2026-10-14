@@ -1,0 +1,20 @@
+{
+  "tool": "image_gen built-in",
+  "created_at": "2026-10-14",
+  "images": [
+    {
+      "role": "cover",
+      "original": "cover-original.png",
+      "derivative": "cover.jpg",
+      "description": "Wide stylized cover with migratory bird, thermal, storm and island. Japanese title checked visually."
+    },
+    {
+      "role": "concept",
+      "original": "concept-original.png",
+      "derivative": "concept.jpg",
+      "description": "Three vertically arranged panels: 羽ばたく / 風で休む / 島へ降りる. Exact text and mechanics checked visually."
+    }
+  ],
+  "visual_review": "PASS: bird, upward thermal, dark storm, island and Japanese labels match concept; illustration explicitly not gameplay screenshot.",
+  "blogger_upload": "not yet performed"
+}
