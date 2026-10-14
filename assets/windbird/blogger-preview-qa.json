@@ -1,0 +1,188 @@
+{
+  "at": "2026-10-14T14:24:20.216Z",
+  "post_id": "712458916780914918",
+  "browser": "149.0.7827.55",
+  "mode": "Actual saved Blogger preview URL with CDN images and live Pages iframe; isolated real Chromium keyboard input after DOM focus (Blogger preview clickTrap blocks pointer clicks), responsive desktop emulation, no physical phone. ClickTrap left intact; preview token omitted.",
+  "records": [
+    {
+      "width": 1100,
+      "client": 1100,
+      "scroll": 1100,
+      "bodyScroll": 1100,
+      "previewRibbons": [
+        {
+          "x": -133.9102020263672,
+          "y": -472.91021728515625,
+          "width": 475.17572021484375,
+          "height": 475.1757507324219,
+          "top": -472.91021728515625,
+          "right": 341.26551818847656,
+          "bottom": 2.265533447265625,
+          "left": -133.9102020263672
+        },
+        {
+          "x": -133.9102020263672,
+          "y": -472.91021728515625,
+          "width": 475.17572021484375,
+          "height": 475.1757507324219,
+          "top": -472.91021728515625,
+          "right": 341.26551818847656,
+          "bottom": 2.265533447265625,
+          "left": -133.9102020263672
+        }
+      ],
+      "images": [
+        {
+          "width": 1439,
+          "height": 810,
+          "cdn": true
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "cdn": true
+        }
+      ],
+      "iframeWidth": 668,
+      "link": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
+      "previewDecorationOverflow": 0,
+      "won": 17.24166666666633,
+      "failureRetryReset": true
+    },
+    {
+      "width": 320,
+      "client": 320,
+      "scroll": 341,
+      "bodyScroll": 320,
+      "previewRibbons": [
+        {
+          "x": -133.9102020263672,
+          "y": -171.9102020263672,
+          "width": 475.17572021484375,
+          "height": 475.17572021484375,
+          "top": -171.9102020263672,
+          "right": 341.26551818847656,
+          "bottom": 303.26551818847656,
+          "left": -133.9102020263672
+        },
+        {
+          "x": -133.9102020263672,
+          "y": -171.9102020263672,
+          "width": 475.17572021484375,
+          "height": 475.17572021484375,
+          "top": -171.9102020263672,
+          "right": 341.26551818847656,
+          "bottom": 303.26551818847656,
+          "left": -133.9102020263672
+        }
+      ],
+      "images": [
+        {
+          "width": 1439,
+          "height": 810,
+          "cdn": true
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "cdn": true
+        }
+      ],
+      "iframeWidth": 290,
+      "link": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
+      "previewDecorationOverflow": 21,
+      "won": 17.141666666666335,
+      "failureRetryReset": true
+    },
+    {
+      "width": 360,
+      "client": 360,
+      "scroll": 360,
+      "bodyScroll": 360,
+      "previewRibbons": [
+        {
+          "x": -133.9102020263672,
+          "y": -172.9102020263672,
+          "width": 475.17572021484375,
+          "height": 475.17572021484375,
+          "top": -172.9102020263672,
+          "right": 341.26551818847656,
+          "bottom": 302.26551818847656,
+          "left": -133.9102020263672
+        },
+        {
+          "x": -133.9102020263672,
+          "y": -172.9102020263672,
+          "width": 475.17572021484375,
+          "height": 475.17572021484375,
+          "top": -172.9102020263672,
+          "right": 341.26551818847656,
+          "bottom": 302.26551818847656,
+          "left": -133.9102020263672
+        }
+      ],
+      "images": [
+        {
+          "width": 1439,
+          "height": 810,
+          "cdn": true
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "cdn": true
+        }
+      ],
+      "iframeWidth": 330,
+      "link": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
+      "previewDecorationOverflow": 0,
+      "won": 17.199999999999665,
+      "failureRetryReset": true
+    },
+    {
+      "width": 390,
+      "client": 390,
+      "scroll": 390,
+      "bodyScroll": 390,
+      "previewRibbons": [
+        {
+          "x": -133.9102020263672,
+          "y": -186.9102020263672,
+          "width": 475.17572021484375,
+          "height": 475.17572021484375,
+          "top": -186.9102020263672,
+          "right": 341.26551818847656,
+          "bottom": 288.26551818847656,
+          "left": -133.9102020263672
+        },
+        {
+          "x": -133.9102020263672,
+          "y": -186.9102020263672,
+          "width": 475.17572021484375,
+          "height": 475.17572021484375,
+          "top": -186.9102020263672,
+          "right": 341.26551818847656,
+          "bottom": 288.26551818847656,
+          "left": -133.9102020263672
+        }
+      ],
+      "images": [
+        {
+          "width": 1439,
+          "height": 810,
+          "cdn": true
+        },
+        {
+          "width": 1440,
+          "height": 960,
+          "cdn": true
+        }
+      ],
+      "iframeWidth": 360,
+      "link": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
+      "previewDecorationOverflow": 0,
+      "won": 17.24166666666633,
+      "failureRetryReset": true
+    }
+  ]
+}

@@ -1,17 +1,13 @@
-# 2026-10-14 再開作業の引継ぎ
+# 風待ちの渡り鳥 — 公開直前の状態
 
-正本は kicchomen/game-idea-lab main。元base 79e25110b6e02dd1892862ebba8c065fab099870と再開時mainが一致、open PR0。今回以外のファイル・Sensor Shift/足あとエコーの旧下書きは変更しない。ちいさなタグボートは既存公開記事。
+正本 kicchomen/game-idea-lab main。初期base79e2511。Library ZIPのサイズ/SHA256/21マニフェスト一致、301テストPASS。ゲームの実Chromium PC3航路成功、320/360/390pxとiframe成功/失敗/再挑戦。320pxのボタンを44pxに修正済み。実機・初見人間・長期面白さは未検証。
 
-Library libfile_a36473c958508191bc4b3f7191713214から Windbird_20261014_reviewed_v2.zip を取得済み。5,542,075 bytes、SHA256 c0f49551ab8d739383ab8d3d4dcf06d175ebc2029f5796fabfac62863f094513。全21マニフェスト一致。以前のLibrary拒否記録は現在の未完了理由ではない。
+Blogger 3556407006374124911、新規投稿712458916780914918。タイトル「風待ちの渡り鳥｜羽を休める場所が、次の一歩をつくる」。旧2下書き1057707127785703864/6862408650449844535は未操作。開始時8公開2下書き、Windbird重複なし。
 
-301テストPASS。実headless ChromiumでPC3航路成功、自然失敗/再挑戦/繰返し、320/360/390pxとiframeの検査済み。320pxの38px高ボタンを44pxへ直して再検査済み。詳細はbrowser-qa.mdと結果JSON。実機・初見人間・長期面白さは未検証。ウィンドウblurはモック範囲。
+通常の「パソコンからアップロード」でcover.jpg/concept.jpgをCDN化済み。article.htmlの2プレースホルダーは置換済み。明示保存・同じ下書き再読込で全HTMLが正本と完全一致。ネイティブChromeの日本語入力欠落を検出し、UTF-8ソースタブから通常コピー/ペーストで修復。blogger-save-verification.json。
 
-画像2点を再度目視、概念画であり簡素な2D試遊のスクリーンショットではない。既存Bloggerテーマ内のローカル記事検査（画像/リンク/狭幅iframe成功失敗再挑戦）も完了。これはBlogger保存済み記事検査ではない。
+保存済みBloggerプレビューのPCと320/360/390pxでタイトル/画像/本文/埋込みを確認。プレビューclickTrapを除去せずキーボードで成功/自然失敗/再挑戦/初期化。プレビューリボンによる装飾の21pxはみ出しを本文/ゲームの横はみ出しと区別。公開実ページで通常クリックと全体幅を再検査する。blogger-preview-qa.json。
 
-Blogger 3556407006374124911 の公開フィードは8記事、Windbird重複なし。現在の下書き一覧は未確認。タイトル: 風待ちの渡り鳥｜羽を休める場所が、次の一歩をつくる。本文: assets/windbird/article.html。新規投稿IDは未作成。
+コードc20f006、台帳e9a1779、CDN記事25e84e2のpushとPages成功確認済み。25e84e2の記事HTMLは実配信と全byte一致。今回の検査記録を保存するコミットのremote/Pages一致を確認後、事前確認なしで公開し、公開ID/URL/日時と実表示検査をpublication.jsonへ保存。認証・公開範囲変更禁止。別ブログのタブは未編集。
 
-現ブロッカーは連携ブラウザ0件、Chrome/IAB専用タブ作成がBrowser is not available。OS画面とキーボードはマリン担当に優先し、既存Chromeを動かしていない。タブを特定できる連携、または親による画面操作の順番調整が必要。
-
-再開順: 現在のBlogger下書き/公開記事再照合 → 通常画像アップロード（cover.jpg 1439×810、concept.jpg 1440×960） → CDN URLでCOVER_CDN_PENDING / CONCEPT_CDN_PENDING置換 → 保存再読込・画像リンク埋込みとモバイル検査 → Git/remote/Pages当該コミット一致 → 検査合格後に事前確認なしで公開 → 公開実表示/title/画像/埋込みを確認 → publication.jsonにID/URL/日時を保存し今回差分だけGit保存。認証/公開範囲変更禁止。
-
-GitとPagesの到達点はpublication.jsonを正とする。未完了操作を成功扱いにしない。
+現在のネイティブChromeにはゲーム専用の下書き、UTF-8ソース、プレビューの3タブがある。既存の別ブログのタブは変更しない。公開完了後、親へ画面操作を解放したことを通知する。

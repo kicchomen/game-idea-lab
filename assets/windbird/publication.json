@@ -1,7 +1,7 @@
 {
   "game": "windbird",
   "title": "風待ちの渡り鳥｜羽を休める場所が、次の一歩をつくる",
-  "status": "blogger_draft_saved_preview_testing",
+  "status": "ready_to_publish",
   "blog_id": "3556407006374124911",
   "post_id": "712458916780914918",
   "public_url": null,
@@ -21,16 +21,15 @@
   "observed_at": "2026-10-14T01:00:50Z",
   "tests_passed": 301,
   "remaining": [
-    "Complete saved Blogger preview responsive/embed QA",
-    "Article CDN source Git/Pages verification",
-    "Blogger publication and public title/images/embed/mobile QA"
+    "Blogger publication and public title/images/embed/mobile QA",
+    "Final publication ledger Git/Pages verification"
   ],
   "limitations": [
     "No physical phone test",
     "No novice-human or long-term fun validation"
   ],
   "independent_review": "PASS source, production engine and mock DOM; separate actual Chromium automation and screenshot review completed by recovery task",
-  "updated_at": "2026-10-14T14:17:48.339993+00:00",
+  "updated_at": "2026-10-14T14:26:13.606189+00:00",
   "transfer": {
     "status": "verified",
     "library_file_id": "libfile_a36473c958508191bc4b3f7191713214",
@@ -137,5 +136,10 @@
       "state": "draft_saved_reloaded",
       "post_id": "712458916780914918"
     }
-  ]
+  ],
+  "saved_preview_verification": "blogger-preview-qa.json",
+  "article_commit": "25e84e267ffdedba3dd96f4ef94b244fa233f895",
+  "article_pages_run_id": 38579464876,
+  "article_pages_status": "success",
+  "article_pages_verified": "article-pages-verification.json"
 }
