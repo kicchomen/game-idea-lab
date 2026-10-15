@@ -255,3 +255,13 @@ Trial: https://kicchomen.github.io/game-idea-lab/games/windbird/ . Prototype com
 https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html
 
 Published at 2026-10-14T23:29:04.990+09:00, post `712458916780914918`. Both images were uploaded through the ordinary Blogger computer file picker and served by Blogger CDN. Full saved/reloaded and public-feed HTML match the source. Actual public article at 1100/320/360/390 CSS px passed title/canonical, image load, standalone-link click, normal pointer controls, pause, embedded success/failure/retry, and measured no horizontal overflow. Mac Chrome public display was also visually checked. Nine published articles and two unchanged older drafts. Screen control has been released. Physical-phone and novice-human testing remain unverified; detailed evidence is in `assets/windbird/publication.json` and `browser-qa.md`.
+
+
+## 深海サルベージ / Salvage Diver
+
+Pick up treasure, reassess the heavier oxygen cost, and return to bank it. Three fixed expeditions, three dives each, visible return forecasts, cargo discard and retry.
+
+Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_15.html
+Trial: https://kicchomen.github.io/game-idea-lab/games/salvage-diver/
+
+Published2026-10-15T10:21:57.495+09:00, post313407064244169801.346 tests pass; independent source/engine review and cloud-browser success/failure/retry passed. Article-content320/360/390px frames and Blogger mobile preview passed; no physical-phone or human-fun validation. See assets/salvage-diver/browser-qa.md and publication.json for precise scope.

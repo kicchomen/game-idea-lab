@@ -1,6 +1,6 @@
 {
   "game": "salvage-diver",
-  "status": "draft_preparing",
+  "status": "published",
   "blog_id": "3556407006374124911",
   "post_id": "313407064244169801",
   "base_commit": "153b86061147eb02c850d53211238e5e48784d00",
@@ -10,5 +10,13 @@
     "duplicate": false
   },
   "tests_passed": 346,
-  "browser_verification": "pending"
+  "browser_verification": "passed; see browser-qa.md",
+  "published_at": "2026-10-15T10:21:57.495+09:00",
+  "url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_15.html",
+  "trial_url": "https://kicchomen.github.io/game-idea-lab/games/salvage-diver/",
+  "source_commit": "89611efdbf2789307204ef5f35f746f3e887c3b5",
+  "pages_run": "38664198624",
+  "pages_conclusion": "success",
+  "physical_phone_test": false,
+  "novice_human_test": false
 }
