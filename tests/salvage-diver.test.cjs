@@ -1,0 +1,28 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const E=require('../games/salvage-diver/engine.js');
+const step=(s,t,to)=>E.act(s,{type:t,to});const move=(s,to)=>step(s,'move',to);const collect=s=>step(s,'collect');const dive=s=>step(s,'dive');
+function route(stage,seq){return seq.reduce((s,c)=>c==='+'?collect(s):c==='>'?dive(s):move(s,c),E.create(stage));}
+const advanced='> A C + A D + A S > A C E + C A S'.split(' ');
+const winning=['>','A','+','C','+','A','S','>','B','+','D','+','B','S'];
+test('initial state is at dock; invalid stage falls back',()=>{assert.equal(E.create().phase,'dock');assert.equal(E.create(99).stage,0);assert.equal(E.create(-1).stage,0);});
+for(let i=0;i<3;i++)test('expedition '+i+' has a two-dive successful route',()=>{const s=route(i,i===2?advanced:winning);assert.equal(s.phase,'won');assert.equal(s.dives,2);assert(s.bank>=E.STAGES[i].quota);assert.equal(s.cargo.length,0);assert(s.air>=0);});
+test('treasure is not banked until surface return',()=>{let s=route(0,['>','A','+']);assert.equal(s.bank,0);assert.equal(E.value(s),3);s=move(s,'S');assert.equal(s.bank,3);assert.equal(s.phase,'dock');assert.equal(E.weight(s),0);});
+test('weight changes the cost at thresholds',()=>{for(let w=0;w<=6;w++)assert.equal(E.moveCost({...E.create(),cargo:[{weight:w}]}),2+Math.ceil(w/3));});
+test('move and pickup have separately accounted oxygen',()=>{let s=dive(E.create());s=move(s,'A');assert.equal(s.air,20);s=collect(s);assert.equal(s.air,18);s=move(s,'C');assert.equal(s.air,15);s=collect(s);assert.equal(s.air,13);s=move(s,'A');assert.equal(s.air,9);});
+test('return estimate is actual shortest weighted route',()=>{let s=route(0,['>','A','C','E','+']);assert.equal(E.returnCost(s),12);s=move(move(move(s,'D'),'B'),'S');assert.equal(s.air,2);assert.equal(s.bank,12);});
+test('deep treasure can be recovered in every expedition',()=>{for(let i=0;i<3;i++){let s=route(i,['>','A','C','E','+','D','B','S']);assert.equal(s.phase,'dock');assert.equal(s.bank,E.STAGES[i].items[4][2]);}});
+test('nonadjacent and malformed moves do not consume turns or oxygen',()=>{let s=dive(E.create());for(const to of ['E','S','?',null,undefined])assert.strictEqual(move(s,to),s);assert.strictEqual(E.act(s,null),s);assert.strictEqual(E.act(s,{type:'oops'}),s);});
+test('dock disallows move, pickup and discard',()=>{const s=E.create();for(const a of [{type:'move',to:'A'},{type:'collect'},{type:'drop'}])assert.strictEqual(E.act(s,a),s);});
+test('repeated pickup and repeated dive do not advance state',()=>{let s=route(0,['>','A','+']);assert.strictEqual(collect(s),s);assert.strictEqual(dive(s),s);});
+test('overcapacity retrieval is blocked without losing oxygen or treasure',()=>{let s=route(0,['>','A','C','+','E']);assert.equal(E.weight(s),3);const next=collect(s);assert.strictEqual(next,s);assert(s.remaining.some(x=>x.room==='E'));});
+test('exact capacity is permitted',()=>{let s=route(1,['>','A','+','C','+']);assert.equal(E.weight(s),6);assert.equal(s.phase,'diving');});
+test('discard removes cargo permanently and costs no oxygen',()=>{let s=route(0,['>','A','+']);const air=s.air;s=step(s,'drop');assert.equal(E.weight(s),0);assert.equal(s.air,air);assert(!s.remaining.some(x=>x.room==='A'));assert.strictEqual(step(s,'drop'),s);});
+test('emergency air failure ends expedition; bank stays safe',()=>{let s=route(0,['>','A','+','S','>']);s={...s,air:2};s=move(s,'A');assert.equal(s.phase,'lost');assert.equal(s.bank,3);assert.equal(s.air,0);assert.equal(s.cargo.length,0);});
+test('exact zero on surface is a valid return',()=>{let s=route(0,['>','A','+']);s={...s,air:3};s=move(s,'S');assert.equal(s.phase,'dock');assert.equal(s.air,0);assert.equal(s.bank,3);});
+test('insufficient oxygen for surface does not deposit cargo',()=>{let s=route(0,['>','A','+']);s={...s,air:2};s=move(s,'S');assert.equal(s.phase,'lost');assert.equal(s.bank,0);});
+test('pickup at zero oxygen ends expedition',()=>{let s=route(0,['>','A']);s={...s,air:2};s=collect(s);assert.equal(s.phase,'lost');assert.equal(s.cargo.length,0);});
+test('three empty dives lose, fourth cannot start',()=>{let s=route(0,['>','A','S','>','B','S','>','A','S']);assert.equal(s.phase,'lost');assert.equal(s.dives,3);assert.strictEqual(dive(s),s);});
+test('third dive can still win',()=>{let seq=['>','A','S',...winning];assert.equal(route(0,seq).phase,'won');});
+test('terminal actions are inert, retry fully reconstructs state',()=>{for(const s of [route(0,winning),route(0,['>','A','S','>','A','S','>','A','S'])]){for(const a of [{type:'move',to:'A'},{type:'collect'},{type:'drop'},{type:'dive'}])assert.strictEqual(E.act(s,a),s);assert.deepEqual(step(s,'retry'),E.create());}});
+test('next requires a win and stops at final stage; select is bounded',()=>{assert.strictEqual(step(E.create(),'next').phase,'dock');assert.equal(step(route(0,winning),'next').stage,1);let s=route(2,advanced);assert.strictEqual(step(s,'next'),s);assert.strictEqual(E.act(s,{type:'select',stage:7}),s);assert.deepEqual(E.act(s,{type:'select',stage:1}),E.create(1));});
+test('actions are immutable and replay deterministic',()=>{let s=route(0,['>','A']);let before=JSON.stringify(s);collect(s);assert.equal(JSON.stringify(s),before);assert.deepEqual(route(2,winning),route(2,winning));});
+test('all edges are symmetric and every node connects to surface',()=>{for(const r of E.ROOMS){for(const n of E.adjacent(r.id))assert(E.adjacent(n).includes(r.id));assert(Number.isFinite(E.returnCost({...E.create(),room:r.id})));}});

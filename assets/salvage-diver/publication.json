@@ -1,0 +1,14 @@
+{
+  "game": "salvage-diver",
+  "status": "draft_preparing",
+  "blog_id": "3556407006374124911",
+  "post_id": "313407064244169801",
+  "base_commit": "153b86061147eb02c850d53211238e5e48784d00",
+  "existing_posts": {
+    "published": 9,
+    "drafts": 2,
+    "duplicate": false
+  },
+  "tests_passed": 346,
+  "browser_verification": "pending"
+}
