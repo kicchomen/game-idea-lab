@@ -1,0 +1,20 @@
+{
+  "game": "pocket-forest",
+  "status": "published",
+  "blog_id": "3556407006374124911",
+  "post_id": "3556946122911917495",
+  "base_commit": "b94cc4ec49acebe01f220ff969f706d4a9de2c34",
+  "source_commit": "6d260dbef6d2a8aab9c580733e99b3eec28e08b9",
+  "pages_run": "38838849268",
+  "pages_conclusion": "success",
+  "trial_url": "https://kicchomen.github.io/game-idea-lab/games/pocket-forest/",
+  "url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_16.html",
+  "published_at": "2026-10-16T11:44:00+09:00",
+  "browser_verification": "standalone and saved Blogger preview passed; public390px operation/title/CDN/OG verified; see browser-qa.json and article-qa.json",
+  "physical_phone_test": false,
+  "novice_human_test": false,
+  "title": "つながる小さな森｜一枚で、すみかが変わる",
+  "publication_time_precision": "minute",
+  "saved_html_exact_match": true,
+  "cdn_images_loaded": 2
+}

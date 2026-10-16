@@ -1,0 +1,36 @@
+{
+  "commit": "6d260dbef6d2a8aab9c580733e99b3eec28e08b9",
+  "checked_at": "2026-10-16T02:24:30Z",
+  "desktop_win": {
+    "turn": 12,
+    "score": 10,
+    "species": 4
+  },
+  "desktop_loss": {
+    "turn": 12,
+    "score": 0,
+    "species": 0
+  },
+  "undo_keyboard_focus_arrow_enter": true,
+  "retry_repeat": true,
+  "rapid_double_click_advanced_turns": 1,
+  "widths": [
+    320,
+    360,
+    390
+  ],
+  "document_client_widths": [
+    315,
+    355,
+    385
+  ],
+  "document_scroll_widths": [
+    315,
+    355,
+    385
+  ],
+  "minimum_cell_width_320": 49.796875,
+  "place_button_height": 48,
+  "mobile_320_full_win": true,
+  "method": "Normal Chromium zoom/native OS resize and actual browser clicks/keys, read-only DOM observations. Not a physical device or human first-use test."
+}

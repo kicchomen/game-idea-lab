@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-10-16T02:43:33Z",
+  "saved_html_exact_match": true,
+  "saved_chars": 2263,
+  "cdn_images_loaded": 2,
+  "desktop_embedded_win": {
+    "turns": 12,
+    "score": 10,
+    "species": 4
+  },
+  "widths": [
+    320,
+    360,
+    390
+  ],
+  "embedded_client_and_scroll_equal": [
+    276,
+    316,
+    346
+  ],
+  "minimum_cells": [
+    48.3958,
+    50,
+    56
+  ],
+  "placement_each_width": true,
+  "preview_watermark_only_overflow_at_320": true,
+  "physical_phone_test": false,
+  "human_first_use_test": false,
+  "published_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_16.html",
+  "post_id": "3556946122911917495",
+  "published_at": "2026-10-16T11:44:00+09:00",
+  "publication_time_precision": "minute",
+  "public_title_verified": true,
+  "public_images_loaded": 2,
+  "public_og_cover_verified": true,
+  "public_embed_operation_verified": true,
+  "public_width": 390,
+  "public_client_scroll_width": 385,
+  "public_320px": {
+    "checked_at": "2026-10-16T02:47:45Z",
+    "client_width": 315,
+    "scroll_width": 315,
+    "article_width": 283
+  }
+}

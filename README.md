@@ -265,3 +265,15 @@ Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_15.html
 Trial: https://kicchomen.github.io/game-idea-lab/games/salvage-diver/
 
 Published2026-10-15T10:21:57.495+09:00, post313407064244169801.346 tests pass; independent source/engine review and cloud-browser success/failure/retry passed. Article-content320/360/390px frames and Blogger mobile preview passed; no physical-phone or human-fun validation. See assets/salvage-diver/browser-qa.md and publication.json for precise scope.
+
+
+## Pocket Forest / つながる小さな森
+
+Choose terrain, select an empty cell, inspect the live habitat forecast, then confirm. Twelve placements in a 5×5 garden; win with at least 10 current points and three currently living species. Forest merging and pond expansion can remove habitats, so more terrain is not always better. No autoplay phase, dependencies, accounts, storage or analytics.
+
+Trial: https://kicchomen.github.io/game-idea-lab/games/pocket-forest/
+
+Implementation: games/pocket-forest/. Design, PDCA, images, article and publication status: assets/pocket-forest/. Published article: https://game-idea-lab.blogspot.com/2026/10/blog-post_16.html . Post3556946122911917495, published2026-10-16T11:44:00+09:00 (minute precision). Saved2263-character HTML matched on reload; two CDN images, public title and OG cover verified. Desktop embedded twelve-turn success and320/360/390preview embedded operation passed. Public390px article had equal client/scroll width385px and working embedded placement. See article-qa.json for precise scope, including preview-watermark overflow at320px.
+
+Cloud Chromium standalone checks passed actual desktop success10points/4species, failure0points, undo, retry, repeated-input suppression, keyboard and320/360/390width operation. Tests are separated into engine, Node DOM-stub interaction and actual browser records. No physical-phone, novice-human, long-term enjoyment or educational-effect claim.
+
