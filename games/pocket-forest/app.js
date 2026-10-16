@@ -14,6 +14,7 @@
   let selectedType = state.offers[0][0];
   let selectedCell = 12;
   let justUndone = false;
+  let placementArmed = true;
 
   function escapeHTML(value) {
     return String(value).replace(/[&<>"']/g, c => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
@@ -59,6 +60,7 @@
   function selectCell(index) {
     if (index < 0 || index >= Engine.SIZE * Engine.SIZE) return;
     selectedCell = index;
+    placementArmed = true;
     paintSelectedCell();
   }
   function renderBoard() {
@@ -148,7 +150,7 @@
       if (event.count < 0) return `${event.label}${disappears ? 'がいなくなる' : ` −${Math.abs(event.count)}か所`}（−${Math.abs(event.points)}点）`;
       return `${event.label} +${event.count}か所（+${event.points}点）`;
     });
-    $('place-button').disabled = false;
+    $('place-button').disabled = !placementArmed;
     box.classList.toggle('good', preview.gained > 0);
     box.classList.toggle('bad', preview.gained < 0);
     const scoreLabel = preview.gained > 0 ? `+${preview.gained} pt` : preview.gained < 0 ? `−${Math.abs(preview.gained)} pt` : '点数変化なし';
@@ -189,6 +191,7 @@
     ribbon.classList.toggle('good', good);
   }
   function commitPlacement(index) {
+    if (!placementArmed) return;
     const result = Engine.place(state, selectedType, index);
     if (!result.ok) {
       const messages = { occupied: 'そこはもう使っているよ。', offer: '今手にない地形だよ。', ended: 'この庭は完成しているよ。' };
@@ -196,6 +199,7 @@
       return;
     }
     state = result.state;
+    placementArmed = false;
     justUndone = false;
     const placedName = NAMES[selectedType];
     if (state.turn < Engine.MAX_TURNS) selectedType = state.offers[state.turn][0];
@@ -203,6 +207,7 @@
     selectedCell = state.board.findIndex(tile => !tile);
     if (selectedCell < 0) selectedCell = 12;
     renderAll({ preserveFocus: false });
+    $('board').querySelector(`[data-focus-target="cell:${selectedCell}"]`)?.focus({ preventScroll: true });
     if (result.events.length) {
       const changes = result.events.map(e => e.points > 0 ? `${e.label} +${e.points}` : `${e.label} −${Math.abs(e.points)}`).join(' · ');
       announce(`${placedName}を置いた。${changes} pt`, result.gained > 0);
@@ -214,13 +219,16 @@
     const result = Engine.undo(state);
     if (!result.ok) return;
     state = result.state;
+    placementArmed = false;
     selectedType = state.offers[state.turn][0];
     justUndone = true;
     renderAll({ preserveFocus: false });
+    $('board').querySelector(`[data-focus-target="cell:${selectedCell}"]`)?.focus({ preventScroll: true });
     announce('1手戻したよ。候補を選び直して、違う配置を試せます。', false);
   }
   function retry() {
     state = Engine.retry(state.seed);
+    placementArmed = true;
     selectedType = state.offers[0][0];
     selectedCell = 12;
     justUndone = false;
@@ -236,6 +244,7 @@
     if (direction === 'ArrowLeft') col = (col + 4) % 5;
     if (direction === 'ArrowRight') col = (col + 1) % 5;
     selectedCell = row * 5 + col;
+    placementArmed = true;
     renderAll({ preserveFocus: false });
     $('board').querySelector(`[data-focus-target="cell:${selectedCell}"]`)?.focus({ preventScroll: true });
   }
@@ -256,7 +265,7 @@
       if (event.target.closest && event.target.closest('.cell')) { event.preventDefault(); nextCell(event.key); }
       return;
     }
-    if (event.key === 'Enter' && event.target.closest && event.target.closest('.cell')) {
+    if (event.key === 'Enter' && !event.repeat && event.target.closest && event.target.closest('.cell')) {
       event.preventDefault();
       if (!state.ended && selectedType && !state.board[selectedCell]) commitPlacement(selectedCell);
       return;

@@ -12,7 +12,7 @@
   font-family: ui-rounded, "Hiragino Maru Gothic ProN", "Yu Gothic", "Meiryo", sans-serif;
 }
 * { box-sizing: border-box; }
-html { min-width: 288px; background: var(--paper); }
+html { min-width: 0; background: var(--paper); }
 body { margin: 0; color: var(--ink); background: radial-gradient(ellipse at 18% 0%, #fffdf3 0, #f5f5ea 55%, #eef0df 100%); min-height: 100vh; }
 button { font: inherit; color: inherit; }
 .page-shell { width: min(1060px, 100%); margin: 0 auto; padding: 24px 24px 18px; }
@@ -131,3 +131,19 @@ kbd { font-family: inherit; font-weight: 700; padding: 2px 5px; border-radius: 5
 .resident-label { color: #8a9785; font-size: 9px; font-weight: 800; letter-spacing: .07em; padding-top: 8px; }
 .forecast.bad { color: #8b5847; background: #f5e8df; }
 .preview-ribbon.bad { color: #8b5847; }
+
+/* Reviewed controls and narrow embedded view. */
+.place-button { display:block;width:100%;min-height:48px;margin-top:12px;padding:10px 14px;border:0;border-radius:12px;background:var(--forest);color:white;font-weight:800;font-size:16px;cursor:pointer; }
+.place-button:disabled { opacity:.45;cursor:default; }
+.place-button:focus-visible { outline:3px solid #d98442;outline-offset:3px; }
+.choice-hint,.rule-list b,.rule-list small,.rule-list em,.rule-footnote { font-size:12px;line-height:1.65; }
+.forecast strong,.forecast p,.goal-label,.key-hint { font-size:12px; }
+@media(max-width:300px) {
+ .page-shell { padding-left:4px;padding-right:4px; }
+ .masthead { flex-wrap:wrap; }
+ .board-panel { padding:8px 4px; }
+ .board-wrap { padding:3px; }
+ .board { gap:2px; }
+ .choice-card,.rules-card { padding:10px; }
+ .option-key { display:none; }
+}
