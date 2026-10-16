@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#eef0dc">
+  <meta name="description" content="森・花・池をつないで、小さな生きもののすみかを育てる12手の庭づくりパズル。">
+  <title>つながる小さな森 — pocket forest</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="page-shell">
+    <header class="masthead">
+      <div class="brand-mark" aria-hidden="true">✳</div>
+      <div>
+        <p class="eyebrow">GARDEN NOTES · 01</p>
+        <h1>つながる小さな森</h1>
+        <p class="subtitle">小さな庭師の、生きものを招く12手</p>
+      </div>
+      <div class="seed-chip"><span>今日のタネ</span><strong id="seed-label">MORI-01</strong></div>
+    </header>
+
+    <section class="game-layout" aria-label="ゲーム">
+      <section class="board-panel" aria-labelledby="board-title">
+        <div class="section-heading">
+          <div><p class="eyebrow">YOUR GARDEN</p><h2 id="board-title">空き地を育てる</h2></div>
+          <div class="turn-badge"><strong id="turn-count">0</strong><span> / 12 手</span></div>
+        </div>
+        <div class="progress-track" aria-label="配置した手数"><div id="progress-bar"></div></div>
+        <div class="board-wrap">
+          <div id="board" class="board" role="grid" aria-label="5列5行の庭。矢印キーで移動し、Enterで選択した地形を置きます"></div>
+          <div class="preview-ribbon" id="preview-ribbon" aria-live="polite">地形を選んで、空き地を選択</div>
+        </div>
+        <div class="score-line">
+          <div><span class="score-label">よろこび</span><strong id="score">0</strong><span class="score-unit"> pt</span></div>
+          <div class="goal-label">12手後に <b>10 pt</b> ＋ <b>3種</b>が目標</div>
+        </div>
+        <div class="resident-label">いま住んでいる生きもの</div><div class="creature-row" id="creature-row" aria-label="いま住んでいる生きもの"></div>
+        <div id="result-banner" class="result-banner" hidden aria-live="assertive"></div>
+        <div class="board-actions">
+          <button id="undo-button" class="text-button" type="button" aria-keyshortcuts="U">↶ 1手戻す <kbd>U</kbd></button>
+          <button id="retry-button" class="text-button" type="button" aria-keyshortcuts="R">↻ 同じタネで再挑戦 <kbd>R</kbd></button>
+        </div>
+      </section>
+
+      <aside class="side-panel">
+        <section class="choice-card" aria-labelledby="choice-title">
+          <div class="section-heading small-heading">
+            <div><p class="eyebrow">NEXT PIECES</p><h2 id="choice-title">今手にある地形</h2></div>
+            <span class="round-number" id="round-number">01</span>
+          </div>
+          <p class="choice-hint">候補→空きマスを選び、予告を見て「この場所に置く」。置いた瞬間にすみかが変わります。</p>
+          <div class="tile-options" id="tile-options" role="group" aria-label="置く地形を選択"></div>
+          <div class="forecast" id="forecast" aria-live="polite">
+            <span class="forecast-icon" aria-hidden="true">◌</span>
+            <div><strong>配置予告</strong><p>地形とマスを選ぶと、増える生きものと点数がここに出ます。</p></div>
+          </div>
+          <button id="place-button" class="place-button" type="button" aria-keyshortcuts="Enter" disabled>この場所に置く</button>
+          <p class="key-hint"><kbd>1</kbd> / <kbd>2</kbd> 地形　 <kbd>←↑↓→</kbd> マス　 <kbd>Enter</kbd> 置く</p>
+        </section>
+
+        <section class="rules-card" aria-labelledby="rules-title">
+          <p class="eyebrow">FIELD GUIDE</p><h2 id="rules-title">すみかのつくり方</h2>
+          <ul class="rule-list">
+            <li><span class="rule-icon fox" aria-hidden="true">狐</span><span><b>キツネのねぐら</b><small>森が上下左右に3枚以上つながる <em>+3 pt</em></small></span></li>
+            <li><span class="rule-icon frog" aria-hidden="true">蛙</span><span><b>カエルの浅瀬</b><small>1〜2枚の池が花に隣接する <em>+2 pt</em></small></span></li>
+            <li><span class="rule-icon bee" aria-hidden="true">蜂</span><span><b>ハチの花畑</b><small>花が森と池の両方に隣接する <em>花ごと +1 pt</em></small></span></li>
+            <li><span class="rule-icon owl" aria-hidden="true">梟</span><span><b>フクロウの巣</b><small>4枚以上の森が池に隣接する <em>+3 pt</em></small></span></li>
+          </ul>
+          <p class="rule-footnote">隣接は上下左右だけ。点は今の盤面にあるすみかの合計。森の合流や池の大型化で、すみかや点が減ることも。12手終了時に10点以上＋3種以上が成功条件。</p>
+        </section>
+      </aside>
+    </section>
+    <footer class="page-foot"><span>同じタネなら、地形の並びも同じ。</span><span>操作：タップ / マウス / キーボード</span></footer>
+  </main>
+  <script src="engine.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
