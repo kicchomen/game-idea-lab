@@ -1,0 +1,16 @@
+<div class="game-idea-article" style="max-width:800px;margin:auto;line-height:1.8;">
+<p>新しいゲームアイデアを発案し、遊びの核をブラウザで試せる形にした記事です。</p>
+<p><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiUCHrsBbIbnzcYAOOP86fasOVGeG9ES7lustX2am-30qDe4qA9xoSsVp7VPnfG19nosIFZz_m0de44QL71O05E5fW14CLK3SMJONEaGI883T5xsnmLPvbiYe7Hlz6yL49XxUKwaPYaHyD4lA-i6qYX59Fc6UnYY1tzQlZn96YmUcWFxWSsfBlJMLkyoqs/s1600/clipboard.jpeg" alt="小さな駅で列車の発車を見守る係員。ゲーム構想のイメージイラスト" style="width:100%;height:auto;" /></p>
+<h2>いま出す？ もう少し待つ？</h2>
+<p>あなたは小さな駅の発車係。港・町・山へ向かう列車を、ひとつの交差点から送り出します。急いで続けて出すと安全停止。でも、待ちすぎると到着期限に間に合いません。</p>
+<p><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGxVZ0x4q5iR0KEkP9kRjZOsgOO9jgLeUtWqdMlcMwvOm4x3If5ynt48vHMUfgZJ2oEkrKTw5_D1nAw8NZwOxh24HeMkEv73FZgpv6M1Ub7m0VTmlUwG2RL_4MTs6CmuVDkmkeVl3Nc4j-VxuA7lhMzHk-O0ZMTxLZh4Yvi7MwedDmcGA6lPadecuhgYg/s1600/clipboard.jpeg" alt="行先を合わせる、交差点の空きを待つ、一両ずつ発車する、という三つの操作を表した構想イラスト" style="width:100%;height:auto;" /></p>
+<p style="font-size:.9em;color:#666;">イラストは構想のイメージです。以下の試作は簡略化した路線図で遊べます。</p>
+<h2>45秒ほどの勤務を試す</h2>
+<iframe src="https://kicchomen.github.io/game-idea-lab/games/rail-dispatch/" title="小さな駅の発車係の試遊" width="100%" height="900" loading="lazy" style="border:0;width:100%;max-width:100%;border-radius:12px;"></iframe>
+<p><a href="https://kicchomen.github.io/game-idea-lab/games/rail-dispatch/" target="_blank" rel="noopener">試遊を単独画面で開く</a></p>
+<ul><li>行先を選び、A・B・C線の発車ボタンを押します。PCは1・2・3で行先、A・S・Dで発車。</li><li>交差点の占有は3秒、到着までは5秒。「空き」を見て次を出しましょう。</li><li>12便すべてが定刻到着すれば成功。失敗しても同じダイヤで再挑戦できます。</li></ul>
+<h2>今回作ったところ・これから</h2>
+<p>実装済みなのは、3つの待機線・行先選択・発車のタイミング・到着期限・安全停止と再挑戦です。固定ダイヤの短い試作なので、長く遊べる深さはまだ検証できていません。</p>
+<p>構想では、急行と貨物の優先順位や待避線など、どちらを先に通すか迷う要素を広げたいと考えています。これらは今回の試遊には含まれません。</p>
+<p style="font-size:.9em;color:#666;">検証記録：単体・制御テスト23件。ブラウザで成功・失敗・再挑戦を確認し、到着期限の表現と列車表示・動きを改善しました。320・360・390px幅のiframeで発車・失敗・再挑戦と横はみ出しなしを確認しました。人による初見テストとスマートフォン実機テストは未実施です。実際の鉄道運行を再現するものではありません。</p>
+</div>
