@@ -3,10 +3,27 @@
   "title": "小さな駅の発車係｜いま出す？ もう少し待つ？",
   "blog_id": "3556407006374124911",
   "post_id": "7733998765926862093",
-  "status": "draft",
-  "public_url": null,
-  "published_at": null,
+  "status": "published",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_17.html",
+  "published_at": "2026-10-17T12:16:00+09:00",
   "play_url": "https://kicchomen.github.io/game-idea-lab/games/rail-dispatch/",
-  "blocked_on": "Final saved-article viewport QA at 360 and 390 CSS px pending. Images uploaded via normal compose clipboard paste without changing cookie settings; CDN HTML saved and reload matched. 320 CSS px actual Blogger preview and desktop passed.",
-  "updated_at": "2026-10-17T03:06:00Z"
+  "blocked_on": null,
+  "updated_at": "2026-10-17T03:17:00Z",
+  "published_at_precision": "minute (public time element)",
+  "public_verification": {
+    "title": true,
+    "images_loaded": [
+      [
+        1439,
+        810
+      ],
+      [
+        1440,
+        960
+      ]
+    ],
+    "og_thumbnail_matches_cover": true,
+    "embedded_start_departure_pause": true,
+    "unchanged_older_drafts": 2
+  }
 }

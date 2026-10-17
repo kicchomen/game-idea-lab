@@ -83,11 +83,10 @@
     "physical smartphones",
     "novice human playtest",
     "long-term depth",
-    "actual screen reader usability",
-    "Blogger CDN images and article layout pending image-picker access"
+    "actual screen reader usability"
   ],
   "blogger_saved_article": {
-    "checked_at": "2026-10-17T03:12:00Z",
+    "checked_at": "2026-10-17T03:15:23Z",
     "images": 2,
     "upload_method": "Blogger compose clipboard image paste",
     "cookies_changed": false,
@@ -95,11 +94,19 @@
     "desktop_content_width": 666,
     "preview_frame_widths_observed": [
       320,
-      359,
+      360,
       390
     ],
-    "scrollbar_note": "At 200% Chrome zoom, document clientWidth excludes an 8 CSS px scrollbar; iframe layout width measured separately. Native window resizing; DevTools not used because blocked by browser policy.",
+    "scrollbar_note": "Final stable checks used Chrome 250% zoom and normal native window resizing. Preview iframe widths exactly 320,360,390 CSS px; document clientWidth/scrollWidth 314/314,354/354,384/384 (6px scrollbar). Article content widths 282,322,352 approximately. No DevTools/settings bypass; cookie settings unchanged.",
     "embedded_operation": "start, dispatch, wrong/conflicting route failure, retry, pause/resume verified",
-    "exact_360_saved_article_preview": "not yet confirmed; standalone game passed exact 360"
+    "exact_360_saved_article_preview": "passed: images, no overflow, wrong-route/conflict failure, retry, departure, pause. 320 and390 resume/pause also passed."
+  },
+  "public_article": {
+    "url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_17.html",
+    "checked_at": "2026-10-17T03:17:21Z",
+    "title": "小さな駅の発車係｜いま出す？ もう少し待つ？",
+    "images_loaded": 2,
+    "og_cover": true,
+    "embed_operation": "start, A departure, pause"
   }
 }

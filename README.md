@@ -277,3 +277,13 @@ Implementation: games/pocket-forest/. Design, PDCA, images, article and publicat
 
 Cloud Chromium standalone checks passed actual desktop success10points/4species, failure0points, undo, retry, repeated-input suppression, keyboard and320/360/390width operation. Tests are separated into engine, Node DOM-stub interaction and actual browser records. No physical-phone, novice-human, long-term enjoyment or educational-effect claim.
 
+
+
+## 小さな駅の発車係 / Rail Dispatch
+
+Real-time dispatch: select destination, wait for the shared junction to clear, dispatch before each train's arrival deadline. Twelve trains in a fixed 45-second shift. No account, storage, analytics or gameplay network calls.
+
+Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_17.html
+Trial: https://kicchomen.github.io/game-idea-lab/games/rail-dispatch/
+
+Published 2026-10-17T12:16:00+09:00 (minute precision), post7733998765926862093. 23 engine/controller tests; independent review led to deadline wording, named destinations and correct train path/clearance improvements. Actual cloud Chromium success, wrong-route/junction/deadline failures, retry, repeated input, keyboard and pause pass. Standalone320/360/390 and saved Blogger preview320/360/390 CSS px passed. Two original illustrated JPEGs uploaded via ordinary Blogger compose clipboard paste, CDN save/reload exact match and public images/OG cover/embed verified. No cookie-setting changes needed. Details in assets/rail-dispatch/browser-validation.json and publication.json. Physical-phone, novice-human, screen-reader and long-term-depth tests remain unverified.
