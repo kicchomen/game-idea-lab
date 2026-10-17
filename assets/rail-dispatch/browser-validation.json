@@ -1,0 +1,19 @@
+{
+  "tested_at": "2026-10-17T01:41:39Z",
+  "prototype_commit": "e55bf509c353276cf6aa08f0a213583dc72573f6",
+  "artwork_harness_commit": "f6a433f4054166b0d72e14295b58e72d085bfad7",
+  "pages_runs": [{"id":38991468010,"conclusion":"success"},{"id":38991841189,"conclusion":"success"}],
+  "url": "https://kicchomen.github.io/game-idea-lab/games/rail-dispatch/",
+  "method": "Cloud Chromium, actual normal UI click/key input; DOM used only for observations. No runtime state injection.",
+  "success": {"delivered":12,"game_clock_seconds":45.2,"departures_observed":[0.8,4.2,7.6,11.6,15.1,18.6,22.7,26.1,29.4,33.7,37.0,40.4],"result":"全12便、定刻到着！"},
+  "failure": ["wrong destination: safety stop at 0.5s", "train 2 deadline: safety stop at 13.0s", "shared junction overlap: safety stop at 6.1s"],
+  "retries": "Multiple actual retry presses reset to 0/12 and allow a fresh departure after success and failure.",
+  "repeated_input": "Second click on emptied A lane did not duplicate departure; keyboard A dispatched train, numeric 2 changed route, S before arrival had no effect.",
+  "pause_resume": "Clock remained 5.3s while paused between calls; explicit resume then subsequent departure worked.",
+  "mobile_iframe_widths": [320,360,390],
+  "mobile_operations_each": ["start", "destination selection", "wrong-route failure", "retry", "valid departure", "pause"],
+  "mobile_layout": [{"width":320,"body_client_scroll":305,"button_width":81,"route_height":48,"departure_height":82},{"width":360,"body_client_scroll":345,"button_width":94.33,"route_height":48,"departure_height":82},{"width":390,"body_client_scroll":375,"button_width":104.33,"route_height":48,"departure_height":82}],
+  "mobile_scrollbar_note": "Iframe outer widths are exactly 320/360/390 CSS px. Chromium scrollbar consumes 15 px; body clientWidth equals scrollWidth in each, no horizontal overflow.",
+  "game_origin_console_errors": [],
+  "unverified": ["physical smartphones", "novice human playtest", "long-term depth", "actual screen reader usability", "Blogger CDN images and article layout pending image-picker access"]
+}
