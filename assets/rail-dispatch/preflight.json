@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-10-17T00:58:17.208073+00:00",
+  "base_commit": "afb4a7b421d9c264c43228070b92be00366341da",
+  "blogger": {
+    "published": 11,
+    "drafts": 2,
+    "scheduled": 0,
+    "preserved_draft_ids": [
+      "1057707127785703864",
+      "6862408650449844535"
+    ],
+    "new_duplicate": false
+  },
+  "github_open_prs": 0,
+  "read": [
+    "README.md",
+    "assets/pocket-forest/design-notes.md",
+    "assets/salvage-diver/design-notes.md",
+    "assets/windbird/design-notes.md",
+    "assets/night-market/design-notes.md",
+    "assets/*/publication.json"
+  ],
+  "new_draft_id": "7733998765926862093"
+}

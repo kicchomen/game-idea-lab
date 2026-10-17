@@ -1,0 +1,10 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>小さな駅の発車係｜Game Idea Lab</title><link rel="stylesheet" href="style.css"></head><body><main>
+<header><p class="eyebrow">GAME IDEA LAB · REAL-TIME DISPATCH</p><h1>小さな駅の発車係</h1><p class="intro">待たせる？ 今、出す？<br>小さな交差点で、12便を定刻に。</p></header>
+<section class="game" aria-label="列車の運行ゲーム"><div class="stats"><span>到着 <b id="score">0 / 12</b></span><span>勤務 <b id="clock">0.0秒</b></span><button id="pause" disabled>一時停止</button></div>
+<div class="map-wrap"><canvas id="map" width="600" height="320" aria-label="左の待機線A B C、中央の共用交差点、右の港 町 山へ向かう路線図"></canvas><div id="junction" class="signal">交差点：空き</div></div>
+<p id="message" role="status">行先を選び、交差点が空いたら発車。</p>
+<div id="announcements" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+<div id="overlay" class="overlay"><h2 id="overlay-title">最初の勤務へ</h2><p id="overlay-text">行先を選ぶ → 発車。交差点が空くまで3秒。到着まで5秒。各便の残り時間を見て順番を決めよう。</p><button id="primary">勤務を始める</button></div>
+<div class="controls"><p class="label">① 行先の分岐を選ぶ <span>キー 1 / 2 / 3</span></p><div class="routes"><button data-route="0" aria-pressed="true">⚓ 港</button><button data-route="1" aria-pressed="false">⌂ 町</button><button data-route="2" aria-pressed="false">△ 山</button></div>
+<p class="label">② 空きを確認して発車 <span>キー A / S / D</span></p><div class="lanes"><button data-lane="0"><b>A線</b><span></span></button><button data-lane="1"><b>B線</b><span></span></button><button data-lane="2"><b>C線</b><span></span></button></div><p id="next" class="next"></p></div>
+</section><details><summary>遊び方・操作</summary><p>列車に書かれた行先と分岐を合わせ、待機線の発車ボタンを押します。発車後の分岐変更は走行中の列車に影響しません。</p><p>共用区間は3秒間、1両だけ。使用中に次の列車を出す・行先を間違える・到着期限を過ぎると安全停止です。発車から到着までは5秒。残り5秒より前の発車を目指そう。</p><p>1・2・3：行先／A・S・D：発車／P・Esc：一時停止。画面を離れると停止します。再開はボタンから。全12便を届けると成功。やり直しは同じダイヤです。</p></details><footer>1回 約45秒 · 音なし · 保存・通信なし<br>試作版。実際の鉄道運行とは異なります。</footer></main><script src="engine.js"></script><script src="app.js"></script></body></html>
