@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4ecdd">
+  <title>ろくろの小さな工房 — 試遊</title>
+  <link rel="stylesheet" href="style.css?v=1">
+  <script src="engine.js?v=1" defer></script>
+  <script src="app.js?v=1" defer></script>
+</head>
+<body>
+  <main class="workshop">
+    <header><p class="eyebrow">POTTERY WORKSHOP · 手触りの試作</p><h1>ろくろの小さな工房</h1><p class="intro">土に触れて、誰かのための器を。</p></header>
+    <nav class="orders" aria-label="注文を選ぶ">
+      <button type="button" data-order="0" aria-pressed="true">一 · お茶碗</button>
+      <button type="button" data-order="1" aria-pressed="false">二 · 花びん</button>
+      <button type="button" data-order="2" aria-pressed="false">三 · 菓子鉢</button>
+    </nav>
+    <section class="request" aria-labelledby="order-name"><span class="stamp" aria-hidden="true">注文票</span><div><p id="customer"></p><h2 id="order-name"></h2><p id="request"></p></div></section>
+    <section class="bench" aria-label="ろくろと制作道具">
+      <div class="meters"><p>合った帯 <strong id="matched">0 / 7</strong></p><p>残りの手数 <strong id="effort">14</strong></p></div>
+      <div class="canvas-wrap">
+        <canvas id="clay" width="720" height="580" tabindex="0" role="img" aria-label="粘土の形。上下キーで高さを選び、左右キーで形を変えられます。" aria-describedby="how-to current-shape"></canvas>
+        <div class="legend"><span class="legend-line"></span>点線は注文の形</div>
+      </div>
+      <p id="feedback" class="feedback" aria-live="polite" aria-atomic="true"></p>
+      <p id="current-shape" class="sr-only"></p>
+      <div class="tools">
+        <label class="height-label" for="height">触れる高さ<select id="height"><option value="0">1 · 口</option><option value="1">2 · 口の下</option><option value="2">3 · 上の胴</option><option value="3" selected>4 · 真ん中</option><option value="4">5 · 下の胴</option><option value="5">6 · 底の上</option><option value="6">7 · 底</option></select></label>
+        <div class="shape-buttons"><button type="button" id="narrow"><span aria-hidden="true">→ ←</span> すぼめる</button><button type="button" id="widen"><span aria-hidden="true">← →</span> 広げる</button></div>
+      </div>
+      <div class="actions"><button type="button" id="fire" class="primary">窯で焼いて渡す</button><button type="button" id="retry">最初から</button></div>
+      <section id="result" class="result" hidden aria-labelledby="result-title"><h2 id="result-title"></h2><p id="result-text"></p><button type="button" id="next">次の注文へ</button></section>
+    </section>
+    <p id="how-to" class="quick-help">器の横を少しずつ左右にドラッグ。1手ずつ手数を使い、上下の帯も動きます。ボタンでも同じ操作ができます。</p>
+    <details><summary>作り方と試遊の範囲</summary><div class="rules"><p>上から7つの帯の太さを整えます。点線から少しのずれはOK。7つとも合ったら、焼いて渡しましょう。</p><p>1手で触れた帯が4、隣が2、その隣が1だけ変わります。1手ごとに残りの手数を使います。手数が0でも焼けますが、作り直すには「最初から」。やり直し回数に制限はありません。</p><p>キー：1〜7で高さ、↑↓で高さ変更、←ですぼめる、→で広げる。TabとEnterでボタン操作。時間制限はありません。</p><p>この試遊は3つの注文と形作りだけ。自由な3D造形・釉薬・工房経営は未実装です。焼成や土の性質は実物の再現ではありません。</p></div></details>
+    <footer>Game Idea Lab · アカウント・保存・通信なし</footer>
+  </main>
+</body>
+</html>

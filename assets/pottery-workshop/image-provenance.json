@@ -1,0 +1,21 @@
+{
+  "created": "2026-10-18",
+  "generator": "OpenAI image generation",
+  "cover": {
+    "file": "cover.jpg",
+    "size": [
+      1440,
+      810
+    ],
+    "description": "Original hand-drawn concept: artisan shapes terracotta pottery beside a target silhouette. Text: ろくろの小さな工房 / ひと押しで、となりの形も変わる"
+  },
+  "concept": {
+    "file": "concept.jpg",
+    "size": [
+      1024,
+      1536
+    ],
+    "description": "Original illustrated explanation: compare shape, gradually shape, finish. Three Japanese labels personally checked."
+  },
+  "review": "Both visually inspected. Concept illustrations, not gameplay screenshots. No external stock material."
+}
