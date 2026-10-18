@@ -287,3 +287,13 @@ Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_17.html
 Trial: https://kicchomen.github.io/game-idea-lab/games/rail-dispatch/
 
 Published 2026-10-17T12:16:00+09:00 (minute precision), post7733998765926862093. 23 engine/controller tests; independent review led to deadline wording, named destinations and correct train path/clearance improvements. Actual cloud Chromium success, wrong-route/junction/deadline failures, retry, repeated input, keyboard and pause pass. Standalone320/360/390 and saved Blogger preview320/360/390 CSS px passed. Two original illustrated JPEGs uploaded via ordinary Blogger compose clipboard paste, CDN save/reload exact match and public images/OG cover/embed verified. No cookie-setting changes needed. Details in assets/rail-dispatch/browser-validation.json and publication.json. Physical-phone, novice-human, screen-reader and long-term-depth tests remain unverified.
+
+
+## ろくろの小さな工房 / Pottery Workshop
+
+Direct clay shaping: one stroke changes neighboring bands. Three orders and finite effort; match seven bands before firing.
+
+Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_18.html
+Trial: https://kicchomen.github.io/game-idea-lab/games/pottery-workshop/
+
+Published 2026-10-18T10:31:00+09:00 (minute precision), post1907769431239473951. 31 new tests and independent review passed. Actual cloud-browser success/failure/retry, keyboard, pointer drag and repeated shaping verified. Standalone and saved Blogger preview at320/360/390 CSS px passed; original generated images uploaded through Blogger compose and CDN readback verified. Records in assets/pottery-workshop/. Physical-phone and novice-human tests remain unverified.
