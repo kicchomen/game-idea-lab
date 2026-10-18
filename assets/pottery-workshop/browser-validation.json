@@ -1,0 +1,12 @@
+{
+ "checked_at":"2026-10-18T01:29:00Z",
+ "environment":"Cloud Chromium, mouse/keyboard; CSS-width emulation, not physical phone",
+ "prototype_commit":"661984c7665c4a8c8ca201cdc096fd9c403883d6",
+ "pages_run":"39085361073",
+ "pages_status":"success",
+ "standalone":{"desktop":"failure, retry, 7/7 success with 7 remaining; keyboard height and shape changes; pointer drag consumed one stroke", "widths":[320,360,390],"width_results":"each actual repeated button shaping, failure, retry, success; clientWidth equals scrollWidth"},
+ "blogger_saved_preview":{"widths":[320,360,390],"document_scroll_widths":[320,360,390],"embedded_widths":[288,328,358],"result":"both CDN images loaded, no horizontal overflow; embedded shaping, firing failure and retry at each width", "method":"native window resizing and 250% browser zoom; measured preview document CSS widths; restored original window and 100% zoom"},
+ "saved_html_exact_match":true,
+ "independent_review":"31 new tests and 100000 fuzz iterations; no blocking issue; drag feedback and match wording improved",
+ "unverified":["physical phone","novice human playtest","screen reader","long-term enjoyment"]
+}
