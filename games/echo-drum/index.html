@@ -1,0 +1,11 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#142c3e"><title>祭りのこだま太鼓 | Echo Drum</title><link rel="stylesheet" href="style.css"></head><body><main>
+<header><div class="eyebrow">ONE BUTTON · CALL & RESPONSE</div><h1>祭りのこだま太鼓</h1><p>見て、覚えて、ドンと返す。</p></header>
+<section class="stage" aria-label="太鼓の舞台"><div class="garland" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div><div class="hud"><span id="phrase">第1節 / 3</span><span id="score">成功 0 / 15</span><span id="errors">ずれ 0 / 4</span></div>
+<div class="phase" id="phase">祭りの太鼓番</div><h2 id="title">ひらく祭り</h2><p id="cue">音は鳴りません</p>
+<div class="track"><canvas id="lane" width="600" height="150" aria-label="玉が左の判定線に重なったら叩く。お手本は金色、あなたの番は緑色。画面上の表示でも順番を案内します。"></canvas><span class="track-label">ここでドン</span></div>
+<div id="feedback" class="feedback" aria-hidden="true">• • •</div>
+<button id="drum" type="button" aria-label="太鼓を叩く" disabled><span class="drum-face"><strong>ドン</strong><small>タップ / Space</small></span></button>
+<p id="message" role="status" aria-live="polite">お手本を見て、同じリズムで太鼓を返そう。</p>
+<div class="actions"><button id="primary" type="button">祭りをはじめる</button><button id="pause" type="button" hidden>一時停止</button><button id="retry" type="button" hidden>はじめから</button></div></section>
+<section class="guide"><h2>遊び方</h2><ol><li><b>お手本を見る</b>：4拍の合図のあと、光る玉のリズムを覚える。</li><li><b>同じリズムを返す</b>：もう一度4拍数えたら、玉が線に来る瞬間に叩く。本番にも玉のガイドがあります。</li><li><b>3節で12打成功</b>：全15打。見送り・空打ちが合計4回で終了。</li></ol><p>少し早い・遅いも成功（±0.16秒）。連打は空打ちになります。P / Esc で停止。画面を離れると自動停止します。</p><p class="limit">試作は3つの固定フレーズ。音声・通信・保存は使いません。</p></section><footer>ECHO DRUM / 小さな演奏の試作</footer>
+</main><script src="engine.js"></script><script src="app.js"></script></body></html>

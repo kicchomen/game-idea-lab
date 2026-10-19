@@ -1,0 +1,19 @@
+const {test}=require('node:test');const assert=require('node:assert/strict');const E=require('../games/echo-drum/engine.js');
+function reply(){return E.advance(E.start(E.create()),6);}
+function at(s,t){return E.advance(s,t-s.time);}
+function perfect(s){for(const n of E.PHRASES[s.phrase].notes)s=E.hit(at(s,n));return at(s,E.LENGTH);}
+test('three distinct immutable phrase patterns total 15 notes',()=>{assert.equal(E.PHRASES.flatMap(p=>p.notes).length,15);assert.equal(new Set(E.PHRASES.map(p=>JSON.stringify(p.notes))).size,3);assert(Object.isFrozen(E.PHRASES[0].notes));});
+test('preview and 4-beat response count-in are exact',()=>{let s=E.start(E.create());assert.equal(s.time,-2.4);s=E.advance(s,5.99);assert.equal(s.phase,'listen');s=E.advance(s,.01);assert.equal(s.phase,'reply');assert(Math.abs(s.time+2.4)<1e-8);});
+test('all phrases perfect input wins with 15 hits',()=>{let s=reply();for(let i=0;i<3;i++){s=perfect(s);if(i<2){assert.equal(s.status,'between');s=E.advance(E.next(s),6);}}assert.equal(s.status,'won');assert.equal(s.hits,15);assert.equal(s.errors,0);assert.equal(s.best,15);});
+test('no input naturally fails on fourth missed note',()=>{let s=E.advance(reply(),6);assert.equal(s.status,'lost');assert.equal(s.errors,4);assert.equal(s.hits,0);});
+test('three missed notes still permit cumulative 12-hit victory',()=>{let s=reply();for(let i=0;i<3;i++){s=at(s,.3);for(const n of E.PHRASES[i].notes.slice(1))s=E.hit(at(s,n));s=at(s,E.LENGTH);if(i<2)s=E.advance(E.next(s),6);}assert.equal(s.status,'won');assert.equal(s.hits,12);assert.equal(s.errors,3);});
+test('early/late boundaries count and feedback is directional',()=>{for(const offset of [-.16,-.1,0,.1,.16]){let s=E.hit(at(reply(),offset));assert.equal(s.hits,1);assert.equal(s.errors,0);assert.equal(s.feedback,offset===0?'ぴったり！':offset<0?'少し早い · OK':'少し遅い · OK');}});
+test('outside tolerance is not a hit',()=>{let s=E.hit(at(reply(),-.161));assert.equal(s.errors,1);assert.equal(s.hits,0);s=E.hit(at(reply(),.161));assert.equal(s.hits,0);assert.equal(s.errors,2);});
+test('judged note cannot score twice; mash reaches failure',()=>{let s=E.hit(at(reply(),0));s=E.hit(s);assert.equal(s.hits,1);assert.equal(s.errors,1);for(let i=0;i<3;i++)s=E.hit(s);assert.equal(s.status,'lost');});
+test('listen and early count-in input is ignored',()=>{let s=E.start(E.create());assert.strictEqual(E.hit(s),s);s=reply();assert.strictEqual(E.hit(s),s);});
+test('pure transitions preserve prior state and judged array',()=>{const s=at(reply(),0),snapshot=JSON.stringify(s);const next=E.hit(s);assert.equal(JSON.stringify(s),snapshot);assert.notStrictEqual(next.judged,s.judged);});
+test('pause/resume freezes every field and cannot hit while paused',()=>{const s=at(reply(),.4),p=E.pause(s);assert.strictEqual(E.advance(p,100),p);assert.strictEqual(E.hit(p),p);assert.deepEqual(E.resume(p),s);});
+test('invalid dt and terminal input cannot mutate state',()=>{const s=E.start(E.create());for(const dt of [NaN,Infinity,-1,0])assert.strictEqual(E.advance(s,dt),s);const lost=E.advance(reply(),20);assert.strictEqual(E.hit(lost),lost);assert.strictEqual(E.next(lost),lost);assert.strictEqual(E.advance(lost,100),lost);});
+test('large dt crosses preview safely and accounts for all misses',()=>{const s=E.advance(E.start(E.create()),50);assert.equal(s.status,'lost');assert.equal(s.errors,4);});
+test('frame rate does not affect scoring at exact input timestamps',()=>{function run(fps){let s=reply();for(const n of E.PHRASES[0].notes){while(s.time+1/fps<n-1e-8)s=E.advance(s,1/fps);s=E.hit(at(s,n));}return at(s,E.LENGTH);}assert.deepEqual(run(30),run(144));});
+test('retry is a clean newly created state, next preserves cumulative score',()=>{const s=perfect(reply()),n=E.next(s);assert.equal(n.hits,4);assert.equal(n.phrase,1);assert.deepEqual(n.judged,[]);assert.deepEqual(E.create(),E.create());});
