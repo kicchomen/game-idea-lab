@@ -297,3 +297,13 @@ Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_18.html
 Trial: https://kicchomen.github.io/game-idea-lab/games/pottery-workshop/
 
 Published 2026-10-18T10:31:00+09:00 (minute precision), post1907769431239473951. 31 new tests and independent review passed. Actual cloud-browser success/failure/retry, keyboard, pointer drag and repeated shaping verified. Standalone and saved Blogger preview at320/360/390 CSS px passed; original generated images uploaded through Blogger compose and CDN readback verified. Records in assets/pottery-workshop/. Physical-phone and novice-human tests remain unverified.
+
+
+## 祭りのこだま太鼓 / Echo Drum
+
+Watch a short rhythm, then return it with one drum button. Visual-guided timing, three fixed phrases; no audio.
+
+Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_19.html
+Trial: https://kicchomen.github.io/game-idea-lab/games/echo-drum/
+
+Published 2026-10-19T10:57:00+09:00 (minute precision), post8139373618734285323. Independent review and416 automated tests passed; actual browser success/failure/retry/pause/repeated input verified. Standalone and saved article content320/360/390px tested, plus actual Blogger smartphone preview and public embed. Two generated illustrations saved through Blogger CDN. Full records in assets/echo-drum/browser-qa.md and publication.json. Physical phone and human first-play/long-term enjoyment remain unverified.
