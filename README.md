@@ -307,3 +307,11 @@ Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_19.html
 Trial: https://kicchomen.github.io/game-idea-lab/games/echo-drum/
 
 Published 2026-10-19T10:57:00+09:00 (minute precision), post8139373618734285323. Independent review and416 automated tests passed; actual browser success/failure/retry/pause/repeated input verified. Standalone and saved article content320/360/390px tested, plus actual Blogger smartphone preview and public embed. Two generated illustrations saved through Blogger CDN. Full records in assets/echo-drum/browser-qa.md and publication.json. Physical phone and human first-play/long-term enjoyment remain unverified.
+
+## 山あいの綱渡り / Rope Walker
+
+A continuous balance-feedback experiment: counterweight against gusts, release before momentum overshoots, and brace to stabilize while automatic walking stops. One 60m crossing, 55-second limit, visible wind forecast, real balance/time failure, pause and retry. Static dependency-free DOM/Canvas game in `games/rope-walker/`. Keyboard arrows/A/D and Space, three simultaneous pointer-held buttons. No accounts, storage, analytics, audio or gameplay network calls.
+
+28 new engine/mocked-controller tests and independent code/content/art review pass; the whole suite has 444 passing tests. Independent review found a physical-key alias release defect; the fix and both-release-order regression are recorded. These are not actual-browser or physical-phone evidence. Live browser and publication status are tracked in `assets/rope-walker/publication.json`; staging the prototype does not mean a Blogger article is published.
+
+Design/PDCA and exact rules: `assets/rope-walker/design-notes.md`. Generated original PNGs and compressed JPEGs, unpublished article source, tests and independent review are preserved. Wider route/equipment/performance ideas remain unimplemented. No novice-human or long-term enjoyment claim.

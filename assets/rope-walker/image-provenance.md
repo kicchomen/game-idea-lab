@@ -1,0 +1,4 @@
+# Original concept illustrations
+Two original images generated for this game on 2026-10-20. Both were inspected as pixels before use. Cover: adult teal-clad performer with coral scarf and balancing pole, rope between two timber platforms in a misty valley. Concept: three moments, counterbalance / brace / advance. No logos, text, game UI or unimplemented equipment is shown. They illustrate the premise, not literal screenshots. Runtime canvas uses the same teal/coral/ochre colors and one-rope scene.
+
+Original PNG files are preserved as cover-original.png and concept-original.png. JPEG derivatives preserve the whole composition at 1439×810, quality 86: cover 283317 bytes, concept 293017 bytes. The normal Blogger image upload and final CDN URLs/readback are tracked separately. No data URI or private download URL will be published.
