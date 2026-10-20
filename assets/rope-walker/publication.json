@@ -2,7 +2,7 @@
   "date": "2026-10-20",
   "title": "山あいの綱渡り｜戻しすぎない、一歩の加減",
   "blog_id": "3556407006374124911",
-  "status": "prototype_staging",
+  "status": "published_verified",
   "before": {
     "published": 14,
     "drafts": 2,
@@ -11,10 +11,23 @@
   },
   "base_commit": "1fc72ddad3e0830595e9bdb25e45218b9a8bbb97",
   "trial_url": "https://kicchomen.github.io/game-idea-lab/games/rope-walker/",
-  "article_url": null,
-  "post_id": null,
-  "published_at": null,
-  "browser_qa": "pending",
+  "article_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_20.html",
+  "post_id": "7501416410475790538",
+  "published_at": "2026-10-20T17:05:00+09:00",
+  "browser_qa": "passed actual cloud Chromium desktop crossing/failure/retry/pause, 320/360/390px frame checks, saved smartphone preview and public embedded start/pause/reset",
   "independent_review": "passed_code_content_art; browser pending",
-  "automated_tests": 444
+  "automated_tests": 444,
+  "published_at_precision": "minute; confirmation observed between 08:05:45 and 08:06:09 UTC",
+  "after": {
+    "published": 15,
+    "drafts": 2,
+    "scheduled": 0
+  },
+  "prototype_commit": "71eeb29",
+  "git_record_backup": "Included in this final publication-record commit; remote readback verification is reported separately.",
+  "limitations": [
+    "No physical-phone test",
+    "No simultaneous multi-touch browser test",
+    "No novice-human or long-term enjoyment assessment"
+  ]
 }

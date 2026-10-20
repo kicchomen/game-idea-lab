@@ -1,0 +1,44 @@
+[
+  {
+    "path": "games/rope-walker/index.html",
+    "status": 200,
+    "bytes": 2766,
+    "sha256": "bc5dcb4f5c1bd7a0aee01b1321c607619d4759b6595d7013a9b9d1bbbbdbb4eb",
+    "matches_local": true
+  },
+  {
+    "path": "games/rope-walker/engine.js",
+    "status": 200,
+    "bytes": 1605,
+    "sha256": "9408689ecd864fb93893b5acbf5a358fe906d45cfa743a01731e2bdc93124240",
+    "matches_local": true
+  },
+  {
+    "path": "games/rope-walker/app.js",
+    "status": 200,
+    "bytes": 7142,
+    "sha256": "4b400e76a1e178c08a47f9113420678a3d90eadaf13dfada2d98b1ae180141a4",
+    "matches_local": true
+  },
+  {
+    "path": "games/rope-walker/style.css",
+    "status": 200,
+    "bytes": 2721,
+    "sha256": "5b9f9da6b6b720fb746be876efedca61b6b2c14f637d3f206e826568a2025de1",
+    "matches_local": true
+  },
+  {
+    "path": "assets/rope-walker/cover.jpg",
+    "status": 200,
+    "bytes": 283317,
+    "sha256": "a3238bbc077f3c45344c00d314c7813cae282f53286eecfb79dcea002198a2ae",
+    "matches_local": true
+  },
+  {
+    "path": "assets/rope-walker/concept.jpg",
+    "status": 200,
+    "bytes": 293017,
+    "sha256": "f8e4b01e23cd58e8bb38310fdf4fc235419935622b9300530172f6057b0273c3",
+    "matches_local": true
+  }
+]

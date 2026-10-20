@@ -315,3 +315,10 @@ A continuous balance-feedback experiment: counterweight against gusts, release b
 28 new engine/mocked-controller tests and independent code/content/art review pass; the whole suite has 444 passing tests. Independent review found a physical-key alias release defect; the fix and both-release-order regression are recorded. These are not actual-browser or physical-phone evidence. Live browser and publication status are tracked in `assets/rope-walker/publication.json`; staging the prototype does not mean a Blogger article is published.
 
 Design/PDCA and exact rules: `assets/rope-walker/design-notes.md`. Generated original PNGs and compressed JPEGs, unpublished article source, tests and independent review are preserved. Wider route/equipment/performance ideas remain unimplemented. No novice-human or long-term enjoyment claim.
+
+### Published Rope Walker article — 2026-10-20
+
+Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_20.html
+Trial: https://kicchomen.github.io/game-idea-lab/games/rope-walker/
+
+Published post7501416410475790538. Actual cloud Chromium completed the crossing in24.2seconds; natural failure, retry, keyboard steering and pause/resume verified.320/360/390px ordinary iframe checks had no horizontal overflow and46px-high buttons. Saved Blogger smartphone preview and public embedded start/pause/reset passed; both original JPEGs are served by Blogger CDN. Saved/reloaded HTML matched exactly.15published articles,2unchanged older drafts. Physical-phone, simultaneous multi-touch and novice-human/long-term enjoyment tests remain unverified. See assets/rope-walker/browser-qa.md and publication.json.
