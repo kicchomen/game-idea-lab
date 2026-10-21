@@ -322,3 +322,16 @@ Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_20.html
 Trial: https://kicchomen.github.io/game-idea-lab/games/rope-walker/
 
 Published post7501416410475790538. Actual cloud Chromium completed the crossing in24.2seconds; natural failure, retry, keyboard steering and pause/resume verified.320/360/390px ordinary iframe checks had no horizontal overflow and46px-high buttons. Saved Blogger smartphone preview and public embedded start/pause/reset passed; both original JPEGs are served by Blogger CDN. Saved/reloaded HTML matched exactly.15published articles,2unchanged older drafts. Physical-phone, simultaneous multi-touch and novice-human/long-term enjoyment tests remain unverified. See assets/rope-walker/browser-qa.md and publication.json.
+
+
+## 野原のシャッターチャンス / Meadow Camera (2026-10-21)
+
+Become a field photographer: move the viewfinder, watch independently moving animals, and commit a limited shot when the required subjects fit in one frame. Wide shots earn one star; narrow shots earn two. Three assignments, six shots and fifty active simulation seconds each. This is a timing-and-composition experiment, not an edit-then-run puzzle.
+
+Play: https://kicchomen.github.io/game-idea-lab/games/meadow-camera/
+
+Controls: left/right buttons, pointer aiming and dragging; arrows/A/D, Space shutter, Z zoom, P pause. Works without account, storage or external libraries. Hidden pages pause; slow rendering extends wall-clock duration because the timer measures capped active simulation time.
+
+Independent cloud Chromium checks passed all three missions, failure, retry, final restart and actual success/retry at 320/360/390 CSS px. Twenty-five automated tests passed (17 production-engine, 8 mocked-controller). Human first-play, physical mobile touch, cross-browser coverage and sustained enjoyment remain untested; fixed trajectories can be memorized.
+
+Design and PDCA: assets/meadow-camera/design-notes.md. Independent QA: docs/independent-qa-20261021.md. Article and publication ledger: assets/meadow-camera/.

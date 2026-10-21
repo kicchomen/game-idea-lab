@@ -24,3 +24,6 @@ Recheck:17production-engine and8mocked-DOM controller tests pass after changes. 
 
 ## Challenge and honest limits
 All missions have reachable wins at both frame sizes. Early narrow winning examples: assignment1 at0sec/x113.8, assignment2 at5.3sec/x181.2, assignment3 at13sec/x345.8. These are feasibility routes, not recommended player recipes or proofs of calibrated difficulty. Visible eligibility intentionally reduces frustration. Fixed trajectories can be memorized, and wide shots may be too forgiving. First-time human, physicalphone, screenreader, crossbrowser and sustained-fun tests remain unperformed. Next human questions: is the framing goal obvious, does waiting feel intentional, and is narrow framing worth pursuing after a wide success?
+
+## Independent live-browser acceptance
+Cloud Chromium actual input passed all three missions, terminal film failure, retry and final restart. Each 320/360/390 CSS-pixel iframe passed start, aim, successful shot and retry. No horizontal overflow or overlapping controls. Photo aspect ratio visually checked. Full results: docs/independent-qa-20261021.md. Real-browser timeout is not claimed; engine and controller timeout tests passed. Physical mobile touch and first-time human testing remain unperformed.
