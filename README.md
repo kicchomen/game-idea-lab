@@ -335,3 +335,5 @@ Controls: left/right buttons, pointer aiming and dragging; arrows/A/D, Space shu
 Independent cloud Chromium checks passed all three missions, failure, retry, final restart and actual success/retry at 320/360/390 CSS px. Twenty-five automated tests passed (17 production-engine, 8 mocked-controller). Human first-play, physical mobile touch, cross-browser coverage and sustained enjoyment remain untested; fixed trajectories can be memorized.
 
 Design and PDCA: assets/meadow-camera/design-notes.md. Independent QA: docs/independent-qa-20261021.md. Article and publication ledger: assets/meadow-camera/.
+
+Published article: https://game-idea-lab.blogspot.com/2026/10/blog-post_21.html (Blogger post 8996931272622090612, 2026-10-21 11:03 JST).

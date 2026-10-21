@@ -34,3 +34,26 @@ Production preview: https://kicchomen.github.io/game-idea-lab/games/meadow-camer
 - No remaining release-blocking defect found in prototype scope tested.
 - Untested: real mobile touch hardware, first-time human play, real-browser timeout (covered by engine/controller tests), final Blogger saved article rendering and CDN images (publisher handles).
 - Screenshot files: assets/meadow-camera/independent-gameplay-full.jpg, independent-mobile-success.jpg, independent-final-success.jpg.
+
+## Saved Blogger preview review — 01:55 UTC
+- Saved draft 8996931272622090612 examined without editing or publishing.
+- Both article images loaded from Blogger CDN; natural sizes 1439×810 and 1165×892.
+- Embedded game loaded and responded to start, movement, shutter, failure, timeout and retry via real browser input inside article.
+- Browser's built-in mobile preview is 412 CSS px, not the requested 320/360/390.
+- DevTools UI was explicitly unavailable by organization policy. No workaround to open DevTools was attempted.
+- Ordinary native window resize and browser zoom 200% achieved exact window.innerWidth 320 and 390. Both article widths tested with readable controls and intact images.
+- Target 360 was measured 359 after resize snapping. 359 is tested, but exact 360 is not claimed; publisher informed and can finish exact measurement.
+- Minor iframe border overflow: iframe 282.5 vs article content 280.5 at 320 width. No clipped controls, but recommend box-sizing:border-box. Publisher preparing fix; reread pending.
+
+## Saved preview correction verified — 01:59 UTC
+- Fresh preview generated from editor: iframe now has box-sizing:border-box. Measured article content 319.5 px and iframe 319.5 px; previous 2 px overflow resolved.
+- Article embedded timeout was also observed in real browser ('日が暮れました'), followed by successful retry and fresh shot.
+- Exact 360 CSS px check remains pending. Native frontmost tab changed to a separate marine-blog task while reviewer was resizing, so background measurements were stale. Parent asked to coordinate exclusive native operation; reviewer stopped further native input.
+
+## Final article QA completed — 02:03 UTC
+- Exclusive native operation coordinated; ordinary Chrome zoom 175% and window resizing achieved exact window.innerWidth=360 (devicePixelRatio=1.75). This is browser CSS-width verification, not a physical mobile device.
+- Fresh saved preview at 360: article content, both CDN images, and iframe each measured 319.4286 CSS px. Both images loaded. No iframe border overflow remains.
+- Actual embedded start → left button → shutter worked at 360, film reduced 6→5 and concrete failure feedback displayed. Screenshot reviewed and stored as assets/meadow-camera/independent-article-360.jpg.
+- Article checks at requested 320/360/390 CSS viewport widths now completed. Prior 359 limitation is resolved, not silently relabeled.
+- No release-blocking defect remains in reviewed saved draft. Publication/post-publication canonical URL verification is publisher responsibility.
+- Native control released to parent and publisher.

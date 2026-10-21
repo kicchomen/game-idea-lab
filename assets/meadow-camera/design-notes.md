@@ -27,3 +27,6 @@ All missions have reachable wins at both frame sizes. Early narrow winning examp
 
 ## Independent live-browser acceptance
 Cloud Chromium actual input passed all three missions, terminal film failure, retry and final restart. Each 320/360/390 CSS-pixel iframe passed start, aim, successful shot and retry. No horizontal overflow or overlapping controls. Photo aspect ratio visually checked. Full results: docs/independent-qa-20261021.md. Real-browser timeout is not claimed; engine and controller timeout tests passed. Physical mobile touch and first-time human testing remain unperformed.
+
+## Article publication verification
+Blogger normal upload on authorized desktop saved two optimized images to its CDN; full saved HTML readback matched2069 characters. Saved article independently rendered and operated at exact320/360/390 CSS px using normal window resizing and browser zoom, with no DevTools restriction bypass. A2px iframe border overflow was corrected with border-box. Published same post8996931272622090612 at2026-10-21T11:03:00+09:00; title, canonical URL, native-dimension images, cover thumbnail and actual embedded controls verified. Published count16; original two drafts preserved. Public URL: https://game-idea-lab.blogspot.com/2026/10/blog-post_21.html

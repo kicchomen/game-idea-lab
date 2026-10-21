@@ -3,19 +3,23 @@
   "title": "野原のシャッターチャンス｜いま撮る？ もう少し待つ？",
   "blog_id": "3556407006374124911",
   "post_id": "8996931272622090612",
-  "status": "draft_full_HTML_saved_and_readback_exact; article_responsive_QA_pending",
+  "status": "published_verified",
   "base_commit": "e9b9517f385526defeba3b83a368ee9825ebfadc",
   "prototype_commits": [
     "c57ecb65fbb4a38c2d375710e60570ab24dc8763",
     "a894250863aebf4325326627baabe28f27e32586",
     "74d954a7ac261379f0d5e14e0a5fb8314b51d484",
-    "93b7ddefe279a6269170359e9525f229da9fd282"
+    "93b7ddefe279a6269170359e9525f229da9fd282",
+    "25e9e417dd546afc0d76b995ed61b94d16aea0a1",
+    "fdc9aacae051b42f5fe099127bf14b724dbd4a22"
   ],
   "pages_success_runs": [
     39527098512,
     39527554820,
     39527858919,
-    39528991527
+    39528991527,
+    39529462033,
+    39530482874
   ],
   "trial_url": "https://kicchomen.github.io/game-idea-lab/games/meadow-camera/",
   "before": {
@@ -57,9 +61,25 @@
     "First-time human and long-term fun unverified",
     "Fixed trajectories and three assignments only"
   ],
-  "remaining": [
-    "Saved article responsive/embed tests",
-    "Article publication and public readback"
-  ],
-  "saved_HTML_characters": 2047
+  "remaining": [],
+  "saved_HTML_characters": 2069,
+  "article_QA_iteration": "Saved preview tested at exact 320/360/390 CSS px using ordinary window resizing and browser zoom. Images and iframe tested. Fixed 2px iframe overflow with border-box and rechecked.",
+  "published_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_21.html",
+  "published_at": "2026-10-21T11:03:00+09:00",
+  "Blogger_modified_at": "2026-10-21T11:03:53+09:00",
+  "verified_at": "2026-10-21T11:05:19+09:00",
+  "after": {
+    "published": 16,
+    "drafts": 2,
+    "scheduled": 0
+  },
+  "public_checks": [
+    "title exact",
+    "canonical URL",
+    "both CDN images loaded at native dimensions",
+    "cover selected as thumbnail in JSON-LD and homepage",
+    "iframe URL and standalone link",
+    "actual embedded start/aim/shutter response",
+    "old drafts preserved"
+  ]
 }
