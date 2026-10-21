@@ -1,0 +1,26 @@
+# 野原のシャッターチャンス — 2026-10-21
+
+## Preflight
+Read latest main README, existing game summaries, recent design notes (pottery, echo drum, rope walker), and all per-game publication.json records. These and README are the existing editorial/ledger structure; no docs/operations or separate editorial folder exists. Starting main e9b9517f385526defeba3b83a368ee9825ebfadc (tree70028481bb37a304a1e42b116fd1e12b84039e2e). Only main branch; no open PR. Blogger directly showed15 published,2 old drafts,0 scheduled. Latest Rope Walker; no new work duplicate. Old Sensor Shift/Footstep Echo drafts remain untouched.
+
+## Player experience and structure
+Become a field photographer. Watch animals move independently, choose framing, and commit a limited shot when the subjects line up. Broad frame secures a record; a narrow frame earns a better rating but needs closer grouping. Movement is not the player's avatar: the player observes the world rather than controlling animal paths.
+
+Compared prior games: Rope Walker continuously stabilizes a physical state; Echo Drum copies timed beat cues; Pottery directly deforms an object; Rail Dispatch routes traffic; Pocket Forest places terrain; Salvage Diver chooses risk versus return; Windbird/Tiny Tug navigate; Lost Property/Fossil Museum infer concealed information; Spark Shield makes combat decisions. Here the core is selecting a transient spatial composition, with instant photographic feedback and finite film. No editable parameter followed by a separate run phase.
+
+First10seconds: move the viewfinder and photograph a fox. Ten-minute hypothesis: improve from a wide record to tightly grouped subjects, learn when to wait rather than consume film. Hour-scale proposed breadth: new habitats, animal behaviors, light, commissioned compositions and a persistent field journal. None of those broader systems is implemented. Three deterministic assignments are an experiment, not validated long-term content.
+
+## Implemented scope
+Dependency-free HTML/CSS/Canvas and pure shared engine. No accounts, analytics, storage, gameplay networking, audio or external fonts. Three assignments: fox; fox+bird; fox+rabbit+bird. Each starts a fixed movement phase offset0/4.7/9.4seconds. Subjects follow deterministic smooth sinusoidal paths. Camera center is clamped to the meadow; frame width240 or150 logicalpixels, vertical60..282. Camera controls: continuous held arrows/A/D, discrete24px left/right buttons, direct pointer position/drag. Space/button shutter, Z zoom, P/Escape pause. Hidden-page interruption pauses with explicit resume and input cleanup. Brief frame stalls clamp delta to100ms, avoiding over-sensitive forced pauses; the timer counts active simulated game time, not guaranteed wall time.
+
+Each assignment lasts50 active seconds and provides6 shots. All wanted animals must fit horizontally in the frame by full visual extents and not overlap the grass strip403..481; vertical frame is tall enough for all animal poses. Wide succeeds for1star, narrow for2. Success stops scene; next starts next assignment. Retry restores that assignment and refunds only its own earned score. Final replay returns to assignment1. Photo thumbnails preserve the captured frame aspect ratio; no saved journal after reload.350ms shutter cooldown rejects accidental immediate duplicate inputs.
+
+## PDCA
+Plan: test observational framing, not another steering/parameter puzzle.
+Do: build one meadow, independently moving animals,3 assignments,2frame sizes, finite film/time, visible eligibility and photographic feedback.
+Check:17engine tests cover all6mission/zoom wins, failure, timeout, retry, pause, invalid/repeated input, fullbody extents, obstruction and determinism. Independent reviewer found visual/rule mismatch for grass partial overlap and bird wing clipping, focus-dependent Space behavior, and anisotropic photo scaling.
+Act: use whole visual horizontal extent versus grass403..481; raise frame top75->60 and crop height207->222; make Space always shoot during active play regardless button focus; render photos at actual frame dimensions without unequal scaling. Cover first draft contained a second rabbit; regenerated that small region to leave exactly one fox/rabbit/bird, inspected final pixels.
+Recheck:17production-engine and8mocked-DOM controller tests pass after changes. Live review found250ms rendering stalls could cause immediate pause; removed this automatic-pause threshold and windowblur pause, retaining actual document-hidden pause. Independent and actual browser results are recorded separately; engine tests are not browser or human evidence.
+
+## Challenge and honest limits
+All missions have reachable wins at both frame sizes. Early narrow winning examples: assignment1 at0sec/x113.8, assignment2 at5.3sec/x181.2, assignment3 at13sec/x345.8. These are feasibility routes, not recommended player recipes or proofs of calibrated difficulty. Visible eligibility intentionally reduces frustration. Fixed trajectories can be memorized, and wide shots may be too forgiving. First-time human, physicalphone, screenreader, crossbrowser and sustained-fun tests remain unperformed. Next human questions: is the framing goal obvious, does waiting feel intentional, and is narrow framing worth pursuing after a wide success?

@@ -1,0 +1,39 @@
+route 0 150 0.00 113.8
+route 0 240 0.00 120.0
+route 1 150 5.30 181.2
+route 1 240 4.60 200.1
+route 2 150 13.00 345.8
+route 2 240 13.00 345.8
+✔ mission 1 input-route win width 150 (2.324837ms)
+✔ mission 1 input-route win width 240 (0.285311ms)
+✔ mission 2 input-route win width 150 (3.909098ms)
+✔ mission 2 input-route win width 240 (0.763532ms)
+✔ mission 3 input-route win width 150 (2.583077ms)
+✔ mission 3 input-route win width 240 (2.279289ms)
+✔ immutable movement and clamp (0.203187ms)
+✔ timeout and terminal locks (0.11965ms)
+✔ six bad shots fail, cooldown prevents duplicate (0.216417ms)
+✔ pause freezes time, move, shutter; resume explicit (0.304389ms)
+✔ retry resets mission and subtracts only last success (0.176547ms)
+✔ winning retry resets photo score (1.302966ms)
+✔ next only on win and stops at final mission (1.806515ms)
+✔ hidden animal cannot count even when framed (0.16579ms)
+✔ full body extents determine frame membership (0.070436ms)
+✔ invalid deltas and positions do not mutate (0.09966ms)
+✔ determinism and frame partitioning (0.239131ms)
+✔ starts, arrowbuttons, successful shutter, next and reset (7.065128ms)
+✔ Space shoots even when movementbutton focused; repeats ignored (2.078917ms)
+✔ pause holds clock and explicit resume works (20.289671ms)
+✔ hiddenpage pauses and clears held keys (6.423977ms)
+✔ brief jank no longer pauses (1.200641ms)
+✔ timeout retry restores time film and ready (228.516508ms)
+✔ pointercancel stops drag updates (1.81636ms)
+✔ captured photos preserve native dimensions (1.364749ms)
+ℹ tests 25
+ℹ suites 0
+ℹ pass 25
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 355.616816
