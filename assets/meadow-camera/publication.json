@@ -1,0 +1,65 @@
+{
+  "date": "2026-10-21",
+  "title": "野原のシャッターチャンス｜いま撮る？ もう少し待つ？",
+  "blog_id": "3556407006374124911",
+  "post_id": "8996931272622090612",
+  "status": "draft_full_HTML_saved_and_readback_exact; article_responsive_QA_pending",
+  "base_commit": "e9b9517f385526defeba3b83a368ee9825ebfadc",
+  "prototype_commits": [
+    "c57ecb65fbb4a38c2d375710e60570ab24dc8763",
+    "a894250863aebf4325326627baabe28f27e32586",
+    "74d954a7ac261379f0d5e14e0a5fb8314b51d484",
+    "93b7ddefe279a6269170359e9525f229da9fd282"
+  ],
+  "pages_success_runs": [
+    39527098512,
+    39527554820,
+    39527858919,
+    39528991527
+  ],
+  "trial_url": "https://kicchomen.github.io/game-idea-lab/games/meadow-camera/",
+  "before": {
+    "published": 15,
+    "drafts": 2,
+    "scheduled": 0,
+    "open_prs": 0
+  },
+  "automated_tests": {
+    "production_engine": 17,
+    "mocked_controller": 8,
+    "passed": 25
+  },
+  "independent_review": "25 automated checks; desktop all three missions success, failure, retry, final restart; 320/360/390 actual success and retry passed",
+  "responsive_review": {
+    "css_widths": [
+      320,
+      360,
+      390
+    ],
+    "horizontal_overflow": false,
+    "control_heights_px": [
+      44,
+      46
+    ],
+    "environment": "cloud desktop Chromium, not physical phone"
+  },
+  "images": {
+    "cover": "cover.jpg",
+    "source": "original AI-generated concept illustration, one fox/rabbit/bird, independently inspected",
+    "Blogger_CDN": {
+      "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg1LJ7f8c1dku5-gFlfX7HkKSFYS5FtIagjAHTNxvS1LNCm4RQ0pfssamkG1-haIvlIMmxU4gU9xtIPD9tx-roKOtxzUTsU0-z8kfxqLfkbtOUNK0T8rG7IQta1sWvaoLyfeVqG8Z4-qlRVGcVkn9H9yiK-T8XhoHSGtCYMIcyD_nw2ficKUp_R9eo1iI/s1439/cover(1).jpg",
+      "screenshot": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOaxWfaNall-S9EcxB1jFy_lMfcZfOdkoTs_1o3H_7G_Zv7SlwI_XSq8ideXOg-a2ojzOeOYWrE56HUQNv9IQbRZRlgpr1Vi4uSwz6NXAyDr1eI7IpVRzvEGv3eJtfM_r-txyOTBONrxJntC-84sGIfh0PvhymQaVHbXo6AXr5Jt_O99i0x3oaJIrUW9Y/s1165/independent-gameplay-full.jpg"
+    },
+    "screenshot": "independent-gameplay-full.jpg"
+  },
+  "limitations": [
+    "Physical-phone not tested",
+    "First-time human and long-term fun unverified",
+    "Fixed trajectories and three assignments only"
+  ],
+  "remaining": [
+    "Saved article responsive/embed tests",
+    "Article publication and public readback"
+  ],
+  "saved_HTML_characters": 2047
+}
