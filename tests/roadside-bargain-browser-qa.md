@@ -18,6 +18,6 @@
 
 ## 実画面スクリーンショット
 
-`../games/roadside-bargain/gameplay-negotiation.jpg` は、このHTML/CSS/JavaScriptを孤立したheadless Chromeで390px幅表示し、実際の提案操作後にページ全体をキャプチャしたもの。390×1900 px、JPEG品質88、227 KB。`../assets/roadside-bargain/gameplay.jpg` は同じ条件を1100px幅で操作後にキャプチャした実画面。1100×1453 px、JPEG品質88、314 KB。どちらもミナの拒否とタロウの同意、両者の条件、ミナの数量付き再提案を示す。構想画ではなく、ブラウザー上の試遊画面。
+`../games/roadside-bargain/gameplay-negotiation.jpg` は、このHTML/CSS/JavaScriptを孤立したheadless Chromeで390px幅表示し、実際の提案操作後にページ全体をキャプチャしたもの。390×1900 px、JPEG品質88、227 KB。`../assets/roadside-bargain/gameplay.jpg` は同じ条件を1100px幅で操作後にキャプチャした実画面。1100×1453 px、JPEG品質80、266,967 bytes。どちらもミナの拒否とタロウの同意、両者の条件、ミナの数量付き再提案を示す。構想画ではなく、ブラウザー上の試遊画面。
 
 物理端末、実ユーザーの操作、他ブラウザーは未確認。ビューポート設定はスマートフォン実機の証明ではない。
