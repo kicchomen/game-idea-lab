@@ -1,0 +1,60 @@
+{
+  "date": "2026-10-22",
+  "title": "旅人たちの取り引き｜その条件なら、交換できる？",
+  "status": "prototype_deployed",
+  "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/roadside-bargain/",
+  "prototype_commit": "eac23233a5b6213c88cab1384e42c37bb31b668b",
+  "pages_success_runs": [
+    39706934880
+  ],
+  "pages_run_url": "https://github.com/kicchomen/game-idea-lab/actions/runs/39706934880",
+  "article_copy": "article-copy.md",
+  "blogger_status": "A draft with this title was created and is managed by the parent task; this task did not edit or publish it.",
+  "automated_tests": {
+    "production_engine": 9,
+    "mocked_controller": 4,
+    "independent_score_oracle": 2,
+    "passed": 15
+  },
+  "independent_review": "Separate hand-authored marginal-value oracle matched all 48 bounded offers; verified multiple viable settlements in each meeting and feasible counters that improve the dissatisfied side. This was not a human playtest.",
+  "browser_checks": {
+    "environment": "isolated headless Chrome",
+    "success": "3/3 route, including counteroffer, accepted better split and retry",
+    "failure": "0/3 route, patience exhaustion and retry",
+    "keyboard": "Enter and Space activate focused counteroffer",
+    "repeated_input": "double-click/stale action guards; one opening refusal costs one patience point",
+    "widths_css_px": [
+      320,
+      360,
+      390
+    ],
+    "horizontal_overflow": false,
+    "step_control_px": "44x44",
+    "primary_action_height_px": 48,
+    "runtime_exceptions": 0,
+    "public_pages_url_loaded": true,
+    "public_gameplay_image": "HTTP 200; JPEG decoded at 1100x1453 and 266967 bytes"
+  },
+  "images": {
+    "cover": {
+      "path": "cover.jpg",
+      "source": "Parent-provided original AI-generated concept illustration; not a gameplay screenshot",
+      "dimensions_px": "1439x810"
+    },
+    "gameplay": {
+      "path": "gameplay.jpg",
+      "source": "Actual 1100px-wide headless Chrome gameplay screenshot after a proposal",
+      "dimensions_px": "1100x1453"
+    },
+    "mobile_qa_capture": {
+      "path": "../../games/roadside-bargain/gameplay-negotiation.jpg",
+      "dimensions_px": "390x1900"
+    }
+  },
+  "limitations": [
+    "Physical phone and real touch were not tested",
+    "First-time human comprehension and long-term enjoyment were not tested",
+    "Safari, Firefox and other browsers were not tested",
+    "The existing monorepo test suite was unavailable in this isolated workspace; all 15 new game-specific tests passed"
+  ]
+}
