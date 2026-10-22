@@ -9,9 +9,10 @@
     39707571304,
     39708101765,
     39709130524,
-    39709581259
+    39709581259,
+    39710597504
   ],
-  "pages_run_url": "https://github.com/kicchomen/game-idea-lab/actions/runs/39709581259",
+  "pages_run_url": "https://github.com/kicchomen/game-idea-lab/actions/runs/39710597504",
   "article_copy": "article-copy.md",
   "blogger_status": "Published; this task performed no Blogger edits.",
   "automated_tests": {
@@ -106,7 +107,7 @@
     "Physical phone and real touch were not tested",
     "First-time human comprehension and long-term enjoyment were not tested",
     "Safari, Firefox and other browsers were not tested",
-    "The existing monorepo test suite was unavailable in this isolated workspace; all 15 new game-specific tests passed",
+    "The existing monorepo test suite was not run in this isolated workspace; all 19 relevant game-specific tests passed",
     "The fixed-value prototype is introductory and all three meetings accept 1:1; adaptive demand shifts and long-term replay depth are not implemented"
   ],
   "blogger_post_id": "4286326035730799723",
