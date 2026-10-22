@@ -337,3 +337,16 @@ Independent cloud Chromium checks passed all three missions, failure, retry, fin
 Design and PDCA: assets/meadow-camera/design-notes.md. Independent QA: docs/independent-qa-20261021.md. Article and publication ledger: assets/meadow-camera/.
 
 Published article: https://game-idea-lab.blogspot.com/2026/10/blog-post_21.html (Blogger post 8996931272622090612, 2026-10-21 11:03 JST).
+
+
+## 旅人たちの取り引き / Roadside Bargain (2026-10-22)
+
+A travelling mediator listens to two people, proposes quantities, reads concrete responses and revises terms until both can accept. Three conversations exchange a map for canteens, linen for bread, and oil flasks for blankets. Each item quantity is 1–4. A traveler accepts when the visible value of what they receive minus the cost of what they give is at least zero. A refusal spends that traveler’s patience; a counteroffer changes the proposed deal. After agreement, seal it or spend one patience from each traveler to seek a better split. Seal at least two of three deals to open the road. The game has multiple acceptable quantity pairs in each conversation, rather than one hidden correct allocation.
+
+Play: https://kicchomen.github.io/game-idea-lab/games/roadside-bargain/
+
+Controls: tap/click the −/+ quantity buttons, then propose, try a counteroffer, seal, or ask for another split. Tab and Enter/Space work with focused buttons. The static prototype has no dependencies or remote requests.
+
+The cover at `assets/roadside-bargain/cover.jpg` is original concept art, not a screenshot. The article-ready 1100×1453 actual gameplay capture is `assets/roadside-bargain/gameplay.jpg`; the separate 390px capture for responsive evidence is `games/roadside-bargain/gameplay-negotiation.jpg`. Article copy, image provenance, idea comparison, PDCA and verification are in `assets/roadside-bargain/` and `tests/roadside-bargain-browser-qa.md`.
+
+Run `node --test tests/roadside-bargain*.test.cjs`: 15 game-specific engine, controller and independent score-oracle checks pass. Headless Chromium verified success, failure, retry, keyboard activation, repeated input and 320/360/390px layouts. This is not a physical-phone, cross-browser or first-time-human playtest. The prototype implements three talks only; carried inventory, relationship memory and branching routes remain ideas.
