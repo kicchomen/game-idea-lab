@@ -237,11 +237,17 @@
         ? `button[data-action="adjust"][data-side="${focusSide}"][data-delta="${focusDelta}"]`
         : `button[data-action="${focusAction}"]`;
       let focusTarget = root.querySelector(selector);
+      if (focusTarget && focusTarget.disabled) focusTarget = null;
       if (!focusTarget && focusAction === 'adjust') {
         const reverseDelta = focusDelta === '-1' ? '1' : '-1';
         focusTarget = root.querySelector(`button[data-action="adjust"][data-side="${focusSide}"][data-delta="${reverseDelta}"]`);
+        if (focusTarget && focusTarget.disabled) focusTarget = null;
       }
-      if (focusTarget && typeof focusTarget.focus === 'function') focusTarget.focus();
+      if (!focusTarget && focusAction === 'submit') {
+        focusTarget = [...root.querySelectorAll('button[data-action="adjust"]')]
+          .find((button) => !button.disabled) || null;
+      }
+      if (focusTarget && !focusTarget.disabled && typeof focusTarget.focus === 'function') focusTarget.focus();
     }
   }
 

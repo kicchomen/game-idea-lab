@@ -46,10 +46,17 @@ function mount() {
     const action = /data-action="([^"]*)"/.exec(selector)?.[1];
     const side = /data-side="([^"]*)"/.exec(selector)?.[1];
     const delta = /data-delta="([^"]*)"/.exec(selector)?.[1];
-    return buttons.find((button) => !button.disabled
-      && (!action || button.dataset.action === action)
+    return buttons.find((button) => (!action || button.dataset.action === action)
       && (!side || button.dataset.side === side)
       && (delta === undefined || button.dataset.delta === delta)) || null;
+  };
+  root.querySelectorAll = (selector) => {
+    const action = /data-action="([^"]*)"/.exec(selector)?.[1];
+    const side = /data-side="([^"]*)"/.exec(selector)?.[1];
+    const delta = /data-delta="([^"]*)"/.exec(selector)?.[1];
+    return buttons.filter((button) => (!action || button.dataset.action === action)
+      && (!side || button.dataset.side === side)
+      && (delta === undefined || button.dataset.delta === delta));
   };
 
   const document = {
@@ -111,6 +118,28 @@ test('quantity controls update the visible preview and keep keyboard focus', () 
   assert.equal(ui.focused.dataset.delta, '1');
   assert.match(ui.html, /ミナの収支/);
   assert.match(ui.html, /タロウの収支/);
+});
+
+test('minimum quantity fallback skips a disabled DOM match and focuses the enabled opposite control', () => {
+  const ui = mount();
+  ui.click('adjust', 'left', -1);
+  assert.equal(ui.button('adjust', 'left', -1).disabled, true);
+  assert.equal(ui.focused.dataset.side, 'left');
+  assert.equal(ui.focused.dataset.delta, '1');
+  assert.equal(ui.focused.disabled, false);
+});
+
+test('reopening a sealed offer focuses an enabled quantity control while submit is disabled', () => {
+  const ui = mount();
+  ui.click('adjust', 'left', -1);
+  ui.click('submit');
+  assert.match(ui.html, /二人とも同意した/);
+  ui.click('push');
+  assert.equal(ui.button('submit').disabled, true);
+  assert.equal(ui.focused.dataset.action, 'adjust');
+  assert.equal(ui.focused.disabled, false);
+  assert.equal(ui.focused.dataset.side, 'left');
+  assert.equal(ui.focused.dataset.delta, '1');
 });
 
 test('stale click and double-click event cannot spend patience twice; held keyboard repeats are suppressed', () => {
