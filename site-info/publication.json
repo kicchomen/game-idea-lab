@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-10-13T09:43:30Z",
+  "updated_at": "2026-10-22T02:14:55Z",
   "blog_id": "3556407006374124911",
   "baseline_commit": "ff0aad40734445ec5c1a92802b631ea047f4abcc",
   "pages": [
@@ -32,13 +32,18 @@
   },
   "contact_source": "https://cruiser-biyori.blogspot.com/p/blog-page.html",
   "privacy_reference": "https://cruiser-biyori.blogspot.com/p/blog-page_04.html",
-  "game_smoke_test": "All 8 published articles, iframes and standalone URLs loaded; core state update verified. Detailed QA below.",
+  "game_smoke_test": "All 9 published articles, iframes and standalone URLs loaded; core state update verified. The newly published Roadside Bargain article passed exact 320/360/390px public-page responsive and embedded-action checks.",
   "limitations": [
     "Physical smartphone not tested",
     "Not full playthrough of every game",
     "No AdSense approval guarantee"
   ],
   "games": [
+    {
+      "title": "旅人たちの取り引き｜その条件なら、交換できる？",
+      "article": "https://game-idea-lab.blogspot.com/2026/10/blog-post_22.html",
+      "game": "https://kicchomen.github.io/game-idea-lab/games/roadside-bargain/"
+    },
     {
       "title": "忘れ物窓口の探偵",
       "article": "https://game-idea-lab.blogspot.com/2026/10/blog-post_13.html",
@@ -101,6 +106,27 @@
       "visible_links": 4,
       "duplicate_widgets": 0,
       "contact_click": "correct published page"
+    },
+    "all_nine_published_game_articles": "pass; the prior 8-page smoke check plus the new public Roadside Bargain article",
+    "public_article_2026_10_22": {
+      "post_id": "4286326035730799723",
+      "title": "旅人たちの取り引き｜その条件なら、交換できる？",
+      "published_at": "2026-10-22T11:11:00+09:00",
+      "url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_22.html",
+      "widths_css_px": [
+        320,
+        360,
+        390
+      ],
+      "document_and_body_widths_match_viewport": true,
+      "images_decoded": 2,
+      "embedded_proposal_counteroffer_seal": true,
+      "physical_phone_test": false
+    },
+    "blogger_posts_after_publication": {
+      "published": 17,
+      "drafts": 2,
+      "duplicate_article": false
     }
   },
   "status": "published_verified"

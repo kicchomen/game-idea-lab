@@ -1,22 +1,27 @@
 {
   "date": "2026-10-22",
   "title": "旅人たちの取り引き｜その条件なら、交換できる？",
-  "status": "prototype_deployed",
+  "status": "published_verified",
   "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/roadside-bargain/",
-  "prototype_commit": "eac23233a5b6213c88cab1384e42c37bb31b668b",
+  "prototype_commit": "5362fdaf4998f2ee9c5ba947514b8c6daa36e257",
   "pages_success_runs": [
-    39706934880
+    39706934880,
+    39707571304,
+    39708101765,
+    39709130524,
+    39709581259
   ],
-  "pages_run_url": "https://github.com/kicchomen/game-idea-lab/actions/runs/39706934880",
+  "pages_run_url": "https://github.com/kicchomen/game-idea-lab/actions/runs/39709581259",
   "article_copy": "article-copy.md",
-  "blogger_status": "A draft with this title was created and is managed by the parent task; this task did not edit or publish it.",
+  "blogger_status": "Published; this task performed no Blogger edits.",
   "automated_tests": {
     "production_engine": 9,
-    "mocked_controller": 4,
+    "mocked_controller": 7,
     "independent_score_oracle": 2,
-    "passed": 15
+    "responsive_source_check": 1,
+    "passed": 19
   },
-  "independent_review": "Separate hand-authored marginal-value oracle matched all 48 bounded offers; verified multiple viable settlements in each meeting and feasible counters that improve the dissatisfied side. This was not a human playtest.",
+  "independent_review": "Separate arithmetic oracle matched all 48 bounded offers. Independent browser review confirmed operation, but found that every meeting accepts 1:1 and score previews can avoid refusals. This remains an introductory fixed-value prototype; adaptive traveler demands and deeper bargaining are not implemented.",
   "browser_checks": {
     "environment": "isolated headless Chrome",
     "success": "3/3 route, including counteroffer, accepted better split and retry",
@@ -33,7 +38,53 @@
     "primary_action_height_px": 48,
     "runtime_exceptions": 0,
     "public_pages_url_loaded": true,
-    "public_gameplay_image": "HTTP 200; JPEG decoded at 1100x1453 and 266967 bytes"
+    "public_gameplay_image": "HTTP 200; JPEG decoded at 1100x1453 and 266967 bytes",
+    "published_article": {
+      "title": "旅人たちの取り引き｜その条件なら、交換できる？",
+      "post_id": "4286326035730799723",
+      "canonical": "https://game-idea-lab.blogspot.com/2026/10/blog-post_22.html",
+      "published_datetime": "2026-10-22T11:11:00+09:00",
+      "cover_og_image": "Blogger CDN image confirmed",
+      "environment": "isolated headless Chromium; CDP frame-level HTMLElement.click(), not physical input",
+      "widths_css_px": [
+        320,
+        360,
+        390
+      ],
+      "document_root_scroll_width_by_viewport_px": {
+        "320": 320,
+        "360": 360,
+        "390": 390
+      },
+      "article_body_scroll_width_by_viewport_px": {
+        "320": 320,
+        "360": 360,
+        "390": 390
+      },
+      "article_iframe_width_px": {
+        "320": 288,
+        "360": 328,
+        "390": 358
+      },
+      "game_inner_width_px": {
+        "320": 286,
+        "360": 326,
+        "390": 356
+      },
+      "horizontal_overflow": false,
+      "images_decoded": 2,
+      "image_natural_dimensions_px": [
+        "1439x810",
+        "1100x1453"
+      ],
+      "proposal_counteroffer_seal_each_width": true,
+      "failed_state_copy": "最後に提示した条件です。",
+      "versioned_assets_loaded": [
+        "style.css?v=20261022-2",
+        "engine.js?v=20261022-2",
+        "app.js?v=20261022-2"
+      ]
+    }
   },
   "images": {
     "cover": {
@@ -55,6 +106,11 @@
     "Physical phone and real touch were not tested",
     "First-time human comprehension and long-term enjoyment were not tested",
     "Safari, Firefox and other browsers were not tested",
-    "The existing monorepo test suite was unavailable in this isolated workspace; all 15 new game-specific tests passed"
-  ]
+    "The existing monorepo test suite was unavailable in this isolated workspace; all 15 new game-specific tests passed",
+    "The fixed-value prototype is introductory and all three meetings accept 1:1; adaptive demand shifts and long-term replay depth are not implemented"
+  ],
+  "blogger_post_id": "4286326035730799723",
+  "published_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_22.html",
+  "published_at": "2026-10-22T11:11:00+09:00",
+  "verified_at_utc": "2026-10-22T02:14:55Z"
 }
