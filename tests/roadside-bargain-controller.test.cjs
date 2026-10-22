@@ -142,6 +142,16 @@ test('reopening a sealed offer focuses an enabled quantity control while submit 
   assert.equal(ui.focused.dataset.delta, '1');
 });
 
+test('failed meeting describes the terms as last proposed rather than agreed', () => {
+  const ui = mount();
+  ui.click('adjust', 'left', 1);
+  ui.click('adjust', 'left', 1);
+  for (let attempt = 0; attempt < Engine.MAX_PATIENCE; attempt += 1) ui.click('submit');
+  assert.match(ui.html, /旅人たちは別々の道へ/);
+  assert.match(ui.html, /最後に提示した条件です。/);
+  assert.doesNotMatch(ui.html, /同意した条件を確認しています。/);
+});
+
 test('stale click and double-click event cannot spend patience twice; held keyboard repeats are suppressed', () => {
   const ui = mount();
   const oldButton = ui.click('submit');

@@ -195,6 +195,9 @@
     const rightResponse = state.meeting.lastResponses.right;
     const lastOffer = state.meeting.lastOffer;
     const displayedOffer = state.phase === 'accepted' && lastOffer ? lastOffer.amounts : state.meeting.amounts;
+    const offerHint = state.meeting.status === 'walked'
+      ? '最後に提示した条件です。'
+      : (editable ? '− / +で数量を調整。TabとEnterでも操作できます。' : '同意した条件を確認しています。');
     const h = state.meetingIndex + 1;
 
     return `<section class="game-card" aria-labelledby="game-title">
@@ -213,7 +216,7 @@
         ${travelerMarkup(meeting.right, 'right', state.meeting.patience.right, preview.right, rightResponse, state.phase)}
       </div>
       <section class="offer-panel" aria-labelledby="offer-title">
-        <div class="offer-heading"><h3 id="offer-title">取り引きの条件</h3><p>${editable ? '− / +で数量を調整。TabとEnterでも操作できます。' : '同意した条件を確認しています。'}</p></div>
+        <div class="offer-heading"><h3 id="offer-title">取り引きの条件</h3><p>${offerHint}</p></div>
         ${quantityRow(meeting, state, 'left')}
         <div class="offer-summary" aria-label="現在の条件"><strong>${displayedOffer.left}つの${escapeHtml(meeting.left.item)}</strong><span class="arrow">↔</span><strong>${displayedOffer.right}つの${escapeHtml(meeting.right.item)}</strong></div>
         ${quantityRow(meeting, state, 'right')}
