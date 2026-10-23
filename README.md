@@ -354,3 +354,13 @@ Run `node --test tests/roadside-bargain*.test.cjs`: 19 game-specific engine, con
 ### 公開済み記事と公開後チェック（2026-10-22）
 
 記事: https://game-idea-lab.blogspot.com/2026/10/blog-post_22.html （Blogger post 4286326035730799723、2026-10-22 11:11 JST）。公開ページのタイトル、canonical、日時、Blogger CDNカバーを確認。隔離headless Chromiumの320 / 360 / 390 CSS px各幅で記事ルートと本文に横はみ出しなし。2画像（1439×810、1100×1453）をdecodeし、埋め込み提案→再提案→成立を各幅で確認。ゲーム内表示幅は286 / 326 / 356px。詳細とDOMベース操作の制約は tests/roadside-bargain-browser-qa.md。
+
+
+## 丘の牧羊犬 / Shepherd Circle (2026-10-23)
+
+Become a sheepdog: position yourself behind four independent sheep and guide them through the right-hand opening. Repulsion plus flock cohesion makes this indirect control, not an attached convoy or edit/run puzzle. One fixed70-second field; dog crosses fences as an explicit simplification.
+
+Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_23.html (post4260675058226376697;2026-10-23 10:35JST).
+Play: https://kicchomen.github.io/game-idea-lab/games/shepherd-circle/
+
+Tap/click destinations, arrows/WASD or held direction controls. Wait stops the dog; pause freezes play; reset retries.26game-specific tests and514full-suite tests pass. Actual cloudChromium completed4/4 at45.0seconds and verified natural failure,retry,pause/reset and responsive320/360/390px controls. Saved article HTML was checked at those widths; fullBlogger smartphone preview365px and public embed also worked. TwoBloggerCDNimages and coverOG verified. Humanfirstplay,physicalmobile,crossbrowser andlongtermdepth untested. See assets/shepherd-circle/publication.json,design-notes.md,browser-qa.md andindependent-review.md for exactscope,fixes andlimitations.

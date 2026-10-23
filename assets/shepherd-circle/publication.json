@@ -1,0 +1,50 @@
+{
+  "date": "2026-10-23",
+  "title": "丘の牧羊犬｜追うより、うしろに回ろう",
+  "status": "published_verified",
+  "blogger_post_id": "4260675058226376697",
+  "published_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_23.html",
+  "published_at": "2026-10-23T10:35:00+09:00",
+  "verified_at_utc": "2026-10-23T01:36:35Z",
+  "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/shepherd-circle/",
+  "prototype_commit": "9041f7f6d2121b0fbd6a776ddf214eec11d66e80",
+  "assets_commit": "b606a54a57b50395348f24653a180128fdb1e413",
+  "pages_success_run": 39884564324,
+  "tests": {
+    "game_specific": 26,
+    "repository_total": 514,
+    "failed": 0
+  },
+  "actual_browser": {
+    "environment": "cloud Chromium CUA ordinary UI input",
+    "success": "4/4 at45.0sec",
+    "failure": "natural70sec timeout0/4",
+    "retry": "success and failure retry restore70sec0/4",
+    "prototype_widths": [
+      320,
+      360,
+      390
+    ],
+    "article_html_widths": [
+      320,
+      360,
+      390
+    ],
+    "article_no_horizontal_overflow": true,
+    "blogger_preview_article_width": 365,
+    "blogger_preview_no_horizontal_overflow": true,
+    "public_embedded_start_pause": true,
+    "cdn_images_decoded": [
+      1439,
+      570
+    ],
+    "thumbnail_og_confirmed": true
+  },
+  "limitations": [
+    "No physical phone or real touch test",
+    "No novice human or sustained enjoyment test",
+    "No Firefox/Safari test",
+    "Article exact three-width checks use saved HTML in normal iframe; full Blogger theme was checked at its smartphone preview width365px",
+    "One fixed field, simplified dog crosses fences, no real animal training claim"
+  ]
+}
