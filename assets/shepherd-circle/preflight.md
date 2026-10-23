@@ -1,0 +1,5 @@
+# Preflight 2026-10-23
+Starting main 551886fd704ed9be9fbcbb9d3048ee98e07a089d cloned from existing origin https://github.com/kicchomen/game-idea-lab.git. Read latest README, existing games, all17publication records, recent Meadow Camera/Roadside Bargain design/editorial records and root review. Direct authenticated Blogger listing:19 total,17 published,2 old drafts,0 scheduled. Latest Roadside Bargain post4286326035730799723. Tiny Tug is published. Sensor Shift and Footstep Echo drafts left untouched.
+New reserved draft4260675058226376697 created once. Not published.
+Candidate: indirect flock herding via dog proximity and autonomous sheep cohesion. Unlike Tiny Tug attached convoy, sheep are independent agents; unlike camera observation, player alters their movement; no edit/run phase.
+Required gates: independent review, simulation/controller tests separately labelled, actual320/360/390browser operation plus success/failure/retry, image inspection and Blogger CDN, exact saved HTML readback, remote/Pages success, public verification.

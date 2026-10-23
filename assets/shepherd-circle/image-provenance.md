@@ -1,0 +1,2 @@
+# Original art
+Built-in image generation, 2026-10-23. Prompt: landscape painterly original game-concept art, one black-and-white sheepdog guiding exactly four free sheep toward open wooden pen, no text/UI/logos/rope. Initial output accidentally contained five sheep and was rejected. Targeted edit removed one sheep. Final inspected image contains exactly four sheep and one dog, coherent anatomy and open gate. Concept illustration, not screenshot or real livestock guidance. cover-final-original.png retains original; cover.jpg1440px optimized JPEG.
