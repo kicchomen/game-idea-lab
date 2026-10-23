@@ -1,0 +1,18 @@
+const test=require('node:test'),assert=require('node:assert/strict');const E=require('../games/shepherd-circle/engine.js');
+function advance(s,seconds,input){for(let i=0;i<Math.round(seconds/E.STEP);i++)E.tick(s,E.STEP,input);return s;}
+function win(){let s=E.start(E.create());for(const x of [220,330,435]){E.aim(s,x,225);advance(s,12);}return s;}
+test('fresh ready state has four sheep and no movement until start',()=>{let s=E.create(),old=JSON.stringify(s);advance(s,3);assert.equal(JSON.stringify(s),old);assert.equal(s.sheep.length,4);});
+test('steering-only three-target route saves all four',()=>{let s=win();assert.equal(s.status,'won');assert.equal(s.saved,4);assert.ok(s.time>25&&s.time<26);});
+test('replay is deterministic',()=>assert.deepEqual(win(),win()));
+test('no dog proximity means no march toward pen',()=>{let s=E.start(E.create());const x=s.sheep.reduce((a,p)=>a+p.x,0)/4;advance(s,15);assert.ok(Math.abs(s.sheep.reduce((a,p)=>a+p.x,0)/4-x)<.001);assert.equal(s.saved,0);});
+test('nearby dog pushes sheep away, not toward a goal',()=>{let s=E.start(E.create());s.sheep=[{id:0,x:280,y:210,safe:false}];s.dog={x:350,y:210};s.target={...s.dog};advance(s,1);assert.ok(s.sheep[0].x<280);});
+test('flock cohesion brings separated animals closer without dog',()=>{let s=E.start(E.create());s.sheep=[{id:0,x:330,y:150,safe:false},{id:1,x:430,y:250,safe:false}];let before=Math.hypot(100,100);advance(s,1);assert.ok(Math.hypot(s.sheep[0].x-s.sheep[1].x,s.sheep[0].y-s.sheep[1].y)<before);});
+test('waiting naturally fails at seventy simulated seconds',()=>{let s=E.start(E.create());advance(s,71);assert.equal(s.status,'lost');assert.equal(s.time,70);assert.equal(s.saved,0);});
+test('terminal states ignore further input and time',()=>{let s=win(),old=JSON.stringify(s);E.aim(s,50,50);advance(s,10);assert.equal(JSON.stringify(s),old);});
+test('pause freezes simulation and clears destination; explicit resume',()=>{let s=E.start(E.create());E.aim(s,400,200);advance(s,1);E.pause(s);assert.deepEqual(s.target,s.dog);let old=JSON.stringify(s);advance(s,5);assert.equal(JSON.stringify(s),old);E.pause(s);assert.equal(s.status,'playing');});
+test('target and direct movement remain inside field',()=>{let s=E.start(E.create());E.aim(s,-500,900);assert.deepEqual(s.target,{x:18,y:402});advance(s,10,{x:-1,y:1});assert.ok(s.dog.x>=18&&s.dog.y<=402);});
+test('diagonal steering speed is normalized',()=>{let a=E.start(E.create()),b=E.start(E.create());E.tick(a,E.STEP,{x:1});E.tick(b,E.STEP,{x:1,y:1});assert.ok(Math.abs(Math.hypot(a.dog.x-90,a.dog.y-210)-Math.hypot(b.dog.x-90,b.dog.y-210))<1e-10);});
+test('repeated start, aim, pause at ready and malformed time are harmless',()=>{let s=E.create();E.pause(s);assert.equal(s.status,'ready');E.start(s);advance(s,1);E.start(s);assert.ok(s.time>.9);let old=JSON.stringify(s);E.aim(s,NaN,3);E.tick(s,NaN);E.tick(s,-3);assert.equal(JSON.stringify(s),old);});
+test('fence blocks sheep outside visible gate',()=>{let s=E.start(E.create());s.sheep=[{id:0,x:480,y:60,safe:false}];s.dog={x:420,y:60};s.target={...s.dog};advance(s,8);assert.equal(s.sheep[0].x,488);assert.equal(s.saved,0);});
+test('saved sheep cannot leave or be counted twice',()=>{let s=E.start(E.create());s.sheep=[{id:0,x:511.9,y:210,safe:false}];s.dog={x:450,y:210};s.target={...s.dog};advance(s,1);assert.equal(s.saved,1);let p={...s.sheep[0]};advance(s,8);assert.deepEqual(s.sheep[0],p);assert.equal(s.saved,1);});
+test('stop freezes dog but sheep keep reacting',()=>{let s=E.start(E.create());E.aim(s,220,225);advance(s,2);E.stop(s);let dog={...s.dog},sheep=JSON.stringify(s.sheep);advance(s,1);assert.deepEqual(s.dog,dog);assert.notEqual(JSON.stringify(s.sheep),sheep);});
