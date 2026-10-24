@@ -1,0 +1,7 @@
+公開ページ: https://game-idea-lab.blogspot.com/2026/10/blog-post_24.html
+canonical: https://game-idea-lab.blogspot.com/2026/10/blog-post_24.html
+og:title: 引越しトラックの積み係｜その隙間、あとで困らない？
+og:image: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkdW_THRLquahZF_HARA66WxsnvKOg9O_iY9VBjA5rPDRv6JTNFtvN-O52neXatYA0tRnMTgec4fiaW6kR42T0svvboKelLWUUlT2ZYTHuv0N5Ervyv7XJ2KJSICzJxpZqyg3B9BeIv56Im4nYDqUxCLSBIggMxD7tRTtzaR3Cdc7f3J6oNm76OAVUuG8/w1200-h630-p-k-no-nu/cover.jpg
+image_src: https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkdW_THRLquahZF_HARA66WxsnvKOg9O_iY9VBjA5rPDRv6JTNFtvN-O52neXatYA0tRnMTgec4fiaW6kR42T0svvboKelLWUUlT2ZYTHuv0N5Ervyv7XJ2KJSICzJxpZqyg3B9BeIv56Im4nYDqUxCLSBIggMxD7tRTtzaR3Cdc7f3J6oNm76OAVUuG8/s1440/cover.jpg
+iframe: https://kicchomen.github.io/game-idea-lab/games/packing-truck/?v=af78f4f
+公開日時(JSON-LD datePublished): 2026-10-24T11:59:00+09:00

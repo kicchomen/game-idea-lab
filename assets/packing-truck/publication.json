@@ -1,34 +1,48 @@
 {
-  "status": "prototype_deployed_article_not_created",
+  "blog_name": "kicchomen's ゲームアイデア実験室",
   "blog_id": "3556407006374124911",
+  "post_id": "6443778352527114855",
   "title": "引越しトラックの積み係｜その隙間、あとで困らない？",
+  "status": "published_verified",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_24.html",
+  "published_at": "2026-10-24T11:59:00+09:00",
+  "published_at_evidence": "Public page source JSON-LD datePublished; Blogger page displays 2026-10-24.",
+  "game_url": "https://kicchomen.github.io/game-idea-lab/games/packing-truck/?v=af78f4f",
+  "thumbnail_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkdW_THRLquahZF_HARA66WxsnvKOg9O_iY9VBjA5rPDRv6JTNFtvN-O52neXatYA0tRnMTgec4fiaW6kR42T0svvboKelLWUUlT2ZYTHuv0N5Ervyv7XJ2KJSICzJxpZqyg3B9BeIv56Im4nYDqUxCLSBIggMxD7tRTtzaR3Cdc7f3J6oNm76OAVUuG8/s1440/cover.jpg",
+  "article_gameplay_image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZWb_K_LwUqEfcPVThzFessEzOCXv8P6IM8-Tiofx6icWJupG37ivRHC_tIUMBqxbmXuXA1r_SWQ3s_lARlCYNqqQ3LvZzcRU4sDjSFq07zJu6_nQ5ZIV_XYPxn1YoESp81w_BgjIIpqBxZnADiUQrYf9p5heXZCRRQO9jSrxpgXqhtx41kyPhD38Jjes/s1648/packing-truck-gameplay.jpg",
+  "cover_library_asset_id": "libfile_d2f08fb738a48191bf549b41fd518bcf",
+  "prepublication_screenshot_library_id": "libfile_b60fede14da88191abc5a0fb24b5f2a9",
+  "post_list_counts_before": {
+    "published": 18,
+    "drafts": 2,
+    "scheduled": 0
+  },
+  "post_list_counts_after": {
+    "published": 19,
+    "drafts": 2,
+    "scheduled": 0
+  },
+  "repository_head": "bbf85069a35db94e119cf329ffa10f96aa98e443",
+  "pages_workflow_run": "40049315149",
+  "open_graph_image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkdW_THRLquahZF_HARA66WxsnvKOg9O_iY9VBjA5rPDRv6JTNFtvN-O52neXatYA0tRnMTgec4fiaW6kR42T0svvboKelLWUUlT2ZYTHuv0N5Ervyv7XJ2KJSICzJxpZqyg3B9BeIv56Im4nYDqUxCLSBIggMxD7tRTtzaR3Cdc7f3J6oNm76OAVUuG8/w1200-h630-p-k-no-nu/cover.jpg",
   "baseline_commit": "5af3d13915f197f21dccf55bc2d0f7c313a7d9d5",
   "prototype_commit": "af78f4f2f73534730ea943d98ba8e63aa950d465",
-  "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/packing-truck/?v=af78f4f",
-  "pages_run": 40048513900,
-  "pages_conclusion": "success",
-  "public_feed_posts_checked": 18,
-  "public_duplicate_found": false,
-  "blogger_drafts_checked": false,
-  "post_id": null,
-  "article_url": null,
   "engine_tests": 8,
   "mock_controller_tests": 4,
   "full_suite_tests": 526,
   "test_failures": 0,
-  "independent_source_review": "passed_after_fixes",
-  "cover_visually_reviewed": true,
-  "browser_qa": "blocked_cloud_browser_Runtime_addBinding_timeout",
+  "browser_qa": "Mac Chrome actual controls and CSS-width emulation; supplied publication evidence",
+  "responsive_widths": [
+    320,
+    360,
+    390
+  ],
   "physical_phone_test": false,
   "novice_human_test": false,
-  "pending": [
-    "Blogger direct draft and parallel work check",
-    "actual success/failure/retry and 320/360/390px operation",
-    "actual gameplay image",
-    "Blogger CDN image upload",
-    "saved article readback and responsive QA",
-    "prepublication screenshot delivery",
-    "publication and public verification"
-  ],
-  "verified_at": "2026-10-24T01:19:43Z"
+  "unverified": [
+    "Physical smartphone",
+    "Novice-human comprehension",
+    "Cross-browser",
+    "Long-term enjoyment"
+  ]
 }

@@ -1,3 +1,5 @@
 # Image provenance
 cover.jpg: original built-in image generation,2026-10-24. Prompt requested a horizontal editorial illustration of a moving truck bed with rectangular parcels and an awkward gap, worker rotating a long parcel, exact Japanese title/tagline. Generated PNG retained in workspace and to be archived with final assets. Inspected visually: correct readable title/tagline, obvious illustration, spatial packing communicated. Cover is concept illustration, not gameplay screenshot. Plants/rug are illustrative moving cargo, not distinct implemented mechanics.
 Gameplay image will be an actual browser screenshot of the prototype, not generated UI. Pending cloud-browser playtest.
+
+Final gameplay.jpg is the actual Mac Chrome game screenshot retrieved from the same Blogger CDN URL used by the published article. Publication evidence is in evidence/. No generated gameplay UI was substituted.
