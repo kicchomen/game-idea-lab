@@ -27,11 +27,10 @@ with sync_playwright() as p:
   page.screenshot(path=f'assets/packing-truck/layout-{width}.png',full_page=True)
   results.append({'width':width,'three_jobs_success':True,'keyboard_focus':True,'pause_retry_remove':True,'overflow':False})
  page.set_viewport_size({'width':1100,'height':1100});page.goto('http://127.0.0.1:8767/games/packing-truck/');page.locator('#start').click()
- for item in routes[2][:0]:pass
  page.locator('.cell').nth(0).click();page.locator('#pieces button').nth(2).click();page.screenshot(path='assets/packing-truck/gameplay.png',full_page=True)
  # Natural 90-second failure, no state injection or time mock.
  page.locator('#retry').click();page.locator('#start').click();page.wait_for_function("document.querySelector('#status').textContent.startsWith('時間切れ')",timeout=100000)
- page.screenshot(path='assets/packing-truck/failure.png',full_page=True);page.locator('#retry').click();page.locator('#start').click();assert '積み込みを' not in page.locator('#status').inner_text() or True
+ page.screenshot(path='assets/packing-truck/failure.png',full_page=True);page.locator('#retry').click();page.locator('#start').click();assert 'すべての荷物を荷台へ' in page.locator('#status').inner_text()
  assert not errors,errors
  json.dump({'browser':'isolated system Chromium headless','results':results,'natural_90_second_failure':True,'errors':errors,'physical_phone':False,'novice_human':False},open('assets/packing-truck/browser-results.json','w'),ensure_ascii=False,indent=2)
  b.close()

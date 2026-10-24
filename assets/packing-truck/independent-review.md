@@ -7,3 +7,5 @@ Reviewer examined engine.js,app.js,index.html,style.css and executed independent
 - Narrow6column target size needs actual browser evaluation.
 - Add footprint preview. Implemented selected-piece shape and pointer hover; touch does not rely on hover.
 This review is source/engine only; actual browser and physical-device results must be recorded separately.
+
+Recheck: reviewer reran all12packing tests, confirmed focus and live rotation notice, and inspected the generated cover and article. No typography mismatch. Hover-outline pointerleave cleanup and stale testcounts were caught and corrected. Full suite526passes.
