@@ -91,7 +91,10 @@
   }
   function render(focusId) {
     app.innerHTML = shellTop() + (state.phase === 'choose' ? chooseView() : state.phase === 'report' ? reportView() : endView()) + (state.phase !== 'ended' ? `<div class="restart-area">${restartArmed ? `<span>一週間の記録を消してやり直す？</span><button class="quiet" data-action="retry" data-revision="${state.revision}">はい、最初から</button><button class="quiet" data-action="cancel-retry">戻る</button>` : '<button class="text-button" data-action="ask-retry">最初からやり直す</button>'}</div>` : '');
-    if (focusId) { const target = document.getElementById(focusId); if (target) target.focus({ preventScroll: true }); }
+    if (focusId) {
+      const target = document.getElementById(focusId);
+      if (target) { target.focus(); target.scrollIntoView({ block: 'start' }); }
+    }
   }
   function announce(message) { announcer.textContent = message; }
   function chooseCard(cardId) {

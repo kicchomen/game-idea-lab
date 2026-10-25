@@ -9,8 +9,9 @@ const routes = require('./waterwheel-routes.cjs');
 // This minimal DOM substitute exercises the real controller. It is NOT a browser/layout test.
 function setup() {
   let now = 0, currentState, focused;
+  const scrolls = [];
   const handlers = {}, nodes = {};
-  function element(id) { return nodes[id] || (nodes[id] = { id, tagName: 'DIV', innerHTML: '', textContent: '', focus() { focused = id; }, addEventListener(type, fn) { handlers[id + ':' + type] = fn; } }); }
+  function element(id) { return nodes[id] || (nodes[id] = { id, tagName: 'DIV', innerHTML: '', textContent: '', focus() { focused = id; }, scrollIntoView(options) { scrolls.push({ id, block: options.block }); }, addEventListener(type, fn) { handlers[id + ':' + type] = fn; } }); }
   const app = element('app');
   function buttons() {
     return [...app.innerHTML.matchAll(/<button\b([^>]*)>([\s\S]*?)<\/button>/g)].map(match => {
@@ -28,7 +29,7 @@ function setup() {
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../games/waterwheel-week/app.js'), 'utf8'), { window: { WaterwheelEngine: tracked }, document, performance: { now: () => now } });
   function clickNode(node, extra = {}) { if (!node) throw new Error('Expected a rendered button'); handlers['app:click']({ target: node, detail: 1, ...extra }); }
   return {
-    get state() { return currentState; }, get html() { return app.innerHTML; }, get focused() { return focused; }, get announcement() { return element('announcer').textContent; },
+    get state() { return currentState; }, get html() { return app.innerHTML; }, get focused() { return focused; }, get scrolls() { return scrolls; }, get announcement() { return element('announcer').textContent; },
     button(action, card) { return buttons().find(b => b.dataset.action === action && (!card || b.dataset.card === card)); },
     click(action, card, extra) { clickNode(this.button(action, card), extra); }, clickNode,
     tick(ms = 500) { now += ms; },
@@ -51,3 +52,5 @@ test('full controller route reaches real 18-bread failure and can retry into suc
 test('mid-game restart asks confirmation; cancel preserves progress', () => { const a = setup(); a.click('select','mill'); a.click('commit'); a.click('ask-retry'); assert.match(a.html,/一週間の記録を消してやり直す/); assert.equal(a.focused,'cancel-retry'); a.click('cancel-retry'); assert.equal(a.focused,'ask-retry'); assert.equal(a.state.phase,'report'); assert.equal(a.state.history.length,1); a.click('ask-retry'); a.tick(); a.click('retry'); assert.equal(a.state.phase,'choose'); assert.equal(a.state.history.length,0); });
 
 test('future offer schedule expands, marks current/past days, and stays open while selecting', () => { const a = setup(); assert.match(a.html,/id="offer-schedule" hidden/); a.click('toggle-schedule'); assert.doesNotMatch(a.html,/id="offer-schedule" hidden/); assert.equal(a.focused,'toggle-schedule'); assert.equal((a.html.match(/data-day=/g)||[]).length,7); assert.match(a.html,/1日目・今日/); a.click('select','mill'); assert.doesNotMatch(a.html,/id="offer-schedule" hidden/); a.click('commit'); a.tick(); a.click('next'); assert.match(a.html,/1日目・済/); assert.match(a.html,/2日目・今日/); a.click('toggle-schedule'); assert.match(a.html,/id="offer-schedule" hidden/); });
+
+test('phase transitions scroll the new heading into view, but selecting cards keeps the viewport', () => { const a = setup(); assert.equal(a.scrolls.length,0); a.click('select','mill'); assert.equal(a.scrolls.length,0); a.click('commit'); assert.deepEqual(a.scrolls.at(-1), { id:'report-title', block:'start' }); a.tick(); a.click('next'); assert.deepEqual(a.scrolls.at(-1), { id:'choose-title', block:'start' }); const count = a.scrolls.length; a.click('select','oven'); assert.equal(a.scrolls.length,count); a.click('ask-retry'); a.tick(); a.click('retry'); assert.deepEqual(a.scrolls.at(-1), { id:'choose-title', block:'start' }); a.play(routes.success21); assert.deepEqual(a.scrolls.at(-1), { id:'end-title', block:'start' }); });
