@@ -107,10 +107,18 @@
 
 ## 検証の境界
 
-2026-10-25の実装時点で `node --test tests/waterwheel*.test.cjs` は43件合格。
+2026-10-25の実装時点で `node --test tests/waterwheel*.test.cjs` は48件合格。
 
 - 純粋エンジン28件：初期資源、選択・予測の非破壊性、費用、生産順、半端な資材、持ち越し、継続生産、成功21/27、失敗18/0、終了後の操作拒否、リトライ、全1,864合法ルートなど。
-- 実際のapp.jsを簡易DOM代替で動かすコントローラ15件：予測・確定・夕方、連打、古いボタン、キーボード、買えない選択、成功・失敗後の再挑戦、途中リセットの確認と取消。
+- 実際のapp.jsを簡易DOM代替で動かすコントローラ20件：予測・確定・夕方、連打、古いボタン、キーボード、買えない選択、成功・失敗後の再挑戦、途中リセットの確認と取消。
 - `node --check` はengine.js/app.jsとも合格。
 - これらは実ブラウザのレンダリング、クリック座標、画面幅、CSS、スクリーンリーダー、実機スマホ、初見の人の理解、面白さを検証していない。
 - 親タスクによる独立レビュー・実ブラウザ・公開後チェックは別記録で扱う。
+
+### 埋め込みのスクロール再修正
+
+親タスクのPages検証で、高さ1900pxの同一origin iframeでは結果見出しがiframe内592pxにあっても外側viewportでは上方に隠れるケースが残った。状態遷移時にfocusの自動スクロールを抑え、scrollIntoViewをinstant指定にしたうえで、同一originのframeElementが取得できる祖先のみ、iframe枠位置＋見出し位置から外側windowのスクロール位置を計算する方式へ変更。2重iframeでも実際のスクロール増分を反映して座標を伝播する。アプリのキャッシュ更新用URLはapp.js?v=20261025-scroll2。
+
+追加のNode検査は、1900px相当の高いiframeの座標算術、2重iframe、異なるoriginでframeElement=nullとなる境界、SecurityErrorの封じ込め、キャッシュ版クエリの5件。実ブラウザの描画検証とは別。実装側48件＋親の独立算術3件で計51件合格。Bloggerのように異なるoriginの親ページは直接スクロールせず、標準scrollIntoViewまでで停止する。記事側で外側へのスクロール連携が必要なら、iframe高さ調整または明示的なホスト側実装を別途検討する。
+
+仕様参照：MDN [scrollIntoView](https://developer.mozilla.org/en-US/docs/Web/API/Element/scrollIntoView) と [frameElement](https://developer.mozilla.org/en-US/docs/Web/API/Window/frameElement)。

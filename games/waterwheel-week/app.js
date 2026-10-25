@@ -89,11 +89,36 @@
     const title = won ? '町のお祭り、開幕！' : '今週は、目標に届かず。';
     return `<section class="ending ${won ? 'won' : 'lost'}" id="choices"><div class="eyebrow">${won ? 'THE TOWN IS READY' : 'TRY A DIFFERENT ORDER'}</div><h2 id="end-title" tabindex="-1">${title}</h2><p class="final-score"><b>${state.resources.bread}</b> / 21 個</p><p>${won ? `パン${state.resources.bread}個を届けて成功。${state.resources.bread >= 24 ? '原料から焼き上げまで、増産がつながりました。' : '今度は24個を目指して、工房の順番を変えてみよう。'}` : `パンが${state.result.shortfall}個足りませんでした。工房を建てるのが遅いと、働ける夕方も少なくなります。`}</p>${dailyReport()}${historyHTML()}<button class="primary" data-action="retry" data-revision="${state.revision}">もう一週間、町をつくる</button><p class="action-note">同じカード・同じ初期資材でやり直します。</p></section>`;
   }
+  function revealHeading(target) {
+    // Avoid competing focus/CSS smooth-scroll animations after the DOM shrinks.
+    target.focus({ preventScroll: true });
+    target.scrollIntoView({ block: 'start', inline: 'nearest', behavior: 'instant' });
+    // A tall same-origin iframe may contain the heading without its outer page
+    // showing it. Align each accessible ancestor viewport to the actual heading,
+    // not to the iframe's top. Never cross an origin/sandbox boundary.
+    let owner = window;
+    let top = target.getBoundingClientRect().top;
+    while (owner.parent && owner.parent !== owner) {
+      try {
+        const frame = owner.frameElement;
+        if (!frame) break;
+        const parent = owner.parent;
+        top += frame.getBoundingClientRect().top + (frame.clientTop || 0);
+        const before = parent.scrollY;
+        parent.scrollTo({ top: Math.max(0, before + top - 16), left: parent.scrollX, behavior: 'instant' });
+        top -= parent.scrollY - before;
+        owner = parent;
+      } catch (_) {
+        // Cross-origin/sandboxed parents remain controlled by their own page.
+        break;
+      }
+    }
+  }
   function render(focusId) {
     app.innerHTML = shellTop() + (state.phase === 'choose' ? chooseView() : state.phase === 'report' ? reportView() : endView()) + (state.phase !== 'ended' ? `<div class="restart-area">${restartArmed ? `<span>一週間の記録を消してやり直す？</span><button class="quiet" data-action="retry" data-revision="${state.revision}">はい、最初から</button><button class="quiet" data-action="cancel-retry">戻る</button>` : '<button class="text-button" data-action="ask-retry">最初からやり直す</button>'}</div>` : '');
     if (focusId) {
       const target = document.getElementById(focusId);
-      if (target) { target.focus(); target.scrollIntoView({ block: 'start' }); }
+      if (target) revealHeading(target);
     }
   }
   function announce(message) { announcer.textContent = message; }

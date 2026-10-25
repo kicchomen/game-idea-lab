@@ -7,11 +7,11 @@ const vm = require('node:vm');
 const E = require('../games/waterwheel-week/engine.js');
 const routes = require('./waterwheel-routes.cjs');
 // This minimal DOM substitute exercises the real controller. It is NOT a browser/layout test.
-function setup() {
+function setup(options = {}) {
   let now = 0, currentState, focused;
   const scrolls = [];
   const handlers = {}, nodes = {};
-  function element(id) { return nodes[id] || (nodes[id] = { id, tagName: 'DIV', innerHTML: '', textContent: '', focus() { focused = id; }, scrollIntoView(options) { scrolls.push({ id, block: options.block }); }, addEventListener(type, fn) { handlers[id + ':' + type] = fn; } }); }
+  function element(id) { return nodes[id] || (nodes[id] = { id, tagName: 'DIV', innerHTML: '', textContent: '', focus() { focused = id; }, scrollIntoView(options) { scrolls.push({ id, block: options.block }); this.lastScrollOptions = options; }, getBoundingClientRect() { return { top: options.headingTop ?? 592 }; }, addEventListener(type, fn) { handlers[id + ':' + type] = fn; } }); }
   const app = element('app');
   function buttons() {
     return [...app.innerHTML.matchAll(/<button\b([^>]*)>([\s\S]*?)<\/button>/g)].map(match => {
@@ -26,10 +26,13 @@ function setup() {
   for (const name of ['createGame', 'retry']) tracked[name] = (...args) => currentState = E[name](...args);
   for (const name of ['select', 'commit', 'nextDay']) tracked[name] = (...args) => { const result = E[name](...args); if (result.ok) currentState = result.state; return result; };
   const document = { getElementById: element, addEventListener(type, fn) { handlers['document:' + type] = fn; } };
-  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../games/waterwheel-week/app.js'), 'utf8'), { window: { WaterwheelEngine: tracked }, document, performance: { now: () => now } });
+  const window = { WaterwheelEngine: tracked, parent: null, frameElement: null };
+  window.parent = window;
+  if (options.configureWindow) options.configureWindow(window);
+  vm.runInNewContext(fs.readFileSync(path.join(__dirname, '../games/waterwheel-week/app.js'), 'utf8'), { window, document, performance: { now: () => now } });
   function clickNode(node, extra = {}) { if (!node) throw new Error('Expected a rendered button'); handlers['app:click']({ target: node, detail: 1, ...extra }); }
   return {
-    get state() { return currentState; }, get html() { return app.innerHTML; }, get focused() { return focused; }, get scrolls() { return scrolls; }, get announcement() { return element('announcer').textContent; },
+    get state() { return currentState; }, get html() { return app.innerHTML; }, get focused() { return focused; }, get scrolls() { return scrolls; }, get nodes() { return nodes; }, get announcement() { return element('announcer').textContent; },
     button(action, card) { return buttons().find(b => b.dataset.action === action && (!card || b.dataset.card === card)); },
     click(action, card, extra) { clickNode(this.button(action, card), extra); }, clickNode,
     tick(ms = 500) { now += ms; },
@@ -54,3 +57,11 @@ test('mid-game restart asks confirmation; cancel preserves progress', () => { co
 test('future offer schedule expands, marks current/past days, and stays open while selecting', () => { const a = setup(); assert.match(a.html,/id="offer-schedule" hidden/); a.click('toggle-schedule'); assert.doesNotMatch(a.html,/id="offer-schedule" hidden/); assert.equal(a.focused,'toggle-schedule'); assert.equal((a.html.match(/data-day=/g)||[]).length,7); assert.match(a.html,/1日目・今日/); a.click('select','mill'); assert.doesNotMatch(a.html,/id="offer-schedule" hidden/); a.click('commit'); a.tick(); a.click('next'); assert.match(a.html,/1日目・済/); assert.match(a.html,/2日目・今日/); a.click('toggle-schedule'); assert.match(a.html,/id="offer-schedule" hidden/); });
 
 test('phase transitions scroll the new heading into view, but selecting cards keeps the viewport', () => { const a = setup(); assert.equal(a.scrolls.length,0); a.click('select','mill'); assert.equal(a.scrolls.length,0); a.click('commit'); assert.deepEqual(a.scrolls.at(-1), { id:'report-title', block:'start' }); a.tick(); a.click('next'); assert.deepEqual(a.scrolls.at(-1), { id:'choose-title', block:'start' }); const count = a.scrolls.length; a.click('select','oven'); assert.equal(a.scrolls.length,count); a.click('ask-retry'); a.tick(); a.click('retry'); assert.deepEqual(a.scrolls.at(-1), { id:'choose-title', block:'start' }); a.play(routes.success21); assert.deepEqual(a.scrolls.at(-1), { id:'end-title', block:'start' }); });
+
+// The ancestor viewport arithmetic is tested separately from real browser layout.
+function scrollWindow(y, x = 0) { const w = { scrollY:y, scrollX:x, calls:[], frameElement:null, scrollTo(options) { this.calls.push({...options}); this.scrollY = options.top; this.scrollX = options.left; } }; w.parent = w; return w; }
+test('tall same-origin iframe aligns actual heading with parent viewport', () => { const parent = scrollWindow(1200,7); const a = setup({ headingTop:592, configureWindow(win) { win.parent=parent; win.frameElement={ clientTop:2, getBoundingClientRect:()=>({top:220-parent.scrollY}) }; } }); a.click('select','mill'); assert.equal(parent.calls.length,0); a.click('commit'); assert.deepEqual(parent.calls.at(-1), { top:798, left:7, behavior:'instant' }); assert.equal(220-parent.scrollY+2+592,16); assert.equal(a.nodes['report-title'].lastScrollOptions.behavior,'instant'); assert.equal(a.nodes['report-title'].lastScrollOptions.inline,'nearest'); });
+test('nested same-origin frames propagate heading position to both ancestors', () => { const outer = scrollWindow(1500); const inner = scrollWindow(600); inner.parent=outer; inner.frameElement={ clientTop:0, getBoundingClientRect:()=>({top:300-outer.scrollY}) }; const a = setup({ headingTop:592, configureWindow(win) { win.parent=inner; win.frameElement={ clientTop:0, getBoundingClientRect:()=>({top:100-inner.scrollY}) }; } }); a.click('select','mill'); a.click('commit'); assert.equal(inner.scrollY,676); assert.equal(outer.scrollY,300); assert.equal(inner.calls.length,1); assert.equal(outer.calls.length,1); });
+test('cross-origin null frameElement does not inspect or scroll parent', () => { const parent = new Proxy({}, { get() { throw new Error('Parent access is forbidden'); } }); const a = setup({ configureWindow(win) { win.parent=parent; win.frameElement=null; } }); a.click('select','mill'); assert.doesNotThrow(()=>a.click('commit')); assert.equal(a.state.phase,'report'); assert.equal(a.scrolls.at(-1).id,'report-title'); });
+test('sandbox access exception is contained without interrupting the game', () => { const a = setup({ configureWindow(win) { win.parent={}; Object.defineProperty(win,'frameElement',{get(){throw new Error('SecurityError');}}); } }); a.click('select','mill'); assert.doesNotThrow(()=>a.click('commit')); assert.equal(a.state.phase,'report'); });
+test('entrypoint has explicit app cache version for deployed scroll fix', () => { const html=fs.readFileSync(path.join(__dirname,'../games/waterwheel-week/index.html'),'utf8'); assert.match(html,/src="app\.js\?v=20261025-scroll2"/); });
