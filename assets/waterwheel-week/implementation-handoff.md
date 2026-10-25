@@ -7,7 +7,7 @@
 - `games/waterwheel-week/engine.js`
 - `games/waterwheel-week/app.js`
 - `tests/waterwheel-week.test.cjs` (28 engine tests)
-- `tests/waterwheel-controller.test.cjs` (14 controller tests, minimal DOM substitute)
+- `tests/waterwheel-controller.test.cjs` (20 controller tests, minimal DOM substitute)
 - `tests/waterwheel-routes.cjs` (reproducible success/failure routes)
 - `assets/waterwheel-week/design-notes.md`
 

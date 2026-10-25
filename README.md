@@ -364,3 +364,12 @@ Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_23.html (post42606
 Play: https://kicchomen.github.io/game-idea-lab/games/shepherd-circle/
 
 Tap/click destinations, arrows/WASD or held direction controls. Wait stops the dog; pause freezes play; reset retries.26game-specific tests and514full-suite tests pass. Actual cloudChromium completed4/4 at45.0seconds and verified natural failure,retry,pause/reset and responsive320/360/390px controls. Saved article HTML was checked at those widths; fullBlogger smartphone preview365px and public embed also worked. TwoBloggerCDNimages and coverOG verified. Humanfirstplay,physicalmobile,crossbrowser andlongtermdepth untested. See assets/shepherd-circle/publication.json,design-notes.md,browser-qa.md andindependent-review.md for exactscope,fixes andlimitations.
+
+
+
+## 水車町の一週間（2026-10-25）
+
+- 試遊: https://kicchomen.github.io/game-idea-lab/games/waterwheel-week/
+- 7日間、毎日1枚を選び、残る工房と在庫で生産の連鎖を育てる。
+- 企画・検証: assets/waterwheel-week/
+- テスト: node --test tests/waterwheel-*.test.cjs
