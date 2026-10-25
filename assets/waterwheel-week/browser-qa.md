@@ -22,3 +22,6 @@ Implemented by the prototype worker; independently reviewed and played by the pu
 - No physical mobile device, human first-time player, long-term fun, accessibility assistive technology, or educational-effect validation was performed.
 - 139 of 1864 legal full-week sequences win; maximum 27 bread. This is simulation coverage, not a claim about human difficulty.
 - Final publication/public URL and ledger checks are recorded separately after publishing.
+
+## Publication verification
+Published 2026-10-25 10:38 JST, post 3330293690001564116. Official list has 20 published and 2 drafts. Public URL https://game-idea-lab.blogspot.com/2026/10/blog-post_25.html . Title/canonical/2 CDN images/embedded game loaded and card-selection response verified after publication. Editor reload before publication matched all2037 source characters exactly.

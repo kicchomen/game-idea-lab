@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-25",
+  "blog_id": "3556407006374124911",
+  "post_id": "3330293690001564116",
+  "title": "水車町の一週間｜今日の工房が、明日のパンをつくる",
+  "status": "published_verified",
+  "play_url": "https://kicchomen.github.io/game-idea-lab/games/waterwheel-week/",
+  "baseline_sha": "9750b373a99c4afa0767c2a8e72586d3c2246229",
+  "verified_source_sha": "a749a020f73fa3207ea60c74991aeef16be98ebd",
+  "pages_run_id": 40151176105,
+  "pages_conclusion": "success",
+  "tests": {
+    "pass": 577,
+    "fail": 0
+  },
+  "saved_body_sha256": "00440b8b7fb7e03a2c8740f85e116fca0eb8bbcc03a2202d5a8ea93ec498f36b",
+  "qa": "browser-qa.md",
+  "unverified": [
+    "Physical smartphone",
+    "Human first impression",
+    "Long-term fun",
+    "Exact-width full Blogger theme (saved body mirror was verified instead)"
+  ],
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_25.html",
+  "published_at": "2026-10-25T10:38:00+09:00",
+  "verified_at": "2026-10-25T10:39:15+09:00"
+}
