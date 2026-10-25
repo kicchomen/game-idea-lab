@@ -1,0 +1,7 @@
+# Preflight 2026-10-25
+Fresh main fetched: 9750b373a99c4afa0767c2a8e72586d3c2246229, 01:05 UTC.
+Read complete README, recursive tree, all 20 publication ledgers, packing-truck and shepherd-circle design notes, and prior independent review. Repository has per-game materials rather than a central operations policy. Older site-info ledger is not the publication authority.
+At 01:07 UTC actual official Blogger list for blog3556407006374124911 showed 21total:19published,2drafts,0scheduled. Packing Truck latest published post6443778352527114855. Tiny Tug published. Sensor Shift and Footstep Echo remain drafts and are not targets. No Waterwheel draft/publication found and no parallel game worker reported.
+New production core: lasting workshop selection and inventory production chains, distinct from yesterday's spatial packing. Forecasts reveal today's consequence; seven-day schedule supports planning. Broader drafting/market variations remain ideas only.
+Original concept cover generated and visually inspected: wheat→watermill→bakery, exact Japanese title, non-photographic illustration. PNG preserved and optimized JPEG1440px for Blogger. Generated art is not a gameplay screenshot.
+Cloud browser cannot reach local HTTPserver (localhost8767 connection refused); this is an environment networking limit, not a bot or permission denial. Prototype can be deployed to already authorized Pages and tested there before any article publication. Article mandatory checks remain pending.

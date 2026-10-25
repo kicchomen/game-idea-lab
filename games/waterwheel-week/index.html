@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#153c3d">
+  <meta name="description" content="7日でパン21個を届けよう。麦畑、水車小屋、パン窯を育てる、無料で遊べる小さなエンジンビルドゲーム。">
+  <title>水車町の一週間 | 7日間の小さな工房づくり</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="engine.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#choices">今日の選択へ</a>
+  <main class="game-shell">
+    <header class="masthead">
+      <div class="eyebrow">A LITTLE TOWN, A GROWING ENGINE</div>
+      <h1>水車町の一週間<span>THE WATERWHEEL WEEK</span></h1>
+      <p>つくった工房は、明日もはたらく。</p>
+    </header>
+    <div id="app"></div>
+    <details class="guide">
+      <summary>遊び方・操作・この試作について</summary>
+      <div>
+        <p>1日に選べるのは1枚だけ。カードを選ぶと予測が見られ、確定すると建設・受取のあと夕方の生産が進みます。建てた工房は、その日から毎日働きます。</p>
+        <ol><li>麦畑が麦を収穫する。</li><li>水車小屋が麦を粉にする。</li><li>パン窯が粉2つをパン3つにする。</li></ol>
+        <p>麦・粉・パン・資材は翌日に持ち越し。材料が足りない設備は、その分だけ休みます。毎夕コインを2枚受け取れます。7日目の夕方にパン21個以上で成功です。</p>
+        <p>タップ／クリック、またはTab・Enterで操作。数字1〜3でカードの予測。長押し・連打では日が飛ばないようにしています。音・制限時間・課金・外部送信はありません。リロードすると最初からです。</p>
+        <p class="small">2026.10.25 試作 / 同じ7日間で順番を比較するゲームです。カードは固定で、ランダム生成やセーブ機能はありません。</p>
+      </div>
+    </details>
+    <footer>小さな選択が、明日の町をつくる。</footer>
+  </main>
+  <div id="announcer" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+  <noscript><p class="noscript">このゲームにはJavaScriptが必要です。</p></noscript>
+</body>
+</html>
