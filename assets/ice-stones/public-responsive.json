@@ -1,0 +1,83 @@
+[
+  {
+    "width": 320,
+    "page": {
+      "client": 305,
+      "scroll": 305
+    },
+    "body": {
+      "scroll": 273,
+      "width": 273
+    },
+    "game": {
+      "client": 256,
+      "scroll": 256
+    },
+    "images": [
+      {
+        "loaded": true,
+        "width": 273
+      },
+      {
+        "loaded": true,
+        "width": 273
+      }
+    ],
+    "power": "55",
+    "reset": "投げた石 0 / 3"
+  },
+  {
+    "width": 360,
+    "page": {
+      "client": 345,
+      "scroll": 345
+    },
+    "body": {
+      "scroll": 313,
+      "width": 313
+    },
+    "game": {
+      "client": 296,
+      "scroll": 296
+    },
+    "images": [
+      {
+        "loaded": true,
+        "width": 313
+      },
+      {
+        "loaded": true,
+        "width": 313
+      }
+    ],
+    "power": "55",
+    "reset": "投げた石 0 / 3"
+  },
+  {
+    "width": 390,
+    "page": {
+      "client": 375,
+      "scroll": 375
+    },
+    "body": {
+      "scroll": 343,
+      "width": 343
+    },
+    "game": {
+      "client": 326,
+      "scroll": 326
+    },
+    "images": [
+      {
+        "loaded": true,
+        "width": 343
+      },
+      {
+        "loaded": true,
+        "width": 340
+      }
+    ],
+    "power": "55",
+    "reset": "投げた石 0 / 3"
+  }
+]

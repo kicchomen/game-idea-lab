@@ -373,3 +373,13 @@ Tap/click destinations, arrows/WASD or held direction controls. Wait stops the d
 - 7日間、毎日1枚を選び、残る工房と在庫で生産の連鎖を育てる。
 - 企画・検証: assets/waterwheel-week/
 - テスト: node --test tests/waterwheel-*.test.cjs
+
+
+## 氷上の寄せ石 / Ice Stones (2026-10-26)
+
+Commit finite shots across a shared ice surface: gently place a blue stone near the target or displace orange stones by collision. Three fixed positions, three shots each; friction and stone positions persist between shots. No AI opponent, sweeping, spin, campaign, account, analytics or storage. A small core experiment, not a curling simulation.
+
+Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_26.html (Blogger post2010469529437619004).
+Play: https://kicchomen.github.io/game-idea-lab/games/ice-stones/?v=20261026-final2
+
+37 new engine, mocked-controller and independent tests;614 whole-suite tests pass. Actual cloud Chromium won all three rounds, verified failure/retry/pause/keyboard and narrow320/360/390px operation. Browser finding fixed: Throw now scrolls the target into view; final result also scrolls into view. Narrowest256px nested game retains44px buttons. Generated cover and actual gameplay screenshot stored through normal Blogger CDN workflow; full saved body matched readback. Exact saved-body width and public-theme evidence are distinguished in assets/ice-stones/browser-qa.md and publication.json. Physical-phone, first-time-human, cross-browser and long-term fun are unverified; fixed shots can be memorised.

@@ -1,0 +1,71 @@
+[
+  {
+    "width": 320,
+    "article": {
+      "client": 305,
+      "scroll": 305
+    },
+    "images": [
+      {
+        "display": 273,
+        "loaded": true
+      },
+      {
+        "display": 273,
+        "loaded": true
+      }
+    ],
+    "game": {
+      "client": 256,
+      "scroll": 256
+    },
+    "power": "55",
+    "resetPower": "50"
+  },
+  {
+    "width": 360,
+    "article": {
+      "client": 345,
+      "scroll": 345
+    },
+    "images": [
+      {
+        "display": 313,
+        "loaded": true
+      },
+      {
+        "display": 313,
+        "loaded": true
+      }
+    ],
+    "game": {
+      "client": 296,
+      "scroll": 296
+    },
+    "power": "55",
+    "resetPower": "50"
+  },
+  {
+    "width": 390,
+    "article": {
+      "client": 375,
+      "scroll": 375
+    },
+    "images": [
+      {
+        "display": 343,
+        "loaded": true
+      },
+      {
+        "display": 340,
+        "loaded": true
+      }
+    ],
+    "game": {
+      "client": 326,
+      "scroll": 326
+    },
+    "power": "55",
+    "resetPower": "50"
+  }
+]

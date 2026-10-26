@@ -1,0 +1,55 @@
+{
+  "status": "published_verified",
+  "title": "氷上の寄せ石｜そっと寄せる？ 相手を弾く？",
+  "blog_id": "3556407006374124911",
+  "post_id": "2010469529437619004",
+  "published_at": "2026-10-26T10:48:00+09:00",
+  "published_at_precision": "minute",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_26.html",
+  "play_url": "https://kicchomen.github.io/game-idea-lab/games/ice-stones/?v=20261026-final2",
+  "baseline_commit": "2e88c6c83e179d849bb53faff86d266100aeb491",
+  "verified_source_commit": "d82f7d760e0375146fdb439a20ee0a18fdbc07a5",
+  "pages_run": 40255886710,
+  "pages_conclusion": "success",
+  "tests": {
+    "all_pass": 614,
+    "all_fail": 0,
+    "new_engine_controller_independent": 37
+  },
+  "saved_body_sha256": "e125f2bfb1580893e848b6989adb855531ed4af5bc2580fc9de56b08317334b7",
+  "saved_readback_exact": true,
+  "official_inventory_after": {
+    "published": 21,
+    "drafts": 2,
+    "scheduled": 0,
+    "new_posts": 1
+  },
+  "public_checks": {
+    "title": true,
+    "canonical": true,
+    "og_cover": true,
+    "cdn_images_loaded": 2,
+    "embed_live_success": true,
+    "standalone_link_actual_click": true,
+    "full_theme_and_embed_widths": [
+      320,
+      360,
+      390
+    ],
+    "horizontal_overflow": false
+  },
+  "qa": [
+    "browser-qa.md",
+    "public-responsive.json",
+    "final-responsive.json",
+    "final-independent-review.md"
+  ],
+  "unverified": [
+    "Physical smartphone",
+    "Human first impression",
+    "Cross-browser",
+    "Screenreader",
+    "Long-term enjoyment"
+  ],
+  "verified_at": "2026-10-26T01:52:00Z"
+}
