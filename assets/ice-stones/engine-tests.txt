@@ -1,0 +1,28 @@
+✔ level 1: ordinary three-shot success (6.977455ms)
+✔ level 1: three weak shots lose and retry is fresh (0.483731ms)
+✔ level 1: fixed-step deterministic across 30/60/120fps (3.924756ms)
+✔ level 2: ordinary three-shot success (1.407826ms)
+✔ level 2: three weak shots lose and retry is fresh (0.534006ms)
+✔ level 2: fixed-step deterministic across 30/60/120fps (5.869922ms)
+✔ level 3: ordinary three-shot success (1.540566ms)
+✔ level 3: three weak shots lose and retry is fresh (0.565765ms)
+✔ level 3: fixed-step deterministic across 30/60/120fps (4.028563ms)
+✔ wrong parameters and repeated launch do not consume throws (0.398151ms)
+✔ terminal state rejects throws and simulation updates (0.580186ms)
+✔ pause freezes, explicit resume continues (0.238049ms)
+✔ first throw does not reset when the next starts (0.394616ms)
+✔ head-on collision transfers momentum and moves orange stone (0.212892ms)
+✔ free friction travel matches discretized kinematics (0.34464ms)
+✔ equal distance is not a blue victory; radius boundary included (0.200502ms)
+✔ all legal sample shots settle finite within ice bounds (96.000805ms)
+✔ default aim is not an automatic all-stage win (1.382157ms)
+✔ one unchanged central route fails later offset challenges (1.173382ms)
+✔ nonfinite or negative elapsed time is ignored (0.177367ms)
+ℹ tests 20
+ℹ suites 0
+ℹ pass 20
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 216.25014

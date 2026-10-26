@@ -1,0 +1,44 @@
+✔ initial HUD and bounded controls (3.820571ms)
+✔ launch locks controls and rejects repeated shots until stopped (5.773858ms)
+✔ actual controller full three-challenge flow and wraparound (42.233949ms)
+✔ weak failure uses truthful copy and retry restores state (5.151152ms)
+✔ repeat keyboard events cannot modify aim (1.024406ms)
+✔ blur pauses motion, explicit button resumes; hidden page pauses again (1.357612ms)
+✔ power native range input and p shortcut (0.979378ms)
+✔ reset while moving cancels old motion and new frame stays aim (1.436902ms)
+✔ level 1: ordinary three-shot success (7.722927ms)
+✔ level 1: three weak shots lose and retry is fresh (1.605868ms)
+✔ level 1: fixed-step deterministic across 30/60/120fps (7.862339ms)
+✔ level 2: ordinary three-shot success (1.564305ms)
+✔ level 2: three weak shots lose and retry is fresh (0.413137ms)
+✔ level 2: fixed-step deterministic across 30/60/120fps (4.305188ms)
+✔ level 3: ordinary three-shot success (1.591227ms)
+✔ level 3: three weak shots lose and retry is fresh (0.614914ms)
+✔ level 3: fixed-step deterministic across 30/60/120fps (4.138304ms)
+✔ wrong parameters and repeated launch do not consume throws (0.301157ms)
+✔ terminal state rejects throws and simulation updates (0.931004ms)
+✔ pause freezes, explicit resume continues (0.296921ms)
+✔ first throw does not reset when the next starts (0.313736ms)
+✔ head-on collision transfers momentum and moves orange stone (0.178551ms)
+✔ free friction travel matches discretized kinematics (0.623496ms)
+✔ equal distance is not a blue victory; radius boundary included (0.22374ms)
+✔ all legal sample shots settle finite within ice bounds (109.149247ms)
+✔ default aim is not an automatic all-stage win (1.48223ms)
+✔ one unchanged central route fails later offset challenges (1.390201ms)
+✔ nonfinite or negative elapsed time is ignored (0.169477ms)
+✔ independent successful three-shot routes on every configuration (12.273576ms)
+✔ unchanged default and minimum power genuinely fail, not forced success (3.649161ms)
+✔ fixed-step final coordinates agree across frame cadences (14.823648ms)
+✔ all advertised integer-step shots settle and remain finite/in rink at final (95.799696ms)
+✔ paused state is immutable to timestep and shot attempts (0.488301ms)
+✔ invalid shots do not mutate state (0.159893ms)
+✔ fourth shot and post-result updates rejected for both win and loss (1.524945ms)
+✔ existing stone position persists between throws and collisions transfer motion (0.385094ms)
+ℹ tests 36
+ℹ suites 0
+ℹ pass 36
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 236.283465
