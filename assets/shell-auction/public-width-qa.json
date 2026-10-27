@@ -1,0 +1,68 @@
+[
+  {
+    "width": 320,
+    "article": {
+      "images": [
+        {
+          "natural": 1439,
+          "width": 273
+        },
+        {
+          "natural": 390,
+          "width": 273
+        }
+      ],
+      "scroll": 305,
+      "viewport": 305,
+      "width": 273
+    },
+    "game": {
+      "scroll": 256,
+      "width": 256
+    }
+  },
+  {
+    "width": 360,
+    "article": {
+      "images": [
+        {
+          "natural": 1439,
+          "width": 313
+        },
+        {
+          "natural": 390,
+          "width": 313
+        }
+      ],
+      "scroll": 345,
+      "viewport": 345,
+      "width": 313
+    },
+    "game": {
+      "scroll": 296,
+      "width": 296
+    }
+  },
+  {
+    "width": 390,
+    "article": {
+      "images": [
+        {
+          "natural": 1439,
+          "width": 343
+        },
+        {
+          "natural": 390,
+          "width": 343
+        }
+      ],
+      "scroll": 375,
+      "viewport": 375,
+      "width": 343
+    },
+    "game": {
+      "scroll": 326,
+      "width": 326
+    }
+  }
+]

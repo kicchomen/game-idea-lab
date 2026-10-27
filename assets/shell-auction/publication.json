@@ -8,7 +8,7 @@
   "publishedAt": "2026-10-27T11:33:00+09:00",
   "publishedTimeSource": "Public Blogger BlogPosting JSON-LD",
   "prepublicationPagesCommit": "224c207d6166e27adfa12ccd1cb96e9591084d35",
-  "pagesRun": 40438928109,
+  "pagesRun": 40439316053,
   "tests": {
     "whole": 684,
     "new": 70,
@@ -21,5 +21,8 @@
     "screen reader",
     "long-term enjoyment"
   ],
-  "publicWidthQa": "pending final readback"
+  "publicWidthQa": "passed 320/360/390 CSS-pixel iframe viewport tests; public theme and nested game actual +/- operations, both CDN images loaded, no horizontal overflow",
+  "verifiedAt": "2026-10-27T02:36:45Z",
+  "recordCommitParent": "e94a42019161c62eebef0dbfff80e93f73dc9b9c",
+  "knownBlockingIssues": []
 }

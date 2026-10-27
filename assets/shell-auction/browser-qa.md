@@ -11,3 +11,6 @@ Cloud Chrome desktop, actual UI input (not simulated). Not physical smartphone o
 - Cache-busted app.js?v=20261027-2 deployed in 224c207; actual article nested game first 3-coin win shows only 1枚2点, not pair forecast.
 - Saved Blogger body readback text identical; HTML structure/attributes identical after Boolean allowfullscreen normalization. Public body, title, canonical, cover og:image and two CDN images verified. Published 2026-10-27T11:33:00+09:00 (Blogger JSON-LD).
 - Article-body fixture320/360/390 actual nested +/- and first win; no horizontal overflow, images loaded1439/390. Official phone preview also visually checked.
+
+- Public canonical page full-theme320/360/390 viewport fixture passed actual nested +/- controls. Article widths273/313/343, nested game256/296/326, no horizontal overflow. Both CDN images loaded at every width. Public full text and all HTML attributes match saved source after boolean normalization. See public-width-qa.json and public-body.html.
+- Publication ledger and final evidence stored in the existing repository. Original Sensor Shift and Footstep Echo drafts remained drafts; final Blogger22 public,2 drafts,0 scheduled.
