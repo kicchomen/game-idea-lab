@@ -1,0 +1,25 @@
+{
+  "status": "published",
+  "blogId": "3556407006374124911",
+  "postId": "3012676308537341362",
+  "title": "貝がらの競り市｜ここで競る？ 次を待つ？",
+  "articleUrl": "https://game-idea-lab.blogspot.com/2026/10/blog-post_27.html",
+  "playUrl": "https://kicchomen.github.io/game-idea-lab/games/shell-auction/",
+  "publishedAt": "2026-10-27T11:33:00+09:00",
+  "publishedTimeSource": "Public Blogger BlogPosting JSON-LD",
+  "prepublicationPagesCommit": "224c207d6166e27adfa12ccd1cb96e9591084d35",
+  "pagesRun": 40438928109,
+  "tests": {
+    "whole": 684,
+    "new": 70,
+    "failed": 0
+  },
+  "unverified": [
+    "physical smartphone",
+    "first-time human",
+    "cross-browser",
+    "screen reader",
+    "long-term enjoyment"
+  ],
+  "publicWidthQa": "pending final readback"
+}

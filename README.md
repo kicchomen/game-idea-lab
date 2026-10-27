@@ -389,6 +389,8 @@ Play: https://kicchomen.github.io/game-idea-lab/games/ice-stones/?v=20261026-fin
 
 Become a collector at a seaside shell market. Allocate 24 coins across six first-price sealed-bid auctions against two collectors with different preferences and finite wallets. The winner alone pays their own bid; announced rotating priority resolves ties. Collect matching pairs, three shapes and the requested color to reach 16 exhibition points. Losing a lot changes a rival’s wallet and collection, affecting later bids. This is a small competitive-auction experiment, not adaptive AI or multiplayer.
 
+Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_27.html (Blogger post 3012676308537341362)
+
 Play: https://kicchomen.github.io/game-idea-lab/games/shell-auction/
 
 Controls: tap/click −/+ or use the native range slider, then submit a bid or pass. Tab and Enter/Space also work. Six-lot schedule and all revealed bids are available in expandable sections. Same-seed retry, a fresh market, URL `?seed=` reproducibility and confirmed mid-game restart are implemented. No dependencies, build, CDN assets in gameplay, accounts, analytics, audio or storage. Suggested embed: width 100%, height 850px with scrolling allowed, plus a standalone play link.

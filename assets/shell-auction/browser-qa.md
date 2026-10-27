@@ -7,3 +7,7 @@ Cloud Chrome desktop, actual UI input (not simulated). Not physical smartphone o
 - Found incorrect pair forecast after acquiring first shell; fixed to show only during bid phase, added 2 regressions. Redeployment and cache-busting app URL required before final approval.
 - Actual gameplay JPEG stored through Blogger Compose clipboard image insert, verified blogger.googleusercontent.com CDN.
 - Full repository automated tests: 684 passed, 0 failed. Independent review and seeded reachability simulations separately documented.
+
+- Cache-busted app.js?v=20261027-2 deployed in 224c207; actual article nested game first 3-coin win shows only 1枚2点, not pair forecast.
+- Saved Blogger body readback text identical; HTML structure/attributes identical after Boolean allowfullscreen normalization. Public body, title, canonical, cover og:image and two CDN images verified. Published 2026-10-27T11:33:00+09:00 (Blogger JSON-LD).
+- Article-body fixture320/360/390 actual nested +/- and first win; no horizontal overflow, images loaded1439/390. Official phone preview also visually checked.
