@@ -383,3 +383,16 @@ Article: https://game-idea-lab.blogspot.com/2026/10/blog-post_26.html (Blogger p
 Play: https://kicchomen.github.io/game-idea-lab/games/ice-stones/?v=20261026-final2
 
 37 new engine, mocked-controller and independent tests;614 whole-suite tests pass. Actual cloud Chromium won all three rounds, verified failure/retry/pause/keyboard and narrow320/360/390px operation. Browser finding fixed: Throw now scrolls the target into view; final result also scrolls into view. Narrowest256px nested game retains44px buttons. Generated cover and actual gameplay screenshot stored through normal Blogger CDN workflow; full saved body matched readback. Exact saved-body width and public-theme evidence are distinguished in assets/ice-stones/browser-qa.md and publication.json. Physical-phone, first-time-human, cross-browser and long-term fun are unverified; fixed shots can be memorised.
+
+
+## 貝がらの競り市 / Shell Auction (2026-10-27)
+
+Become a collector at a seaside shell market. Allocate 24 coins across six first-price sealed-bid auctions against two collectors with different preferences and finite wallets. The winner alone pays their own bid; announced rotating priority resolves ties. Collect matching pairs, three shapes and the requested color to reach 16 exhibition points. Losing a lot changes a rival’s wallet and collection, affecting later bids. This is a small competitive-auction experiment, not adaptive AI or multiplayer.
+
+Play: https://kicchomen.github.io/game-idea-lab/games/shell-auction/
+
+Controls: tap/click −/+ or use the native range slider, then submit a bid or pass. Tab and Enter/Space also work. Six-lot schedule and all revealed bids are available in expandable sections. Same-seed retry, a fresh market, URL `?seed=` reproducibility and confirmed mid-game restart are implemented. No dependencies, build, CDN assets in gameplay, accounts, analytics, audio or storage. Suggested embed: width 100%, height 850px with scrolling allowed, plus a standalone play link.
+
+70 game-specific engine, mocked-controller and independent tests; 684 whole-suite tests pass. An initial 22-coin budget produced unreachable sampled markets; 24 coins gave reachable success in all 5,000 markets checked independently, not a proof for every possible seed. Browser observation found a won shell incorrectly previewing a pair with itself; the pair preview now appears only before bidding, with regression coverage. These automated checks do not establish physical-phone, cross-browser, screen-reader, first-time-human or long-term enjoyment results.
+
+Run `node --test tests/shell-auction*.test.cjs`. Design comparison, implemented versus proposed scope, exact rules, PDCA, independent review, article HTML and publication evidence are maintained under `assets/shell-auction/`. The cover is concept art, not a gameplay screenshot. Publication links and final browser evidence are recorded separately rather than assumed from the local prototype.
