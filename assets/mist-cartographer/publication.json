@@ -1,11 +1,11 @@
 {
-  "status": "quality_passed_waiting_image_repository_approval",
+  "status": "published",
   "blogId": "3556407006374124911",
   "postId": "7386979964581147921",
   "playUrl": "https://kicchomen.github.io/game-idea-lab/games/mist-cartographer/",
   "title": "霧の島の地図師｜先を見渡す？ 足で確かめる？",
-  "sourceCommit": "dcc48abf16adb0b6e44e04d57201e34f85a9a42b",
-  "pagesRun": 40616687444,
+  "sourceCommit": "222fc31a5525f043d00fa02466be46c9f9aa24dd",
+  "pagesRun": 40617527124,
   "pagesStatus": "success",
   "tests": {
     "total": 735,
@@ -14,7 +14,7 @@
   },
   "imageRepositoryBackup": "pending create_blob approval; no result returned for cover.jpg",
   "savedBloggerReadback": "2450 characters exact match after reload",
-  "published": false,
+  "published": true,
   "checkedAt": "2026-10-28T01:50:00Z",
   "browserQA": {
     "standaloneWidths": [
@@ -32,5 +32,13 @@
     "mobilePhysical": "not tested",
     "firstTimeHuman": "not tested",
     "blogThemeExactWidths": "Blogger smartphone preview checked; fixed-width article HTML fixtures separately checked"
-  }
+  },
+  "articleUrl": "https://game-idea-lab.blogspot.com/2026/10/blog-post_28.html",
+  "publishedAt": "2026-10-28T11:23:00+09:00",
+  "publishedTimeSource": "Public Blogger time datetime attribute",
+  "verifiedAt": "2026-10-28T02:23:46Z",
+  "publicVerification": "Canonical title, two decoded CDN images, iframe interaction 22→20 verified",
+  "publicationPolicy": "User explicitly separated Git image backup from article publication at2026-10-28T02:21:31Z",
+  "knownBlockingIssues": [],
+  "remainingBackupIssue": "Git image create_blob result unknown; not retried or bypassed. Images preserved locally and on Blogger CDN."
 }
