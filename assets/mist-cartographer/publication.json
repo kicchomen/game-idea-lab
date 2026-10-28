@@ -1,11 +1,11 @@
 {
-  "status": "draft_quality_checks_in_progress",
+  "status": "quality_passed_waiting_image_repository_approval",
   "blogId": "3556407006374124911",
   "postId": "7386979964581147921",
   "playUrl": "https://kicchomen.github.io/game-idea-lab/games/mist-cartographer/",
   "title": "霧の島の地図師｜先を見渡す？ 足で確かめる？",
-  "sourceCommit": "040c6688ab2917869fbf62ab531ba9bc41cab2b4",
-  "pagesRun": 40613857324,
+  "sourceCommit": "dcc48abf16adb0b6e44e04d57201e34f85a9a42b",
+  "pagesRun": 40616687444,
   "pagesStatus": "success",
   "tests": {
     "total": 735,
@@ -14,5 +14,23 @@
   },
   "imageRepositoryBackup": "pending create_blob approval; no result returned for cover.jpg",
   "savedBloggerReadback": "2450 characters exact match after reload",
-  "published": false
+  "published": false,
+  "checkedAt": "2026-10-28T01:50:00Z",
+  "browserQA": {
+    "standaloneWidths": [
+      320,
+      360,
+      390
+    ],
+    "savedArticleWidths": [
+      320,
+      360,
+      390
+    ],
+    "daylightExhaustion": "22 real pointer clicks: 22 to 0, failure verified",
+    "keyboard": "ArrowUp actual DOM state changed",
+    "mobilePhysical": "not tested",
+    "firstTimeHuman": "not tested",
+    "blogThemeExactWidths": "Blogger smartphone preview checked; fixed-width article HTML fixtures separately checked"
+  }
 }

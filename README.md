@@ -398,3 +398,9 @@ Controls: tap/click −/+ or use the native range slider, then submit a bid or p
 70 game-specific engine, mocked-controller and independent tests; 684 whole-suite tests pass. An initial 22-coin budget produced unreachable sampled markets; 24 coins gave reachable success in all 5,000 markets checked independently, not a proof for every possible seed. Browser observation found a won shell incorrectly previewing a pair with itself; the pair preview now appears only before bidding, with regression coverage. These automated checks do not establish physical-phone, cross-browser, screen-reader, first-time-human or long-term enjoyment results.
 
 Run `node --test tests/shell-auction*.test.cjs`. Design comparison, implemented versus proposed scope, exact rules, PDCA, independent review, article HTML and publication evidence are maintained under `assets/shell-auction/`. The cover is concept art, not a gameplay screenshot. Publication links and final browser evidence are recorded separately rather than assumed from the local prototype.
+
+## 霧の島の地図師 / Mist Cartographer (2026-10-28)
+
+`games/mist-cartographer/` — 未知の6×6島を歩き、昼を払って見渡し、名所を2つ訪ねて野営地へ戻る探索の試作。固定3島。移動・見渡す・帰還の判断が核。操作は方向ボタン/矢印/WASD、Vで見渡す。依存・課金・通信・保存なし。
+
+企画とPDCA: `assets/mist-cartographer/design-notes.md`、独立レビュー: `independent-review.md`。新規51テスト（独立14含む）、全735テスト成功。クラウドChrome実操作で成功/失敗/再挑戦/反復、320/360/390px試遊と保存記事HTMLの埋込みを確認。記事幅fixtureは実テーマ全体の実機表示検査とは区別。実機スマホ・初見の面白さ・長時間の奥行きは未検証。固定地図の暗記後は見渡す価値が薄れる課題を記録。

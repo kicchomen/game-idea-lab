@@ -1,0 +1,149 @@
+[
+  {
+    "width": 320,
+    "day": "19",
+    "article": {
+      "images": [
+        {
+          "natural": 1439,
+          "width": 288
+        },
+        {
+          "natural": 501,
+          "width": 288
+        }
+      ],
+      "links": [
+        "https://kicchomen.github.io/game-idea-lab/games/mist-cartographer/"
+      ],
+      "scroll": 320,
+      "width": 320
+    },
+    "game": {
+      "buttons": [
+        {
+          "h": 46,
+          "w": 65.75
+        },
+        {
+          "h": 46,
+          "w": 65.75
+        },
+        {
+          "h": 46,
+          "w": 65.75
+        },
+        {
+          "h": 46,
+          "w": 65.75
+        }
+      ],
+      "scroll": 286,
+      "width": 286
+    },
+    "initialDay": "22",
+    "keyboardNorthDay": "21",
+    "pointerAction": "survey",
+    "pointerResult": "day reduced and message updated",
+    "scope": "Saved article HTML in fixed-width browser fixture, not physical device",
+    "automationNote": "Nested frame locator click did not change state; screenshot-based native click verified."
+  },
+  {
+    "width": 360,
+    "day": "19",
+    "article": {
+      "images": [
+        {
+          "natural": 1439,
+          "width": 328
+        },
+        {
+          "natural": 501,
+          "width": 328
+        }
+      ],
+      "links": [
+        "https://kicchomen.github.io/game-idea-lab/games/mist-cartographer/"
+      ],
+      "scroll": 360,
+      "width": 360
+    },
+    "game": {
+      "buttons": [
+        {
+          "h": 46,
+          "w": 71.75
+        },
+        {
+          "h": 46,
+          "w": 71.75
+        },
+        {
+          "h": 46,
+          "w": 71.75
+        },
+        {
+          "h": 46,
+          "w": 71.75
+        }
+      ],
+      "scroll": 326,
+      "width": 326
+    },
+    "initialDay": "22",
+    "keyboardNorthDay": "21",
+    "pointerAction": "survey",
+    "pointerResult": "day reduced and message updated",
+    "scope": "Saved article HTML in fixed-width browser fixture, not physical device",
+    "automationNote": "Nested frame locator click did not change state; screenshot-based native click verified."
+  },
+  {
+    "width": 390,
+    "day": "20",
+    "article": {
+      "images": [
+        {
+          "natural": 1439,
+          "width": 358
+        },
+        {
+          "natural": 501,
+          "width": 358
+        }
+      ],
+      "links": [
+        "https://kicchomen.github.io/game-idea-lab/games/mist-cartographer/"
+      ],
+      "scroll": 390,
+      "width": 390
+    },
+    "game": {
+      "buttons": [
+        {
+          "h": 46,
+          "w": 79.25
+        },
+        {
+          "h": 46,
+          "w": 79.25
+        },
+        {
+          "h": 46,
+          "w": 79.25
+        },
+        {
+          "h": 46,
+          "w": 79.25
+        }
+      ],
+      "scroll": 356,
+      "width": 356
+    },
+    "initialDay": "22",
+    "keyboardNorthDay": "21",
+    "pointerAction": "north",
+    "pointerResult": "day reduced and message updated",
+    "scope": "Saved article HTML in fixed-width browser fixture, not physical device",
+    "automationNote": "Nested frame locator click did not change state; screenshot-based native click verified."
+  }
+]
