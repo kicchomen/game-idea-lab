@@ -1,0 +1,24 @@
+const test=require('node:test'),assert=require('node:assert/strict');const E=require('../games/mist-cartographer/engine.js');
+const routes=[['up','up','up','up','up','right','right','down','down','down','left','down','down','left'],['up','up','up','right','right','down','right','down','down','left','left','left'],['up','up','up','up','up','right','right','down','right','right','down','down','down','down','left','left','left','left']];
+const run=(s,actions)=>actions.reduce((s,a)=>E.act(s,a),s);
+test('initial map has camp and two cardinal neighbors known',()=>{const s=E.create();assert.equal(s.at,30);assert.equal(s.left,22);assert.equal(s.known.filter(Boolean).length,3);assert.equal(E.knownReturn(s),0);});
+test('map selection validation',()=>{for(const x of [-1,4,NaN,'1',null])assert.equal(E.create(x).map,0);assert.equal(E.create(2).map,2);});
+test('action is immutable and does not expose map in view',()=>{const s=E.create(),before=JSON.stringify(s),n=E.act(s,'up');assert.equal(JSON.stringify(s),before);assert.notEqual(n,s);assert.equal(E.view(s)[0].kind,'?');});
+test('survey reveals Manhattan radius3 and costs2 without recording landmarks',()=>{const s=E.create(),n=E.act(s,'survey');assert.equal(n.left,20);assert.equal(n.known.filter(Boolean).length,10);assert.equal(n.landmarks.length,0);assert.equal(E.view(n)[18].kind,'L');});
+test('repeat survey has no new information and spends nothing',()=>{const s=E.act(E.create(),'survey');assert.equal(E.act(s,'survey'),s);assert.equal(E.canSurvey(s),false);});
+test('unknown invalid action and edges do not cost',()=>{const s=E.create();for(const a of ['left','down','xx',null])assert.equal(E.act(s,a),s);});
+test('rock blocks and does not charge',()=>{const s=run(E.create(),['right','up']);assert.equal(E.act(s,'right'),s);});
+test('forest costs two; ordinary move one',()=>{const s=run(E.create(),['up','up','right']);const n=E.act(s,'right');assert.equal(n.left,s.left-2);assert.equal(E.view(n)[n.at].kind,'F');});
+test('a landmark counts only once',()=>{let s=run(E.create(),['up','up']);assert.equal(s.landmarks.length,1);s=run(s,['down','up']);assert.equal(s.landmarks.length,1);});
+for(let m=0;m<3;m++){test(`authored island${m+1} playable winning route with a survey`,()=>{const s=run(E.act(E.create(m),'survey'),routes[m]);assert.equal(s.at,30);assert.ok(s.landmarks.length>=2);assert.ok(s.left>0);assert.equal(E.act(s,'finish').status,'won');});test(`island${m+1} no-input early finish loses`,()=>assert.equal(E.act(E.create(m),'finish').status,'lost'));}
+test('cannot finish away from camp',()=>{const s=E.act(E.create(),'up');assert.equal(E.act(s,'finish'),s);});
+test('daylight exhaustion outside camp loses',()=>{let s=E.create();s.left=1;const n=E.act(s,'up');assert.equal(n.status,'lost');assert.equal(n.left,0);});
+test('zero daylight camp return succeeds at quota',()=>{let s=run(E.create(),routes[0].slice(0,-1));s.left=1;const n=E.act(s,'left');assert.equal(n.at,30);assert.equal(n.status,'won');});
+test('zero daylight camp return fails below quota',()=>{let s=E.act(E.create(),'right');s.left=1;assert.equal(E.act(s,'left').status,'lost');});
+test('overbudget move rejected',()=>{const s=run(E.create(),['up','up','right']);s.left=1;assert.equal(E.act(s,'right'),s);});
+test('terminal actions never change state',()=>{for(const s of [E.act(E.create(),'finish'),E.act(run(E.create(),routes[0]),'finish')])for(const a of [...Object.keys(E.DIRS),'finish','survey'])assert.equal(E.act(s,a),s);});
+test('retry makes independent arrays',()=>{const a=E.create(),b=E.create();a.known[0]=true;a.landmarks.push(3);assert.equal(b.known[0],false);assert.equal(b.landmarks.length,0);});
+test('known return computes destination costs and excludes unknown shortcuts',()=>{let s=run(E.create(),['up','up','right','right']);assert.equal(E.knownReturn(s),4);s=E.act(s,'survey');assert.ok(Number.isFinite(E.knownReturn(s)));});
+test('survey availability requires new cells and enough day',()=>{const s=E.create();assert.equal(E.canSurvey(s),true);s.left=1;assert.equal(E.canSurvey(s),false);assert.equal(E.act(s,'survey'),s);});
+test('all maps exactly36 cells have camp and three landmarks',()=>{for(const m of E.MAPS){const c=m.rows.join('');assert.equal(c.length,36);assert.equal([...c].filter(x=>x==='L').length,3);assert.equal(c[30],'C');}});
+test('repeatable routes deterministic',()=>{for(let m=0;m<3;m++)assert.deepEqual(run(E.create(m),routes[m]),run(E.create(m),routes[m]));});

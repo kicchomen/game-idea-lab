@@ -1,0 +1,1374 @@
+{
+  "baselineCommit": "08b9f70e0933f1f069acbd90c6edca168d85ce49",
+  "readAt": "2026-10-28T01:05:00Z",
+  "bloggerDirect": {
+    "published": 22,
+    "drafts": 2,
+    "scheduled": 0,
+    "draftTitles": [
+      "足あとエコー｜4歩前の自分と扉を開ける",
+      "センサーずらし｜角度を変えてロボットを出口へ"
+    ],
+    "latest": "貝がらの競り市",
+    "tinyTug": "published",
+    "newConcurrentPostObserved": false
+  },
+  "reservedPostId": "7386979964581147921",
+  "records": [
+    {
+      "path": "assets/echo-drum/publication.json",
+      "record": {
+        "date": "2026-10-19",
+        "title": "祭りのこだま太鼓｜覚えたリズムを、叩いて返す",
+        "blog_id": "3556407006374124911",
+        "post_id": "8139373618734285323",
+        "status": "published",
+        "base_commit": "d639efc4d798e98c4e610c20a4698e778d1c33cb",
+        "before": {
+          "published": 13,
+          "drafts": 2,
+          "scheduled": 0,
+          "open_prs": 0
+        },
+        "trial_url": "https://kicchomen.github.io/game-idea-lab/games/echo-drum/",
+        "article_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_19.html",
+        "published_at": "2026-10-19T10:57:00+09:00",
+        "timestamp_precision": "minute",
+        "source_commit": "5423023f306d2ad3f6a3450f7bbfeee374110fde",
+        "after": {
+          "published": 14,
+          "drafts": 2,
+          "scheduled": 0
+        },
+        "verified_at": "2026-10-19T01:58:00Z"
+      }
+    },
+    {
+      "path": "assets/packing-truck/publication.json",
+      "record": {
+        "blog_name": "kicchomen's ゲームアイデア実験室",
+        "blog_id": "3556407006374124911",
+        "post_id": "6443778352527114855",
+        "title": "引越しトラックの積み係｜その隙間、あとで困らない？",
+        "status": "published_verified",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_24.html",
+        "published_at": "2026-10-24T11:59:00+09:00",
+        "published_at_evidence": "Public page source JSON-LD datePublished; Blogger page displays 2026-10-24.",
+        "game_url": "https://kicchomen.github.io/game-idea-lab/games/packing-truck/?v=af78f4f",
+        "thumbnail_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkdW_THRLquahZF_HARA66WxsnvKOg9O_iY9VBjA5rPDRv6JTNFtvN-O52neXatYA0tRnMTgec4fiaW6kR42T0svvboKelLWUUlT2ZYTHuv0N5Ervyv7XJ2KJSICzJxpZqyg3B9BeIv56Im4nYDqUxCLSBIggMxD7tRTtzaR3Cdc7f3J6oNm76OAVUuG8/s1440/cover.jpg",
+        "article_gameplay_image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiZWb_K_LwUqEfcPVThzFessEzOCXv8P6IM8-Tiofx6icWJupG37ivRHC_tIUMBqxbmXuXA1r_SWQ3s_lARlCYNqqQ3LvZzcRU4sDjSFq07zJu6_nQ5ZIV_XYPxn1YoESp81w_BgjIIpqBxZnADiUQrYf9p5heXZCRRQO9jSrxpgXqhtx41kyPhD38Jjes/s1648/packing-truck-gameplay.jpg",
+        "cover_library_asset_id": "libfile_d2f08fb738a48191bf549b41fd518bcf",
+        "prepublication_screenshot_library_id": "libfile_b60fede14da88191abc5a0fb24b5f2a9",
+        "post_list_counts_before": {
+          "published": 18,
+          "drafts": 2,
+          "scheduled": 0
+        },
+        "post_list_counts_after": {
+          "published": 19,
+          "drafts": 2,
+          "scheduled": 0
+        },
+        "repository_head": "bbf85069a35db94e119cf329ffa10f96aa98e443",
+        "pages_workflow_run": "40049315149",
+        "open_graph_image_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgkdW_THRLquahZF_HARA66WxsnvKOg9O_iY9VBjA5rPDRv6JTNFtvN-O52neXatYA0tRnMTgec4fiaW6kR42T0svvboKelLWUUlT2ZYTHuv0N5Ervyv7XJ2KJSICzJxpZqyg3B9BeIv56Im4nYDqUxCLSBIggMxD7tRTtzaR3Cdc7f3J6oNm76OAVUuG8/w1200-h630-p-k-no-nu/cover.jpg",
+        "baseline_commit": "5af3d13915f197f21dccf55bc2d0f7c313a7d9d5",
+        "prototype_commit": "af78f4f2f73534730ea943d98ba8e63aa950d465",
+        "engine_tests": 8,
+        "mock_controller_tests": 4,
+        "full_suite_tests": 526,
+        "test_failures": 0,
+        "browser_qa": "Mac Chrome actual controls and CSS-width emulation; supplied publication evidence",
+        "responsive_widths": [
+          320,
+          360,
+          390
+        ],
+        "physical_phone_test": false,
+        "novice_human_test": false,
+        "unverified": [
+          "Physical smartphone",
+          "Novice-human comprehension",
+          "Cross-browser",
+          "Long-term enjoyment"
+        ]
+      }
+    },
+    {
+      "path": "assets/rope-walker/publication.json",
+      "record": {
+        "date": "2026-10-20",
+        "title": "山あいの綱渡り｜戻しすぎない、一歩の加減",
+        "blog_id": "3556407006374124911",
+        "status": "published_verified",
+        "before": {
+          "published": 14,
+          "drafts": 2,
+          "scheduled": 0,
+          "open_prs": 0
+        },
+        "base_commit": "1fc72ddad3e0830595e9bdb25e45218b9a8bbb97",
+        "trial_url": "https://kicchomen.github.io/game-idea-lab/games/rope-walker/",
+        "article_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_20.html",
+        "post_id": "7501416410475790538",
+        "published_at": "2026-10-20T17:05:00+09:00",
+        "browser_qa": "passed actual cloud Chromium desktop crossing/failure/retry/pause, 320/360/390px frame checks, saved smartphone preview and public embedded start/pause/reset",
+        "independent_review": "passed_code_content_art; browser pending",
+        "automated_tests": 444,
+        "published_at_precision": "minute; confirmation observed between 08:05:45 and 08:06:09 UTC",
+        "after": {
+          "published": 15,
+          "drafts": 2,
+          "scheduled": 0
+        },
+        "prototype_commit": "71eeb29",
+        "git_record_backup": "Included in this final publication-record commit; remote readback verification is reported separately.",
+        "limitations": [
+          "No physical-phone test",
+          "No simultaneous multi-touch browser test",
+          "No novice-human or long-term enjoyment assessment"
+        ]
+      }
+    },
+    {
+      "path": "assets/rail-dispatch/publication.json",
+      "record": {
+        "game": "rail-dispatch",
+        "title": "小さな駅の発車係｜いま出す？ もう少し待つ？",
+        "blog_id": "3556407006374124911",
+        "post_id": "7733998765926862093",
+        "status": "published",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_17.html",
+        "published_at": "2026-10-17T12:16:00+09:00",
+        "play_url": "https://kicchomen.github.io/game-idea-lab/games/rail-dispatch/",
+        "blocked_on": null,
+        "updated_at": "2026-10-17T03:17:00Z",
+        "published_at_precision": "minute (public time element)",
+        "public_verification": {
+          "title": true,
+          "images_loaded": [
+            [
+              1439,
+              810
+            ],
+            [
+              1440,
+              960
+            ]
+          ],
+          "og_thumbnail_matches_cover": true,
+          "embedded_start_departure_pause": true,
+          "unchanged_older_drafts": 2
+        }
+      }
+    },
+    {
+      "path": "assets/pocket-forest/publication.json",
+      "record": {
+        "game": "pocket-forest",
+        "status": "published",
+        "blog_id": "3556407006374124911",
+        "post_id": "3556946122911917495",
+        "base_commit": "b94cc4ec49acebe01f220ff969f706d4a9de2c34",
+        "source_commit": "6d260dbef6d2a8aab9c580733e99b3eec28e08b9",
+        "pages_run": "38838849268",
+        "pages_conclusion": "success",
+        "trial_url": "https://kicchomen.github.io/game-idea-lab/games/pocket-forest/",
+        "url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_16.html",
+        "published_at": "2026-10-16T11:44:00+09:00",
+        "browser_verification": "standalone and saved Blogger preview passed; public390px operation/title/CDN/OG verified; see browser-qa.json and article-qa.json",
+        "physical_phone_test": false,
+        "novice_human_test": false,
+        "title": "つながる小さな森｜一枚で、すみかが変わる",
+        "publication_time_precision": "minute",
+        "saved_html_exact_match": true,
+        "cdn_images_loaded": 2
+      }
+    },
+    {
+      "path": "assets/ice-stones/publication.json",
+      "record": {
+        "status": "published_verified",
+        "title": "氷上の寄せ石｜そっと寄せる？ 相手を弾く？",
+        "blog_id": "3556407006374124911",
+        "post_id": "2010469529437619004",
+        "published_at": "2026-10-26T10:48:00+09:00",
+        "published_at_precision": "minute",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_26.html",
+        "play_url": "https://kicchomen.github.io/game-idea-lab/games/ice-stones/?v=20261026-final2",
+        "baseline_commit": "2e88c6c83e179d849bb53faff86d266100aeb491",
+        "verified_source_commit": "d82f7d760e0375146fdb439a20ee0a18fdbc07a5",
+        "pages_run": 40255886710,
+        "pages_conclusion": "success",
+        "tests": {
+          "all_pass": 614,
+          "all_fail": 0,
+          "new_engine_controller_independent": 37
+        },
+        "saved_body_sha256": "e125f2bfb1580893e848b6989adb855531ed4af5bc2580fc9de56b08317334b7",
+        "saved_readback_exact": true,
+        "official_inventory_after": {
+          "published": 21,
+          "drafts": 2,
+          "scheduled": 0,
+          "new_posts": 1
+        },
+        "public_checks": {
+          "title": true,
+          "canonical": true,
+          "og_cover": true,
+          "cdn_images_loaded": 2,
+          "embed_live_success": true,
+          "standalone_link_actual_click": true,
+          "full_theme_and_embed_widths": [
+            320,
+            360,
+            390
+          ],
+          "horizontal_overflow": false
+        },
+        "qa": [
+          "browser-qa.md",
+          "public-responsive.json",
+          "final-responsive.json",
+          "final-independent-review.md"
+        ],
+        "unverified": [
+          "Physical smartphone",
+          "Human first impression",
+          "Cross-browser",
+          "Screenreader",
+          "Long-term enjoyment"
+        ],
+        "verified_at": "2026-10-26T01:52:00Z"
+      }
+    },
+    {
+      "path": "assets/spark-shield/publication.json",
+      "record": {
+        "game": "spark-shield",
+        "blog_id": "3556407006374124911",
+        "post_id": "3307005946088725543",
+        "status": "published",
+        "title": "火花の盾｜受けた一撃を、反撃の力に",
+        "trial_url": "https://kicchomen.github.io/game-idea-lab/games/spark-shield/",
+        "prototype_commit": "5cdc7d4fa886a849cfdbfe6e831cdab1c14a593a",
+        "pages_run_id": 38191277410,
+        "observed_existing": {
+          "published": 6,
+          "drafts": 2,
+          "main": "4bc2f921ce3b4e8fe56db1f6173fa93a1a7e56f0",
+          "open_prs": 0
+        },
+        "updated_at": "2026-10-12T01:44:46.236515+00:00",
+        "verification": {
+          "tests_passed": 210,
+          "independent_review": "PASS",
+          "standalone_css_widths": [
+            320,
+            360,
+            390
+          ],
+          "preview_css_widths": [
+            320,
+            360,
+            390
+          ],
+          "saved_html_readback": true,
+          "public_css_widths": [
+            320,
+            360,
+            390
+          ],
+          "public_title": true,
+          "public_thumbnail": true,
+          "public_images": 2,
+          "public_embed_operated": true,
+          "public_posts": 7,
+          "preserved_drafts": 2
+        },
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_12.html",
+        "published_at": "2026-10-12T10:40:00+09:00",
+        "verified_at": "2026-10-12T01:44:46.236515+00:00",
+        "limitations": [
+          "Desktop Chromium responsive sizing, not a physical-phone test",
+          "No novice-human or long-term fun test",
+          "Three fixed opponents; travel, equipment progression and save not implemented"
+        ]
+      }
+    },
+    {
+      "path": "assets/hush-courier/publication.json",
+      "record": {
+        "game": "hush-courier",
+        "blog_id": "3556407006374124911",
+        "post_id": "5603664971834539949",
+        "status": "published",
+        "title": "ねむりの谷の配達人｜急ぎたい。でも、起こしたくない",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_09.html",
+        "published_at": "2026-10-09T11:16:00+09:00",
+        "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/hush-courier/?v=2",
+        "prototype_commit": "9c50893f9623c71c429e8dd5d1a0f65ad239be15",
+        "pages_workflow_ids": [
+          37871718298,
+          37873201091
+        ],
+        "pages_conclusions": [
+          "success",
+          "success"
+        ],
+        "automated_tests": 116,
+        "new_engine_tests": 21,
+        "new_mock_controller_tests": 6,
+        "new_source_layout_tests": 2,
+        "independent_review": "PASS: engine/controller, article/image pixels, responsive source fix",
+        "article_sha256": "205585fef685a6557c1bb0bc8a88f29cb13a21605550a56437c1eb5599c30e88",
+        "browser_checks": {
+          "environment": "Cloud desktop Chromium, ordinary resize/browser zoom; no physical phone",
+          "success": "Actual keyboard inputs delivered all3 in21.5 simulated seconds; repeated after CSSv2 in320px Blogger preview with288px game",
+          "failure": "Continuous running produced discovery failure; repeated in corrected288px embed",
+          "retry": "Success/failure retries restore0/3,55seconds; pause/resume and stationary delivery confirmed",
+          "pointer": "320px standalone Run long-press moved to first cottage; release then stationary yielded1/3",
+          "article_widths": [
+            320,
+            360,
+            390
+          ],
+          "article_scroll_widths": [
+            320,
+            360,
+            390
+          ],
+          "embed_widths": [
+            288,
+            328,
+            358
+          ],
+          "embed_scroll_widths": [
+            288,
+            328,
+            358
+          ],
+          "standalone_widths": [
+            320,
+            360,
+            390
+          ],
+          "standalone_scroll_widths": [
+            320,
+            360,
+            390
+          ],
+          "fixed_pause_card": {
+            "embed_width": 288,
+            "stage_height": 240,
+            "card_height": 200.59375
+          },
+          "fixed_ready_card_height": 169.1875,
+          "fixed_win_card_height": 151.59375
+        },
+        "blogger_checks": {
+          "saved_reload_exact": true,
+          "images": 2,
+          "cdn": "blogger.googleusercontent.com",
+          "data_uris": 0,
+          "title_verified": true,
+          "thumbnail_loaded": true,
+          "both_images_loaded": true,
+          "public_embedded_start_pause_verified": true,
+          "post_count": 6,
+          "published_count": 4,
+          "preserved_draft_count": 2
+        },
+        "remaining": [],
+        "limitations": [
+          "Physical phone and Safari not tested",
+          "First-time human understanding and sustained fun unverified",
+          "Mock controller/source tests are not visual tests"
+        ]
+      }
+    },
+    {
+      "path": "assets/night-market/publication.json",
+      "record": {
+        "game": "night-market",
+        "blog_id": "3556407006374124911",
+        "post_id": "2227938574447171811",
+        "status": "published",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_07.html",
+        "published_at": "2026-10-07T13:49:00+09:00",
+        "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/night-market/",
+        "prototype_commit": "033586239027a57dfa5c8ff69f3e050dbe39ab4e",
+        "qa_commit": "f753df8323b4caadd73f7c16ee00f0a15cd569e3",
+        "pages_workflow_ids": [
+          37555980862,
+          37556068086
+        ],
+        "pages_conclusions": [
+          "success",
+          "success"
+        ],
+        "automated_tests": 54,
+        "independent_review": "pass after balance, responsive-control and active-customer fixes",
+        "browser_checks": {
+          "observed_at": "2026-10-07T12:28:00+09:00",
+          "environment": "cloud desktop Chromium; no physical phone or novice human test",
+          "success": "390px iframe, actual UI keyboard controls through six nights; cash17,22,27,32,35,41",
+          "failure": "same-seed retry then no-stock six nights; cash12, failure displayed",
+          "new_seed": "fresh market rendered round1/cash12",
+          "widths": [
+            {
+              "iframe": 320,
+              "client": 305,
+              "scroll": 305
+            },
+            {
+              "iframe": 360,
+              "client": 345,
+              "scroll": 345
+            },
+            {
+              "iframe": 390,
+              "client": 375,
+              "scroll": 375
+            }
+          ],
+          "buttons": {
+            "width": 44,
+            "height": 46
+          },
+          "buy_refund": "clicked at every tested width"
+        },
+        "remaining": [],
+        "article_title": "夜市の仕入れ番｜売り切るか、もうひと勝負か",
+        "article_sha256": "3ffdb76456024ec3471a0913cae5b68f8a03f1170f87456c770002ffd84e04c0",
+        "blogger_checks": {
+          "saved_readback_exact": true,
+          "images": 2,
+          "cdn": "blogger.googleusercontent.com",
+          "data_uris": 0,
+          "iframes": 1,
+          "published_title_verified": true,
+          "thumbnail_loaded": true,
+          "all_article_images_loaded": true,
+          "live_embed_buy_refund": true,
+          "list_counts": {
+            "published": 2,
+            "drafts": 2
+          },
+          "article_preview_viewports": [
+            320,
+            359,
+            390
+          ],
+          "article_preview_overflow": 0,
+          "preview_overlay_note": "Blogger preview watermark itself overflowed at320; article elements stayed within viewport.359px test is slightly narrower than requested360.",
+          "preview_mobile_embedded_open_action": true,
+          "physical_phone_test": false
+        }
+      }
+    },
+    {
+      "path": "assets/tiny-tug/publication.json",
+      "record": {
+        "status": "published",
+        "published_date": "2026-10-06",
+        "verified_at_utc": "2026-10-06T11:05:26Z",
+        "title": "ちいさなタグボート｜助けるほど、帰り道がむずかしくなる",
+        "article_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post.html",
+        "playable_url": "https://kicchomen.github.io/game-idea-lab/games/tiny-tug/?v=2",
+        "prototype_commit": "c3e6d6e2c6b72971efde956a147a883ac31588e6",
+        "scope": "Publication and minimal experiment-framing correction; no gameplay or asset changes",
+        "checks": {
+          "published_list_count": 1,
+          "remaining_draft_count": 2,
+          "images": 2,
+          "images_loaded": true,
+          "image_natural_width": 1600,
+          "iframes": 1,
+          "live_embedded_rescue": "1 of 6 delivered, hull 5/5, paused",
+          "smartphone_preview": "365px article content width equals scroll width; both images and iframe fit",
+          "physical_mobile_device_test": false
+        },
+        "design_assessment": "Difficulty is too low to establish meaningful return-versus-more decisions. Game viability and sustained challenge remain unresolved."
+      }
+    },
+    {
+      "path": "assets/waterwheel-week/publication-ledger.json",
+      "record": {
+        "date": "2026-10-25",
+        "blog_id": "3556407006374124911",
+        "post_id": "3330293690001564116",
+        "title": "水車町の一週間｜今日の工房が、明日のパンをつくる",
+        "status": "published_verified",
+        "play_url": "https://kicchomen.github.io/game-idea-lab/games/waterwheel-week/",
+        "baseline_sha": "9750b373a99c4afa0767c2a8e72586d3c2246229",
+        "verified_source_sha": "a749a020f73fa3207ea60c74991aeef16be98ebd",
+        "pages_run_id": 40151176105,
+        "pages_conclusion": "success",
+        "tests": {
+          "pass": 577,
+          "fail": 0
+        },
+        "saved_body_sha256": "00440b8b7fb7e03a2c8740f85e116fca0eb8bbcc03a2202d5a8ea93ec498f36b",
+        "qa": "browser-qa.md",
+        "unverified": [
+          "Physical smartphone",
+          "Human first impression",
+          "Long-term fun",
+          "Exact-width full Blogger theme (saved body mirror was verified instead)"
+        ],
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_25.html",
+        "published_at": "2026-10-25T10:38:00+09:00",
+        "verified_at": "2026-10-25T10:39:15+09:00"
+      }
+    },
+    {
+      "path": "assets/windbird/publication.json",
+      "record": {
+        "game": "windbird",
+        "title": "風待ちの渡り鳥｜羽を休める場所が、次の一歩をつくる",
+        "status": "published_verified",
+        "blog_id": "3556407006374124911",
+        "post_id": "712458916780914918",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html",
+        "trial_url": "https://kicchomen.github.io/game-idea-lab/games/windbird/",
+        "base_commit": "79e25110b6e02dd1892862ebba8c065fab099870",
+        "existing_posts": {
+          "published": 8,
+          "drafts": 2,
+          "scheduled": 0,
+          "observed_at_before_new_draft": "2026-10-14T13:56:20.313824+00:00",
+          "windbird_duplicate": false,
+          "old_drafts_unchanged": [
+            "1057707127785703864",
+            "6862408650449844535"
+          ]
+        },
+        "observed_at": "2026-10-14T01:00:50Z",
+        "tests_passed": 301,
+        "remaining": [],
+        "limitations": [
+          "No physical phone test",
+          "No novice-human or long-term fun validation"
+        ],
+        "independent_review": "PASS source, production engine and mock DOM; separate actual Chromium automation and screenshot review completed by recovery task",
+        "updated_at": "2026-10-14T14:39:16.561256+00:00",
+        "transfer": {
+          "status": "verified",
+          "library_file_id": "libfile_a36473c958508191bc4b3f7191713214",
+          "file_name": "Windbird_20261014_reviewed_v2.zip",
+          "size_bytes": 5542075,
+          "sha256": "c0f49551ab8d739383ab8d3d4dcf06d175ebc2029f5796fabfac62863f094513",
+          "manifest_entries_verified": 21
+        },
+        "browser_verification": {
+          "mode": "Actual isolated headless Chromium, real RAF and keyboard/mouse inputs; narrow viewports and CDP touch emulation",
+          "desktop_css_width": 1100,
+          "standalone_css_widths": [
+            320,
+            360,
+            390
+          ],
+          "iframe_css_widths": [
+            320,
+            360,
+            390
+          ],
+          "desktop_courses_won": [
+            1,
+            2,
+            3
+          ],
+          "success_failure_retry": true,
+          "P_Escape_pause_explicit_resume": true,
+          "pointer_hold": true,
+          "simultaneous_touch_emulation": true,
+          "horizontal_overflow": false,
+          "controls_min_height_px_after_fix": 44,
+          "browser": "149.0.7827.55",
+          "physical_phone": false,
+          "native_window_blur": "Not reproduced in headless environment; source/mock DOM coverage only",
+          "baseline_results": "browser-results-baseline.json",
+          "final_320_results": "browser-results-320.json"
+        },
+        "article_template_verification": {
+          "scope": "Local source article inserted into existing fetched Blogger theme, with local images and game. Not a saved Blogger draft or CDN check.",
+          "css_widths": [
+            1100,
+            320,
+            360,
+            390
+          ],
+          "iframe_widths": [
+            812,
+            290,
+            330,
+            360
+          ],
+          "images_loaded": 2,
+          "standalone_link": true,
+          "success_failure_retry_in_narrow_embeds": true,
+          "horizontal_overflow": false,
+          "report": "article-template-qa.json"
+        },
+        "prototype_commit": "c20f006cd80fe69cb9200fbffc6ba313b55ac8ee",
+        "remote_main_verified": "c20f006cd80fe69cb9200fbffc6ba313b55ac8ee",
+        "remote_main_verified_at": "2026-10-14T13:45:51.431365+00:00",
+        "pages_run_id": 38574039406,
+        "pages_run_url": "https://github.com/kicchomen/game-idea-lab/actions/runs/38574039406",
+        "pages_status": "success",
+        "pages_files_verified": "pages-file-verification.json",
+        "pages_live_browser_verification": {
+          "report": "pages-browser-results-320.json",
+          "standalone_css_width": 320,
+          "iframe_css_width": 320,
+          "success_failure_retry": true,
+          "horizontal_overflow": false,
+          "all_visible_button_heights_at_least_44px": true,
+          "page_errors": []
+        },
+        "editor_url": "https://www.blogger.com/blog/post/edit/3556407006374124911/712458916780914918",
+        "images": [
+          {
+            "role": "cover",
+            "source_file": "assets/windbird/cover.jpg",
+            "blogger_cdn_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhKTE-0WEPjMqwMVfNqpPm9GCtbgMEuVviJ2kgyWgaEIIv-X6KYvCaSo_GkilD_9QFjZshmh_zm1rIUCyOduHU3D_z0lK4pkuRaF0qpxubt5l1miKxsm8N_Bmonu32r-P5K0u9RcT2U0TxaQd5qJosH6_m0Tk2C4r3IhHTpQeLfMIRyHFFXjoPhkLoeQ6M/s1600/cover.jpg",
+            "upload_method": "Blogger Insert image > Upload from computer > native file picker",
+            "natural_width": 1439,
+            "natural_height": 810
+          },
+          {
+            "role": "concept",
+            "source_file": "assets/windbird/concept.jpg",
+            "blogger_cdn_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWbuxPDlBYuOexpUfJLpWXaHeVEXlENjTjZbiYATprs8YwlCZ7I_4RbPXdY0UvZiUFx2Gq6ZXZ_-vJzwwv2o_H_r96XALpqTboC4YRvZ1Y6Fks-RzB85No82et_VYXSEkfYzerTERM9LjfZhHbOVOM3OQJLky7SNtijF9Xt3M1xrt5mHuOlpmdvZXz03Q/s1600/concept.jpg",
+            "upload_method": "Blogger Insert image > Upload from computer > native file picker",
+            "natural_width": 1440,
+            "natural_height": 960
+          }
+        ],
+        "saved_html_readback": "blogger-save-verification.json",
+        "editor_state": "Native publish confirmed on same post; listing9published2drafts0scheduled",
+        "history": [
+          {
+            "at": "2026-10-14T13:51:00Z",
+            "state": "native_screen_handoff_authorized",
+            "note": "Marine task released Mac screen control; only newly created game tabs used"
+          },
+          {
+            "at": "2026-10-14T14:17:48.339993+00:00",
+            "state": "draft_saved_reloaded",
+            "post_id": "712458916780914918"
+          },
+          {
+            "at": "2026-10-14T23:29:04.990+09:00",
+            "state": "published",
+            "post_id": "712458916780914918",
+            "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_14.html"
+          },
+          {
+            "at": "2026-10-14T14:39:16.561256+00:00",
+            "state": "published_public_qa_passed",
+            "widths": [
+              1100,
+              320,
+              360,
+              390
+            ]
+          }
+        ],
+        "saved_preview_verification": "blogger-preview-qa.json",
+        "article_commit": "25e84e267ffdedba3dd96f4ef94b244fa233f895",
+        "article_pages_run_id": 38579464876,
+        "article_pages_status": "success",
+        "article_pages_verified": "article-pages-verification.json",
+        "published_at": "2026-10-14T23:29:04.990+09:00",
+        "existing_posts_after": {
+          "published": 9,
+          "drafts": 2,
+          "scheduled": 0,
+          "old_drafts_unchanged": [
+            "1057707127785703864",
+            "6862408650449844535"
+          ]
+        },
+        "prepublication_verified_commit": "8a326b2997e89f65eecd6c28b96930477afa3875",
+        "prepublication_pages_run_id": 38580547713,
+        "prepublication_pages_status": "success",
+        "public_verification": {
+          "report": "blogger-public-qa.json",
+          "source_report": "public-source-verification.json",
+          "css_widths": [
+            1100,
+            320,
+            360,
+            390
+          ],
+          "iframe_widths": [
+            812,
+            290,
+            330,
+            360
+          ],
+          "title_and_canonical": true,
+          "cdn_images_loaded": 2,
+          "public_body_exact_match": true,
+          "normal_pointer_start_and_held_control": true,
+          "pause": true,
+          "embedded_success_failure_retry": true,
+          "standalone_link_click": true,
+          "horizontal_overflow": false,
+          "screenshots_visually_reviewed": true,
+          "physical_phone": false
+        },
+        "native_screen_control_released_at": "2026-10-14T14:39:16.561256+00:00",
+        "native_screen_control": "Released; other blog tabs unchanged; no further OS UI actions"
+      }
+    },
+    {
+      "path": "assets/sky-plates/publication.json",
+      "record": {
+        "game": "sky-plates",
+        "blog_id": "3556407006374124911",
+        "post_id": "8325798801934045638",
+        "status": "published",
+        "title": "空中サーカスの皿まわし｜次に助けるのは、どのお皿？",
+        "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/sky-plates/?v=2",
+        "prototype_commit": "f2d4ea2fdfd1d3dd4033edcbbd811695abee1066",
+        "pages_workflow_id": 38013774407,
+        "pages_conclusion": "success",
+        "automated_tests": 138,
+        "independent_review": "PASS",
+        "browser_checks": {
+          "desktop_success": "Actual keyboard play completed45 seconds,40points,18refills",
+          "desktop_failure_retry_pause": "Verified in cloud Chromium",
+          "article_widths_verified": [
+            320,
+            360,
+            390
+          ],
+          "article_320_scroll_width": 313,
+          "embed_320_width": 280,
+          "embed_320_start": "Verified",
+          "remaining": "Physical phone, novice-human and sustained-fun tests not performed",
+          "article_scroll_widths": [
+            313,
+            353,
+            383
+          ],
+          "standalone_widths": [
+            320,
+            360,
+            390
+          ],
+          "standalone_scroll_widths": [
+            313,
+            353,
+            383
+          ],
+          "pointer_360": "Actual1100ms pointer hold raised second plate from63 to96 and score0 to1; release and pause verified",
+          "responsive_operations": "320start/restart;360select/hold/pause;390start/resume/select/pause"
+        },
+        "updated_at": "2026-10-10T01:56:33Z",
+        "article_sha256": "f7937c846970e57f617b9146dd674fc3ea6bffab1348c27b4764a34e7ce7d81d",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_10.html",
+        "published_at": "2026-10-10T10:55:00+09:00",
+        "public_verified": true,
+        "blogger_checks": {
+          "saved_reload_exact": true,
+          "public_title": true,
+          "public_images_loaded": 2,
+          "public_image_natural_widths": [
+            1400,
+            1400
+          ],
+          "og_image_matches_cover": true,
+          "public_embed_start_pause": true,
+          "public_embed_remaining_after_start_pause": "44.7",
+          "published_posts": 5,
+          "preserved_drafts": 2
+        }
+      }
+    },
+    {
+      "path": "assets/shell-auction/publication.json",
+      "record": {
+        "status": "published",
+        "blogId": "3556407006374124911",
+        "postId": "3012676308537341362",
+        "title": "貝がらの競り市｜ここで競る？ 次を待つ？",
+        "articleUrl": "https://game-idea-lab.blogspot.com/2026/10/blog-post_27.html",
+        "playUrl": "https://kicchomen.github.io/game-idea-lab/games/shell-auction/",
+        "publishedAt": "2026-10-27T11:33:00+09:00",
+        "publishedTimeSource": "Public Blogger BlogPosting JSON-LD",
+        "prepublicationPagesCommit": "224c207d6166e27adfa12ccd1cb96e9591084d35",
+        "pagesRun": 40439316053,
+        "tests": {
+          "whole": 684,
+          "new": 70,
+          "failed": 0
+        },
+        "unverified": [
+          "physical smartphone",
+          "first-time human",
+          "cross-browser",
+          "screen reader",
+          "long-term enjoyment"
+        ],
+        "publicWidthQa": "passed 320/360/390 CSS-pixel iframe viewport tests; public theme and nested game actual +/- operations, both CDN images loaded, no horizontal overflow",
+        "verifiedAt": "2026-10-27T02:36:45Z",
+        "recordCommitParent": "e94a42019161c62eebef0dbfff80e93f73dc9b9c",
+        "knownBlockingIssues": []
+      }
+    },
+    {
+      "path": "assets/meadow-camera/publication.json",
+      "record": {
+        "date": "2026-10-21",
+        "title": "野原のシャッターチャンス｜いま撮る？ もう少し待つ？",
+        "blog_id": "3556407006374124911",
+        "post_id": "8996931272622090612",
+        "status": "published_verified",
+        "base_commit": "e9b9517f385526defeba3b83a368ee9825ebfadc",
+        "prototype_commits": [
+          "c57ecb65fbb4a38c2d375710e60570ab24dc8763",
+          "a894250863aebf4325326627baabe28f27e32586",
+          "74d954a7ac261379f0d5e14e0a5fb8314b51d484",
+          "93b7ddefe279a6269170359e9525f229da9fd282",
+          "25e9e417dd546afc0d76b995ed61b94d16aea0a1",
+          "fdc9aacae051b42f5fe099127bf14b724dbd4a22"
+        ],
+        "pages_success_runs": [
+          39527098512,
+          39527554820,
+          39527858919,
+          39528991527,
+          39529462033,
+          39530482874
+        ],
+        "trial_url": "https://kicchomen.github.io/game-idea-lab/games/meadow-camera/",
+        "before": {
+          "published": 15,
+          "drafts": 2,
+          "scheduled": 0,
+          "open_prs": 0
+        },
+        "automated_tests": {
+          "production_engine": 17,
+          "mocked_controller": 8,
+          "passed": 25
+        },
+        "independent_review": "25 automated checks; desktop all three missions success, failure, retry, final restart; 320/360/390 actual success and retry passed",
+        "responsive_review": {
+          "css_widths": [
+            320,
+            360,
+            390
+          ],
+          "horizontal_overflow": false,
+          "control_heights_px": [
+            44,
+            46
+          ],
+          "environment": "cloud desktop Chromium, not physical phone"
+        },
+        "images": {
+          "cover": "cover.jpg",
+          "source": "original AI-generated concept illustration, one fox/rabbit/bird, independently inspected",
+          "Blogger_CDN": {
+            "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjg1LJ7f8c1dku5-gFlfX7HkKSFYS5FtIagjAHTNxvS1LNCm4RQ0pfssamkG1-haIvlIMmxU4gU9xtIPD9tx-roKOtxzUTsU0-z8kfxqLfkbtOUNK0T8rG7IQta1sWvaoLyfeVqG8Z4-qlRVGcVkn9H9yiK-T8XhoHSGtCYMIcyD_nw2ficKUp_R9eo1iI/s1439/cover(1).jpg",
+            "screenshot": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgOaxWfaNall-S9EcxB1jFy_lMfcZfOdkoTs_1o3H_7G_Zv7SlwI_XSq8ideXOg-a2ojzOeOYWrE56HUQNv9IQbRZRlgpr1Vi4uSwz6NXAyDr1eI7IpVRzvEGv3eJtfM_r-txyOTBONrxJntC-84sGIfh0PvhymQaVHbXo6AXr5Jt_O99i0x3oaJIrUW9Y/s1165/independent-gameplay-full.jpg"
+          },
+          "screenshot": "independent-gameplay-full.jpg"
+        },
+        "limitations": [
+          "Physical-phone not tested",
+          "First-time human and long-term fun unverified",
+          "Fixed trajectories and three assignments only"
+        ],
+        "remaining": [],
+        "saved_HTML_characters": 2069,
+        "article_QA_iteration": "Saved preview tested at exact 320/360/390 CSS px using ordinary window resizing and browser zoom. Images and iframe tested. Fixed 2px iframe overflow with border-box and rechecked.",
+        "published_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_21.html",
+        "published_at": "2026-10-21T11:03:00+09:00",
+        "Blogger_modified_at": "2026-10-21T11:03:53+09:00",
+        "verified_at": "2026-10-21T11:05:19+09:00",
+        "after": {
+          "published": 16,
+          "drafts": 2,
+          "scheduled": 0
+        },
+        "public_checks": [
+          "title exact",
+          "canonical URL",
+          "both CDN images loaded at native dimensions",
+          "cover selected as thumbnail in JSON-LD and homepage",
+          "iframe URL and standalone link",
+          "actual embedded start/aim/shutter response",
+          "old drafts preserved"
+        ]
+      }
+    },
+    {
+      "path": "assets/firebreak-keeper/publication.json",
+      "record": {
+        "game": "firebreak-keeper",
+        "blog_id": "3556407006374124911",
+        "post_id": "1517983666088192901",
+        "status": "published",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_08.html",
+        "published_at": "2026-10-08T11:25:00+09:00",
+        "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/firebreak-keeper/",
+        "prototype_commit": "31cd714a2ff148a0a525bb47ab4d06b00a5e6762",
+        "pages_workflow_ids": [
+          37716876013
+        ],
+        "pages_conclusions": [
+          "success"
+        ],
+        "automated_tests": 87,
+        "new_engine_tests": 29,
+        "new_mock_controller_tests": 4,
+        "independent_review": "PASS after burned-forest limit, terminal-control lock and article turn-limit clarification",
+        "article_sha256": "2c80711729ac84139d11337846d37c583afeccf3968c305873acd0fa31cd6050",
+        "browser_checks": {
+          "environment": "cloud desktop Chromium; narrow CSS viewport, not physical phone or novice human play",
+          "success": "320px iframe: mission1,3 turns,10 actions,3 groups rescued,zero active fires,zero burned tiles",
+          "failure": "mission2: actual advance-wind clicks with no interventions; house reached before rescue",
+          "retry": "failure retry restores turn1,zero rescued,3 fires; success undo restores rescue2 then re-rescue wins; next mission starts mission2",
+          "other_actions": "360px firebreak+undo;390px keyboard Enter movement, mission3 refill and keyboard undo restoring water1/AP2",
+          "game_widths": [
+            {
+              "client": 320,
+              "scroll": 320
+            },
+            {
+              "client": 360,
+              "scroll": 360
+            },
+            {
+              "client": 390,
+              "scroll": 390
+            }
+          ],
+          "article_preview_widths": [
+            {
+              "client": 320,
+              "scroll": 320
+            },
+            {
+              "client": 360,
+              "scroll": 360
+            },
+            {
+              "client": 390,
+              "scroll": 390
+            }
+          ],
+          "article_embed": "actual movement/rescue/turn progression in Blogger preview; actual movement in published embed",
+          "note": "Some pointer locator clicks below the visible nested frame did not activate; focused keyboard activation succeeded. No claim of physical touch validation."
+        },
+        "blogger_checks": {
+          "saved_readback_exact": true,
+          "images": 2,
+          "cdn": "blogger.googleusercontent.com",
+          "data_uris": 0,
+          "iframes": 1,
+          "published_title_verified": true,
+          "thumbnail_loaded": true,
+          "both_images_loaded": true,
+          "post_count": 5,
+          "published_count": 3,
+          "preserved_draft_count": 2
+        },
+        "remaining": [],
+        "limitations": [
+          "Physical-phone touch and cross-browser testing not performed",
+          "First-time human comprehension and sustained fun are unverified",
+          "Fire dynamics are fictional, not real emergency guidance"
+        ]
+      }
+    },
+    {
+      "path": "assets/lost-property/publication.json",
+      "record": {
+        "game": "lost-property",
+        "title": "忘れ物窓口の探偵｜一人の証言が、三人をつなぐ",
+        "status": "published",
+        "blog_id": "3556407006374124911",
+        "reserved_editor_post_id": "8001755356304616392",
+        "editor_url": "https://www.blogger.com/blog/post/edit/3556407006374124911/8001755356304616392",
+        "editor_state": "Published same saved draft; listing8published2drafts",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_13.html",
+        "trial_url": "https://kicchomen.github.io/game-idea-lab/games/lost-property/",
+        "planned_trial_url": "https://kicchomen.github.io/game-idea-lab/games/lost-property/",
+        "remote_main_verified": "47962a6fcf65278f2ae38ac7014148590093b018",
+        "remote_tree": "b521df3523ad24fd7ace44a770bcff152f79bdae",
+        "git_result": "Explicit retry approval received. Main advanced with expected-head lease; both Pages deployments succeeded.",
+        "tests_passed": 242,
+        "new_tests_passed": 32,
+        "independent_review": "Source and mock DOM pass; separate cloud browser320/360/390 pass",
+        "browser_attempt": "Live PC703 all3 cases success; failure/Undo/retry success. Independent320/360/390 no horizontal overflow, success/failure/retry verified. Physical smartphone touch and human novice testing not performed.",
+        "remaining": [],
+        "updated_at": "2026-10-13T08:59:00Z",
+        "prototype_commit": "8962cff025b3df64db2739d8d58da009b77bff6c",
+        "post_id": "8001755356304616392",
+        "published_at": "2026-10-13T17:57:00+09:00",
+        "pages_run_id": 38372429369,
+        "verification": {
+          "tests_passed": 242,
+          "new_tests": 32,
+          "independent_source_review": "pass",
+          "independent_browser_review": "pass",
+          "standalone_css_widths": [
+            320,
+            360,
+            390,
+            703
+          ],
+          "article_body_before_publication_css_widths": [
+            320,
+            360,
+            390
+          ],
+          "blogger_native_preview_css_width": 412,
+          "public_blogger_css_widths": [
+            320,
+            360,
+            390
+          ],
+          "public_document_widths": [
+            305,
+            345,
+            375
+          ],
+          "public_scroll_widths": [
+            305,
+            345,
+            375
+          ],
+          "saved_html_readback": true,
+          "public_title_verified": true,
+          "public_thumbnail_verified": true,
+          "public_images_loaded": 2,
+          "public_embed_success_failure_retry_verified": true,
+          "physical_smartphone_test": false,
+          "novice_human_test": false,
+          "screenshots_visually_reviewed": true
+        },
+        "images": [
+          {
+            "role": "cover",
+            "source_file": "assets/lost-property/cover.jpg",
+            "origin": "AI-generated concept illustration; visually checked; clearly labeled in article",
+            "blogger_cdn_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgnkik6BApseuewkNAQaG8ngtTa2Ywpuap6WT7UoS7N7v0EFkaY7znuDdqKBBMrRFw2aZcmQ-K2BMb2ZpGuLetXsW7q69E72klzGVBC-r62n5RiBES4Tvc-YHW-xdX4sT5j3hn4cuROrnFKX4Ezc2UcOP2ksjWR8stb30lj-Ii5ee-mn48Z8ZAJl8kzXJc/s1600/clipboard.jpeg",
+            "upload_method": "Blogger Compose clipboard image upload",
+            "natural_width": 1440,
+            "natural_height": 810
+          },
+          {
+            "role": "concept",
+            "source_file": "assets/lost-property/concept.jpg",
+            "origin": "AI-generated concept illustration; visually checked; clearly labeled in article",
+            "blogger_cdn_url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjlIZHbDDwf_0LtwfgUhlQ-29dy9xO1o-busKoKKi77_RlB75HpazAVEfdTgv9-16xTSw2Kmicq9WtLI3ocR7X-_Noe0Xy2ue2ekpIOEZSVsB7uXngtELTHNUAeGZMeWzekCX8YaH4jQfdbxP9rMEUXRTFvwsaa_V3IkLZ7qzhHF1m8W3hyphenhyphenu36H0_vlRuQ/s1600/clipboard.jpeg",
+            "upload_method": "Blogger Compose clipboard image upload",
+            "natural_width": 1440,
+            "natural_height": 960
+          }
+        ],
+        "limitations": [
+          "Three fixed cases can be memorized",
+          "Retry and Undo permit brute-force exploration",
+          "Physical phone touch and novice-human enjoyment remain untested"
+        ],
+        "history": [
+          {
+            "at": "2026-10-13T01:43:00Z",
+            "state": "paused",
+            "reason": "Git create_tree was cancelled; no commit/ref change then. Recovery ZIP preserved."
+          },
+          {
+            "at": "2026-10-13T08:31:55Z",
+            "state": "retry_authorized",
+            "reason": "User explicitly approved Git retry, verification and publication."
+          },
+          {
+            "at": "2026-10-13T08:57:00Z",
+            "state": "published",
+            "post_id": "8001755356304616392"
+          }
+        ]
+      }
+    },
+    {
+      "path": "assets/shepherd-circle/publication.json",
+      "record": {
+        "date": "2026-10-23",
+        "title": "丘の牧羊犬｜追うより、うしろに回ろう",
+        "status": "published_verified",
+        "blogger_post_id": "4260675058226376697",
+        "published_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_23.html",
+        "published_at": "2026-10-23T10:35:00+09:00",
+        "verified_at_utc": "2026-10-23T01:36:35Z",
+        "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/shepherd-circle/",
+        "prototype_commit": "9041f7f6d2121b0fbd6a776ddf214eec11d66e80",
+        "assets_commit": "b606a54a57b50395348f24653a180128fdb1e413",
+        "pages_success_run": 39884564324,
+        "tests": {
+          "game_specific": 26,
+          "repository_total": 514,
+          "failed": 0
+        },
+        "actual_browser": {
+          "environment": "cloud Chromium CUA ordinary UI input",
+          "success": "4/4 at45.0sec",
+          "failure": "natural70sec timeout0/4",
+          "retry": "success and failure retry restore70sec0/4",
+          "prototype_widths": [
+            320,
+            360,
+            390
+          ],
+          "article_html_widths": [
+            320,
+            360,
+            390
+          ],
+          "article_no_horizontal_overflow": true,
+          "blogger_preview_article_width": 365,
+          "blogger_preview_no_horizontal_overflow": true,
+          "public_embedded_start_pause": true,
+          "cdn_images_decoded": [
+            1439,
+            570
+          ],
+          "thumbnail_og_confirmed": true
+        },
+        "limitations": [
+          "No physical phone or real touch test",
+          "No novice human or sustained enjoyment test",
+          "No Firefox/Safari test",
+          "Article exact three-width checks use saved HTML in normal iframe; full Blogger theme was checked at its smartphone preview width365px",
+          "One fixed field, simplified dog crosses fences, no real animal training claim"
+        ]
+      }
+    },
+    {
+      "path": "assets/fossil-museum/publication.json",
+      "record": {
+        "game": "fossil-museum",
+        "blog_id": "3556407006374124911",
+        "post_id": "6004115168095843624",
+        "status": "published",
+        "title": "砂の下の博物館｜速く掘る？ そっと払う？",
+        "observed_existing": {
+          "published": 5,
+          "drafts": 2,
+          "main": "8b9af357578f77edc33bfe60b967f740690df474",
+          "open_prs": 0
+        },
+        "updated_at": "2026-10-11T01:07:20Z",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_11.html",
+        "trial_url": "https://kicchomen.github.io/game-idea-lab/games/fossil-museum/",
+        "published_at": "2026-10-11T13:59:00+09:00",
+        "verified_at": "2026-10-11T05:01:37Z",
+        "prototype_commit": "1b6e194db9b89e2ed8ec7357b211e628bfa77198",
+        "pages_run_id": 38112545361,
+        "verification": {
+          "tests_passed": 176,
+          "independent_review": "PASS",
+          "saved_html_exact_characters": 2251,
+          "standalone_css_widths": [
+            320,
+            360,
+            390
+          ],
+          "preview_css_widths": [
+            320,
+            360,
+            390
+          ],
+          "public_css_widths": [
+            320,
+            360,
+            390
+          ],
+          "public_title": true,
+          "public_thumbnail": true,
+          "public_images": 2,
+          "public_embed_operated": true,
+          "public_posts": 6,
+          "preserved_drafts": 2
+        },
+        "limitations": [
+          "Desktop Chromium responsive sizing, not a physical phone test",
+          "No novice-human playtest or long-term fun validation",
+          "Museum building and collection persistence not implemented"
+        ]
+      }
+    },
+    {
+      "path": "assets/roadside-bargain/publication.json",
+      "record": {
+        "date": "2026-10-22",
+        "title": "旅人たちの取り引き｜その条件なら、交換できる？",
+        "status": "published_verified",
+        "prototype_url": "https://kicchomen.github.io/game-idea-lab/games/roadside-bargain/",
+        "prototype_commit": "5362fdaf4998f2ee9c5ba947514b8c6daa36e257",
+        "pages_success_runs": [
+          39706934880,
+          39707571304,
+          39708101765,
+          39709130524,
+          39709581259,
+          39710597504
+        ],
+        "pages_run_url": "https://github.com/kicchomen/game-idea-lab/actions/runs/39710597504",
+        "article_copy": "article-copy.md",
+        "blogger_status": "Published; this task performed no Blogger edits.",
+        "automated_tests": {
+          "production_engine": 9,
+          "mocked_controller": 7,
+          "independent_score_oracle": 2,
+          "responsive_source_check": 1,
+          "passed": 19
+        },
+        "independent_review": "Separate arithmetic oracle matched all 48 bounded offers. Independent browser review confirmed operation, but found that every meeting accepts 1:1 and score previews can avoid refusals. This remains an introductory fixed-value prototype; adaptive traveler demands and deeper bargaining are not implemented.",
+        "browser_checks": {
+          "environment": "isolated headless Chrome",
+          "success": "3/3 route, including counteroffer, accepted better split and retry",
+          "failure": "0/3 route, patience exhaustion and retry",
+          "keyboard": "Enter and Space activate focused counteroffer",
+          "repeated_input": "double-click/stale action guards; one opening refusal costs one patience point",
+          "widths_css_px": [
+            320,
+            360,
+            390
+          ],
+          "horizontal_overflow": false,
+          "step_control_px": "44x44",
+          "primary_action_height_px": 48,
+          "runtime_exceptions": 0,
+          "public_pages_url_loaded": true,
+          "public_gameplay_image": "HTTP 200; JPEG decoded at 1100x1453 and 266967 bytes",
+          "published_article": {
+            "title": "旅人たちの取り引き｜その条件なら、交換できる？",
+            "post_id": "4286326035730799723",
+            "canonical": "https://game-idea-lab.blogspot.com/2026/10/blog-post_22.html",
+            "published_datetime": "2026-10-22T11:11:00+09:00",
+            "cover_og_image": "Blogger CDN image confirmed",
+            "environment": "isolated headless Chromium; CDP frame-level HTMLElement.click(), not physical input",
+            "widths_css_px": [
+              320,
+              360,
+              390
+            ],
+            "document_root_scroll_width_by_viewport_px": {
+              "320": 320,
+              "360": 360,
+              "390": 390
+            },
+            "article_body_scroll_width_by_viewport_px": {
+              "320": 320,
+              "360": 360,
+              "390": 390
+            },
+            "article_iframe_width_px": {
+              "320": 288,
+              "360": 328,
+              "390": 358
+            },
+            "game_inner_width_px": {
+              "320": 286,
+              "360": 326,
+              "390": 356
+            },
+            "horizontal_overflow": false,
+            "images_decoded": 2,
+            "image_natural_dimensions_px": [
+              "1439x810",
+              "1100x1453"
+            ],
+            "proposal_counteroffer_seal_each_width": true,
+            "failed_state_copy": "最後に提示した条件です。",
+            "versioned_assets_loaded": [
+              "style.css?v=20261022-2",
+              "engine.js?v=20261022-2",
+              "app.js?v=20261022-2"
+            ]
+          }
+        },
+        "images": {
+          "cover": {
+            "path": "cover.jpg",
+            "source": "Parent-provided original AI-generated concept illustration; not a gameplay screenshot",
+            "dimensions_px": "1439x810"
+          },
+          "gameplay": {
+            "path": "gameplay.jpg",
+            "source": "Actual 1100px-wide headless Chrome gameplay screenshot after a proposal",
+            "dimensions_px": "1100x1453"
+          },
+          "mobile_qa_capture": {
+            "path": "../../games/roadside-bargain/gameplay-negotiation.jpg",
+            "dimensions_px": "390x1900"
+          }
+        },
+        "limitations": [
+          "Physical phone and real touch were not tested",
+          "First-time human comprehension and long-term enjoyment were not tested",
+          "Safari, Firefox and other browsers were not tested",
+          "The existing monorepo test suite was not run in this isolated workspace; all 19 relevant game-specific tests passed",
+          "The fixed-value prototype is introductory and all three meetings accept 1:1; adaptive demand shifts and long-term replay depth are not implemented"
+        ],
+        "blogger_post_id": "4286326035730799723",
+        "published_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_22.html",
+        "published_at": "2026-10-22T11:11:00+09:00",
+        "verified_at_utc": "2026-10-22T02:14:55Z"
+      }
+    },
+    {
+      "path": "assets/salvage-diver/publication.json",
+      "record": {
+        "game": "salvage-diver",
+        "status": "published",
+        "blog_id": "3556407006374124911",
+        "post_id": "313407064244169801",
+        "base_commit": "153b86061147eb02c850d53211238e5e48784d00",
+        "existing_posts": {
+          "published": 9,
+          "drafts": 2,
+          "duplicate": false
+        },
+        "tests_passed": 346,
+        "browser_verification": "passed; see browser-qa.md",
+        "published_at": "2026-10-15T10:21:57.495+09:00",
+        "url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_15.html",
+        "trial_url": "https://kicchomen.github.io/game-idea-lab/games/salvage-diver/",
+        "source_commit": "89611efdbf2789307204ef5f35f746f3e887c3b5",
+        "pages_run": "38664198624",
+        "pages_conclusion": "success",
+        "physical_phone_test": false,
+        "novice_human_test": false
+      }
+    },
+    {
+      "path": "assets/pottery-workshop/publication.json",
+      "record": {
+        "date": "2026-10-18",
+        "title": "ろくろの小さな工房｜ひと押しで、となりの形も変わる",
+        "blog_id": "3556407006374124911",
+        "post_id": "1907769431239473951",
+        "status": "published",
+        "public_url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_18.html",
+        "published_at": "2026-10-18T10:31:00+09:00",
+        "play_url": "https://kicchomen.github.io/game-idea-lab/games/pottery-workshop/",
+        "blocked_on": null,
+        "timestamp_precision": "minute",
+        "validated_commit": "dd881f8a91c05b00b407334efbc2efb28282d781",
+        "pages_run": "39086748605",
+        "public_verification": "title, canonical, OG cover, both CDN images loaded, iframe shaping/failure/retry"
+      }
+    }
+  ]
+}
