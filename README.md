@@ -404,3 +404,12 @@ Run `node --test tests/shell-auction*.test.cjs`. Design comparison, implemented 
 `games/mist-cartographer/` — 未知の6×6島を歩き、昼を払って見渡し、名所を2つ訪ねて野営地へ戻る探索の試作。固定3島。移動・見渡す・帰還の判断が核。操作は方向ボタン/矢印/WASD、Vで見渡す。依存・課金・通信・保存なし。
 
 企画とPDCA: `assets/mist-cartographer/design-notes.md`、独立レビュー: `independent-review.md`。新規51テスト（独立14含む）、全735テスト成功。クラウドChrome実操作で成功/失敗/再挑戦/反復、320/360/390px試遊と保存記事HTMLの埋込みを確認。記事幅fixtureは実テーマ全体の実機表示検査とは区別。実機スマホ・初見の面白さ・長時間の奥行きは未検証。固定地図の暗記後は見渡す価値が薄れる課題を記録。
+
+## 屋台の鍋番 / Simmer Stall (2026-10-29)
+
+共通の火で大根・じゃがいも・葉物を煮て、投入時差と不可逆の取り出し、皿の冷却を調整するリアルタイム試作。固定3皿のうち2皿成功が目標。火止めは加熱のみ、一時停止は時間全体を止める。ネット通信・課金・保存・音声なし。
+
+記事: https://game-idea-lab.blogspot.com/2026/10/blog-post_29.html （Blogger4130876958999935163）
+試遊: https://kicchomen.github.io/game-idea-lab/games/simmer-stall/
+
+ゲーム37テスト、全772テスト、独立10030ケース成功。低FPSのdt切捨てを独立レビューで発見し修正。クラウドChromeで成功/失敗/再挑戦/反復/キー操作、320/360/390pxの試遊と保存本文fixtureを確認。公開記事内でも開始/投入/停止を確認。実機スマホ・初見の人・長期面白さは未検証。企画/PDCA/画像/本文/検査/公開台帳はassets/simmer-stall/、独立レビューはreviews/simmer-independent-20261029.md。

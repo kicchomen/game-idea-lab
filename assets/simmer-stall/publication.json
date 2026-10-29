@@ -1,0 +1,49 @@
+{
+  "status": "published",
+  "blogId": "3556407006374124911",
+  "postId": "4130876958999935163",
+  "title": "屋台の鍋番｜食べ頃を、一皿にそろえる",
+  "articleUrl": "https://game-idea-lab.blogspot.com/2026/10/blog-post_29.html",
+  "playUrl": "https://kicchomen.github.io/game-idea-lab/games/simmer-stall/",
+  "publishedAt": "2026-10-29T12:34:00+09:00",
+  "publishedTimeSource": "Public Blogger time datetime attribute",
+  "verifiedAt": "2026-10-29T03:35:37Z",
+  "baselineCommit": "3b6ecb096f00daf7a64fe15a9fd2a29967c3f9e5",
+  "prototypeCommit": "f04b509e9aa6a1ab3036e07053df913e85afc372",
+  "pagesRun": 40811777242,
+  "articleFixtureCommit": "7ea63dc379ec0616992e27c248b4dc619a2da337",
+  "articleFixturePagesRun": 40812479906,
+  "pagesStatus": "success",
+  "tests": {
+    "total": 772,
+    "game": 37,
+    "independentInvariantCases": 10030
+  },
+  "imageRepositoryBackup": {
+    "cover.jpg": "cc6e628d4bb2ebfb07528095b3fbe32fcf3ed4de",
+    "gameplay.jpg": "8c882fad3fc42a7c455b1538baa2b1b1ce4610f7"
+  },
+  "savedBloggerReadback": "exact full HTML match with 2 images, 1 iframe",
+  "publicVerification": "title/canonical/decoded 1439x810 cover and 460x740 screenshot/public embedded start-insert-pause verified",
+  "browserQA": {
+    "standaloneWidths": [
+      320,
+      360,
+      390
+    ],
+    "savedArticleWidths": [
+      320,
+      360,
+      390
+    ],
+    "standalone": "weak and strong recipes succeed; insufficient potato failure; retry and 2/3 overall victory; keyboard and pause/reset",
+    "article": "same saved HTML at320/360/390 has no horizontal overflow, both CDN images decoded, embedded start-insert-pause actual keyboard/pointer operations",
+    "officialBloggerPreview": "visual inspection only; preview interaction overlay does not forward play input",
+    "physicalPhone": "not tested",
+    "humanFirstPlay": "not tested",
+    "longtermFun": "not tested"
+  },
+  "knownBlockingIssues": [],
+  "remainingBackupIssue": null,
+  "published": true
+}

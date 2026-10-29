@@ -1,0 +1,47 @@
+[
+  {
+    "embedWidth": 296,
+    "images": [
+      {
+        "loaded": true,
+        "w": 296
+      },
+      {
+        "loaded": true,
+        "w": 296
+      }
+    ],
+    "scroll": 320,
+    "viewport": 320
+  },
+  {
+    "embedWidth": 336,
+    "images": [
+      {
+        "loaded": true,
+        "w": 336
+      },
+      {
+        "loaded": true,
+        "w": 336
+      }
+    ],
+    "scroll": 360,
+    "viewport": 360
+  },
+  {
+    "embedWidth": 366,
+    "images": [
+      {
+        "loaded": true,
+        "w": 366
+      },
+      {
+        "loaded": true,
+        "w": 366
+      }
+    ],
+    "scroll": 390,
+    "viewport": 390
+  }
+]
