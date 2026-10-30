@@ -1,0 +1,26 @@
+{
+  "article": "<div class=\"cloud-post-article\" style=\"max-width:820px;margin:auto;line-height:1.8;overflow-wrap:anywhere;\">\n<figure style=\"margin:0 0 1em;\"><img alt=\"雲の郵便飛行船の構想イラスト。進行・修理・資金のカードを手に、空の郵便局へ向かう\" height=\"810\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjv6_CGUc-vo3ypncpP_rDSAtwl1bjycRRbyfkalYRnqzXdyFHKFmFMrLWl02OxvxJBXFZ42E-PPzilsHJeCr_6u_Lge7C9efAk_yKdovmx2LMTtbY4BvHQQZ6cE2lDXE6t0H8NTpF7VZfnh2JCOLl3RZChf3b_4psVxOI4Kt5lmKF93-uCUBiY7VvBqY4/s1600/clipboard.jpeg\" style=\"display:block;width:100%;height:auto;\" width=\"1440\"><figcaption style=\"font-size:.85em;color:#666;\">構想を描いたイメージ。実際の試遊画面は下に掲載しています。</figcaption></figure>\n<p>ゲームアイデアを発案し、遊びの核を試作してみる記事です。</p>\n<h2>買った一枚が、あとで頼りになる</h2><p>雲の向こうの郵便局へ、飛行船でお届けもの。あなたが選ぶのは、毎日の手札4枚から使う2枚です。</p>\n<p>進むカードだけでは船がもたない。修理ばかりでは遠くへ届かない。小包を運んで資金を作り、強いカードを買っても、すぐには使えません。<strong>捨札に入れた一枚が、山札を一周して手元に戻ってくる。</strong> その先の航海を考えて、道具箱ならぬ「手札の中身」を育てるゲームです。</p>\n<h2>小さく試してみる</h2><p>今回の試作は、8日以内に距離28へ到達する1航路。1日の終わりに船体が2減り、0になると終了です。買えるカードは、よく進む帆、大きく修理するキット、進みながら資金も作る速達便の3種類。</p>\n<figure style=\"margin:1em 0;\"><img alt=\"実際の試作画面。購入していた大きな帆のカードが、4日目の手札へ戻ったところ\" height=\"1151\" src=\"https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWSFOak0JpnG0HTfEhD_uO-W7SD_K9BJzjRyExJc0KnfOSkkpGFcMryxYB4K4FZOrK4n2XEcMqybvH1xbBaTYuGaCMuiUr0sPxUKayQGvx3vDrO6eLNDzDB0NCcaupjqAjLiQiU3DZ1Fb86YicLcAndFwOmnm3SM24jUsbuMMaX5j_C4qgZ7vJT7fggsY/s1600/clipboard.jpeg\" style=\"display:block;width:100%;max-width:460px;height:auto;margin:auto;\" width=\"700\"><figcaption style=\"font-size:.85em;color:#666;\">実際の試作画面。右端の「購入カード」が、山札を一周して戻ってきました。</figcaption></figure>\n<iframe src=\"https://kicchomen.github.io/game-idea-lab/games/cloud-post/\" title=\"雲の郵便飛行船を試遊\" width=\"100%\" height=\"1350\" style=\"display:block;border:0;width:100%;max-width:100%;\" loading=\"lazy\"></iframe><p><a href=\"https://kicchomen.github.io/game-idea-lab/games/cloud-post/\" rel=\"noopener\" target=\"_blank\">単独の画面で試遊する ↗</a></p>\n<p>カードを2枚タップしたら、必要に応じて補給所で1枚購入し、翌日へ。時間制限はなく、PCはTabとEnter／Spaceでも操作できます。</p>\n<p><strong>ヒント：</strong> 最初のカードだけでは距離が足りません。資金を作る日と、買ったカードが戻る日を考えてみてください。</p>\n<h2>この先に広げるなら</h2><p>追い風の多い航路か、整備所の多い遠回りか。旅先の選択で、育てたい手札も変わる配達の旅へ。今回はその構想のうち、<strong>購入したカードが循環する仕組みと、進行・修理・資金の使い分け</strong>だけを実装しています。航路分岐やイベントは未実装で、再挑戦は同じ初期状態から始まります。</p>\n<p>自動テスト796件とクラウドブラウザで成功・失敗・再挑戦を確認。幅320／360／390pxでも最後まで操作し、狭い画面で飛行船が切れる表示を修正しました。スマートフォン実機、人の初見テスト、長く遊ぶ面白さは未検証です。\n</p>\n</div>",
+  "canonical": "https://game-idea-lab.blogspot.com/2026/10/blog-post_30.html",
+  "images": [
+    {
+      "complete": true,
+      "height": 810,
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjv6_CGUc-vo3ypncpP_rDSAtwl1bjycRRbyfkalYRnqzXdyFHKFmFMrLWl02OxvxJBXFZ42E-PPzilsHJeCr_6u_Lge7C9efAk_yKdovmx2LMTtbY4BvHQQZ6cE2lDXE6t0H8NTpF7VZfnh2JCOLl3RZChf3b_4psVxOI4Kt5lmKF93-uCUBiY7VvBqY4/s1600/clipboard.jpeg",
+      "width": 1440
+    },
+    {
+      "complete": true,
+      "height": 1151,
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgWSFOak0JpnG0HTfEhD_uO-W7SD_K9BJzjRyExJc0KnfOSkkpGFcMryxYB4K4FZOrK4n2XEcMqybvH1xbBaTYuGaCMuiUr0sPxUKayQGvx3vDrO6eLNDzDB0NCcaupjqAjLiQiU3DZ1Fb86YicLcAndFwOmnm3SM24jUsbuMMaX5j_C4qgZ7vJT7fggsY/s1600/clipboard.jpeg",
+      "width": 700
+    }
+  ],
+  "time": [
+    "<time class=\"published\" datetime=\"2026-10-30T10:28:00+09:00\" title=\"2026-10-30T10:28:00+09:00\">\n10月 30, 2026\n</time>",
+    "<time class=\"published\" datetime=\"2026-10-06T20:03:00+09:00\" title=\"2026-10-06T20:03:00+09:00\">\n10月 06, 2026\n</time>",
+    "<time class=\"published\" datetime=\"2026-10-07T13:49:00+09:00\" title=\"2026-10-07T13:49:00+09:00\">\n10月 07, 2026\n</time>",
+    "<time class=\"published\" datetime=\"2026-10-22T11:11:00+09:00\" title=\"2026-10-22T11:11:00+09:00\">\n10月 22, 2026\n</time>"
+  ],
+  "title": "雲の郵便飛行船｜いま進む？ 次の手札を育てる？",
+  "game": "CARD-BUILDING VOYAGE\n雲の郵便飛行船\n\n買ったカードが、次の航海を変える。\n8日以内に距離28へ。船体0で航行終了。\n\n雲の郵便局まで 26\nいま何日目\n2/8\n進んだ距離\n2/28\n船体\n8/10\n資金\n1\n\n2日目。4枚から2枚を使おう。\n\n手札 — あと2枚使えます\n各カードは1回だけ\n➜\n手こぎ\n距離 +2\nタップで使う\n◇\n小包便\n資金 +1\nタップで使う\n➜\n手こぎ\n距離 +2\nタップで使う\n✚\n応急修理\n船体 +3\nタップで使う\n補給所 — 1日に1枚まで\n大きな帆\n距離 +5\n2 資金\n整備キット\n船体 +6\n2 資金\n速達便\n距離 +3 / 資金 +1\n3 資金\n\n2枚使用後に購入可。資金は持ち越せます。\n購入品はすぐ使えません。山札が尽きると混ざります。\n\n翌日へ — 船体 −2\n最初からやり直す\n山札 0枚 → 手札 4枚 → 捨札 4枚\n山札が空なら捨札を混ぜて補充。現在0回循環／購入0枚。\nルールと今回の試作範囲\n直近の航海記録\n\nゲームアイデア実験室 · 静的プロトタイプ／音声・通信・保存なし"
+}

@@ -418,3 +418,7 @@ Run `node --test tests/shell-auction*.test.cjs`. Design comparison, implemented 
 ## 雲の郵便飛行船 / Cloud Post
 
 A short deck-building voyage: choose two of four cards, balance progress/repairs/income, buy a card into the discard pile and use it when the deck cycles. Eight days, one seeded route, three market cards. Static dependency-free prototype in `games/cloud-post/`; scope and comparisons in `assets/cloud-post/design-notes.md`. Publication and actual-browser QA are tracked separately; a repository prototype does not mean the Blogger article is published.
+
+記事: https://game-idea-lab.blogspot.com/2026/10/blog-post_30.html （Blogger6380221038895662236、2026-10-30 10:28 JST公開）
+試遊: https://kicchomen.github.io/game-idea-lab/games/cloud-post/
+全796テスト成功。PC成功/失敗/再挑戦、320/360/390px全勝利と保存記事埋込操作、公開CDN2画像/タイトル/本文/埋込確認済み。実機・人の初見・長期面白さ未検証。記録はassets/cloud-post/publication.jsonとbrowser-qa.md。
