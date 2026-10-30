@@ -1,0 +1,1 @@
+module.exports={win:[['play',1],['play',0],['next'],['play',6],['play',5],['buy','sail'],['next'],['play',7],['play',4],['next'],['play',2],['play',6],['next'],['play',1],['play',3],['next'],['play',6],['play',8],['next'],['play',1],['play',8],['next'],['play',4],['play',6]]};

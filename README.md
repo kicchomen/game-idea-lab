@@ -413,3 +413,8 @@ Run `node --test tests/shell-auction*.test.cjs`. Design comparison, implemented 
 試遊: https://kicchomen.github.io/game-idea-lab/games/simmer-stall/
 
 ゲーム37テスト、全772テスト、独立10030ケース成功。低FPSのdt切捨てを独立レビューで発見し修正。クラウドChromeで成功/失敗/再挑戦/反復/キー操作、320/360/390pxの試遊と保存本文fixtureを確認。公開記事内でも開始/投入/停止を確認。実機スマホ・初見の人・長期面白さは未検証。企画/PDCA/画像/本文/検査/公開台帳はassets/simmer-stall/、独立レビューはreviews/simmer-independent-20261029.md。
+
+
+## 雲の郵便飛行船 / Cloud Post
+
+A short deck-building voyage: choose two of four cards, balance progress/repairs/income, buy a card into the discard pile and use it when the deck cycles. Eight days, one seeded route, three market cards. Static dependency-free prototype in `games/cloud-post/`; scope and comparisons in `assets/cloud-post/design-notes.md`. Publication and actual-browser QA are tracked separately; a repository prototype does not mean the Blogger article is published.

@@ -1,0 +1,32 @@
+✔ independent random legal and invalid actions preserve bounded state and unique deck (214.288971ms)
+✔ independent repair and combined-card results match displayed rules (0.264948ms)
+✔ narrow illustration is not cropped and user labels use day units (0.65244ms)
+✔ ready/start initial state and two-action hand (1.307054ms)
+✔ no operation before starting except reset (0.230196ms)
+✔ played ID cannot be repeated or implicitly play another card (0.246471ms)
+✔ invalid IDs and malformed actions do not alter state (0.249135ms)
+✔ two uses lead to supply and block any third card (0.222584ms)
+✔ buy puts a uniquely identified card in discard, not hand (0.34621ms)
+✔ cannot buy unaffordable, unknown, or second card (0.332169ms)
+✔ day end discards ALL hand cards, charges hull, gives four and resets actions (0.921144ms)
+✔ money carries to next day (0.331939ms)
+✔ repair is capped at ten (0.575734ms)
+✔ shuffle uses fixed seed and purchased cards can appear and work (1.889589ms)
+✔ verified full route succeeds on day eight with a single upgrade (0.345609ms)
+✔ arrival takes priority over next-day wear; ended state blocks further input (0.401834ms)
+✔ zero hull fails at transition without drawing a new hand (0.180972ms)
+✔ last day fails if short of goal, no ninth day (0.252008ms)
+✔ reset fully restores deck, money, hull, rng and logs (0.502024ms)
+✔ production actions never mutate their input (0.524388ms)
+✔ every step conserves unique card IDs including used cards (0.774984ms)
+✔ exhaustive all no-purchase two-card day choices cannot win (79.077306ms)
+✔ market effects and price intentionally distinct (0.186209ms)
+✔ 200 resets replay same result without accumulated state (34.208816ms)
+ℹ tests 24
+ℹ suites 0
+ℹ pass 24
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 305.620546

@@ -1,0 +1,14 @@
+(function(root,factory){const api=factory();if(typeof module==='object'&&module.exports)module.exports=api;else root.CloudPost=api;})(typeof globalThis!=='undefined'?globalThis:this,function(){'use strict';
+const CARDS={oar:{name:'手こぎ',icon:'➜',move:2,repair:0,coin:0,cost:0},patch:{name:'応急修理',icon:'✚',move:0,repair:3,coin:0,cost:0},parcel:{name:'小包便',icon:'◇',move:0,repair:0,coin:1,cost:0},sail:{name:'大きな帆',icon:'➜',move:5,repair:0,coin:0,cost:2},kit:{name:'整備キット',icon:'✚',move:0,repair:6,coin:0,cost:2},express:{name:'速達便',icon:'✦',move:3,repair:0,coin:1,cost:3}};
+const MARKET=['sail','kit','express'];const GOAL=28,MAX_HULL=10,LAST_DAY=8;
+const clone=s=>JSON.parse(JSON.stringify(s));
+function note(s,message){s.message=message;s.log.push(message);s.log=s.log.slice(-6);}
+function shuffle(s,a){for(let i=a.length-1;i>0;i--){s.rng=(Math.imul(s.rng,1664525)+1013904223)>>>0;const j=s.rng%(i+1);[a[i],a[j]]=[a[j],a[i]];}return a;}
+function draw(s){s.hand=[];for(let i=0;i<4;i++){if(!s.deck.length){s.deck=shuffle(s,s.discard);s.discard=[];s.cycles++;}if(s.deck.length)s.hand.push({...s.deck.shift(),used:false});}s.actions=2;s.bought=false;s.phase='flight';}
+function create(){return{phase:'ready',day:1,distance:0,hull:MAX_HULL,money:0,actions:2,bought:false,deck:['parcel','oar','patch','parcel','oar','parcel','oar','patch'].map((kind,id)=>({kind,id})),discard:[],hand:[],nextId:8,rng:43026,cycles:0,purchases:0,message:'手札を育てて、8日以内に雲の向こうへ。',log:[]};}
+function act(state,action,arg){if(!state)return state;if(action==='reset')return create();const s=clone(state);
+if(action==='start'&&s.phase==='ready'){draw(s);note(s,'出発！ 4枚から2枚を使います。');return s;}
+if(action==='play'&&s.phase==='flight'&&Number.isInteger(arg)){const c=s.hand.find(c=>c.id===arg&&!c.used);if(!c)return state;c.used=true;const d=CARDS[c.kind];s.distance+=d.move;s.hull=Math.min(MAX_HULL,s.hull+d.repair);s.money+=d.coin;s.actions--;note(s,`${d.name}を使用。${d.move?'距離 +'+d.move+'。':''}${d.repair?'船体 +'+d.repair+'（上限10）。':''}${d.coin?'資金 +'+d.coin+'。':''}`);if(s.distance>=GOAL){s.phase='won';note(s,'郵便を届けた！ 育てた手札で雲を越えました。');}else if(!s.actions){s.phase='supply';note(s,'補給：1枚まで購入できます。翌日へ進むと船体 −2。');}return s;}
+if(action==='buy'&&s.phase==='supply'&&!s.bought&&MARKET.includes(arg)){const d=CARDS[arg];if(s.money<d.cost)return state;s.money-=d.cost;s.discard.push({kind:arg,id:s.nextId++});s.bought=true;s.purchases++;note(s,`${d.name}を購入し捨札へ。山札が尽きると混ざって手札に来ます。`);return s;}
+if(action==='next'&&s.phase==='supply'){for(const c of s.hand)s.discard.push({kind:c.kind,id:c.id});s.hand=[];s.hull=Math.max(0,s.hull-2);if(!s.hull){s.phase='lost';note(s,'船体が尽きて航行終了。修理のタイミングを変えてみよう。');return s;}if(s.day===LAST_DAY){s.phase='lost';note(s,'8日で到着できませんでした。買うカードと手札の比率を見直そう。');return s;}s.day++;const before=s.cycles;draw(s);note(s,`${s.day}日目。${s.cycles>before?'捨札を山札へ戻しました。購入カードも再登場します。':'4枚から2枚を使おう。'}`);return s;}return state;}
+return{CARDS,MARKET,GOAL,MAX_HULL,LAST_DAY,create,act};});
