@@ -1,0 +1,11 @@
+const {test}=require('node:test'),assert=require('node:assert/strict'),E=require('../games/tide-crabs/engine.js');
+test('initial state and rotating values',()=>{assert.deepEqual(E.create().pos,[20,24,0,4]);assert.deepEqual(E.values(1),[1,2,3]);assert.deepEqual(E.values(2),[2,3,1]);});
+test('invalid and edge wrap actions preserve identity',()=>{const s=E.create();for(const [id,to]of [[0,19],[0,25],[-1,15],[4,15],[0,12],[0,NaN],[2,5]])assert.equal(E.act(s,id,to),s);});
+test('same-team destination blocks',()=>{let s=E.create();s.pos=[20,21,0,4];assert.equal(E.legal(s,0,21),false);});
+test('push advances actor and displaces enemy one cell',()=>{let s=E.create();s.pos=[12,24,7,4];let n=E.act(s,0,7);assert.deepEqual(n.pos,[7,24,2,4]);assert.deepEqual(s.pos,[12,24,7,4]);});
+test('push cannot leave board or shove into occupied space',()=>{let s=E.create();s.pos=[7,24,2,4];assert.equal(E.legal(s,0,2),false);s.pos=[12,2,7,4];assert.equal(E.legal(s,0,7),false);});
+test('two actions auto-advance and reset AP',()=>{let s=E.act(E.create(),0,15);assert.equal(s.ap,1);s=E.act(s,0,16);assert.equal(s.round,2);assert.equal(s.ap,2);});
+test('pass resolves rival and scores after both sides',()=>{let s=E.pass(E.create());assert.equal(s.round,2);assert.ok(s.pos[2]!==0||s.pos[3]!==4);assert.equal(s.log.at(-1).startsWith('この潮'),true);});
+test('idle loses, terminal actions immutable, reset independent',()=>{let s=E.create();for(let i=0;i<8;i++)s=E.pass(s);assert.equal(s.status,'lost');assert.equal(E.pass(s),s);assert.equal(E.act(s,0,15),s);assert.deepEqual(E.create().score,[0,0]);});
+test('actual production-engine winning route',()=>{let s=E.create();for(let a of [[0,15],null,[0,16],[0,17],[0,12],[1,19],[1,18],[1,17],null,null,null,null])s=a?E.act(s,...a):E.pass(s);assert.equal(s.status,'won');assert.deepEqual(s.score,[23,15]);});
+test('deterministic replay and uniqueness over random legal games',()=>{for(let run=0;run<50;run++){let s=E.create(),t=E.create();for(let k=0;k<16&&s.status==='playing';k++){let aa=E.actions(s,0),a=aa[(run*7+k*11)%aa.length];s=a?E.act(s,a.id,a.to):E.pass(s);t=a?E.act(t,a.id,a.to):E.pass(t);assert.deepEqual(s,t);assert.equal(new Set(s.pos).size,4);assert.ok(s.pos.every(p=>p>=0&&p<25));assert.ok(s.ap>=0&&s.ap<=2);}}});

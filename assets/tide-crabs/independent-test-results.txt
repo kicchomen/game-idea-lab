@@ -1,0 +1,17 @@
+✔ independent fixed route wins and idle loses, reproducibly (12.169273ms)
+✔ values rotate forward; total available points remains six (0.224177ms)
+✔ legal moves match independent coordinate oracle across 500 distinct arrangements (22.924458ms)
+✔ push moves exactly one opponent one cell; no own push, chain push, row wrap or off-board push (0.334313ms)
+✔ terminal state rejects all inputs without mutation (1.73488ms)
+✔ new game has no references to old board or score (0.191038ms)
+✔ 400 independent random full games preserve occupancy, scoring and action budgets (381.211989ms)
+✔ mock controller can win with normal cell/select/pass controls, retry and fail (5.168098ms)
+✔ mock controller keyboard repeats do not move; cancelled reset preserves state; focus controls select crab (1.383873ms)
+ℹ tests 9
+ℹ suites 0
+ℹ pass 9
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 516.164319
