@@ -25,3 +25,18 @@ The mock DOM is not a browser, physical phone or first-time human test. Parent o
 ## Design comparison
 
 The primary verb is positional move/push, feedback is opponent displacement plus per-round occupation score, and victory is relative territory score after eight rounds. This differs from the preceding deck-composition loop, continuous cooking timing and fog-route exploration. It also differs from Shell Auction's bidding and final collection scoring; adversarial control of a shared spatial board is the implemented distinction. It is a core experiment in an established territory-control genre, not a claim to invent the genre.
+
+## Independent delivery-content review — 01:12 UTC
+
+Read final `article.html`, `design-notes.md`, `browser-qa.md`; visually opened actual `cover.jpg` and `gameplay.jpg` pixels with view_image.
+
+**Content/art review passes; no mandatory copy/image fix found.**
+
+- Cover is wide 1439×810, visibly two blue and two orange illustrated crabs, three shell-topped rocks, a nudge/territory scene; no false screenshot UI or unreadable generated labels. Article explicitly labels it generated concept illustration, different from actual play.
+- Actual screenshot shows blue 1 at row 4 column 1, blue 2 at bottom-right, orange at the top corners, three central 1/2/3 point rocks, and one action left. This matches the article alt text and one legal initial move. The screenshot is not presented as a richer rendered game than implemented.
+- Article accurately describes two actions shared between crabs, legal one-square push only with clear space behind, opponent acting before scoring, eight rounds, no timer and retry. Player input is accurately distinguished from current score computation.
+- Core experiment vs future board variety/multiplayer is clearly separated. Fixed-policy/memorization and passive late-game holding are disclosed; physical phone, novice-human and long-term fun remain unverified.
+- Browser QA text explicitly labels 320/360/390 px as desktop iframe-width emulation, not real smartphones. The article does not claim physical-phone verification.
+- Wide image first, concise concept description, actual gameplay image, standalone link, titled embedded prototype and short controls satisfy the requested image-led structure.
+
+The actual saved Blogger wrapper, public page/CDN fetch and embed layout must still be verified by the publishing owner. The iframe has a 1px border alongside width:100%; check the final theme's box-sizing/overflow rather than infer fit from this HTML review. This is a check reminder, not a reproduced defect.

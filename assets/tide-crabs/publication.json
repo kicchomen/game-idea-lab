@@ -1,0 +1,37 @@
+{
+  "title": "潮だまりのカニ合戦｜その岩、次の一手で守れる？",
+  "blogId": "3556407006374124911",
+  "postId": "4116049033429683519",
+  "url": "https://game-idea-lab.blogspot.com/2026/10/blog-post_31.html",
+  "publishedAt": "2026-10-31T10:14:00+09:00",
+  "timestampPrecision": "minute from live article time element",
+  "trialUrl": "https://kicchomen.github.io/game-idea-lab/games/tide-crabs/",
+  "baselineCommit": "3114bba9a046938714162cfd2c3712f2e2d2b43f",
+  "prototypeCommit": "5ef9c0330709f94738863385bab26bbebb559ea0",
+  "savedArticleCommit": "3764b76d21c1543e0c75412cde2985beb5df2bac",
+  "pagesSuccessRuns": [
+    41153519065,
+    41154176645
+  ],
+  "publishedPosts": 26,
+  "drafts": 2,
+  "scheduled": 0,
+  "oldDraftsUntouched": true,
+  "verified": [
+    "public title/canonical/OG cover",
+    "two CDN images decoded",
+    "saved/reloaded full HTML equality",
+    "public iframe move and pass",
+    "standalone victory failure retry keyboard",
+    "320/360/390 standalone full victory/failure/retry and saved-body content/embedded pointer interaction",
+    "independent source/test/article/image review",
+    "815 automated tests"
+  ],
+  "limits": [
+    "physical smartphone untested",
+    "cross-browser untested",
+    "first-time human comprehension and long-term fun untested",
+    "fixed opponent solution settles into passive holding",
+    "exact320/360/390 checks are saved-body fixtures, actual Blogger mobile preview397px, public full theme desktop1165px"
+  ]
+}

@@ -1,0 +1,80 @@
+[
+  {
+    "width": 320,
+    "body": {
+      "client": 320,
+      "scroll": 320
+    },
+    "images": [
+      {
+        "n": 1439,
+        "ok": true,
+        "w": 288
+      },
+      {
+        "n": 561,
+        "ok": true,
+        "w": 288
+      }
+    ],
+    "game": {
+      "client": 286,
+      "scroll": 286
+    },
+    "state": "青1を選択中 · あと1手。隣へ移動、または橙を押そう。",
+    "verifiedPointerRound": 3,
+    "pointerMethod": "fresh screenshot coordinate click after nested locator coordinate misses"
+  },
+  {
+    "width": 360,
+    "body": {
+      "client": 360,
+      "scroll": 360
+    },
+    "images": [
+      {
+        "n": 1439,
+        "ok": true,
+        "w": 328
+      },
+      {
+        "n": 561,
+        "ok": true,
+        "w": 328
+      }
+    ],
+    "game": {
+      "client": 326,
+      "scroll": 326
+    },
+    "state": "青1を選択中 · あと1手。隣へ移動、または橙を押そう。",
+    "verifiedPointerRound": 2,
+    "pointerMethod": "fresh screenshot coordinate click after nested locator coordinate misses"
+  },
+  {
+    "width": 390,
+    "body": {
+      "client": 390,
+      "scroll": 390
+    },
+    "images": [
+      {
+        "n": 1439,
+        "ok": true,
+        "w": 358
+      },
+      {
+        "n": 561,
+        "ok": true,
+        "w": 358
+      }
+    ],
+    "game": {
+      "client": 356,
+      "scroll": 356
+    },
+    "state": "青1を選択中 · あと2手。隣へ移動、または橙を押そう。",
+    "verifiedPointerRound": 2,
+    "pointerMethod": "fresh screenshot coordinate click after nested locator coordinate misses"
+  }
+]

@@ -431,3 +431,5 @@ Two blue crabs compete with a fixed-policy orange rival for three scoring rocks.
 Play: https://kicchomen.github.io/game-idea-lab/games/tide-crabs/
 
 19new tests and815full-suite pass, independent oracle/mock-controller review, actual cloud Chromium victory/failure/retry/keyboard and320/360/390px checks. Same-board opponent can be solved into passive holding; no sustained depth claim. Physical-phone and first-time-human tests unverified. Design/PDCA/article/images/QA/publication records under assets/tide-crabs/. Article publication tracked separately; prototype deployment is not article publication.
+
+Published article: https://game-idea-lab.blogspot.com/2026/10/blog-post_31.html (Blogger4116049033429683519,2026-10-31 10:14JST). BothCDNimages/title/OG/canonical and public embedded move/pass verified. Savedbody/mobilepreview/publictheme scope distinguished in assets/tide-crabs/publication.json.
