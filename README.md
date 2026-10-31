@@ -422,3 +422,12 @@ A short deck-building voyage: choose two of four cards, balance progress/repairs
 記事: https://game-idea-lab.blogspot.com/2026/10/blog-post_30.html （Blogger6380221038895662236、2026-10-30 10:28 JST公開）
 試遊: https://kicchomen.github.io/game-idea-lab/games/cloud-post/
 全796テスト成功。PC成功/失敗/再挑戦、320/360/390px全勝利と保存記事埋込操作、公開CDN2画像/タイトル/本文/埋込確認済み。実機・人の初見・長期面白さ未検証。記録はassets/cloud-post/publication.jsonとbrowser-qa.md。
+
+
+## 潮だまりのカニ合戦 / Tide Crabs (2026-10-31)
+
+Two blue crabs compete with a fixed-policy orange rival for three scoring rocks. Move, push, or hold position; both sides act before each round score. Eight rounds, one fixed5×5board. No dependencies,account,storage,analytics,audio or gameplay network.
+
+Play: https://kicchomen.github.io/game-idea-lab/games/tide-crabs/
+
+19new tests and815full-suite pass, independent oracle/mock-controller review, actual cloud Chromium victory/failure/retry/keyboard and320/360/390px checks. Same-board opponent can be solved into passive holding; no sustained depth claim. Physical-phone and first-time-human tests unverified. Design/PDCA/article/images/QA/publication records under assets/tide-crabs/. Article publication tracked separately; prototype deployment is not article publication.
