@@ -1,0 +1,54 @@
+{
+  "blogId": "3556407006374124911",
+  "postId": "3070762721570269538",
+  "title": "港のクレーン係｜台車を止めても、箱は止まらない",
+  "url": "https://game-idea-lab.blogspot.com/2026/11/blog-post.html",
+  "publishedAt": "2026-11-01T10:35:00+09:00",
+  "verifiedAt": "2026-11-01T01:36:00Z",
+  "status": "published",
+  "playUrl": "https://kicchomen.github.io/game-idea-lab/games/harbor-crane/",
+  "baselineCommit": "e36fb5013a794f7329ca864ee734b7a7a1da9270",
+  "prototypeCommit": "64728d9efbdf38e7969d546d3d467a8fcb66112b",
+  "articleAssetsCommit": "3dc704f8339779ccb599427aae0e55cc29a71c69",
+  "pagesRun": 41261438857,
+  "images": [
+    {
+      "height": 810,
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjwSMNEJ1yRDFJfvLZZX1WtV-qO8aXPjUKhz2VaN1FsV3qbjIESydtHHXa13FtqwEODtDixbuCyjECZrg_HdtYd89GryjWrTmRGkVjVmMKtJFZ7GPyiME9gXTArmuB35BIXmDeXPHwQhuDw274w47EIa6H8oKeXmNwI5FIfMQq5vv6o62OYZOWWipxfdWA/s1600/clipboard.jpeg",
+      "width": 1440
+    },
+    {
+      "height": 747,
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjodXPG3rz6YDSK5UhzaEJfzJcGmhbCRpRoGbwcxzRcdOBEOofTgnM0pucHJQKNFdqzYgOElOst63Llg7n1WryTVYGGaJskrbyw7JD9ErflQsxlTnySiJ_H-3ey9Ta9LcxJs378LqTmEsmULh46cTL9IsQHcETld2z7dJZjWvtLaIof56uronUEKGNrmrg/s1600/clipboard.jpeg",
+      "width": 1165
+    }
+  ],
+  "verification": {
+    "publicTitle": true,
+    "publicTwoImagesLoaded": true,
+    "publicThumbnail": true,
+    "publicEmbedStartPause": true,
+    "savedHtmlReload": true,
+    "widths": [
+      320,
+      360,
+      390
+    ],
+    "widthScope": "saved Blogger body in browser fixture, plus gameplay UI; actual Blogger smartphone preview ~381px, not full theme at exact widths",
+    "automatedTests": {
+      "passed": 833,
+      "failed": 0
+    },
+    "actualPc": "first-job success, second-job failure, retry, directional holds, pause/resume",
+    "simulated": "all 3 jobs success, deadline/boundary/repeat tests",
+    "unverified": [
+      "physical smartphone",
+      "first-time human",
+      "long-term enjoyment"
+    ]
+  },
+  "protectedDrafts": [
+    "1057707127785703864",
+    "6862408650449844535"
+  ]
+}

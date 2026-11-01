@@ -1,0 +1,12 @@
+✔ island downward crossing succeeds (0.242434ms)
+✔ deadline failure exists while resting in thermal (0.116876ms)
+✔ retry resets all course state (0.962676ms)
+✔ invalid dt is ignored (0.203596ms)
+ℹ tests 833
+ℹ suites 0
+ℹ pass 833
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 11640.495187

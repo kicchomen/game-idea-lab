@@ -443,3 +443,5 @@ Move a trolley, manage its hanging load, then release onto the marked platform. 
 Trial: https://kicchomen.github.io/game-idea-lab/games/harbor-crane/
 
 Source games/harbor-crane/, design/PDCA/article/QA assets/harbor-crane/, independent review reviews/harbor-crane-independent-20261101.md.18 game-specific tests pass; browser and publication status are recorded separately. A deployed prototype is not a published Blogger article.
+
+Published article: https://game-idea-lab.blogspot.com/2026/11/blog-post.html (Blogger3070762721570269538,2026-11-01 10:35JST).833 tests pass; public title/two CDN images/thumbnail/embedded start-pause verified. Browser width and unverified real-device scopes: assets/harbor-crane/browser-qa.md and publication.json.
