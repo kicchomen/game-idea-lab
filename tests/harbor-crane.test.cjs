@@ -1,0 +1,8 @@
+const test=require('node:test'),assert=require('node:assert/strict'),E=require('../games/harbor-crane/engine.js');
+test('ready cannot move or release; start once only',()=>{let s=E.create();E.step(s,1,3);assert.equal(s.x,100);assert.equal(E.release(s),false);E.start(s);E.step(s,1,1);let t=s.time;E.start(s);assert.equal(s.time,t)});
+test('trolley acceleration induces cargo lag and release keeps horizontal speed',()=>{let s=E.create();E.start(s);E.step(s,1,.5);let c=E.cargo(s);assert.ok(c.x<s.x);E.release(s);assert.equal(s.drop.vx,c.vx);assert.equal(s.drop.x,c.x);assert.equal(s.drop.vy,0)});
+test('invalid dt and paused input leave state unchanged',()=>{let s=E.create();E.start(s);let b=JSON.stringify(s);for(let dt of [-1,0,NaN,Infinity])E.step(s,1,dt);assert.equal(JSON.stringify(s),b);E.pause(s);b=JSON.stringify(s);E.step(s,1,20);assert.equal(JSON.stringify(s),b)});
+test('rail limits constrain trolley',()=>{let s=E.create();E.start(s);E.step(s,1,8);assert.equal(s.x,475);E.step(s,-1,12);assert.equal(s.x,45);assert.ok(Number.isFinite(s.angle))});
+test('idle times out and retry creates a clean independent state',()=>{let s=E.create(1);E.start(s);E.step(s,0,41);assert.equal(s.phase,'lost');let next=E.create(s.job);assert.equal(next.time,0);assert.equal(next.x,370);assert.equal(next.drop,null)});
+test('cargo landing is on painted pad top',()=>{let s=E.create();E.start(s);s.x=350;E.release(s);E.step(s,0,2);assert.equal(s.phase,'won');assert.equal(s.drop.y+E.BOX/2,312)});
+test('equivalent fixed slices replay deterministically',()=>{let a=E.create(),b=E.create();E.start(a);E.start(b);for(let i=0;i<360;i++)E.step(a,i<240?1:0,1/120);for(let i=0;i<90;i++)E.step(b,i<60?1:0,1/30);assert.ok(Math.abs(a.x-b.x)<1e-7);assert.ok(Math.abs(a.angle-b.angle)<1e-7)});
