@@ -8,9 +8,13 @@
     "latest": "港のクレーン係",
     "checkedAt": "2026-11-02T01:01:44Z"
   },
-  "protectedDrafts": [
-    "1057707127785703864",
-    "6862408650449844535"
-  ],
-  "status": "in-production"
+  "status": "published",
+  "postId": "4811023047166637919",
+  "url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_02.html",
+  "publishedAt": "2026-11-02T10:19:00+09:00",
+  "bloggerAfter": {
+    "published": 28,
+    "draft": 2,
+    "scheduled": 0
+  }
 }

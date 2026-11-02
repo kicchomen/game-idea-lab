@@ -1,0 +1,15 @@
+# Rooftop Lantern QA — 2026-11-02
+- Baseline main d68baa74b4676108b0adeb9d6230c0e7a206cbdd read; Blogger actual 27 published, 2 protected drafts, 0 scheduled before this run. New post created only once:4811023047166637919.
+- Concept based on lantern keeper role; first side-view platform-action core in this portfolio, compared to momentum crane, flight endurance, timing-memory and turn-based tactics. No genre novelty claim.
+- Node regression851/851 pass, including12 author and6 independent tests. Normal-input simulation completes in9.27sec, no-dash precision route9.62sec; not human fun testing.
+- Independent visual/model mismatch fixed: high roofs rendered thin bridges instead of solid walls. P/Esc key-repeat now ignored; generalized fall hint so early fall does not imply final gap. Separate engine/render/input.
+- Actual cloud desktop Chromium via Pages: walk-off failure; retry; directional holds, jumps, pause/resume between action sequences; air dash across last gap;3/3 collection and beacon success. Repeated restart verified via fresh locator. No injected game-state used.
+- Actual responsive game frames320/360/390: body scrollWidth equals width; canvas300/332/362px; main controls58pxhigh and minimum57.59pxwide. Each frame start/jump/dash/pause/resume/right-hold until failure/retry/jump/pause verified. Pointer buttons plus keyboard through focused frame used; real multitouch hardware not tested.
+- Generated wide concept illustration visually inspected,3embers,roofs,keeper,beacon; labelled conceptual not screenshot. Screenshot visually inspected. Both JPEGs pasted through ordinary Blogger compose UI; normal blogger.googleusercontent.com CDN conversion/natural sizes confirmed1439x810 and1165x747. Picker attempt did not insert image; result checked before clipboard route.
+- Saved article reloaded and exact2056character HTML compared successfully,2CDNimages,standalone link,iframe. Actual Blogger preview desktop and smartphone (~381px container) visually checked first image/title/text.
+- Known limits: one fixed course, generous90sec limit, no physical phone/human-first-play/longterm enjoyment proof. Fully spoken/screenreader game navigation not implemented; canvas map visual.
+- Saved-body responsive fixture320/360/390: scrollWidth equals viewport, both images loaded at288/328/358px and embed same width. Nested iframe start/jump/pause works at all three sizes. This is saved article body plus minimal fixture CSS, not exact-width Blogger theme; actual Blogger mobile preview separately checked.
+- Independent article/content/image review passed with no blockers (`article-review.md`).
+- Pages exact commits924c99a (run41370843733),a955e45 (run41371273843),8fec708 (run41371645242) completed success; final script query versions prevent stale browser cache of corrected hints.
+
+- Published10:19JST, exact post4811023047166637919, public URL https://game-idea-lab.blogspot.com/2026/11/blog-post_02.html . Title,date,2loaded CDNimages,OGthumbnail,public iframe start/jump/dash/pause verified. Public script src has versionedreview1. Blogger after28published/2protectedDrafts/0scheduled. Public body readback saved.

@@ -1,0 +1,47 @@
+{
+  "blogId": "3556407006374124911",
+  "postId": "4811023047166637919",
+  "title": "星灯りの屋根わたり｜空中の一歩を、どこで使う？",
+  "url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_02.html",
+  "playUrl": "https://kicchomen.github.io/game-idea-lab/games/rooftop-lantern/",
+  "publishedAt": "2026-11-02T10:19:00+09:00",
+  "verifiedAt": "2026-11-02T01:20:11Z",
+  "status": "published",
+  "baselineCommit": "d68baa74b4676108b0adeb9d6230c0e7a206cbdd",
+  "prototypeCommit": "924c99ae6d6f0731dc94991ca1c70d1b845b0a3b",
+  "articleAssetsCommit": "8fec70844ebc710a69524e1d294bba05afa40697",
+  "pagesRun": 41371645242,
+  "images": [
+    {
+      "height": 810,
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjGD8zASgc4hK7PYlWkvuOgESNVEaElGH2ckAXmghtiGfmd0NC4dnGZcZCLBC4Bz-ysKMhKlgeyD92e5yrkx_vDAwGP7LL-joNoMF7IZiNd6zws9Wbt6RNe_mY_GaxdeCSZStP-1Gi92GYyBIYWBAMgOhp0HGMxQWvNX3SZwtdg-tpdtTI9j2oRoUWJX20/s1600/clipboard.jpeg",
+      "width": 1439
+    },
+    {
+      "height": 747,
+      "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj_OpXEQPIjq-6aTW7qqDVbzoRiyXftrJkU1JhrhHzxguEwVq_S-yDvkVZ7FpDzovMbN-kClnSVsqcBpv_OLrymlqC73L82IAK3yp-Cku7s6ufiFEyEip9RtTyzBaDup8L9GLIwPicctoog0vTTOdcr3okwxAjFB3mfpeJYAXwkc-3a0g6pyFJYYzPMF4c/s1600/clipboard.jpeg",
+      "width": 1165
+    }
+  ],
+  "verification": {
+    "automatedTests": 851,
+    "independentReview": "passed",
+    "publicTitle": true,
+    "publicThumbnail": true,
+    "publicTwoImagesLoaded": true,
+    "publicEmbedStartJumpDashPause": true,
+    "savedHtmlReloadExact": true,
+    "widths": [
+      320,
+      360,
+      390
+    ],
+    "widthScope": "game and saved article body fixtures; actual Blogger smartphone preview separately",
+    "actualPC": "walk-off failure, retry, jumps, air dash, pause/resume, three embers and beacon success",
+    "unverified": [
+      "physical smartphone",
+      "first-time human",
+      "long-term enjoyment"
+    ]
+  }
+}
