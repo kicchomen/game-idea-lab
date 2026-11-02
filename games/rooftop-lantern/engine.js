@@ -20,7 +20,7 @@ function tick(s,axis){
  if(s.vy>=0){for(let p of PLATFORMS){if(s.x+10>p.x&&s.x-10<p.x+p.w&&oldY<=p.y+.001&&s.y>=p.y){s.y=p.y;s.vy=0;s.ground=true;s.airDash=true;s.dash=0;s.coyote=.09;break;}}}
  EMBERS.forEach((e,i)=>{if(Math.abs(s.x-e.x)<25&&Math.abs(s.y-16-e.y)<29)s.embers[i]=true;});
  if(s.x>1780&&s.ground&&s.embers.every(Boolean)){s.phase='won';s.reason='3つの星灯りを届けた！ 夜の街に灯りが戻った。';}
- else if(s.y>H+50){s.phase='lost';s.reason='屋根の外へ落ちた。最後の広いすき間は、ジャンプ中にダッシュ！';}
+ else if(s.y>H+50){s.phase='lost';s.reason='屋根の外へ落ちた。すき間の手前でジャンプ、空中ダッシュで距離を伸ばそう。';}
  else if(s.time>=LIMIT){s.phase='lost';s.time=LIMIT;s.reason='夜明けまでに間に合わなかった。もう一度挑戦しよう。';}
 }
 function step(s,axis,dt){if(s.phase!=='playing'||!Number.isFinite(dt)||dt<=0)return s;axis=Number.isFinite(axis)?Math.sign(axis):0;s.acc+=dt;while(s.acc+1e-10>=DT&&s.phase==='playing'){s.acc-=DT;tick(s,axis);}return s;}

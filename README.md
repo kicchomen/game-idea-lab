@@ -445,3 +445,10 @@ Trial: https://kicchomen.github.io/game-idea-lab/games/harbor-crane/
 Source games/harbor-crane/, design/PDCA/article/QA assets/harbor-crane/, independent review reviews/harbor-crane-independent-20261101.md.18 game-specific tests pass; browser and publication status are recorded separately. A deployed prototype is not a published Blogger article.
 
 Published article: https://game-idea-lab.blogspot.com/2026/11/blog-post.html (Blogger3070762721570269538,2026-11-01 10:35JST).833 tests pass; public title/two CDN images/thumbnail/embedded start-pause verified. Browser width and unverified real-device scopes: assets/harbor-crane/browser-qa.md and publication.json.
+
+
+## 星灯りの屋根わたり（2026-11-02）
+- 役割: 夜の街へ灯りを届ける屋根の配達係。左右移動・ジャンプ・空中で1回のダッシュを繋ぐ横スクロールアクション。
+- 固定1コース、3灯り回収→灯台、落下/90秒期限、再挑戦と停止。通常のジャンプでも端ぎりぎりなら完走可能、ダッシュは余裕を作る。
+- 企画の比較/構想と実装/PDCAは `assets/rooftop-lantern/design-notes.md`、独立レビューは `reviews/rooftop-lantern-independent-20261102.md`。人初見・実機スマホ・長期の面白さは未検証。
+- 試遊: https://kicchomen.github.io/game-idea-lab/games/rooftop-lantern/
