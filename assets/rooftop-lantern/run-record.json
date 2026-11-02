@@ -1,0 +1,16 @@
+{
+  "run": "2026-11-02T01:00:00Z",
+  "baselineCommit": "d68baa74b4676108b0adeb9d6230c0e7a206cbdd",
+  "bloggerBefore": {
+    "published": 27,
+    "draft": 2,
+    "scheduled": 0,
+    "latest": "港のクレーン係",
+    "checkedAt": "2026-11-02T01:01:44Z"
+  },
+  "protectedDrafts": [
+    "1057707127785703864",
+    "6862408650449844535"
+  ],
+  "status": "in-production"
+}
