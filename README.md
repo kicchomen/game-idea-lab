@@ -452,3 +452,6 @@ Published article: https://game-idea-lab.blogspot.com/2026/11/blog-post.html (Bl
 - 固定1コース、3灯り回収→灯台、落下/90秒期限、再挑戦と停止。通常のジャンプでも端ぎりぎりなら完走可能、ダッシュは余裕を作る。
 - 企画の比較/構想と実装/PDCAは `assets/rooftop-lantern/design-notes.md`、独立レビューは `reviews/rooftop-lantern-independent-20261102.md`。人初見・実機スマホ・長期の面白さは未検証。
 - 試遊: https://kicchomen.github.io/game-idea-lab/games/rooftop-lantern/
+
+## 夕ぐれフェリー（2026-11-03）
+定員2人の船で、乗客の締切と登場時刻を読み寄港順・相乗り・給油を選ぶターン制運航。固定3港・12人・14刻、9人到着が目標。単純巡回7人/目的地優先8人を独立検証し初案7人から難度を改善。全12人到着可能。試遊: https://kicchomen.github.io/game-idea-lab/games/dusk-ferry/ 。企画/画像/記事/QA/公開台帳は assets/dusk-ferry/、独立レビュー reviews/dusk-ferry-independent-20261103.md。全877自動テスト成功。実機・人の初見・長期面白さ未検証。
