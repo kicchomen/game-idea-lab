@@ -1,0 +1,5 @@
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const dir=path.join(__dirname,'../games/dusk-ferry');
+test('selected and route hover explicitly retain dark background and white text',()=>{const css=fs.readFileSync(path.join(dir,'style.css'),'utf8');const override='button[aria-pressed=true]:hover:not(:disabled),.routes button:hover:not(:disabled){background:#173f51;color:#fff}';assert.ok(css.includes(override));assert.ok(css.indexOf(override)>css.indexOf('button:hover:not(:disabled){background:#edf5f3}'));});
+test('dark hover foreground contrast exceeds WCAG AA normal text',()=>{function luminance(hex){return hex.match(/../g).map(v=>parseInt(v,16)/255).map(v=>v<=.04045?v/12.92:((v+.055)/1.055)**2.4).reduce((a,v,i)=>a+v*[.2126,.7152,.0722][i],0);}assert.ok((1+.05)/(luminance('173f51')+.05)>=4.5);});
+test('delivered count and target have distinct labels, no score fraction',()=>{const app=fs.readFileSync(path.join(dir,'app.js'),'utf8');assert.ok(app.includes('到着 ${E.score(state)}人 / 目標9人'));assert.ok(!app.includes('到着 ${E.score(state)}/9人'));});
