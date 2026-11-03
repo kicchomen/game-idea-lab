@@ -1,0 +1,12 @@
+# Dusk Ferry browser QA — 2026-11-03
+
+Actual cloud Chromium, not mocked DOM or physical phone.
+- Production Pages a1c01e1c9b861abab4e344902027803bfa29888b / run41557672562 success. Ordinary pointer input followed browser-route.md and reached14刻,12 delivered, success. Idle14 wait clicks reached0 delivered failure. Terminal retry reset time/fuel/selection. Space toggled passenger twice with no time advance. Repeated select/deselect, capacity, carry-over through intermediate port and fuel operation worked.
+- Actual screenshot exposed selected/dark-route hover white text on light background. Fixed in5110fcd68c4a757abf766624497b9c2523fd10b1; added3 UI contrast/source tests, whole877 tests pass. Final HTML asset versioning79fb6530e6c16459f737c99404ad9acc07930de1, Pages41558438876 success. HUD clarified delivered count versus goal. Screenshots and final preview show new HUD.
+- Standalone iframe widths320,360,390: no horizontal overflow (305/305,360/360,390/390, scrollbar may consume15px). Visible action target heights>=48px. At every width selected/unselected passenger, departed twice and deliveredB. These are desktop narrow-frame simulations, not physical mobile touch.
+- Blogger normal compose clipboard image upload:2 distinct blogger.googleusercontent.com CDN URLs,1439x810 cover and657x757 actual-game image. Both visually inspected independently. Final HTML2051 characters, exactly2images/1iframe/link, matches full clipboard readback after editor reload. A transient CodeMirror fill appended old image markup; replaced via standard select-all/paste and verified exact reload, no duplicated images saved.
+- Actual saved Blogger smartphone preview body365px has scrollWidth365px, both images complete/naturalWidth>0; embedded selection and departure deliveredA at1刻. Preview theme is separate from exact320/360/390 saved-body fixtures.
+- Unverified: physical phones, first-time human usability/fun, crossbrowser, sustained enjoyment; fixed timetable is memorizable. Engine simulations and1000 independent oracle traces are not user playtests.
+
+## Published canonical check
+2026-11-03 01:24 UTC: public article https://game-idea-lab.blogspot.com/2026/11/blog-post_03.html title/canonical/OG cover verified. Two images decoded (1439 and657 pixels). Actual published iframe A→market delivers1 at tick1 fuel7. Public feed confirms post2880149317318434862 published2026-11-03T10:21:33.347+09:00. No other posts/drafts changed.

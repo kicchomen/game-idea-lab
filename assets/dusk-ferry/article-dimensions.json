@@ -1,0 +1,68 @@
+[
+  {
+    "width": 320,
+    "article": {
+      "client": 305,
+      "scroll": 305
+    },
+    "game": {
+      "client": 258,
+      "scroll": 258
+    },
+    "hud": "1 / 14刻\n燃料 7/8\n到着 1人 / 目標9人",
+    "images": [
+      {
+        "complete": true,
+        "width": 1439
+      },
+      {
+        "complete": true,
+        "width": 657
+      }
+    ]
+  },
+  {
+    "width": 360,
+    "article": {
+      "client": 345,
+      "scroll": 345
+    },
+    "game": {
+      "client": 298,
+      "scroll": 298
+    },
+    "hud": "1 / 14刻\n燃料 7/8\n到着 1人 / 目標9人",
+    "images": [
+      {
+        "complete": true,
+        "width": 1439
+      },
+      {
+        "complete": true,
+        "width": 657
+      }
+    ]
+  },
+  {
+    "width": 390,
+    "article": {
+      "client": 375,
+      "scroll": 375
+    },
+    "game": {
+      "client": 328,
+      "scroll": 328
+    },
+    "hud": "1 / 14刻\n燃料 7/8\n到着 1人 / 目標9人",
+    "images": [
+      {
+        "complete": true,
+        "width": 1439
+      },
+      {
+        "complete": true,
+        "width": 657
+      }
+    ]
+  }
+]
