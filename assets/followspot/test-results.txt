@@ -1,0 +1,38 @@
+✔ start once, pause, restart and result controls preserve clean transitions (14.257506ms)
+✔ physical-key aliases remain held until both are released (4.92867ms)
+✔ repeated width/shutter keydown is ignored and Space never activates focused pause (4.769408ms)
+✔ pointer cancel and lost capture release held movement (6.066272ms)
+✔ two direction pointers are independent and opposite inputs cancel (6.331383ms)
+✔ stage ignores second touch but allows one drag and mouse hover aiming (5.815241ms)
+✔ help freezes then restores active show, and Escape returns without advancing (5.299673ms)
+✔ help opened from ready or pause does not start the show (3.496411ms)
+✔ hidden tab and window blur clear inputs, pause and require explicit resume (10.51899ms)
+✔ large frame interruption pauses rather than silently losing simulated time (4.352672ms)
+✔ ordinary pointer and shutter UI route wins, terminal inputs freeze, replay restarts (114.814665ms)
+✔ natural failure text does not claim near-success and retry resets heat and score (36.985015ms)
+✔ modal makes background inert and traps Tab on its only action (1.642853ms)
+✔ ready rejects movement, toggles and time; only first start works (3.785987ms)
+✔ careful tracking, overlap avoidance and dark cooling reaches success (28.940109ms)
+✔ no input fails naturally (10.266058ms)
+✔ permanent blackout fails with zero score and heat (4.956028ms)
+✔ wide light raises heat faster and expands full coverage (0.778898ms)
+✔ clean exposure requires full target and no overlap onto other actor (0.791412ms)
+✔ spill decreases score but cannot go negative (1.145531ms)
+✔ overheat locks until 35; off never instantly clears lock (0.935668ms)
+✔ cue boundaries and next preview match fixed six cues (0.405483ms)
+✔ dark phase lighting counts as spill; blackout cools (1.665874ms)
+✔ pause freezes all gameplay operations and resume continues same time (0.8538ms)
+✔ terminal state ignores repeated input and retry is independent (5.796802ms)
+✔ invalid delta/input values do not corrupt state (0.279275ms)
+✔ aim and held steering obey stage limits (0.698633ms)
+✔ fixed-step simulation is frame partition independent for constant input (2.815785ms)
+✔ large time advance terminates exactly once at 36 seconds (3.275685ms)
+✔ actor positions stay in stage and reflect symmetrically (3.47002ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 517.326285

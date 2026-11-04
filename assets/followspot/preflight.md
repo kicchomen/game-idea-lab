@@ -1,0 +1,1 @@
+2026-11-04 01:04 UTC: Blogger canonical direct UI shows29 published,2 drafts,0scheduled. Latest Dusk Ferry Nov3. Sensor Shift and Footstep Echo drafts preserved. Git main5cadb822ba9bc62e8a38fc4c067909c9dcc916e3. README read including Nov3 one-screen/design-first preferences. No Nov4 parallel draft or game.
