@@ -473,3 +473,5 @@ Published article: https://game-idea-lab.blogspot.com/2026/11/blog-post.html (Bl
 ソース `games/repair-workshop/`、企画・PDCA・画像・記事案・検証記録 `assets/repair-workshop/`。新規13テスト（独立5を含む）で全15故障組合せと全41検査を照合し、最悪4検査が必要十分と確認。既存を含む915テスト成功は独立5テスト追加前の記録。画面は画像生成の設計案を確認してから実装し、実ブラウザの5サイズで収まりを確認。検査・交換ボタンとヘルプの44px操作領域を改善した。人の初見、実機スマホ、長期的な面白さは未検証。
 
 **Blogger記事・CDN画像・Pagesの今回差分の配信は準備中。** 公開URL/投稿ID/公開日時と公開後の検証は `assets/repair-workshop/publication.json` に確定後記録する。ローカル試作や配信予定URLを公開済み記事と扱わない。
+
+Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-post_05.html (post 2441288832916086624). Two normal Blogger CDN images, saved HTML readback, 320/360/390px Blogger previews and embedded operation verified. 13 new / 920 total tests pass. Exact Pages code files matched the local source. Physical-phone and novice-human tests remain unperformed. Full records: assets/repair-workshop/publication.json.

@@ -1,7 +1,11 @@
-# Browser QA — 2026-11-05
+# Browser QA — Repair Workshop, 2026-11-05
 
-Cloud Chromium, five iframe viewports: 320×568, 360×640, 390×844, 258×568 (narrow embedded content), 667×375 landscape. Each initial/play/help view fits its viewport without document scrolling. Small viewport cards finish at y317, message starts y332 (no overlap). Help and result dialogs fit. Help touch target increased to44px; landscape action height increased to44px (final CSS recheck pending).
+Cloud Chromium: 320x568, 360x640, 390x844, 258x568 narrow embed and 667x375 landscape fit without document scrolling. Start/help dialogs fit. At320x568, cards end y317 and message starts y332. Final landscape action heights44px, document667x375.
 
-Actual keyboard/Enter UI operations in 320×568: AB test returns2; same test does not consume another attempt; correct repair advances. Second robot AB=0,C=1,D=1 then CD repair succeeds. Third AB=1,A=1,CD=1,C=0, then AD succeeds after4 tests. Final3-robot win displays4 spare tests. Same-job retry resets to4. EF replacement fails, discloses AB faults, same-job restart returns to4. Result dialog 292×365 within320×568.
+Actual keyboard/Enter: first robot AB=2, repeated AB test keeps3remaining and one log, correct repair. Second AB=0,C=1,D=1 thenCD repair. Third AB=1,A=1,CD=1,C=0 thenAD repair. All3win,4spare tests. Same-job retry resets; EF wrong repair loses and revealsAB; same-job reset to4.
 
-Mouse click infrastructure currently times out Input.dispatchMouseEvent across Blogger and the local preview; keyboard operates. Earlier start/help clicks worked. Final pointer/touch flow and final CSS recheck remain pending. This is not a gameplay defect determination. Physical mobile devices, Safari, human first-time play and subjective enjoyment have not been tested.
+Cloud pointer input began timing out across Blogger and game tabs. Existing Mac Chrome normal-click check independently passed start,AB test=2,repeat test with no extra cost/log,correct repair,next robot,wrongAB repair on robot2(actualCD),same-job reset to1/3,4tests,unselected. Screenshots reviewed. No source changes on Mac.
+
+Blogger:2images uploaded through normal UI and saved/reloaded CDN. Supplied article HTML readback exact match.320/360/390px preview no overflow/broken images;embedded start/select/test/fail/retry passed. Published10:46JST on2026-11-05,post2441288832916086624. Public page reload title,cover,list thumbnail,og:image,2body images,iframe and test operation passed.
+
+Physical phone,Safari,human first-time play and long-term enjoyment not tested. Public-page checks were performed by browser executor; an additional parent feed fetch was not completed because exec-server disconnected. Do not label that extra read as passed.

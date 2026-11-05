@@ -1,30 +1,33 @@
 {
   "game": "repair-workshop",
   "title": "小さな修理工房｜どの組み合わせを調べれば、故障が分かる？",
-  "status": "blogger_draft_prepared",
-  "prepared_at": "2026-11-05T01:20:00Z",
+  "status": "published",
   "blog_id": "3556407006374124911",
   "blogger_post_id": "2441288832916086624",
-  "article_url": null,
-  "published_at": null,
-  "planned_play_url": "https://kicchomen.github.io/game-idea-lab/games/repair-workshop/",
-  "pages_commit": null,
-  "pages_deployment_verified": false,
+  "article_url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_05.html",
+  "published_at": "2026-11-05T10:46:00+09:00",
+  "published_precision": "minute, Blogger UI record",
+  "play_url": "https://kicchomen.github.io/game-idea-lab/games/repair-workshop/",
+  "pages_commit": "080c6b46d9f15b04f1d86f741e1aa916905b68ae",
+  "pages_deployment_verified": true,
+  "pages_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/41949167358",
   "images": {
-    "cover_local": "assets/repair-workshop/cover.jpg",
-    "cover_cdn": null,
-    "gameplay_local": null,
-    "gameplay_cdn": null
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiVQefKOyvh5nQpIBPZBCm5eDLzTqpvd8XGxnSvUXMkq70PtcY5Fs17yg81BmBbiul5UnBjpntvtaVPF1wPsc0xhqGKSSgbDYqmGh9FiqCzhD9CvwrcIfymTqPkIaM6hgkCAlTK1n7YLssyMhqS_9Uvj0qHhTo5av8Ocj0F4jz26Ejv2Vpdoou5riSwPtM/s1439/cover.jpg",
+    "gameplay": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiIiemX_eh6A0B-0rNtO-TK3FlT6W7OWuCqfqUGET06j2Csx_e4lEI4vYiwUrUzGP_ZBn36G8y2vc_O3rzlct24SbjEunUv7-C_guGq3MFchPFB7HDQPhRA-TRp8GbGUBkpa970huGQi43eCU8Sm7rJ3gnr-X8AxR8TJdmrB97nc25Lx83kWGvggMxCdDs/s568/gameplay.jpg"
   },
   "checks": {
-    "game_tests": "13 passed, including 5 independent tests",
-    "full_suite_before_independent_addition": "915 passed",
-    "browser_layout": "Parent reports five viewport sizes fit; detailed operation and final publish checks pending",
-    "blogger_save_readback": "pending",
-    "public_article": "pending",
-    "physical_mobile": "not tested",
-    "first_time_human": "not tested",
-    "long_term_enjoyment": "not tested",
-    "full_suite": "920 passed"
-  }
+    "new_tests": 13,
+    "whole_repository_tests": 920,
+    "independent_review": "engine and article pass",
+    "deduction": "all15 fault pairs solvable in4tests; no strategy guarantees3",
+    "cloud_browser": "320x568,360x640,390x844,258x568,667x375 fit; keyboard3robot success,fail,retry,duplicate test",
+    "mac_browser": "normal pointer start,test,duplicate test,success,next robot,failure,retry passed",
+    "blogger": "saved HTML exactly matches supplied article;320/360/390 previews no overflow or broken images; embedded start/select/test/failure/retry passed",
+    "public_article": "reloaded title,cover,list thumbnail,og:image,2body images,iframe and in-frame test verified by browser executor",
+    "physical_phone": "not tested",
+    "human_first_time": "not tested",
+    "cross_browser": "not tested",
+    "long_term_enjoyment": "not tested"
+  },
+  "environment_note": "Creation,code,images,tests and Git backup in cloud. Cloud Chrome input timed out; normal Blogger upload/final publish and pointer check used existing Mac thread only. Final local exec disconnected; final records saved with connected GitHub tools."
 }
