@@ -1,0 +1,16 @@
+✔ seed deterministic, 3 unique legal faults (9.033404ms)
+✔ all 15 faults and all legal probes have exact counts (2.684702ms)
+✔ 4 test budget, repeats do not consume, invalid selections (0.778909ms)
+✔ correct repairs, next clears clues, terminal guarded (0.287592ms)
+✔ wrong repair loses, malformed repair no effect (0.25276ms)
+✔ selection toggles and time-free state (0.120801ms)
+✔ exhaustive decision tree: 4 necessary and sufficient in worst case (29.52775ms)
+✔ four fixed single checks cannot identify every fault (0.358879ms)
+ℹ tests 8
+ℹ suites 0
+ℹ pass 8
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 147.171354

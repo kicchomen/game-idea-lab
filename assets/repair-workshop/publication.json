@@ -1,0 +1,30 @@
+{
+  "game": "repair-workshop",
+  "title": "小さな修理工房｜どの組み合わせを調べれば、故障が分かる？",
+  "status": "blogger_draft_prepared",
+  "prepared_at": "2026-11-05T01:20:00Z",
+  "blog_id": "3556407006374124911",
+  "blogger_post_id": "2441288832916086624",
+  "article_url": null,
+  "published_at": null,
+  "planned_play_url": "https://kicchomen.github.io/game-idea-lab/games/repair-workshop/",
+  "pages_commit": null,
+  "pages_deployment_verified": false,
+  "images": {
+    "cover_local": "assets/repair-workshop/cover.jpg",
+    "cover_cdn": null,
+    "gameplay_local": null,
+    "gameplay_cdn": null
+  },
+  "checks": {
+    "game_tests": "13 passed, including 5 independent tests",
+    "full_suite_before_independent_addition": "915 passed",
+    "browser_layout": "Parent reports five viewport sizes fit; detailed operation and final publish checks pending",
+    "blogger_save_readback": "pending",
+    "public_article": "pending",
+    "physical_mobile": "not tested",
+    "first_time_human": "not tested",
+    "long_term_enjoyment": "not tested",
+    "full_suite": "920 passed"
+  }
+}

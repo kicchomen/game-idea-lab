@@ -464,3 +464,12 @@ Published article: https://game-idea-lab.blogspot.com/2026/11/blog-post.html (Bl
 定員2人の船で、乗客の締切と登場時刻を読み寄港順・相乗り・給油を選ぶターン制運航。固定3港・12人・14刻、9人到着が目標。単純巡回7人/目的地優先8人を独立検証し初案7人から難度を改善。全12人到着可能。試遊: https://kicchomen.github.io/game-idea-lab/games/dusk-ferry/ 。企画/画像/記事/QA/公開台帳は assets/dusk-ferry/、独立レビュー reviews/dusk-ferry-independent-20261103.md。全877自動テスト成功。実機・人の初見・長期面白さ未検証。
 
 公開記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_03.html （Blogger 2880149317318434862、2026-11-03 10:21:33 JST）。公開後の本文・サムネ・画像・埋込操作を検証済み。
+
+## 小さな修理工房（2026-11-05）
+6部品に故障が2個。1〜3部品を選んで検査すると、その中に含まれる故障数だけが分かる。各台4検査の履歴から2個を特定して交換する、3台の診断推理の試作。時間制限なし。同じ仕事の再挑戦と、故障配置が変わる別の仕事を区別する。
+
+試遊の配信予定先: https://kicchomen.github.io/game-idea-lab/games/repair-workshop/
+
+ソース `games/repair-workshop/`、企画・PDCA・画像・記事案・検証記録 `assets/repair-workshop/`。新規13テスト（独立5を含む）で全15故障組合せと全41検査を照合し、最悪4検査が必要十分と確認。既存を含む915テスト成功は独立5テスト追加前の記録。画面は画像生成の設計案を確認してから実装し、実ブラウザの5サイズで収まりを確認。検査・交換ボタンとヘルプの44px操作領域を改善した。人の初見、実機スマホ、長期的な面白さは未検証。
+
+**Blogger記事・CDN画像・Pagesの今回差分の配信は準備中。** 公開URL/投稿ID/公開日時と公開後の検証は `assets/repair-workshop/publication.json` に確定後記録する。ローカル試作や配信予定URLを公開済み記事と扱わない。
