@@ -1,0 +1,53 @@
+[
+  {
+    "client": 305,
+    "embedWidth": 273,
+    "images": [
+      {
+        "loaded": true,
+        "width": 273
+      },
+      {
+        "loaded": true,
+        "width": 273
+      }
+    ],
+    "scroll": 305,
+    "size": "320 × 568",
+    "heading": "船首 北から右53° · 速さ 15"
+  },
+  {
+    "client": 345,
+    "embedWidth": 313,
+    "images": [
+      {
+        "loaded": true,
+        "width": 313
+      },
+      {
+        "loaded": true,
+        "width": 313
+      }
+    ],
+    "scroll": 345,
+    "size": "360 × 640",
+    "heading": "船首 北から右52° · 速さ 12"
+  },
+  {
+    "client": 375,
+    "embedWidth": 343,
+    "images": [
+      {
+        "loaded": true,
+        "width": 343
+      },
+      {
+        "loaded": true,
+        "width": 343
+      }
+    ],
+    "scroll": 375,
+    "size": "390 × 844",
+    "heading": "船首 北から右54° · 速さ 14"
+  }
+]

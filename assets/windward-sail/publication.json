@@ -1,12 +1,33 @@
 {
-  "game":"windward-sail",
-  "title":"風読みの小さなヨット｜まっすぐ向かうと、進めない",
-  "status":"draft_in_progress",
-  "blog_id":"3556407006374124911",
-  "blogger_post_id":"4545190250516703600",
-  "article_url":null,
-  "published_at":null,
-  "play_url":"https://kicchomen.github.io/game-idea-lab/games/windward-sail/",
-  "pages_commit":null,
-  "checks":{"physical_phone":"not tested","human_first_time":"not tested","long_term_enjoyment":"not tested"}
+  "game": "windward-sail",
+  "title": "風読みの小さなヨット｜まっすぐ向かうと、進めない",
+  "status": "published",
+  "blog_id": "3556407006374124911",
+  "blogger_post_id": "4545190250516703600",
+  "article_url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_06.html",
+  "published_at": "2026-11-06T12:19:00+09:00",
+  "play_url": "https://kicchomen.github.io/game-idea-lab/games/windward-sail/",
+  "pages_commit": "67fdc8eb22e0e0d157d67068b6f595e0001a5e65",
+  "checks": {
+    "physical_phone": "not tested",
+    "human_first_time": "not tested",
+    "long_term_enjoyment": "not tested",
+    "game_tests": 30,
+    "whole_repository_tests": 950,
+    "independent_review": "engine, inputs, final article, screenshot and HELP correction passed",
+    "actual_browser": "keyboard steering; timeout and shore failures; repeated reset; pause/resume/help; 48.5s successful return, 3 tacks",
+    "prototype_viewports": "320x568,360x640,390x844 pointer steering and no internal overflow;258x568 narrow embed;667x375 HELP correction verified",
+    "saved_blogger": "saved HTML reloaded; 2 CDN images; actual Blogger preview iframe at320/360/390px and embedded steering/pause; body widths305/345/375 including15px scrollbar deduction; inner game widths273/313/343",
+    "public_article": "title, wide cover thumbnail, og:image,2body images,game iframe and actual start/steer/pause verified; standalone link opened correct Pages",
+    "cross_browser": "not tested"
+  },
+  "published_precision": "minute, public time datetime attribute",
+  "pages_code_commit": "af136ec5de8fe0e143a55df890f511c3bfef611d",
+  "pages_deployment_verified": true,
+  "pages_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42155571091",
+  "images": {
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj8fahvdCytw7Sq3AY6yD6ww7xqwtMi9cAgWZBgy4F6y65KOI-DE_rN0YcGuvKK2zvQdPvDa_TLrPvj0OJeGtfVYzeGPbVm9vaYwYOmCUQH23SbH7YakXXTe_x5_IjmMvGqRgAHQMIxk5bKtA5PzjsznyikSc1e6Zz04OFA46nv91hOk4Fm8hBe5ug9mq0/s1600/clipboard.jpeg",
+    "gameplay": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFwLLEJOrvFdDaP7FNGQtB1nDpRk-RpMbJ4uS2oj9hFq_7d_OKyCYO3xxOWpcZFHHv6Tfx0rEsjtf9RlMSe1Vfpu6JLcYGsnxmAZZlACJBYwhGDy9FHr7JIea6vlrgK03yB3R66ZIfJeMASUENHM7_dVgLqEgT3AgC9mGTT5QxU4TM1hYrRET9awgMRGk/s1600/clipboard.jpeg"
+  },
+  "environment_note": "Cloud only. CLI unauthenticated push did not execute; existing connected GitHub tools created commits and non-forced compare-and-set main updates. No credentials or new access configured. Browser rendering became unavailable once with several live test tabs; closed own test tabs and reloaded the public article, then embedded operation succeeded. No claim of physical-device or human-first-play validation."
 }
