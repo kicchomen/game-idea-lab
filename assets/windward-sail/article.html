@@ -3,7 +3,7 @@
 <h2>近道は、まっすぐとは限らない。</h2>
 <p>あなたは小さなヨットの船乗り。北から吹く風に正面を向けると、帆が力を失います。左右の斜めをつなぎ、<b>進みたい方向へ、進める方向から近づく</b>遊びを考えました。</p>
 <p>岸のぎりぎりまで進むか、余裕を残して切り返すか。舵を離すと、その向きへ進み続けます。上の絵は構想イラストです。</p>
-<div style="text-align:center"><img src="GAMEPLAY_CDN" alt="実際の試遊画面。風向き、船首、次のブイを見ながら舵を切る" style="display:block;width:100%;max-width:490px;height:auto;margin:0 auto" /></div>
+<div style="text-align:center"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFwLLEJOrvFdDaP7FNGQtB1nDpRk-RpMbJ4uS2oj9hFq_7d_OKyCYO3xxOWpcZFHHv6Tfx0rEsjtf9RlMSe1Vfpu6JLcYGsnxmAZZlACJBYwhGDy9FHr7JIea6vlrgK03yB3R66ZIfJeMASUENHM7_dVgLqEgT3AgC9mGTT5QxU4TM1hYrRET9awgMRGk/s1600/clipboard.jpeg" alt="実際の試遊画面。風向き、船首、次のブイを見ながら舵を切る" style="display:block;width:100%;max-width:490px;height:auto;margin:0 auto" /></div>
 <h2>試遊：風読みの小さなヨット</h2>
 <iframe src="https://kicchomen.github.io/game-idea-lab/games/windward-sail/" title="風読みの小さなヨットを試遊" loading="lazy" style="display:block;width:100%;height:568px;border:0;border-radius:12px;background:#103b4c"></iframe>
 <p>「左へ」「右へ」を押している間だけ旋回。PCは←→またはA・D。ブイ1→2→港の輪へ、60秒以内に入れば成功です。岸に触れると失敗。中央ボタンで一時停止できます。</p>
@@ -11,4 +11,4 @@
 <h2>今回は、ひとつの湾で風をつかむ。</h2>
 <p><b>実装したもの：</b>一定の北風、正面±35°の失速、加速を伴う操船、順番に通る2つのブイ、帰港、成功・失敗・再挑戦。帆の細かな調整や潮流はない、簡略化したモデルです。実際の操船訓練には使えません。</p>
 <p><b>今後の構想：</b>風向きが変わる航路、潮の流れ、船ごとの得意な向き。まずは同じ湾で、切り返す場所による違いを試します。固定コースを覚えた後の面白さは、まだ検証していません。</p>
-<details><summary>作って、試して、直したこと</summary><p>画像で画面を設計してから実装。正面へ直進するだけでは進めず、異なる2航路で帰港できることをシミュレーションで確認しました。独立レビューを受けて切り返しの集計を修正。ブラウザでの操作と狭い画面の検証結果を公開前に確認します。人の初見テスト、実機スマートフォン、長期的な面白さは未検証です。</p></details>
+<details><summary>作って、試して、直したこと</summary><p>画像で画面を設計してから実装。正面へ直進するだけでは進めず、異なる2航路で帰港できることをシミュレーションで確認しました。独立レビューを受けて切り返しの集計を修正。実ブラウザで帰港・岸接触・時間切れ・再挑戦を確認。320／360／390px幅でボタン操作を検査し、横長画面で説明が切れる問題も修正しました。人の初見テスト、実機スマートフォン、長期的な面白さは未検証です。</p></details>
