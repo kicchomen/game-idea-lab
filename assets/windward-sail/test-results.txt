@@ -1,0 +1,38 @@
+✔ controller initial/start/pause/resume/restart and repeated clicks (52.588237ms)
+✔ held keyboard aliases survive release of one alias (20.681908ms)
+✔ pointer cancel stops steering and opposite pointers cancel (28.368543ms)
+✔ blur clears keys and pauses until explicit resume (27.077445ms)
+✔ natural deadline failure and retry in actual controller loop (854.588749ms)
+✔ help opened during play freezes clock; closing resumes explicitly (49.231571ms)
+✔ independent polar oracle covers full circle and repeated revolutions (8.62503ms)
+✔ independent steering-only routes achieve ordered course from both sides (14.298499ms)
+✔ constant or shallow alternating helm is not an accidental victory (8.20731ms)
+✔ movement never gets snapped toward an active target (0.166531ms)
+✔ circle threshold and ordered targets use actual position (0.182375ms)
+✔ all terminal and paused engine states reject subsequent helm/time (0.142124ms)
+✔ acceleration preserves inertia into no-go rather than instant teleport/stop (0.146491ms)
+✔ 60-second deadline stops exactly even when input tick would overrun (0.09884ms)
+✔ time partitioning is stable for fixed-step multiples over full voyage (0.601758ms)
+✔ north no-go exactly ±35 degrees and symmetry (2.175131ms)
+✔ straight north fails by deadline without artificial progress (7.42494ms)
+✔ stall can rotate out without momentum or prerequisite speed (0.260263ms)
+✔ held spins cannot clear course (4.910558ms)
+✔ two mirrored initial tacking routes win with normal inputs (4.252594ms)
+✔ deterministic replay produces identical state (3.306368ms)
+✔ mark order cannot be bypassed at harbor or second buoy (0.162845ms)
+✔ each circle collects once and terminal freezes (0.155364ms)
+✔ shore failure at all four borders (0.238009ms)
+✔ pause is immutable and resume only changes paused state (0.286212ms)
+✔ retry resets all state (0.257088ms)
+✔ time chunking is fixed step stable (0.463429ms)
+✔ input bounds and invalid time (0.418452ms)
+✔ tacks count completed north crossings, not downwind gybes (2.284656ms)
+✔ entering no-go then returning to same side does not count a tack (0.114112ms)
+ℹ tests 30
+ℹ suites 0
+ℹ pass 30
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 1264.935601

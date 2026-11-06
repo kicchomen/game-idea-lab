@@ -475,3 +475,8 @@ Published article: https://game-idea-lab.blogspot.com/2026/11/blog-post.html (Bl
 **Blogger記事・CDN画像・Pagesの今回差分の配信は準備中。** 公開URL/投稿ID/公開日時と公開後の検証は `assets/repair-workshop/publication.json` に確定後記録する。ローカル試作や配信予定URLを公開済み記事と扱わない。
 
 Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-post_05.html (post 2441288832916086624). Two normal Blogger CDN images, saved HTML readback, 320/360/390px Blogger previews and embedded operation verified. 13 new / 920 total tests pass. Exact Pages code files matched the local source. Physical-phone and novice-human tests remain unperformed. Full records: assets/repair-workshop/publication.json.
+
+## 風読みの小さなヨット（2026-11-06）
+一定の北風に真正面から向かうと失速する小さな帆船。左右の舵で斜めの航路をつなぎ、ブイ1→2→港を60秒以内に通るリアルタイム操船の試作。岸に触れるか期限で失敗。左右キー/A Dと長押しボタン、P/Escapeで停止、明示的再開・再挑戦。物理的な帆走訓練ではない簡略モデル。
+
+ソース `games/windward-sail/`、企画・PDCA `assets/windward-sail/design-notes.md`。13純エンジン+6モック入力テストに合格。左右から始める2航路は約29秒で帰港し、正面放置と旋回し続ける入力は失敗。ブラウザ/公開検査結果は別途記録し、純エンジンの成功と区別する。実機スマホ、人の初見、長期の面白さは未検証。

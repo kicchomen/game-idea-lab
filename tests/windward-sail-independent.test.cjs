@@ -1,0 +1,15 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict');
+const E=require('../games/windward-sail/engine.js');
+function run(policy){let s=E.start(),history=[];for(let i=0;i<E.LIMIT*120&&s.phase==='playing';i++){const turn=policy(s);history.push(turn);s=E.tick(s,{turn});}return {s,history};}
+function oracle(degrees){const a=Math.abs(((degrees+180)%360+360)%360-180);return a<=35?0:a<=55?(a-35)*1.9:a<=90?38+(a-55)*6/35:44-(a-90)/5;}
+function pilot(startSide){let tack=startSide;return s=>{const target=E.marks[s.mark];const bearing=Math.atan2(target.x-s.x,s.y-target.y)*180/Math.PI;let desired=bearing;if(Math.abs(bearing)<53){if(s.x<70)tack=1;else if(s.x>330)tack=-1;desired=tack*56;}const delta=E.wrap(desired-s.heading);return Math.abs(delta)<.35?0:Math.sign(delta);};}
+test('independent polar oracle covers full circle and repeated revolutions',()=>{for(let d=-1080;d<=1080;d+=.25)assert.ok(Math.abs(E.polar(d)-oracle(d))<1e-10,`heading ${d}`);});
+test('independent steering-only routes achieve ordered course from both sides',()=>{for(const side of[-1,1]){const {s,history}=run(pilot(side));assert.equal(s.phase,'won');assert.equal(s.mark,3);assert.ok(s.t<35);assert.ok(history.includes(-1)&&history.includes(0)&&history.includes(1));let replay=E.start();for(const turn of history)replay=E.tick(replay,{turn});assert.deepEqual(replay,s);}});
+test('constant or shallow alternating helm is not an accidental victory',()=>{for(const f of[()=>0,()=>1,()=>-1,s=>Math.floor(s.t)%2?1:-1,s=>Math.floor(s.t*2)%2?1:-1])assert.notEqual(run(f).s.phase,'won');});
+test('movement never gets snapped toward an active target',()=>{const s={...E.start(),x:174.5,y:95,heading:90,speed:10};const n=E.tick(s,{turn:0});assert.ok(n.x>s.x&&n.x<s.x+1);assert.equal(n.y,s.y);assert.equal(n.mark,0);});
+test('circle threshold and ordered targets use actual position',()=>{for(let i=0;i<3;i++){const m=E.marks[i];const base={...E.start(),mark:i,x:m.x+m.r+.01,y:m.y};assert.equal(E.tick(base).mark,i);assert.equal(E.tick({...base,x:m.x+m.r}).mark,i+1);}const harbor=E.marks[2];assert.equal(E.tick({...E.start(),x:harbor.x,y:harbor.y}).mark,0);});
+test('all terminal and paused engine states reject subsequent helm/time',()=>{for(const phase of['won','lost','paused','ready']){const s={...E.start(),phase};const before=JSON.stringify(s);assert.equal(E.tick(s,{turn:1},.5),s);assert.equal(JSON.stringify(s),before);}});
+test('acceleration preserves inertia into no-go rather than instant teleport/stop',()=>{let s={...E.start(),heading:34,speed:30};const n=E.tick(s);assert.ok(n.speed>0&&n.speed<30);assert.ok(n.x>s.x&&n.y<s.y);});
+test('60-second deadline stops exactly even when input tick would overrun',()=>{const s={...E.start(),t:59.999};const n=E.tick(s,{},1);assert.equal(n.phase,'lost');assert.equal(n.reason,'time');assert.equal(n.t,60);});
+test('time partitioning is stable for fixed-step multiples over full voyage',()=>{let a=E.start(),b=E.start();for(let i=0;i<150;i++)a=E.tick(a,{turn:1},E.DT);for(let i=0;i<25;i++)b=E.tick(b,{turn:1},6*E.DT);for(const key of['x','y','heading','speed','t'])assert.ok(Math.abs(a[key]-b[key])<1e-9,key);});
