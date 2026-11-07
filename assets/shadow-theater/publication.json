@@ -1,16 +1,16 @@
 {
   "game": "shadow-theater",
   "title": "影絵の動物劇場｜つながる影を、演じよう",
-  "status": "prototype_verified_article_blocked",
+  "status": "published",
   "blog_id": "3556407006374124911",
   "blogger_post_id": "8106924051784366229",
-  "article_url": null,
-  "published_at": null,
+  "article_url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_07.html",
+  "published_at": "2026-11-07T17:19:00+09:00",
   "play_url": "https://kicchomen.github.io/game-idea-lab/games/shadow-theater/",
   "pages_code_commit": "60d9353b17f5d331481af2f9cb7cbca89354a81e",
   "actual_browser": "Cloud Chrome: PC all 3 levels, failure/retry/repeated inputs; 25 states at 320x568,360x640,390x844,258x568,667x375 passed. Help fix rechecked at all 5 sizes, keyboard close/reopen and post-help drag success passed. CSS-size frames, not physical phone.",
-  "blogger_images": "not uploaded; required cookie permission not authorized",
-  "saved_blogger": "title only",
+  "blogger_images": "normal compose binary clipboard paste, one JPEG and one PNG; both Blogger CDN images loaded after saved HTML reload and on public article",
+  "saved_blogger": "final 2136-character HTML exactly matched after save and reload; 2 images, 1 iframe, 1 standalone link; pending-publication sentence replaced with completed facts",
   "physical_phone": "not tested",
   "human_first_time": "not tested",
   "long_term_enjoyment": "not tested",
@@ -19,5 +19,51 @@
   "pages_deployment_verified": true,
   "whole_repository_tests": 973,
   "pages_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42340198939",
-  "source_remote_match": true
+  "source_remote_match": true,
+  "published_precision": "minute; public article time datetime attribute",
+  "images": {
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh7g_ZQu2iiBchMdHm9FUNIxDGS6ivt-hbfva6PTTjqNP0fQf8buAwW2aFdyykjTPM2zratOPpxOoGA7BmuwLk4c5qv6bWFcNVoal_3tNfCCpHK7WtUNb0qtHlxTWk05YOhM7qRr8BrQIPW4kt8lD-hHIJMjjAWuzYGzJbOH0HbCljarT-5-XndrskWK2k/s1600/clipboard.jpeg",
+    "gameplay": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij-huIQxAJHnDc4jeDotDRrYBgX6Dg312qtWM7Pu5MXd90I7B3AcK2gpzb8lydyPiEnpIl2ydM9kP2rLT_aM_Sq438E_koEvh6z1pkF7ex54upiFP7qsX3vv7NOnRvXcghXwfwHmPDNJRKmiwOH__DKPZLyxaqtN0kIfZ3Lom_p7HLiZOB7kIUPc4bpH8/s1600/clipboard.png"
+  },
+  "saved_article_checks": {
+    "method": "Existing Cloud Chrome; real saved Blogger preview URL loaded through the existing responsive-check UI, never saved to repository",
+    "viewports": [
+      {
+        "frame": 320,
+        "body": 305,
+        "article": 273,
+        "game": 273,
+        "no_horizontal_overflow": true
+      },
+      {
+        "frame": 360,
+        "body": 345,
+        "article": 313,
+        "game": 313,
+        "no_horizontal_overflow": true
+      },
+      {
+        "frame": 390,
+        "body": 375,
+        "article": 343,
+        "game": 343,
+        "no_horizontal_overflow": true
+      }
+    ],
+    "scrollbar_note": "15px browser scrollbar; article padding consumes another 32px",
+    "images_natural_sizes": [
+      [
+        1440,
+        810
+      ],
+      [
+        320,
+        568
+      ]
+    ],
+    "operation": "320: start, rotate, undo, natural failure, retry, normal button adjustments and rabbit success. 360: next bird, rotate, undo, reset. 390: help opened at scrollTop=0 with title focus, then closed. Game height568px, controls44px high.",
+    "official_smartphone_preview": "body397px/article365px; start, right rotation and undo; visually inspected; no horizontal overflow"
+  },
+  "public_article_checks": "33 published,2 old drafts,0 scheduled. Homepage wide cover thumbnail loaded; exact title/canonical/post ID/time/og:image and2CDNbody images verified. Public embedded start/right/undo/failed pose worked. Standalone link opened correct Pages in a new tab.",
+  "environment_note": "Cloud only; no Cookie/security/authentication changes. Prior windward-sail preflight documented the same Picker Cookie block and successful ordinary binary clipboard image paste. Applied that existing compose UI route; no hidden API/DOM write or repeated image upload. Long batches of test controls timed out; actual SVG DOM was reread before continuing. These timeouts were test-automation interruptions, not counted as successful actions."
 }
