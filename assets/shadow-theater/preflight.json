@@ -1,0 +1,31 @@
+{
+  "checked_at": "2026-11-07T10:00:00Z",
+  "base_main": "67e4791dd8fc173e7217d10bf14b267f75cb4fbc",
+  "blog_id": "3556407006374124911",
+  "posts": 34,
+  "published": 32,
+  "drafts": [
+    {
+      "id": "1057707127785703864",
+      "title": "足あとエコー",
+      "preserve": true
+    },
+    {
+      "id": "6862408650449844535",
+      "title": "センサーずらし",
+      "preserve": true
+    }
+  ],
+  "tiny_tug_id": "2467816573351864872",
+  "latest_published_id": "4545190250516703600",
+  "duplicate_shadow_theater": false,
+  "personal_account_verified": true,
+  "files_read": [
+    "README.md",
+    "index.html",
+    "assets/windward-sail/design-notes.md",
+    "assets/windward-sail/publication.json",
+    "assets/repair-workshop/design-notes.md"
+  ],
+  "local_headless_browser": "failed socket() Operation not permitted; not a passed visual test"
+}
