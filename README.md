@@ -490,4 +490,4 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 
 試遊ステージ: https://kicchomen.github.io/game-idea-lab/games/shadow-theater/
 
-新作23テスト、既存含む全973テストと独立ソースレビューに成功。公開Chromeで全3演目の成功・失敗・再挑戦、ドラッグ/キー/ボタンを実操作し、320/360/390pxほか5表示枠の25状態が枠内に収まることを確認。狭幅ヘルプの初期位置を追加修正し再検査予定。BloggerのCookie許可が未解決のためCDN画像保存・本文保存・記事内検査・記事公開は未完了。同じ新規下書きIDを維持し、必須検査に合格するまで公開しない。物理スマホ・初見の人・長期の面白さは未検証。詳しい範囲はassets/shadow-theater/browser-qa.mdとpublication.json。
+新作23テスト、既存含む全973テストと独立ソースレビューに成功。公開Chromeで全3演目の成功・失敗・再挑戦、ドラッグ/キー/ボタンを実操作し、320/360/390pxほか5表示枠の25状態が枠内に収まることを確認。狭幅ヘルプの初期位置を追加修正し、公開版の5表示枠で先頭表示・再表示・閉じる操作を再検査済み。BloggerのCookie許可が未解決のためCDN画像保存・本文保存・記事内検査・記事公開は未完了。同じ新規下書きIDを維持し、必須検査に合格するまで公開しない。物理スマホ・初見の人・長期の面白さは未検証。詳しい範囲はassets/shadow-theater/browser-qa.mdとpublication.json。

@@ -1,14 +1,14 @@
 {
   "game": "shadow-theater",
   "title": "影絵の動物劇場｜つながる影を、演じよう",
-  "status": "prototype_staged_article_blocked",
+  "status": "prototype_verified_article_blocked",
   "blog_id": "3556407006374124911",
   "blogger_post_id": "8106924051784366229",
   "article_url": null,
   "published_at": null,
   "play_url": "https://kicchomen.github.io/game-idea-lab/games/shadow-theater/",
-  "pages_code_commit": "1971548d5d78a001d9927af62dbcdc3595a2419c",
-  "actual_browser": "Cloud Chrome: PC all 3 levels, failure/retry/repeated inputs; 25 states at 320x568,360x640,390x844,258x568,667x375 passed. CSS-size frames, not physical phone. Narrow-help fix awaits deployed recheck.",
+  "pages_code_commit": "60d9353b17f5d331481af2f9cb7cbca89354a81e",
+  "actual_browser": "Cloud Chrome: PC all 3 levels, failure/retry/repeated inputs; 25 states at 320x568,360x640,390x844,258x568,667x375 passed. Help fix rechecked at all 5 sizes, keyboard close/reopen and post-help drag success passed. CSS-size frames, not physical phone.",
   "blogger_images": "not uploaded; required cookie permission not authorized",
   "saved_blogger": "title only",
   "physical_phone": "not tested",
@@ -18,5 +18,6 @@
   "new_game_tests": 23,
   "pages_deployment_verified": true,
   "whole_repository_tests": 973,
-  "pages_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42322764728"
+  "pages_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42340198939",
+  "source_remote_match": true
 }
