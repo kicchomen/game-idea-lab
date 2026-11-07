@@ -482,3 +482,12 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 ソース `games/windward-sail/`、企画・PDCA `assets/windward-sail/design-notes.md`。13純エンジン+6モック入力テストに合格。左右から始める2航路は約29秒で帰港し、正面放置と旋回し続ける入力は失敗。ブラウザ/公開検査結果は別途記録し、純エンジンの成功と区別する。実機スマホ、人の初見、長期の面白さは未検証。
 
 公開記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_06.html （Blogger 4545190250516703600、2026-11-06 12:19 JST）。30ゲームテスト／全950テスト成功。実ブラウザーで48.5秒の帰港、岸・期限失敗、再挑戦、停止再開、320/360/390px操作を検証。横長HELP見切れを改善し再レビュー済み。保存済みBlogger記事の3幅、公開画像・サムネイル・埋め込み操作も確認。完全な検査範囲と未検証事項は `assets/windward-sail/browser-qa.md` と `publication.json`。
+
+
+## 影絵の動物劇場 / Shadow Theater（2026-11-07、記事は未公開）
+
+影絵の人形遣いとして、連動する体・顔・耳（鳥は冠羽）をその場で回し、見本の輪郭に近づける試作。固定3演目、各3回の失敗判定、ドラッグ・キー・ボタン、Undo・再挑戦。依存・保存・音声・ゲーム通信なし。
+
+試遊ステージ: https://kicchomen.github.io/game-idea-lab/games/shadow-theater/
+
+新作22テスト、既存含む全972テストと独立ソースレビューに成功。横長配置と判定キー反復を修正。Pagesの該当コードコミットの配信ワークフロー成功を確認。ただしブラウザアクセスとBlogger画像保存の許可確認が必要なため、実ブラウザ操作・幅高さ検査・CDN保存・記事公開は未完了。新規記事は同じ下書きIDを維持し、必須検査に合格するまで公開しない。画像は構想図。物理スマホ・初見の人・長期の面白さは未検証。詳しい範囲はassets/shadow-theater/browser-qa.mdとpublication.json。

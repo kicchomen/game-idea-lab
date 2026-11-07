@@ -1,0 +1,22 @@
+{
+  "game": "shadow-theater",
+  "title": "影絵の動物劇場｜つながる影を、演じよう",
+  "status": "prototype_staged_article_blocked",
+  "blog_id": "3556407006374124911",
+  "blogger_post_id": "8106924051784366229",
+  "article_url": null,
+  "published_at": null,
+  "play_url": "https://kicchomen.github.io/game-idea-lab/games/shadow-theater/",
+  "pages_code_commit": "1971548d5d78a001d9927af62dbcdc3595a2419c",
+  "actual_browser": "not tested; browser origin access confirmation needed",
+  "blogger_images": "not uploaded; required cookie permission not authorized",
+  "saved_blogger": "title only",
+  "physical_phone": "not tested",
+  "human_first_time": "not tested",
+  "long_term_enjoyment": "not tested",
+  "independent_source_review": "passed; no current source-level blockers",
+  "new_game_tests": 22,
+  "pages_deployment_verified": true,
+  "whole_repository_tests": 972,
+  "pages_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42322427551"
+}

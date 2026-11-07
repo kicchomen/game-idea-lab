@@ -1,0 +1,30 @@
+✔ independent nested SVG transform reconstruction agrees with engine (17.828067ms)
+✔ all target neighborhoods reachable by button lattice, terminal calls immutable (1.222959ms)
+✔ no unchanged or single-part solution; undo never refunds failures (0.590256ms)
+✔ UI can start, fail, retry and reset without terminal leakage (6.355589ms)
+✔ UI solves all rounds through buttons and preserves feedback (11.43432ms)
+✔ help blocks shortcut input and keyboard native activation avoids duplication (1.792791ms)
+✔ pointer move changes pose immediately, cancel/blur clears drag, undo groups gesture (3.826069ms)
+✔ holding native Enter on focused submit cannot spend repeated attempts (1.770427ms)
+✔ ready guards all gameplay input (2.836864ms)
+✔ all starts are nontrivial, target poses reachable using public 2-degree input (1.331475ms)
+✔ visible geometry coordinate search independently reaches all three (12.540103ms)
+✔ failure after exactly three wrong confirmations and frozen terminal (0.2673ms)
+✔ reset retries current animal and restores all attempts (0.186406ms)
+✔ undo changes only pose, not consumed attempts (0.157374ms)
+✔ next requires clear and campaign ends after three (0.189844ms)
+✔ invalid and nonfinite values cannot poison engine (0.222217ms)
+✔ repeated directional inputs clamp without growing no-op history (0.665969ms)
+✔ root articulation moves children and tip does not move body (0.334229ms)
+✔ single correct part is not enough (0.699829ms)
+✔ one degree errors tolerated but meaningful pose displacement rejected (0.2718ms)
+✔ keyboard aliases, repeats, and native control focus are safe (0.454114ms)
+✔ all allowed integer poses retain visible key geometry (13.433534ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 211.121122
