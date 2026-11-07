@@ -8,15 +8,15 @@
   "published_at": null,
   "play_url": "https://kicchomen.github.io/game-idea-lab/games/shadow-theater/",
   "pages_code_commit": "1971548d5d78a001d9927af62dbcdc3595a2419c",
-  "actual_browser": "not tested; browser origin access confirmation needed",
+  "actual_browser": "Cloud Chrome: PC all 3 levels, failure/retry/repeated inputs; 25 states at 320x568,360x640,390x844,258x568,667x375 passed. CSS-size frames, not physical phone. Narrow-help fix awaits deployed recheck.",
   "blogger_images": "not uploaded; required cookie permission not authorized",
   "saved_blogger": "title only",
   "physical_phone": "not tested",
   "human_first_time": "not tested",
   "long_term_enjoyment": "not tested",
   "independent_source_review": "passed; no current source-level blockers",
-  "new_game_tests": 22,
+  "new_game_tests": 23,
   "pages_deployment_verified": true,
-  "whole_repository_tests": 972,
-  "pages_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42322427551"
+  "whole_repository_tests": 973,
+  "pages_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42322764728"
 }

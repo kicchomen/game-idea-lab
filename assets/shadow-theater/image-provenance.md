@@ -9,3 +9,5 @@
 
 カバープロンプト要旨: Japanese title 影絵の動物劇場, wide16:9, handcrafted shadow theater, cream glowing stage/navy curtains/amber lighting, articulated bird silhouette with brass joints and pale teal target pose, no UI, concept illustration.
 画面案プロンプト要旨: portrait Japanese browser game concept, large shadow stage, articulated paper animal/navy silhouette, teal target outline, brass handles, three part selectors and rotation/show buttons. Reading and touchability take priority over ornament in final implementation.
+
+- trial.png: 公開試遊を320×568 CSS表示枠で直接撮影した無加工スクリーンショット。記事2枚目に使用予定。画像内のUIは実装と一致する。design.jpgは制作前の比較資料としてのみ保持し、記事には使わない。
