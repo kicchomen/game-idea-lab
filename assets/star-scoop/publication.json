@@ -1,11 +1,11 @@
 {
   "game": "star-scoop",
   "title": "雲間の星すくい｜もう一つすくう？ 今夜は持ち帰る？",
-  "status": "ready_to_publish",
+  "status": "published",
   "blog_id": "3556407006374124911",
   "blogger_post_id": "7671703192445959346",
-  "article_url": null,
-  "published_at": null,
+  "article_url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_08.html",
+  "published_at": "2026-11-08T10:47:00+09:00",
   "play_url": "https://kicchomen.github.io/game-idea-lab/games/star-scoop/",
   "pages_code_commit": "4c56791ee61c05a55488fe5d1bdf190210fd857f",
   "pages_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42432782609",
@@ -48,9 +48,15 @@
     "notes": "CSS widths, not physical devices. Native browser scrollbar and article padding reduce game width."
   },
   "actual_browser": "PC 26-point success,0-point failure,retry,keyboard,double-click guard,pause/resume.5 CSS frames and25 measured states; 320px full success. See browser-qa.md.",
-  "public_article_checks": "pending",
+  "public_article_checks": "Exact title/canonical/same post ID/time/cover og:image and homepage thumbnail/2 loaded CDN images verified. Public embedded start, draw1point and bank1point worked. Standalone link opened the correct Pages game in a new tab.",
   "physical_phone": "not tested",
   "human_first_time": "not tested",
   "long_term_enjoyment": "not tested",
-  "environment_note": "Cloud only. Normal compose binary image paste. No Cookie, authentication or security setting changes."
+  "environment_note": "Cloud only. Normal compose binary image paste. No Cookie, authentication or security setting changes.",
+  "published_precision": "minute; datetime attribute on public article",
+  "pages_artifact_commit": "d09c3d025e913eddd2fde76efb91c06aa6b2233a",
+  "pages_artifact_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42435524308",
+  "pages_artifact_deployment_verified": true,
+  "artifact_remote_match": true,
+  "alternate_sky_browser_check": "Pause menu changed seed20261108 to1772730022 through fresh-sky reset. Night1/bank0/pending0/bag6stars3clouds restored."
 }

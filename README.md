@@ -495,4 +495,6 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 ## 雲間の星すくい / Star Scoop（2026-11-08）
 星か雨雲を1個ずつ引き、未確定の光をいつ持ち帰るか決めるプッシュ・ユア・ラック。星1/2/3点が各2個、雨雲3個の袋。雨雲2個で今夜だけ0点、5夜で22点が目標。残り袋を読み、引く/帰るを選ぶ。時間制限なし。同じ空の再挑戦と別seedの空を区別する。
 
-ソース `games/star-scoop/`、企画比較・構想/実装境界・PDCA・難度シミュレーションは `assets/star-scoop/`。作者27+独立7の新作34テスト、既存を含む1007テスト成功。1万seedで適応方針42.8%成功、固定6点帰還28.69%、全引き5.99%。最適性・人の面白さの証明ではない。実ブラウザで成功/失敗/再挑戦/キー操作と5表示枠、保存済みBlogger記事の320/360/390pxを確認。実機/初見/長期面白さは未検証。試遊: https://kicchomen.github.io/game-idea-lab/games/star-scoop/ 。ローカル実装は記事公開を意味しない。
+ソース `games/star-scoop/`、企画比較・構想/実装境界・PDCA・難度シミュレーションは `assets/star-scoop/`。作者27+独立7の新作34テスト、既存を含む1007テスト成功。1万seedで適応方針42.8%成功、固定6点帰還28.69%、全引き5.99%。最適性・人の面白さの証明ではない。実ブラウザで成功/失敗/再挑戦/キー操作と5表示枠、保存済みBlogger記事の320/360/390pxを確認。実機/初見/長期面白さは未検証。試遊: https://kicchomen.github.io/game-idea-lab/games/star-scoop/ 。
+
+公開記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_08.html （Blogger 7671703192445959346、2026-11-08 10:47 JST）。公開後title/canonical/サムネイル/2画像/埋込操作/単独リンクを確認。公開台帳はassets/star-scoop/publication.json。
