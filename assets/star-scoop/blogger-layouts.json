@@ -1,0 +1,560 @@
+[
+  {
+    "label": "320-preview-paused",
+    "article": {
+      "iframe": [
+        {
+          "height": 568,
+          "title": "雲間の星すくいを試遊",
+          "width": 280.5
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1439,
+          "rect": {
+            "bottom": -579.109375,
+            "height": 157.890625,
+            "left": 16,
+            "right": 296.5,
+            "top": -737,
+            "width": 280.5,
+            "x": 16,
+            "y": -737
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpTTKAM7I02-J5s1hX3wSxpoSZG-RNu4x02DcmK_MyaR2w30whx4TmZsRHeO98MCMg1A8jgaFc0rUyE6lu30FEtA3SB6KZP0kk7WWtJEnEewZX0I3JHMp0KI_w73CjHdRQFOWr8dy0GXTPQ2yIS2LX2JyzN6DnG241xdE_dlinN2KlcoroSGR4rF98ZY/s1600/clipboard.jpeg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1180,
+          "rect": {
+            "bottom": -67.8203125,
+            "height": 179.9453125,
+            "left": 16,
+            "right": 296.5,
+            "top": -247.765625,
+            "width": 280.5,
+            "x": 16,
+            "y": -247.765625
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy_Z0UyMh_vncECMriJN5pgRp2R8Q8BJx1t2aFJ0p7BdGmnSvyuPsccPezpCmd9dJaAXO53u51Rh4wsE7Rsl684S56eyrtmye9e075YzIOhGi49DEJG0ttBQCNIUBKOfH2zvBGnHN16mWCcELwRpcj8FF6d3TUhHrFH2pv8VImECLVlm7QZL3DmUf8_ts/s1600/clipboard.jpeg"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://kicchomen.github.io/game-idea-lab/games/star-scoop/",
+          "text": "別画面で遊ぶ"
+        }
+      ],
+      "scrollWidth": 312,
+      "width": 312
+    },
+    "game": {
+      "buttons": [
+        {
+          "height": 44,
+          "text": "？",
+          "width": 44
+        },
+        {
+          "height": 52,
+          "text": "すくう",
+          "width": 128.25
+        },
+        {
+          "height": 52,
+          "text": "帰る",
+          "width": 128.25
+        },
+        {
+          "height": 44,
+          "text": "中断",
+          "width": 44
+        },
+        {
+          "height": 44,
+          "text": "戻る",
+          "width": 218.5
+        },
+        {
+          "height": 44,
+          "text": "同じ空で最初から",
+          "width": 218.5
+        },
+        {
+          "height": 44,
+          "text": "別の空で最初から",
+          "width": 218.5
+        }
+      ],
+      "scrollWidth": 280,
+      "text": "雲間の星すくい\n？\n第 1 / 5 夜\n持帰り 0 / 22 点\n✦ · ✧ · ✦\n✦\n◡\n\n星の光 +1。帰れば1点。\n\n今夜 1 点\n雨雲 0 / 2\n\n残り：星5個・雨雲3個\n\n次の1個で失う確率 0 / 8\n\nすくう\n帰る\n雨雲2個で今夜の光は0点\n中断\nひと休み\n\n時間は進みません。続きから戻れます。\n\n空の番号：20261108\n最初からを選ぶと5夜分をやり直します。\n\n戻る\n同じ空で最初から別の空で最初から",
+      "width": 280
+    }
+  },
+  {
+    "label": "320-preview-bank-3",
+    "article": {
+      "iframe": [
+        {
+          "height": 568,
+          "title": "雲間の星すくいを試遊",
+          "width": 280.5
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1439,
+          "rect": {
+            "bottom": -769.609375,
+            "height": 157.890625,
+            "left": 16,
+            "right": 296.5,
+            "top": -927.5,
+            "width": 280.5,
+            "x": 16,
+            "y": -927.5
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpTTKAM7I02-J5s1hX3wSxpoSZG-RNu4x02DcmK_MyaR2w30whx4TmZsRHeO98MCMg1A8jgaFc0rUyE6lu30FEtA3SB6KZP0kk7WWtJEnEewZX0I3JHMp0KI_w73CjHdRQFOWr8dy0GXTPQ2yIS2LX2JyzN6DnG241xdE_dlinN2KlcoroSGR4rF98ZY/s1600/clipboard.jpeg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1180,
+          "rect": {
+            "bottom": -258.3203125,
+            "height": 179.9453125,
+            "left": 16,
+            "right": 296.5,
+            "top": -438.265625,
+            "width": 280.5,
+            "x": 16,
+            "y": -438.265625
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy_Z0UyMh_vncECMriJN5pgRp2R8Q8BJx1t2aFJ0p7BdGmnSvyuPsccPezpCmd9dJaAXO53u51Rh4wsE7Rsl684S56eyrtmye9e075YzIOhGi49DEJG0ttBQCNIUBKOfH2zvBGnHN16mWCcELwRpcj8FF6d3TUhHrFH2pv8VImECLVlm7QZL3DmUf8_ts/s1600/clipboard.jpeg"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://kicchomen.github.io/game-idea-lab/games/star-scoop/",
+          "text": "別画面で遊ぶ"
+        }
+      ],
+      "scrollWidth": 312,
+      "width": 312
+    },
+    "game": {
+      "buttons": [
+        {
+          "height": 44,
+          "text": "？",
+          "width": 44
+        },
+        {
+          "height": 48,
+          "text": "次の夜へ",
+          "width": 264.5
+        },
+        {
+          "height": 44,
+          "text": "中断",
+          "width": 44
+        }
+      ],
+      "scrollWidth": 280,
+      "text": "雲間の星すくい\n？\n第 1 / 5 夜\n持帰り 3 / 22 点\n✦ · ✧ · ✦\n✦\n◡\n\n3点を持ち帰った！\n\n今夜 0 点\n雨雲 0 / 2\n\n残り：星4個・雨雲3個\n\n星は1・2・3点が各2個\n\n次の夜へ\n1夜:3\n中断",
+      "width": 280
+    }
+  },
+  {
+    "label": "359-preview-before-adjustment",
+    "article": {
+      "iframe": [
+        {
+          "height": 568,
+          "title": "雲間の星すくいを試遊",
+          "width": 319.5
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1439,
+          "rect": {
+            "bottom": 143.3359375,
+            "height": 179.8359375,
+            "left": 16,
+            "right": 335.5,
+            "top": -36.5,
+            "width": 319.5,
+            "x": 16,
+            "y": -36.5
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpTTKAM7I02-J5s1hX3wSxpoSZG-RNu4x02DcmK_MyaR2w30whx4TmZsRHeO98MCMg1A8jgaFc0rUyE6lu30FEtA3SB6KZP0kk7WWtJEnEewZX0I3JHMp0KI_w73CjHdRQFOWr8dy0GXTPQ2yIS2LX2JyzN6DnG241xdE_dlinN2KlcoroSGR4rF98ZY/s1600/clipboard.jpeg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1180,
+          "rect": {
+            "bottom": 679.640625,
+            "height": 204.9609375,
+            "left": 16,
+            "right": 335.5,
+            "top": 474.6796875,
+            "width": 319.5,
+            "x": 16,
+            "y": 474.6796875
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy_Z0UyMh_vncECMriJN5pgRp2R8Q8BJx1t2aFJ0p7BdGmnSvyuPsccPezpCmd9dJaAXO53u51Rh4wsE7Rsl684S56eyrtmye9e075YzIOhGi49DEJG0ttBQCNIUBKOfH2zvBGnHN16mWCcELwRpcj8FF6d3TUhHrFH2pv8VImECLVlm7QZL3DmUf8_ts/s1600/clipboard.jpeg"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://kicchomen.github.io/game-idea-lab/games/star-scoop/",
+          "text": "別画面で遊ぶ"
+        }
+      ],
+      "scrollWidth": 351,
+      "width": 351
+    },
+    "game": {
+      "buttons": [
+        {
+          "height": 44,
+          "text": "？",
+          "width": 44
+        },
+        {
+          "height": 48,
+          "text": "次の夜へ",
+          "width": 303.5
+        },
+        {
+          "height": 44,
+          "text": "中断",
+          "width": 44
+        }
+      ],
+      "scrollWidth": 319,
+      "text": "雲間の星すくい\n？\n第 1 / 5 夜\n持帰り 3 / 22 点\n✦ · ✧ · ✦\n✦\n◡\n\n3点を持ち帰った！\n\n今夜 0 点\n雨雲 0 / 2\n\n残り：星4個・雨雲3個\n\n星は1・2・3点が各2個\n\n次の夜へ\n1夜:3\n中断",
+      "width": 319
+    }
+  },
+  {
+    "label": "390-preview-paused",
+    "article": {
+      "iframe": [
+        {
+          "height": 568,
+          "title": "雲間の星すくいを試遊",
+          "width": 350.5
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1439,
+          "rect": {
+            "bottom": -564.7109375,
+            "height": 197.2890625,
+            "left": 16,
+            "right": 366.5,
+            "top": -762,
+            "width": 350.5,
+            "x": 16,
+            "y": -762
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpTTKAM7I02-J5s1hX3wSxpoSZG-RNu4x02DcmK_MyaR2w30whx4TmZsRHeO98MCMg1A8jgaFc0rUyE6lu30FEtA3SB6KZP0kk7WWtJEnEewZX0I3JHMp0KI_w73CjHdRQFOWr8dy0GXTPQ2yIS2LX2JyzN6DnG241xdE_dlinN2KlcoroSGR4rF98ZY/s1600/clipboard.jpeg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1180,
+          "rect": {
+            "bottom": -32.515625,
+            "height": 224.8515625,
+            "left": 16,
+            "right": 366.5,
+            "top": -257.3671875,
+            "width": 350.5,
+            "x": 16,
+            "y": -257.3671875
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy_Z0UyMh_vncECMriJN5pgRp2R8Q8BJx1t2aFJ0p7BdGmnSvyuPsccPezpCmd9dJaAXO53u51Rh4wsE7Rsl684S56eyrtmye9e075YzIOhGi49DEJG0ttBQCNIUBKOfH2zvBGnHN16mWCcELwRpcj8FF6d3TUhHrFH2pv8VImECLVlm7QZL3DmUf8_ts/s1600/clipboard.jpeg"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://kicchomen.github.io/game-idea-lab/games/star-scoop/",
+          "text": "別画面で遊ぶ"
+        }
+      ],
+      "scrollWidth": 382,
+      "width": 382
+    },
+    "game": {
+      "buttons": [
+        {
+          "height": 44,
+          "text": "？",
+          "width": 44
+        },
+        {
+          "height": 52,
+          "text": "すくう",
+          "width": 163.25
+        },
+        {
+          "height": 52,
+          "text": "帰る",
+          "width": 163.25
+        },
+        {
+          "height": 44,
+          "text": "中断",
+          "width": 44
+        },
+        {
+          "height": 44,
+          "text": "戻る",
+          "width": 277.0859375
+        },
+        {
+          "height": 44,
+          "text": "同じ空で最初から",
+          "width": 277.0859375
+        },
+        {
+          "height": 44,
+          "text": "別の空で最初から",
+          "width": 277.0859375
+        }
+      ],
+      "scrollWidth": 350,
+      "text": "雲間の星すくい\n？\n第 2 / 5 夜\n持帰り 3 / 22 点\n✦ · ✧ · ✦\n☾\n◡\n\n新しい袋。星6個と雨雲3個。\n\n今夜 0 点\n雨雲 0 / 2\n\n残り：星6個・雨雲3個\n\n次の1個で失う確率 0 / 9\n\nすくう\n帰る\n1夜:3\n中断\nひと休み\n\n時間は進みません。続きから戻れます。\n\n空の番号：20261108\n最初からを選ぶと5夜分をやり直します。\n\n戻る\n同じ空で最初から別の空で最初から",
+      "width": 350
+    }
+  },
+  {
+    "label": "390-preview-bank-6",
+    "article": {
+      "iframe": [
+        {
+          "height": 568,
+          "title": "雲間の星すくいを試遊",
+          "width": 350.5
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1439,
+          "rect": {
+            "bottom": -790.7109375,
+            "height": 197.2890625,
+            "left": 16,
+            "right": 366.5,
+            "top": -988,
+            "width": 350.5,
+            "x": 16,
+            "y": -988
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpTTKAM7I02-J5s1hX3wSxpoSZG-RNu4x02DcmK_MyaR2w30whx4TmZsRHeO98MCMg1A8jgaFc0rUyE6lu30FEtA3SB6KZP0kk7WWtJEnEewZX0I3JHMp0KI_w73CjHdRQFOWr8dy0GXTPQ2yIS2LX2JyzN6DnG241xdE_dlinN2KlcoroSGR4rF98ZY/s1600/clipboard.jpeg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1180,
+          "rect": {
+            "bottom": -258.515625,
+            "height": 224.8515625,
+            "left": 16,
+            "right": 366.5,
+            "top": -483.3671875,
+            "width": 350.5,
+            "x": 16,
+            "y": -483.3671875
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy_Z0UyMh_vncECMriJN5pgRp2R8Q8BJx1t2aFJ0p7BdGmnSvyuPsccPezpCmd9dJaAXO53u51Rh4wsE7Rsl684S56eyrtmye9e075YzIOhGi49DEJG0ttBQCNIUBKOfH2zvBGnHN16mWCcELwRpcj8FF6d3TUhHrFH2pv8VImECLVlm7QZL3DmUf8_ts/s1600/clipboard.jpeg"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://kicchomen.github.io/game-idea-lab/games/star-scoop/",
+          "text": "別画面で遊ぶ"
+        }
+      ],
+      "scrollWidth": 382,
+      "width": 382
+    },
+    "game": {
+      "buttons": [
+        {
+          "height": 44,
+          "text": "？",
+          "width": 44
+        },
+        {
+          "height": 48,
+          "text": "次の夜へ",
+          "width": 334.5
+        },
+        {
+          "height": 44,
+          "text": "中断",
+          "width": 44
+        }
+      ],
+      "scrollWidth": 350,
+      "text": "雲間の星すくい\n？\n第 2 / 5 夜\n持帰り 6 / 22 点\n✦ · ✧ · ✦\n✦\n◡\n\n3点を持ち帰った！\n\n今夜 0 点\n雨雲 1 / 2\n\n残り：星5個・雨雲2個\n\n星は1・2・3点が各2個\n\n次の夜へ\n1夜:3 / 2夜:3\n中断",
+      "width": 350
+    }
+  },
+  {
+    "label": "360-preview-before",
+    "article": {
+      "iframe": [
+        {
+          "height": 568,
+          "title": "雲間の星すくいを試遊",
+          "width": 322
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1439,
+          "rect": {
+            "bottom": -667.25,
+            "height": 181.25,
+            "left": 16,
+            "right": 338,
+            "top": -848.5,
+            "width": 322,
+            "x": 16,
+            "y": -848.5
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpTTKAM7I02-J5s1hX3wSxpoSZG-RNu4x02DcmK_MyaR2w30whx4TmZsRHeO98MCMg1A8jgaFc0rUyE6lu30FEtA3SB6KZP0kk7WWtJEnEewZX0I3JHMp0KI_w73CjHdRQFOWr8dy0GXTPQ2yIS2LX2JyzN6DnG241xdE_dlinN2KlcoroSGR4rF98ZY/s1600/clipboard.jpeg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1180,
+          "rect": {
+            "bottom": -129.33123779296875,
+            "height": 206.5687561035156,
+            "left": 16,
+            "right": 338,
+            "top": -335.8999938964844,
+            "width": 322,
+            "x": 16,
+            "y": -335.8999938964844
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy_Z0UyMh_vncECMriJN5pgRp2R8Q8BJx1t2aFJ0p7BdGmnSvyuPsccPezpCmd9dJaAXO53u51Rh4wsE7Rsl684S56eyrtmye9e075YzIOhGi49DEJG0ttBQCNIUBKOfH2zvBGnHN16mWCcELwRpcj8FF6d3TUhHrFH2pv8VImECLVlm7QZL3DmUf8_ts/s1600/clipboard.jpeg"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://kicchomen.github.io/game-idea-lab/games/star-scoop/",
+          "text": "別画面で遊ぶ"
+        }
+      ],
+      "scrollWidth": 354,
+      "width": 354
+    },
+    "game": {
+      "buttons": [
+        {
+          "height": 44,
+          "text": "？",
+          "width": 44
+        },
+        {
+          "height": 48,
+          "text": "次の夜へ",
+          "width": 306
+        },
+        {
+          "height": 44,
+          "text": "中断",
+          "width": 44
+        }
+      ],
+      "scrollWidth": 322,
+      "text": "雲間の星すくい\n？\n第 2 / 5 夜\n持帰り 6 / 22 点\n✦ · ✧ · ✦\n✦\n◡\n\n3点を持ち帰った！\n\n今夜 0 点\n雨雲 1 / 2\n\n残り：星5個・雨雲2個\n\n星は1・2・3点が各2個\n\n次の夜へ\n1夜:3 / 2夜:3\n中断",
+      "width": 322
+    }
+  },
+  {
+    "label": "360-preview-bank-9",
+    "article": {
+      "iframe": [
+        {
+          "height": 568,
+          "title": "雲間の星すくいを試遊",
+          "width": 322
+        }
+      ],
+      "images": [
+        {
+          "complete": true,
+          "naturalWidth": 1439,
+          "rect": {
+            "bottom": -834.4500122070312,
+            "height": 181.25,
+            "left": 16,
+            "right": 338,
+            "top": -1015.7000122070312,
+            "width": 322,
+            "x": 16,
+            "y": -1015.7000122070312
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpTTKAM7I02-J5s1hX3wSxpoSZG-RNu4x02DcmK_MyaR2w30whx4TmZsRHeO98MCMg1A8jgaFc0rUyE6lu30FEtA3SB6KZP0kk7WWtJEnEewZX0I3JHMp0KI_w73CjHdRQFOWr8dy0GXTPQ2yIS2LX2JyzN6DnG241xdE_dlinN2KlcoroSGR4rF98ZY/s1600/clipboard.jpeg"
+        },
+        {
+          "complete": true,
+          "naturalWidth": 1180,
+          "rect": {
+            "bottom": -296.53125,
+            "height": 206.5687561035156,
+            "left": 16,
+            "right": 338,
+            "top": -503.1000061035156,
+            "width": 322,
+            "x": 16,
+            "y": -503.1000061035156
+          },
+          "src": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy_Z0UyMh_vncECMriJN5pgRp2R8Q8BJx1t2aFJ0p7BdGmnSvyuPsccPezpCmd9dJaAXO53u51Rh4wsE7Rsl684S56eyrtmye9e075YzIOhGi49DEJG0ttBQCNIUBKOfH2zvBGnHN16mWCcELwRpcj8FF6d3TUhHrFH2pv8VImECLVlm7QZL3DmUf8_ts/s1600/clipboard.jpeg"
+        }
+      ],
+      "links": [
+        {
+          "href": "https://kicchomen.github.io/game-idea-lab/games/star-scoop/",
+          "text": "別画面で遊ぶ"
+        }
+      ],
+      "scrollWidth": 354,
+      "width": 354
+    },
+    "game": {
+      "buttons": [
+        {
+          "height": 44,
+          "text": "？",
+          "width": 44
+        },
+        {
+          "height": 48,
+          "text": "次の夜へ",
+          "width": 306
+        },
+        {
+          "height": 44,
+          "text": "中断",
+          "width": 44
+        }
+      ],
+      "scrollWidth": 322,
+      "text": "雲間の星すくい\n？\n第 3 / 5 夜\n持帰り 9 / 22 点\n✦ · ✧ · ✦\n✦\n◡\n\n3点を持ち帰った！\n\n今夜 0 点\n雨雲 1 / 2\n\n残り：星5個・雨雲2個\n\n星は1・2・3点が各2個\n\n次の夜へ\n1夜:3 / 2夜:3 / 3夜:3\n中断",
+      "width": 322
+    }
+  }
+]

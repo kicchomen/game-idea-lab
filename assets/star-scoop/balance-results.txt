@@ -1,0 +1,27 @@
+always 5.99% 5.0736
+cloud 24.87% 17.5267
+four 19.01% 16.9623
+six 28.69% 18.1184
+adaptive 42.8% 20.2269
+DEFAULT 26 draw,draw,draw,draw,draw,bank,next,draw,draw,draw,bank,next,draw,draw,draw,bank,next,draw,draw,next,draw,draw,draw,draw,draw,draw,bank [
+  [
+    1, 2, 1, 3, 0,
+    0, 3, 0, 2
+  ],
+  [
+    0, 3, 2, 1, 3,
+    0, 2, 0, 1
+  ],
+  [
+    0, 3, 2, 0, 3,
+    0, 2, 1, 1
+  ],
+  [
+    0, 0, 2, 2, 1,
+    3, 1, 0, 3
+  ],
+  [
+    2, 3, 1, 2, 1,
+    0, 0, 0, 3
+  ]
+]

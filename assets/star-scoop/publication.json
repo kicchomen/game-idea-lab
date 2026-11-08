@@ -1,0 +1,56 @@
+{
+  "game": "star-scoop",
+  "title": "雲間の星すくい｜もう一つすくう？ 今夜は持ち帰る？",
+  "status": "ready_to_publish",
+  "blog_id": "3556407006374124911",
+  "blogger_post_id": "7671703192445959346",
+  "article_url": null,
+  "published_at": null,
+  "play_url": "https://kicchomen.github.io/game-idea-lab/games/star-scoop/",
+  "pages_code_commit": "4c56791ee61c05a55488fe5d1bdf190210fd857f",
+  "pages_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42432782609",
+  "pages_deployment_verified": true,
+  "source_remote_match": true,
+  "new_game_tests": 34,
+  "whole_repository_tests": 1007,
+  "independent_source_review": "passed; help heading focus/scroll reset improved before deployment",
+  "independent_article_review": "passed: implementation, article rules, CDN URLs and saved preview measurements consistent",
+  "saved_blogger": "2110-character HTML exactly matched after save and reload; 2 CDN images, 1 iframe, 1 standalone link",
+  "images": {
+    "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpTTKAM7I02-J5s1hX3wSxpoSZG-RNu4x02DcmK_MyaR2w30whx4TmZsRHeO98MCMg1A8jgaFc0rUyE6lu30FEtA3SB6KZP0kk7WWtJEnEewZX0I3JHMp0KI_w73CjHdRQFOWr8dy0GXTPQ2yIS2LX2JyzN6DnG241xdE_dlinN2KlcoroSGR4rF98ZY/s1600/clipboard.jpeg",
+    "gameplay": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiy_Z0UyMh_vncECMriJN5pgRp2R8Q8BJx1t2aFJ0p7BdGmnSvyuPsccPezpCmd9dJaAXO53u51Rh4wsE7Rsl684S56eyrtmye9e075YzIOhGi49DEJG0ttBQCNIUBKOfH2zvBGnHN16mWCcELwRpcj8FF6d3TUhHrFH2pv8VImECLVlm7QZL3DmUf8_ts/s1600/clipboard.jpeg"
+  },
+  "saved_article_checks": {
+    "method": "Blogger official preview in existing cloud Chrome; normal browser window resize and zoom. No preview token sent to external page.",
+    "viewports": [
+      {
+        "frame": 320,
+        "zoom_percent": 200,
+        "document_client_width": 312,
+        "embedded_width": 280.5
+      },
+      {
+        "frame": 360,
+        "zoom_percent": 250,
+        "document_client_width": 354,
+        "embedded_width": 322
+      },
+      {
+        "frame": 390,
+        "zoom_percent": 200,
+        "document_client_width": 382,
+        "embedded_width": 350.5
+      }
+    ],
+    "no_horizontal_overflow": true,
+    "buttons_min_css_px": 44,
+    "operation": "Each requested width: real draw and bank; carried totals3,6,9. Official smartphone preview also start/draw.",
+    "notes": "CSS widths, not physical devices. Native browser scrollbar and article padding reduce game width."
+  },
+  "actual_browser": "PC 26-point success,0-point failure,retry,keyboard,double-click guard,pause/resume.5 CSS frames and25 measured states; 320px full success. See browser-qa.md.",
+  "public_article_checks": "pending",
+  "physical_phone": "not tested",
+  "human_first_time": "not tested",
+  "long_term_enjoyment": "not tested",
+  "environment_note": "Cloud only. Normal compose binary image paste. No Cookie, authentication or security setting changes."
+}

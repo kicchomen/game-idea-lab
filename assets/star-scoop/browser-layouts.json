@@ -1,0 +1,917 @@
+[
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 268,
+        "y": 8
+      },
+      {
+        "bottom": 380.59375,
+        "h": 48,
+        "text": "はじめる",
+        "w": 304,
+        "x": 8,
+        "y": 332.59375
+      },
+      {
+        "bottom": 429.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 268,
+        "y": 385.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 568,
+    "scrollHeight": 568,
+    "scrollWidth": 320,
+    "width": 320,
+    "state": "320 ready"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 54,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 306,
+        "y": 10
+      },
+      {
+        "bottom": 446.59375,
+        "h": 48,
+        "text": "はじめる",
+        "w": 340,
+        "x": 10,
+        "y": 398.59375
+      },
+      {
+        "bottom": 498.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44.015625,
+        "x": 305.984375,
+        "y": 454.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 640,
+    "scrollHeight": 640,
+    "scrollWidth": 360,
+    "width": 360,
+    "state": "360 × 640 ready"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 54,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 336,
+        "y": 10
+      },
+      {
+        "bottom": 446.59375,
+        "h": 48,
+        "text": "はじめる",
+        "w": 370,
+        "x": 10,
+        "y": 398.59375
+      },
+      {
+        "bottom": 498.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44.015625,
+        "x": 335.984375,
+        "y": 454.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 844,
+    "scrollHeight": 844,
+    "scrollWidth": 390,
+    "width": 390,
+    "state": "390 × 844 ready"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 206,
+        "y": 8
+      },
+      {
+        "bottom": 380.59375,
+        "h": 48,
+        "text": "はじめる",
+        "w": 242,
+        "x": 8,
+        "y": 332.59375
+      },
+      {
+        "bottom": 429.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 206,
+        "y": 385.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 568,
+    "scrollHeight": 568,
+    "scrollWidth": 258,
+    "width": 258,
+    "state": "258 × 568 ready"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 511.5,
+        "y": 8
+      },
+      {
+        "bottom": 249.78125,
+        "h": 48,
+        "text": "はじめる",
+        "w": 215,
+        "x": 340.5,
+        "y": 201.78125
+      },
+      {
+        "bottom": 308.1875,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 511.5,
+        "y": 264.1875
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 375,
+    "scrollHeight": 375,
+    "scrollWidth": 667,
+    "width": 667,
+    "state": "667 × 375 ready"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 268,
+        "y": 8
+      },
+      {
+        "bottom": 384.59375,
+        "h": 52,
+        "text": "すくう",
+        "w": 148,
+        "x": 8,
+        "y": 332.59375
+      },
+      {
+        "bottom": 384.59375,
+        "h": 52,
+        "text": "帰る",
+        "w": 148,
+        "x": 164,
+        "y": 332.59375
+      },
+      {
+        "bottom": 433.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 268,
+        "y": 389.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "draw",
+    "height": 568,
+    "scrollHeight": 568,
+    "scrollWidth": 320,
+    "width": 320,
+    "state": "320 play"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 54,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 306,
+        "y": 10
+      },
+      {
+        "bottom": 450.59375,
+        "h": 52,
+        "text": "すくう",
+        "w": 166,
+        "x": 10,
+        "y": 398.59375
+      },
+      {
+        "bottom": 450.59375,
+        "h": 52,
+        "text": "帰る",
+        "w": 166,
+        "x": 184,
+        "y": 398.59375
+      },
+      {
+        "bottom": 502.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44.015625,
+        "x": 305.984375,
+        "y": 458.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "closeDialog",
+    "height": 640,
+    "scrollHeight": 640,
+    "scrollWidth": 360,
+    "width": 360,
+    "state": "360 × 640 play"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 54,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 336,
+        "y": 10
+      },
+      {
+        "bottom": 450.59375,
+        "h": 52,
+        "text": "すくう",
+        "w": 181,
+        "x": 10,
+        "y": 398.59375
+      },
+      {
+        "bottom": 450.59375,
+        "h": 52,
+        "text": "帰る",
+        "w": 181,
+        "x": 199,
+        "y": 398.59375
+      },
+      {
+        "bottom": 502.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44.015625,
+        "x": 335.984375,
+        "y": 458.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "closeDialog",
+    "height": 844,
+    "scrollHeight": 844,
+    "scrollWidth": 390,
+    "width": 390,
+    "state": "390 × 844 play"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 206,
+        "y": 8
+      },
+      {
+        "bottom": 384.59375,
+        "h": 52,
+        "text": "すくう",
+        "w": 117,
+        "x": 8,
+        "y": 332.59375
+      },
+      {
+        "bottom": 384.59375,
+        "h": 52,
+        "text": "帰る",
+        "w": 117,
+        "x": 133,
+        "y": 332.59375
+      },
+      {
+        "bottom": 433.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 206,
+        "y": 389.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "closeDialog",
+    "height": 568,
+    "scrollHeight": 568,
+    "scrollWidth": 258,
+    "width": 258,
+    "state": "258 × 568 play"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 511.5,
+        "y": 8
+      },
+      {
+        "bottom": 256.390625,
+        "h": 56.609375,
+        "text": "すくう",
+        "w": 103.5,
+        "x": 340.5,
+        "y": 199.78125
+      },
+      {
+        "bottom": 256.390625,
+        "h": 56.609375,
+        "text": "帰る",
+        "w": 103.5,
+        "x": 452,
+        "y": 199.78125
+      },
+      {
+        "bottom": 308.6875,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 511.5,
+        "y": 264.6875
+      }
+    ],
+    "dialog": false,
+    "focus": "closeDialog",
+    "height": 375,
+    "scrollHeight": 375,
+    "scrollWidth": 667,
+    "width": 667,
+    "state": "667 × 375 play"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 268,
+        "y": 8
+      },
+      {
+        "bottom": 380.59375,
+        "h": 48,
+        "text": "次の夜へ",
+        "w": 304,
+        "x": 8,
+        "y": 332.59375
+      },
+      {
+        "bottom": 429.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 268,
+        "y": 385.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "advance",
+    "height": 568,
+    "scrollHeight": 568,
+    "scrollWidth": 320,
+    "width": 320,
+    "state": "320 night failure"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 54,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 306,
+        "y": 10
+      },
+      {
+        "bottom": 446.59375,
+        "h": 48,
+        "text": "次の夜へ",
+        "w": 340,
+        "x": 10,
+        "y": 398.59375
+      },
+      {
+        "bottom": 498.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44.015625,
+        "x": 305.984375,
+        "y": 454.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 640,
+    "scrollHeight": 640,
+    "scrollWidth": 360,
+    "width": 360,
+    "state": "360 × 640 night failure"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 54,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 336,
+        "y": 10
+      },
+      {
+        "bottom": 446.59375,
+        "h": 48,
+        "text": "次の夜へ",
+        "w": 370,
+        "x": 10,
+        "y": 398.59375
+      },
+      {
+        "bottom": 498.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44.015625,
+        "x": 335.984375,
+        "y": 454.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 844,
+    "scrollHeight": 844,
+    "scrollWidth": 390,
+    "width": 390,
+    "state": "390 × 844 night failure"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 206,
+        "y": 8
+      },
+      {
+        "bottom": 380.59375,
+        "h": 48,
+        "text": "次の夜へ",
+        "w": 242,
+        "x": 8,
+        "y": 332.59375
+      },
+      {
+        "bottom": 429.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 206,
+        "y": 385.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 568,
+    "scrollHeight": 568,
+    "scrollWidth": 258,
+    "width": 258,
+    "state": "258 × 568 night failure"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 511.5,
+        "y": 8
+      },
+      {
+        "bottom": 249.78125,
+        "h": 48,
+        "text": "次の夜へ",
+        "w": 215,
+        "x": 340.5,
+        "y": 201.78125
+      },
+      {
+        "bottom": 308.1875,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 511.5,
+        "y": 264.1875
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 375,
+    "scrollHeight": 375,
+    "scrollWidth": 667,
+    "width": 667,
+    "state": "667 × 375 night failure"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 268,
+        "y": 8
+      },
+      {
+        "bottom": 380.59375,
+        "h": 48,
+        "text": "はじめる",
+        "w": 304,
+        "x": 8,
+        "y": 332.59375
+      },
+      {
+        "bottom": 429.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 268,
+        "y": 385.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 568,
+    "scrollHeight": 568,
+    "scrollWidth": 320,
+    "width": 320,
+    "state": "320 × 568 retry"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 54,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 306,
+        "y": 10
+      },
+      {
+        "bottom": 446.59375,
+        "h": 48,
+        "text": "はじめる",
+        "w": 340,
+        "x": 10,
+        "y": 398.59375
+      },
+      {
+        "bottom": 498.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44.015625,
+        "x": 305.984375,
+        "y": 454.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 640,
+    "scrollHeight": 640,
+    "scrollWidth": 360,
+    "width": 360,
+    "state": "360 × 640 retry"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 54,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 336,
+        "y": 10
+      },
+      {
+        "bottom": 446.59375,
+        "h": 48,
+        "text": "はじめる",
+        "w": 370,
+        "x": 10,
+        "y": 398.59375
+      },
+      {
+        "bottom": 498.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44.015625,
+        "x": 335.984375,
+        "y": 454.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 844,
+    "scrollHeight": 844,
+    "scrollWidth": 390,
+    "width": 390,
+    "state": "390 × 844 retry"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 206,
+        "y": 8
+      },
+      {
+        "bottom": 380.59375,
+        "h": 48,
+        "text": "はじめる",
+        "w": 242,
+        "x": 8,
+        "y": 332.59375
+      },
+      {
+        "bottom": 429.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 206,
+        "y": 385.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 568,
+    "scrollHeight": 568,
+    "scrollWidth": 258,
+    "width": 258,
+    "state": "258 × 568 retry"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 511.5,
+        "y": 8
+      },
+      {
+        "bottom": 249.78125,
+        "h": 48,
+        "text": "はじめる",
+        "w": 215,
+        "x": 340.5,
+        "y": 201.78125
+      },
+      {
+        "bottom": 308.1875,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 511.5,
+        "y": 264.1875
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 375,
+    "scrollHeight": 375,
+    "scrollWidth": 667,
+    "width": 667,
+    "state": "667 × 375 retry"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 268,
+        "y": 8
+      },
+      {
+        "bottom": 380.59375,
+        "h": 48,
+        "text": "成功！ 26点 · もう一度",
+        "w": 304,
+        "x": 8,
+        "y": 332.59375
+      },
+      {
+        "bottom": 429.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 268,
+        "y": 385.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "advance",
+    "height": 568,
+    "scrollHeight": 568,
+    "scrollWidth": 320,
+    "width": 320,
+    "state": "320 success"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 54,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 306,
+        "y": 10
+      },
+      {
+        "bottom": 446.59375,
+        "h": 48,
+        "text": "成功！ 26点 · もう一度",
+        "w": 340,
+        "x": 10,
+        "y": 398.59375
+      },
+      {
+        "bottom": 498.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44.015625,
+        "x": 305.984375,
+        "y": 454.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 640,
+    "scrollHeight": 640,
+    "scrollWidth": 360,
+    "width": 360,
+    "state": "360 × 640 success"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 54,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 336,
+        "y": 10
+      },
+      {
+        "bottom": 446.59375,
+        "h": 48,
+        "text": "成功！ 26点 · もう一度",
+        "w": 370,
+        "x": 10,
+        "y": 398.59375
+      },
+      {
+        "bottom": 498.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44.015625,
+        "x": 335.984375,
+        "y": 454.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 844,
+    "scrollHeight": 844,
+    "scrollWidth": 390,
+    "width": 390,
+    "state": "390 × 844 success"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 206,
+        "y": 8
+      },
+      {
+        "bottom": 380.59375,
+        "h": 48,
+        "text": "成功！ 26点 · もう一度",
+        "w": 242,
+        "x": 8,
+        "y": 332.59375
+      },
+      {
+        "bottom": 429.59375,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 206,
+        "y": 385.59375
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 568,
+    "scrollHeight": 568,
+    "scrollWidth": 258,
+    "width": 258,
+    "state": "258 × 568 success"
+  },
+  {
+    "buttons": [
+      {
+        "bottom": 52,
+        "h": 44,
+        "text": "？",
+        "w": 44,
+        "x": 511.5,
+        "y": 8
+      },
+      {
+        "bottom": 249.78125,
+        "h": 48,
+        "text": "成功！ 26点 · もう一度",
+        "w": 215,
+        "x": 340.5,
+        "y": 201.78125
+      },
+      {
+        "bottom": 308.1875,
+        "h": 44,
+        "text": "中断",
+        "w": 44,
+        "x": 511.5,
+        "y": 264.1875
+      }
+    ],
+    "dialog": false,
+    "focus": "",
+    "height": 375,
+    "scrollHeight": 375,
+    "scrollWidth": 667,
+    "width": 667,
+    "state": "667 × 375 success"
+  }
+]

@@ -1,0 +1,21 @@
+const {test}=require('node:test'),a=require('node:assert/strict'),E=require('../games/star-scoop/engine');
+function play(seed,policy){let s=E.act(E.create(seed),'start');let count=0;while(!['won','lost'].includes(s.phase)&&count++<100)s=E.act(s,s.phase==='between'?'next':policy(s));return s;}
+const adaptive=s=>{const r=E.remaining(s);return s.clouds&&s.catch&&r.reduce((a,b)=>a+b,0)<=r.filter(x=>!x).length*s.catch?'bank':'draw';};
+test('five valid shuffled bags preserve every item',()=>{for(let seed=0;seed<1000;seed++)for(const bag of E.bags(seed))a.deepEqual(bag.slice().sort(),E.BAG.slice().sort());});
+test('seed replay deterministic and distinct seed varies',()=>{a.deepEqual(E.create(42),E.create(42));a.notDeepEqual(E.bags(42),E.bags(43));});
+test('initial state and input before start',()=>{const s=E.create();a.equal(s.bank,0);a.equal(E.act(s,'draw'),s);a.equal(E.act(s,'bank'),s);});
+test('immutable transitions',()=>{const s=E.create(),copy=JSON.stringify(s);E.act(s,'start');a.equal(JSON.stringify(s),copy);});
+test('cannot bank without a draw',()=>{const s=E.act(E.create(),'start');a.equal(E.act(s,'bank'),s);});
+test('first star earns one pending point not banked',()=>{const s=E.act(E.act(E.create(),'start'),'draw');a.equal(s.catch,1);a.equal(s.bank,0);a.equal(s.index,1);});
+test('bank deposits once and guards stale actions',()=>{let s=E.act(E.act(E.create(),'start'),'draw');s=E.act(s,'bank');a.equal(s.bank,1);a.equal(s.phase,'between');a.equal(E.act(s,'bank'),s);a.equal(E.act(s,'draw'),s);});
+test('second cloud loses only pending catch',()=>{let s=E.act(E.create(),'start');for(let i=0;i<6;i++)s=E.act(s,'draw');a.equal(s.phase,'between');a.equal(s.bank,0);a.equal(s.catch,0);a.equal(s.history[0].bust,true);});
+test('next night resets catch and cloud but preserves bank',()=>{let s=E.act(E.act(E.create(),'start'),'draw');s=E.act(E.act(s,'bank'),'next');a.equal(s.night,1);a.equal(s.bank,1);a.equal(s.catch,0);a.equal(s.clouds,0);});
+test('visible risk corresponds to remaining cloud counts',()=>{let s=E.act(E.create(),'start');for(let i=0;i<5;i++)s=E.act(s,'draw');a.deepEqual(E.risk(s),{clouds:2,total:4,bust:2});});
+test('full collection banks automatically',()=>{let s=E.act(E.create(),'start');s.bags[0]=[1,1,2,2,3,3,0,0,0];for(let i=0;i<6;i++)s=E.act(s,'draw');a.equal(s.phase,'between');a.equal(s.bank,12);});
+test('default observable policy succeeds across five nights',()=>{const s=play(20261108,adaptive);a.equal(s.phase,'won');a.equal(s.bank,26);a.equal(s.history.length,5);});
+test('reckless default play fails naturally',()=>{const s=play(20261108,()=> 'draw');a.equal(s.phase,'lost');a.equal(s.bank,0);});
+test('terminal inputs are inert and retry starts five nights fresh',()=>{const s=play(20261108,adaptive);for(const action of ['start','next','draw','bank'])a.equal(E.act(s,action),s);a.deepEqual(E.create(s.seed),E.create());});
+test('exact threshold wins and below threshold loses',()=>{for(const bank of [21,22]){let s=E.act(E.create(),'start');s.night=4;s.index=1;s.catch=1;s.bank=bank-1;s=E.act(s,'bank');a.equal(s.phase,bank===22?'won':'lost');}});
+test('all seed policies terminate without missing cards or invalid scores',()=>{for(let seed=0;seed<1000;seed++){const s=play(seed,adaptive);a.ok(['won','lost'].includes(s.phase));a.equal(s.history.length,5);a.ok(s.bank>=0&&s.bank<=60);}});
+test('remaining cards excludes drawn cards and does not mutate',()=>{let s=E.act(E.create(),'start');s=E.act(s,'draw');const r=E.remaining(s);a.equal(r.length,8);r.pop();a.equal(E.remaining(s).length,8);});
+test('a cloud-free pull cannot bust',()=>{a.equal(E.risk(E.act(E.create(),'start')).bust,0);});
