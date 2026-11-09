@@ -42,3 +42,10 @@ Re-check: 無設置と月灯3台は第1波失敗。陽灯3台固定、陽灯2+�
 `node --test tests/lantern-ward*.test.cjs`: 純エンジン16+モックコントローラ5 = 21成功。資源、不正入力、範囲、停止、後半強化、敗北、勝利、再挑戦、キー反復、画面離脱を含む。モックは視覚/実ブラウザ/実機検査ではない。全リポジトリテストと独立レビュー、実表示結果は確定後別記録。
 
 次の人による試遊で見ること: 月灯を弱い攻撃塔と誤解しないか、強化時に範囲が増すことが読み取れるか、波の途中の追加設置が忙しすぎないか。現試作には敵編成プレビューの詳細、音、無限モード、セーブ、ランダム道はない。
+
+## Independent follow-up review
+Exhaustive 233 affordable initial layouts found one no-investment success (sun 1,5,6; one life left). Thus investment is helpful, not mathematically mandatory. Article wording corrected before publication. +18 rewards only intermediate waves 1–4.
+
+## Actual browser QA
+Cloud Chrome, not physical phone: completed five waves with5/5 lives; bare setup lost at first wave; clean restart, keyboard2/M placing moon, pause/resume, repeated actions verified. Game frames320×568,360×640,390×700,320×480: build/start/pause/retry worked, minimum44px buttons, no horizontal overflow. Saved-article HTML fixture at320/360/390 included margins+scrollbar, actual game widths273/313/343; same controls worked and both CDN images loaded. These fixture tests are not the Blogger theme. Official Blogger phone preview412px separately verified article+embedded width365px, both CDN images loaded, start/build/pause worked. Human first-time test and physical phones untested.
+Independent source reviewer fixed short-screen clipped-control risk. Full repo1028 tests passed.

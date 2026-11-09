@@ -1,0 +1,54 @@
+[
+  {
+    "id": "w320",
+    "metric": {
+      "buttonMin": 44,
+      "height": 568,
+      "light": "50",
+      "retryBottom": 562,
+      "scrollHeight": 568,
+      "scrollWidth": 320,
+      "status": "時間と設置を止めています。",
+      "width": 320
+    }
+  },
+  {
+    "id": "w360",
+    "metric": {
+      "buttonMin": 44,
+      "height": 640,
+      "light": "50",
+      "retryBottom": 630,
+      "scrollHeight": 640,
+      "scrollWidth": 360,
+      "status": "時間と設置を止めています。",
+      "width": 360
+    }
+  },
+  {
+    "id": "w390",
+    "metric": {
+      "buttonMin": 44,
+      "height": 700,
+      "light": "50",
+      "retryBottom": 690,
+      "scrollHeight": 700,
+      "scrollWidth": 390,
+      "status": "時間と設置を止めています。",
+      "width": 390
+    }
+  },
+  {
+    "id": "short",
+    "metric": {
+      "buttonMin": 44,
+      "height": 480,
+      "light": "50",
+      "retryBottom": 453.75,
+      "scrollHeight": 480,
+      "scrollWidth": 320,
+      "status": "時間と設置を止めています。",
+      "width": 320
+    }
+  }
+]

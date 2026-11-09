@@ -1,0 +1,74 @@
+[
+  {
+    "width": 320,
+    "article": {
+      "iframe": 273,
+      "images": [
+        {
+          "loaded": true,
+          "width": 273
+        },
+        {
+          "loaded": true,
+          "width": 273
+        }
+      ],
+      "scroll": 273,
+      "width": 273
+    },
+    "game": {
+      "message": "時間と設置を止めています。",
+      "minButton": 44,
+      "scroll": 273,
+      "width": 273
+    }
+  },
+  {
+    "width": 360,
+    "article": {
+      "iframe": 313,
+      "images": [
+        {
+          "loaded": true,
+          "width": 313
+        },
+        {
+          "loaded": true,
+          "width": 313
+        }
+      ],
+      "scroll": 313,
+      "width": 313
+    },
+    "game": {
+      "message": "時間と設置を止めています。",
+      "minButton": 44,
+      "scroll": 313,
+      "width": 313
+    }
+  },
+  {
+    "width": 390,
+    "article": {
+      "iframe": 343,
+      "images": [
+        {
+          "loaded": true,
+          "width": 343
+        },
+        {
+          "loaded": true,
+          "width": 343
+        }
+      ],
+      "scroll": 343,
+      "width": 343
+    },
+    "game": {
+      "message": "時間と設置を止めています。",
+      "minButton": 44,
+      "scroll": 343,
+      "width": 343
+    }
+  }
+]
