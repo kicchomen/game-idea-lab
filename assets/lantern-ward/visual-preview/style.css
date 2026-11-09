@@ -29,3 +29,8 @@ canvas{height:100%;width:100%}
 @media(max-width:380px){.game{padding:6px 8px 14px;gap:7px}.illustrated-header{height:53px;margin:-5px -5px 0}#help{width:44px;height:44px;top:4px;right:5px}.stats{font-size:12px;padding:5px 9px}.stats b{font-size:20px}.stats span+span{padding-left:6px}.sites{gap:3px;padding:0}.sites button{font-size:23px}.selection{font-size:16px}.controls{gap:4px}.controls button{font-size:11px}#start{font-size:15px}.art-card{min-height:62px}#message{font-size:12px}}
 @media(min-width:381px) and (max-width:480px){.illustrated-header{height:60px}.sites{gap:5px;padding:0 5px}}
 @media(max-height:520px){.game{min-height:0}.board{height:auto;aspect-ratio:4/3}}
+
+.card-role{position:absolute;bottom:2px;left:4px;right:4px;padding:1px 0;border-radius:4px;font:11px system-ui;color:#fff3d1;background:#2b241ceb;text-shadow:none;pointer-events:none}
+/* Crop strictly to the title region: never expose reference's static counters. */
+.illustrated-header{height:auto;min-height:0;aspect-ratio:8.1}
+#help{right:0;top:0;width:44px;height:44px;border:0;background:transparent;box-shadow:none;color:transparent;text-shadow:none}
