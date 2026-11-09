@@ -1,0 +1,24 @@
+{
+  "checked_at": "2026-11-09",
+  "production_commit": "1a1f8af35c043a24d829ac0bacb2a8babb6b6076",
+  "pages_run": 42549379715,
+  "pages_result": "success",
+  "blog_id": "3556407006374124911",
+  "post_id": "7671703192445959346",
+  "article_url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_08.html",
+  "game_url": "https://kicchomen.github.io/game-idea-lab/games/star-scoop/",
+  "verified": [
+    "34 automated tests pass",
+    "Production generated artwork visibly loaded",
+    "Start/draw/bank in public Chrome; bank 1 point",
+    "Blogger same post updated; exact HTML readback matches",
+    "New screenshot uploaded through Blogger and CDN image loaded at 480x680",
+    "Public article embed start and draw functional"
+  ],
+  "not_verified": [
+    "New visual version at 320/360/390 viewport widths",
+    "Real smartphone",
+    "Human first-play enjoyment",
+    "Full five-night win/loss/retry through browser this run (automated coverage passed)"
+  ]
+}

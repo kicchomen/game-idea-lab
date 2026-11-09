@@ -1,0 +1,14 @@
+<p>新しいゲームアイデアを発案し、主要な遊びを小さな試遊にする記事です。</p>
+<div style="text-align:center"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgGpTTKAM7I02-J5s1hX3wSxpoSZG-RNu4x02DcmK_MyaR2w30whx4TmZsRHeO98MCMg1A8jgaFc0rUyE6lu30FEtA3SB6KZP0kk7WWtJEnEewZX0I3JHMp0KI_w73CjHdRQFOWr8dy0GXTPQ2yIS2LX2JyzN6DnG241xdE_dlinN2KlcoroSGR4rF98ZY/s1600/clipboard.jpeg" alt="雲間の星すくいの構想イラスト。星と雨雲の袋を前に、もう一度すくうか持ち帰るか迷う星集めの人" style="display:block;width:100%;height:auto;margin:auto"></div>
+<h2>もう一つほしい。でも、今夜の星はまだ手元にない。</h2>
+<p>あなたは雲の上の星集め。袋から一つすくうと、星か雨雲が出てきます。<b>「帰る」を選ぶまで、今夜の星は未確定。</b>雨雲を2個引くと、その夜の分だけ失います。</p>
+<p>袋に残る星と雨雲の数は見える。次に出る一つは見えない。少しずつ減る袋と、増えた星を見比べて、続けるか帰るかを決める遊びです。上の絵は構想イラストです。下の試遊画面は、画像生成で作った星集めの人・雲の背景・星や雨雲の素材を、操作できるゲーム画面に組み込んだものです。</p>
+<div style="text-align:center"><img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj6lsrmeo-1OSRfP3moyyFZ-qcHEdb4uHpHhdTwQykMurKegSK4S9LByP7nlr2I5R-tbJuqk0UM31NX99PvcPc9Wu7gN_oAob__OPenXl4pWP6iRHzGGDeFn_d9AoJ_o4E607dZYx_BPUxyilSjA1A95_9ahC_vgOq3Ga38UbDOKAc8LLHHIGADLix_9cE/s1600/clipboard.png" alt="実際の試遊画面。今夜の得点と残りの星・雨雲を見て、すくうか帰るかを選ぶ" style="display:block;width:100%;max-width:480px;height:auto;margin:auto"></div>
+<h2>試遊：雲間の星すくい</h2>
+<iframe src="https://kicchomen.github.io/game-idea-lab/games/star-scoop/" title="雲間の星すくいを試遊" loading="lazy" style="display:block;width:100%;height:700px;box-sizing:border-box;border:0;border-radius:12px;background:#171d3d"></iframe>
+<p>「すくう」で1個、「帰る」で今夜の得点を確定。星は1・2・3点が各2個、雨雲は3個で、毎夜新しい袋になります。5夜で22点が目標。星を全部すくうと自動で帰ります。時間制限はありません。PCはSですくう、Bで帰る、Pで中断できます。</p>
+<p><a href="https://kicchomen.github.io/game-idea-lab/games/star-scoop/" target="_blank" rel="noopener">別画面で遊ぶ</a></p>
+<h2>今回は、五夜の引き際まで。</h2>
+<p><b>実装：</b>残り個数の表示、星の得点、雨雲2個の失敗、途中帰還、5夜の合計、同じ空と別の空の再挑戦。<b>今後の構想：</b>空模様で袋の構成が変わる旅や、夜を越えて使う道具。まだ入っていません。</p>
+<p>最初の空は同じ順番で、再挑戦すれば覚えられます。「別の空」で順番を変えられますが、運によって目標へ届かないこともあります。必勝の問題を解くゲームではありません。</p>
+<details><summary>試して、直したことと検証の範囲</summary><p>自動テストと独立レビューで得点・袋・再挑戦を検査。単純に6点で帰る方針より残り袋を読む方針が有利でしたが、最適戦略の証明ではありません。初案の24点目標を22点へ下げ、狭いヘルプが先頭から開くよう改善しました。初版は公開Chromeで成功・失敗・再挑戦、幅320/360/390pxなどを確認。画像組込み版は34件の自動テストを再実行し、本番Chromeで開始・すくう・帰るを確認しました。人の初見、実機スマホ、長時間の面白さは未検証。順番を覚えた後の奥行きと、運による失敗をどう感じるかは、今後の課題です。</p></details>
