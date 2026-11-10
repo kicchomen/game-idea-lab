@@ -504,3 +504,6 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 庭先の羽子板を左右に動かし、接触位置で返球角度を変えて相手を動かす、3点先取のリアルタイム対戦試作。1コート・1相手・左右反射。左右キー/A D、長押しボタン、ドラッグ、明示的な停止・再開・再挑戦。実際の羽根つきとは異なる簡略モデル。
 
 試遊: https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/ 。生成したUI設計を先に目視し、生成背景と動くDOMで実装。企画・比較・PDCA・独立レビュー・検証記録は `assets/courtyard-rally/`。対象46、全体1074テスト成功。公開Chromeで通常キー入力の3–2勝利、0–3敗北、再挑戦、長押し、ドラッグ、停止保持を検証。6寸法と保存済みBlogger本文の320/360/390px表示・操作も検査。速い追従だけでも勝て、一定の返球が循環する場合がある。実機スマホ、人の初見、長期の面白さは未検証。記事公開情報はpublication.jsonへ記録する。
+
+
+公開記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_10.html （Blogger 4426454648826238485、2026-11-10 10:37 JST）。公開後の title・canonical・カバーの og:image・CDN 2画像・別画面リンク・埋め込みの開始／敗北／再挑戦／停止再開を確認。記事と試遊のソースは変更せず、公開台帳を `assets/courtyard-rally/publication.json` に保存。実機スマホ、人の初見、長期の面白さは未検証。

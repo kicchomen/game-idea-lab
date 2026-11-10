@@ -1,11 +1,11 @@
 {
   "game": "courtyard-rally",
   "title": "庭先の羽根ラリー｜当てる位置で、返す向きを変える",
-  "status": "draft",
+  "status": "published",
   "blog_id": "3556407006374124911",
   "blogger_post_id": "4426454648826238485",
-  "article_url": null,
-  "published_at": null,
+  "article_url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_10.html",
+  "published_at": "2026-11-10T10:37:00+09:00",
   "play_url": "https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/",
   "pages_deployment_verified": true,
   "physical_phone": "not tested",
@@ -19,8 +19,43 @@
   "independent_article_review": "passed after code/render checks",
   "saved_blogger": "Body equals article.html after excluding CodeMirror trailing blank-line U+200B; two Blogger CDN images loaded.",
   "browser_qa": "Ordinary keyboard 3–2 victory; 0–3 failure; retries; held button; drag; pause persistence; six sizes.",
-  "article_responsive": "Actual saved Blogger preview in 320/360/390px frames, including images, links and embedded operation. CSS client widths are 305/345/375 because desktop scrollbar uses15px.",
+  "article_responsive": "Actual saved Blogger preview in 320/360/390px frames, including images, links and embedded operation. CSS client widths are 305/345/375 because desktop scrollbar uses 15px.",
   "important_unfinished": [
-    "Publish same draft after artifact deployment; public article check and publication ledger."
-  ]
+    "Physical-phone touch and first-time-human testing are not performed.",
+    "Long-term enjoyment remains unverified; some return policies can sustain long repeating rallies."
+  ],
+  "published_at_source": "Public article time[datetime] and Blogger editor; minute precision.",
+  "public_verification_at": "2026-11-10T01:55:16Z",
+  "artifact_commit": "bd6944a8899d0344c1e7649165fb0df7d1adf05f",
+  "public_verification": {
+    "title": "庭先の羽根ラリー｜当てる位置で、返す向きを変える",
+    "canonical": "https://game-idea-lab.blogspot.com/2026/11/blog-post_10.html",
+    "og_image": "Matches the cover Blogger CDN image, with w1200-h630-p-k-no-nu transform.",
+    "images": [
+      {
+        "role": "cover",
+        "loaded": true,
+        "natural_width": 1280,
+        "natural_height": 720
+      },
+      {
+        "role": "gameplay",
+        "loaded": true,
+        "natural_width": 360,
+        "natural_height": 640
+      }
+    ],
+    "iframe": {
+      "src": "https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/",
+      "title": "庭先の羽根ラリーの試遊",
+      "measured_width": 760,
+      "measured_height": 640
+    },
+    "standalone_link": "https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/",
+    "embedded_operation": "Started a match, observed natural 0–3 defeat, used retry to return to 0–0 ready, restarted, paused, resumed, sent ordinary ArrowRight input, and paused again. Public page screenshot inspected.",
+    "scope": "Cloud desktop Chrome. No new physical-phone, first-time-human, cross-browser or long-term-play test.",
+    "game_source_changed": false,
+    "article_body_changed": false
+  },
+  "recovery_focused_test_count": 46
 }
