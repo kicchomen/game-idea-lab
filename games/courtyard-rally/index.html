@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f7edda"><title>庭先の羽根ラリー · Game Idea Lab</title><link rel="stylesheet" href="style.css?v=20261110a"></head>
+<body><main class="game">
+<header><div><small>COURTYARD RALLY</small><h1>庭先の羽根ラリー</h1></div><button id="help" aria-label="遊び方を開く">?</button></header>
+<section class="scoreboard" aria-label="得点"><span class="you">あなた <b id="playerScore">0</b></span><span class="goal">3点先取</span><span class="them"><b id="opponentScore">0</b> 相手</span></section>
+<div class="court-wrap"><div id="court" class="court" role="img" aria-label="上が相手、下があなた。羽子板を左右に動かして羽根を返します。" tabindex="0"><div class="court-lines" aria-hidden="true"></div><div id="opponentPaddle" class="paddle opponent" aria-hidden="true"></div><div id="playerPaddle" class="paddle player" aria-hidden="true"></div><div id="shuttle" aria-hidden="true"><i></i></div></div><div id="overlay" class="overlay"><div><small id="overlayEyebrow">庭先で、一勝負。</small><h2 id="result">当てる位置で<br>返す向きが変わる</h2><p id="resultNote">羽子板の端で、相手のいない方へ。</p><button id="start" class="primary">ラリーを始める</button><button id="restart" hidden>最初から</button></div></div></div>
+<div class="play-info"><p id="phase" class="phase" role="status" aria-live="polite">開始前</p><p id="feedback">左右に動いて、羽根を返そう。</p></div>
+<div class="controls" role="group" aria-label="羽子板の操作"><button id="left" aria-label="左へ移動">◀ 左</button><button id="pause" disabled>一時停止</button><button id="right" aria-label="右へ移動">右 ▶</button></div>
+<p class="hint">左右キー・A D・コートをドラッグ</p>
+<dialog id="instructions" aria-labelledby="helpTitle"><h2 id="helpTitle">相手を動かし、空いた方へ。</h2><p>下の青緑の羽子板があなた。先に3点取れば勝ちです。羽根を画面の奥へ通すと得点、手前に落とすと相手の得点になります。</p><p>中央に当てるとまっすぐ、左端なら左、右端なら右へ返ります。返すたびに少し速くなります。左右の壁では跳ね返ります。</p><p>左右ボタンを長押し、← →／A D、またはコート上をドラッグして移動。羽子板には移動速度の上限があります。</p><p>P・Escで一時停止。ヘルプや別画面への移動でも停止し、再開ボタンを押すまで動きません。実際の羽根つきの練習用ではない、小さな対戦試作です。</p><button id="closeHelp" class="primary">閉じる</button></dialog>
+</main><script src="engine.js?v=20261110a"></script><script src="app.js?v=20261110a"></script></body></html>
