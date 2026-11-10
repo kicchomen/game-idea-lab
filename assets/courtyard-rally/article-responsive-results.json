@@ -1,0 +1,113 @@
+[
+  {
+    "size": "320×568",
+    "article": {
+      "width": 273,
+      "x": 16
+    },
+    "embed": [
+      {
+        "height": 640,
+        "src": "https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/",
+        "width": 273
+      }
+    ],
+    "images": [
+      {
+        "cdn": true,
+        "height": 720,
+        "loaded": true,
+        "renderWidth": 273,
+        "width": 1280
+      },
+      {
+        "cdn": true,
+        "height": 640,
+        "loaded": true,
+        "renderWidth": 273,
+        "width": 360
+      }
+    ],
+    "links": [
+      "https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/"
+    ],
+    "scrollWidth": 305,
+    "viewport": 305,
+    "operation": "一時停止中",
+    "paddle": "left: 60%; top: 91.1765%;"
+  },
+  {
+    "size": "360×640",
+    "article": {
+      "width": 313,
+      "x": 16
+    },
+    "embed": [
+      {
+        "height": 640,
+        "src": "https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/",
+        "width": 313
+      }
+    ],
+    "images": [
+      {
+        "cdn": true,
+        "height": 720,
+        "loaded": true,
+        "renderWidth": 313,
+        "width": 1280
+      },
+      {
+        "cdn": true,
+        "height": 640,
+        "loaded": true,
+        "renderWidth": 313,
+        "width": 360
+      }
+    ],
+    "links": [
+      "https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/"
+    ],
+    "scrollWidth": 345,
+    "viewport": 345,
+    "operation": "一時停止中",
+    "paddle": "left: 60%; top: 91.1765%;"
+  },
+  {
+    "size": "390×700",
+    "article": {
+      "width": 343,
+      "x": 16
+    },
+    "embed": [
+      {
+        "height": 640,
+        "src": "https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/",
+        "width": 343
+      }
+    ],
+    "images": [
+      {
+        "cdn": true,
+        "height": 720,
+        "loaded": true,
+        "renderWidth": 343,
+        "width": 1280
+      },
+      {
+        "cdn": true,
+        "height": 640,
+        "loaded": true,
+        "renderWidth": 343,
+        "width": 360
+      }
+    ],
+    "links": [
+      "https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/"
+    ],
+    "scrollWidth": 375,
+    "viewport": 375,
+    "operation": "一時停止中",
+    "paddle": "left: 60%; top: 91.1765%;"
+  }
+]

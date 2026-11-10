@@ -7,8 +7,20 @@
   "article_url": null,
   "published_at": null,
   "play_url": "https://kicchomen.github.io/game-idea-lab/games/courtyard-rally/",
-  "pages_deployment_verified": false,
+  "pages_deployment_verified": true,
   "physical_phone": "not tested",
   "human_first_time": "not tested",
-  "long_term_enjoyment": "not tested"
+  "long_term_enjoyment": "not tested",
+  "pages_code_commit": "26241e5fbf05863d0ec73f9452c19aa081cb29b6",
+  "pages_code_workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/42735115119",
+  "new_game_tests": 46,
+  "whole_repository_tests": 1074,
+  "independent_source_review": "passed",
+  "independent_article_review": "passed after code/render checks",
+  "saved_blogger": "Body equals article.html after excluding CodeMirror trailing blank-line U+200B; two Blogger CDN images loaded.",
+  "browser_qa": "Ordinary keyboard 3–2 victory; 0–3 failure; retries; held button; drag; pause persistence; six sizes.",
+  "article_responsive": "Actual saved Blogger preview in 320/360/390px frames, including images, links and embedded operation. CSS client widths are 305/345/375 because desktop scrollbar uses15px.",
+  "important_unfinished": [
+    "Publish same draft after artifact deployment; public article check and publication ledger."
+  ]
 }
