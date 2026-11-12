@@ -1,0 +1,41 @@
+{
+  "game": "parcel-switch",
+  "title": "小包の分岐番｜通したら、次の小包へ。",
+  "blog_id": "3556407006374124911",
+  "post_id": "8324461995653141488",
+  "status": "published",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_12.html",
+  "play_url": "https://kicchomen.github.io/game-idea-lab/games/parcel-switch/",
+  "published_at_displayed": "2026-11-12T10:28:00+09:00",
+  "checked_at_utc": "2026-11-12T01:29:45.803371+00:00",
+  "prototype_commit": "7b8e1437933e562bb0f51e34da849508623aed1e",
+  "final_game_commit": "3f6662f2c40c14a769b9e8ea45589812aa2aec7b",
+  "pages_workflow_id": 43134093969,
+  "pages_status": "completed/success",
+  "tests": {
+    "focused": 23,
+    "full_suite": 1097,
+    "failures": 0
+  },
+  "browser_verified": [
+    "18/18 zero-error success via normal visible-UI clicks",
+    "3-error failure",
+    "restart",
+    "keyboard1 and pointer switch2",
+    "pause/resume",
+    "prototype five responsive viewports",
+    "saved Blogger preview320/360/390 width and embedded operation",
+    "published title canonical OG CDN images iframe operation",
+    "public320 width no horizontal overflow"
+  ],
+  "unverified": [
+    "physical smartphone",
+    "human first-look",
+    "long-term enjoyment"
+  ],
+  "protected_drafts_untouched": [
+    "sensor-shift",
+    "footstep-echo",
+    "morning flower-chain Nov11"
+  ]
+}
