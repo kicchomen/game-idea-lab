@@ -1,0 +1,6 @@
+# 2026-11-12 preflight
+Fresh main: f3180b7005b5788bf1867addbea9269b4e427438. Read latest README and existing game structure, per-game QA and publication records. Blogger authenticated target 3556407006374124911: 39 total, 36 public, 3 drafts, no scheduled. Latest public Courtyard Rally dated Nov10; flower-chain Nov11 remains draft and excluded. Sensor Shift and Footstep Echo protected drafts excluded. No Nov12 item visible.
+
+Today's candidate: 小包の分岐番. Player anticipates parcels at two shared conveyor forks; symbols and colors identify three destinations. A route locks at each crossing, so switch decisions affect only later parcels. Unlike Night Market (inventory/fulfilment) and Rail Dispatch (departure planning), interaction is continuous switching of an occupied spatial network. No accounts, dependencies, analytics or paid service.
+
+Publication gate: pure-engine tests and independent review; existing authorized Pages prototype distribution, actual cloud-browser keyboard/pointer and success/failure/retry tests, responsive viewport checks, generated image review and normal Blogger image upload, article readback/preview, then article publication. Prototype distribution is not Blogger article publication. Mobile device and human first-look testing will remain explicitly unverified.
