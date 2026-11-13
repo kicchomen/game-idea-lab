@@ -1,0 +1,3 @@
+# 2026-11-13 preflight
+Fresh main commit 869bb445b4d539d269342053e5d88023d5f4495d. README fully read, per-game publication and PDCA reviewed. Blogger directly inspected:40 total,37 published,3 drafts,0 scheduled; latest public Nov12 Parcel Switch. Nov13 absent. Sensor Shift, Footstep Echo, Nov11 flower-chain drafts untouched. No prior Nov13 source found in workspace.
+New idea: star-garden territory enclosure. Prototype may stage to existing authorized GitHub Pages after code review for actual browser testing; Blogger publication only after actual operation/responsive/image checks. No previous denied flower-chain write retried. No Grok used.

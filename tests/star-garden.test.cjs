@@ -1,0 +1,14 @@
+const test=require('node:test'),assert=require('node:assert/strict'),E=require('../games/star-garden/engine.js');
+const route=['left','down','down','down','right','right','right','down','down','down','down','down'];
+const play=ds=>ds.reduce((s,d)=>E.move(s,d),E.create());
+test('initial border and interior',()=>{let s=E.create();assert.equal(s.safe.filter(Boolean).length,32);assert.equal(s.area,0);assert.equal(s.lives,3);assert.equal(s.player,4);});
+test('route closes 36 cells in twelve steps',()=>{let s=play(route);assert.equal(s.status,'won');assert.equal(s.area,36);assert.equal(s.lives,3);assert.equal(s.steps,12);assert.equal(s.trail.length,0);});
+test('straight initial cut hits bug',()=>{let s=play(['down','down']);assert.equal(s.lives,2);assert.equal(s.player,4);assert.equal(s.trail.length,0);});
+test('edge and unknown input free',()=>{assert.deepEqual(E.move(E.create(),'up'),E.create());assert.deepEqual(E.move(E.create(),'no'),E.create());});
+test('input never mutates original',()=>{let s=E.create(),str=JSON.stringify(s);E.move(s,'down');assert.equal(JSON.stringify(s),str);});
+test('retreat erases one segment and advances clock',()=>{let s=play(['left','down','down','up']);assert.equal(s.trail.length,1);assert.equal(s.steps,4);assert.equal(s.player,12);});
+test('return to anchor cancels last segment without claiming',()=>{let s=play(['left','down','up']);assert.equal(s.area,0);assert.equal(s.trail.length,0);assert.equal(s.steps,3);});
+test('safe edge only reaches time failure',()=>{let s=E.create();for(let i=0;i<80;i++)s=E.move(s,i%2?'right':'left');assert.equal(s.status,'lost');assert.equal(s.lives,3);assert.equal(s.steps,80);});
+test('terminal no longer responds; fresh create retries',()=>{let s=play(route);assert.deepEqual(E.move(s,'left'),s);assert.equal(E.create().status,'playing');assert.equal(E.create().area,0);});
+test('same actions deterministic',()=>assert.deepEqual(play(route),play(route)));
+test('random production states preserve topology and counters',()=>{let seed=1234;function rand(){seed=(Math.imul(seed,1664525)+1013904223)>>>0;return seed;}let total=0;for(let r=0;r<300;r++){let s=E.create();for(let a=0;a<200&&s.status==='playing';a++){s=E.move(s,Object.keys(E.dirs)[(rand()>>>16)%4]);total++;assert.ok(s.player>=0&&s.player<81);assert.ok(!s.safe[s.bug.y*9+s.bug.x]);assert.equal(new Set(s.trail).size,s.trail.length);assert.ok(s.trail.every(i=>!s.safe[i]));assert.ok(s.lives>=0&&s.lives<=3);assert.ok(s.steps<=80);assert.equal(s.area,s.safe.reduce((n,v,i)=>n+(v&&i%9>0&&i%9<8&&i>=9&&i<72?1:0),0));if(s.status==='playing')assert.ok(!s.trail.includes(s.bug.y*9+s.bug.x));}}assert.ok(total>1000);});
