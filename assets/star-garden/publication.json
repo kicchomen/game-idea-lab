@@ -1,0 +1,43 @@
+{
+  "game": "star-garden",
+  "title": "星庭の囲い番｜広く囲む？ 虫が来る前に戻る？",
+  "blog_id": "3556407006374124911",
+  "post_id": "8362291764737950964",
+  "status": "published",
+  "url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_13.html",
+  "published_at": "2026-11-13T11:18:00+09:00",
+  "play_url": "https://kicchomen.github.io/game-idea-lab/games/star-garden/?v=20261113b",
+  "source_commit": "d5c7c7f2516dc0262b592901827f293564ee39d3",
+  "pages_run": "43351099540",
+  "pages_conclusion": "success",
+  "verification": {
+    "public_title": true,
+    "canonical": true,
+    "cover_thumbnail": true,
+    "cdn_images_loaded": 2,
+    "iframe_movement_and_retry": true,
+    "prototype_browser_widths": [
+      320,
+      360,
+      390
+    ],
+    "saved_article_body_fixture_widths": [
+      320,
+      360,
+      390
+    ],
+    "full_blogger_theme_exact_three_widths": false,
+    "official_mobile_preview_approx_width": 405,
+    "unit_tests": 1113,
+    "focused_tests": 16,
+    "independent_closures": 28798
+  },
+  "unverified": [
+    "Physical smartphone",
+    "Novice human playtest",
+    "Long-term enjoyment",
+    "Cross-browser",
+    "Full Blogger theme at exact 320/360/390px"
+  ],
+  "notes": "Fixed garden, learnable 12-step solution. 3 protected drafts untouched. No Grok, settings, permissions or schedules changed."
+}

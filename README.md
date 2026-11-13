@@ -516,3 +516,12 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 - ソース: games/parcel-switch/
 - 記録: assets/parcel-switch/{design-notes.md,independent-review.md,browser-qa.md,publication.json}
 - 23 focused tests、全1097 tests合格。実Chromeで成功/失敗/再挑戦、320/360/390幅記事埋込操作確認。実機・人の初見・長期の面白さは未検証。
+
+
+## 星庭の囲い番 / Star Garden（2026-11-13）
+安全な縁から線を伸ばし、虫のいない側を花壇に変えて次の足場を増やすターン制陣取り。9×9固定庭、36マス、80手、3被弾。操作1歩ごとに虫も1歩。固定の12手解があり、長期の深さは未検証。
+
+記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_13.html
+試遊: https://kicchomen.github.io/game-idea-lab/games/star-garden/?v=20261113b
+
+1113テスト、独立28,798閉路比較、実Chromeの成功・被弾・期限失敗・再挑戦、320/360/390pxを検証。保存記事本文の3幅と公式モバイルプレビュー、公開後CDN画像・サムネイル・埋込操作を確認。完全なBloggerテーマの指定3幅、実機スマホ・初見の人・長期の面白さは未検証。記録: assets/star-garden/publication.json と browser-qa.md。
