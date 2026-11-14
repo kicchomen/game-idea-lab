@@ -525,3 +525,10 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 試遊: https://kicchomen.github.io/game-idea-lab/games/star-garden/?v=20261113b
 
 1113テスト、独立28,798閉路比較、実Chromeの成功・被弾・期限失敗・再挑戦、320/360/390pxを検証。保存記事本文の3幅と公式モバイルプレビュー、公開後CDN画像・サムネイル・埋込操作を確認。完全なBloggerテーマの指定3幅、実機スマホ・初見の人・長期の面白さは未検証。記録: assets/star-garden/publication.json と browser-qa.md。
+
+
+## 岩壁のふたつの手 / Two Hand Climb（2026-11-14）
+残した手を支点に掛け替え、握力を管理して中央棚で休むターン制登攀パズル。固定1壁1棚。物理登山ではない。
+記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_14.html
+試遊: https://kicchomen.github.io/game-idea-lab/games/two-hand-climb/
+10 tests、独立726状態/53724遷移、Chrome成功/失敗/再挑戦、試遊・記事本文3幅の表示と入力を確認。人初見・実機・長期面白さ、Bloggerテーマ全体の正確な3幅は未検証。記録: assets/two-hand-climb/publication.json。

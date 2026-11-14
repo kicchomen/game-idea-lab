@@ -1,5 +1,5 @@
 # 岩壁のふたつの手 / Two Hand Climb
-2026-11-14 local prototype. No publication performed by implementation worker.
+2026-11-14 prototype; implementation worker did not publish. Coordinator subsequently published; see publication.json and browser-qa.md.
 
 ## Core
 小さな固定壁で、手をひとつずつ掛け替える。残した手が届く範囲を決め、握力を消費する。中央棚で両手を揃え、休憩を使って頂上へ登る。時間は手を掛け替えた時だけ進む。現実の登山・安全技術を再現した教材ではない。
@@ -38,7 +38,7 @@ Retry: 再挑戦, both hands bottom, energy8, rest unused.
 ## Image note
 Parent supplied a reference path whose actual image was a boat illustration, not the climb cover. This mismatch was reported, image not embedded or copied. UI uses the requested warm rock / blue-and-red hands / green shelf palette, independently constructed CSS.
 
-## Pending
-Independent review, live browser action + responsive checks, generated cover verification, Blogger/Pages deployment verification. Implementation worker performed no external saving/publishing.
+## Completion
+Independent review, live browser input and3-width checks, correct generated cover, Blogger publication completed by coordinator. See browser-qa.md and publication.json for exact verified/unverified scope.
 
 独立レビューで消費2/3が読み上げのみと判明したため、到達可能突起へ可視数字を追加。棚/頂上ラベルも保持。独立側は全到達726状態/53,724遷移の不変条件を確認。

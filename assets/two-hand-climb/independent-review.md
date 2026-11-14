@@ -1,0 +1,2 @@
+# Independent review
+Reviewer independently examined production engine and explored726 states/53724 transitions. Detected missing visible cost labels;2/3 labels added. Cover reviewed as concept illustration, paired with actual game screenshot. Final full article reviewed; no mandatory fixes. Wording corrected: shelf reached at zero energy still permits rest. Fixed level can be memorized;3-cost moves may be strategically losing. No claim of sustained depth or physical climbing.
