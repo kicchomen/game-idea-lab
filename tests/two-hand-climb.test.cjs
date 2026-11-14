@@ -1,0 +1,13 @@
+const test=require('node:test'),a=require('node:assert/strict'),E=require('../games/two-hand-climb/engine');
+const route=[[0,27],[1,21],[0,16],[1,17],'rest',[0,11],[1,6],[0,1],[1,2]];
+const run=(seq)=>seq.reduce((s,x)=>x==='rest'?E.rest(s):E.move(E.select(s,x[0]),x[1]),E.create());
+test('success with zero remaining energy is valid',()=>{let s=run(route);a.equal(s.status,'won');a.equal(s.energy,0);a.equal(s.moves,8);a.equal(s.rested,true);});
+test('reaching shelf at zero permits rest',()=>{let s=run(route.slice(0,4));a.equal(s.status,'playing');a.equal(s.energy,0);a.equal(E.canRest(s),true);a.equal(E.rest(s).energy,8);});
+test('skip rest falls',()=>{let s=run(route.filter(x=>x!=='rest'));a.equal(s.status,'lost');});
+test('rest cannot be repeated or used elsewhere',()=>{let s=E.create();a.deepEqual(E.rest(s),s);s=run(route.slice(0,5));a.equal(E.canRest(s),false);a.deepEqual(E.rest(s),s);});
+test('invalid and occupied targets ignored',()=>{let s=E.create();for(let i of [NaN,null,Infinity,'27',-1,0,31,33,1])a.deepEqual(E.move(s,i),s);});
+test('supporting hand determines range',()=>{let s=E.create();a.equal(E.reachable(s,27),true);a.equal(E.reachable(s,21),false);a.equal(E.reachable(E.select(s,1),26),true);});
+test('distance three costs three',()=>{let s=E.move(E.create(),26);a.equal(s.energy,5);});
+test('state remains immutable',()=>{let s=E.create(),before=JSON.stringify(s);E.move(s,27);E.select(s,1);E.rest(s);a.equal(JSON.stringify(s),before);});
+test('terminal moves blocked and retry clean',()=>{let s=run(route);a.deepEqual(E.move(s,6),s);a.equal(E.create().status,'playing');a.equal(E.create().rested,false);});
+test('all reachable histories invariant',()=>{let queue=[E.create()],seen=new Set;for(let j=0;j<queue.length;j++){let s=queue[j],k=JSON.stringify([s.hands,s.energy,s.rested,s.status]);if(seen.has(k))continue;seen.add(k);a.ok(s.energy>=0&&s.energy<=8);a.notEqual(...s.hands);a.ok(s.hands.every(x=>E.holds.includes(x)));if(s.status!=='playing')continue;if(E.canRest(s))queue.push(E.rest(s));for(let h=0;h<2;h++)for(let i of E.holds){let t=E.select(s,h);if(E.reachable(t,i))queue.push(E.move(t,i));}}a.ok(seen.size>100);});
