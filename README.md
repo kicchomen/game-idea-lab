@@ -532,3 +532,7 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_14.html
 試遊: https://kicchomen.github.io/game-idea-lab/games/two-hand-climb/
 10 tests、独立726状態/53724遷移、Chrome成功/失敗/再挑戦、試遊・記事本文3幅の表示と入力を確認。人初見・実機・長期面白さ、Bloggerテーマ全体の正確な3幅は未検証。記録: assets/two-hand-climb/publication.json。
+
+## 森の切り札便 / Forest Tricks（2026-11-15）
+5枚の手札を見て勝つ回数を予告し、同色追随・切り札を使って5勝負の勝ち数をぴったり合わせる2人札勝負。固定方針の相手、同じ便の再挑戦、別の配り。対人・長期成長なし。
+ソース `games/forest-tricks/`、企画/PDCA `assets/forest-tricks/design-notes.md`。作者11エンジンテスト。ブラウザ・独立検査・配信と記事公開は別記録で確定する。

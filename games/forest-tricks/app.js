@@ -1,0 +1,12 @@
+'use strict';
+const E=ForestTricks,$=id=>document.getElementById(id);let seed=1511,s=E.create(seed);const names={leaf:'葉',water:'雫'},symbols={leaf:'♣',water:'◆'};
+function card(c){return `<span class="symbol">${symbols[c.suit]} ${names[c.suit]}</span><span class="number">${c.value}</span>`;}
+function showSlot(id,c){const el=$(id);el.className='slot'+(c?' filled '+c.suit:'');el.innerHTML=c?`<div class="card">${card(c)}</div>`:'—';}
+function button(text,fn){const b=document.createElement('button');b.textContent=text;b.addEventListener('click',fn);return b;}
+function render(){ $('trump').textContent=`切り札：${symbols[s.trump]} ${names[s.trump]}`;$('progress').textContent=`${s.trick}/5回`;$('score').textContent=`勝ち ${s.wins} / 予告 ${s.bid===null?'?':s.bid}`;
+const reveal=s.phase==='reveal'||s.phase==='result';showSlot('player-card',reveal?s.last?.player:null);showSlot('opponent-card',reveal?s.last?.opponent:s.lead);
+let msg='手札を見て、勝つ回数を予告しよう。';if(s.phase==='play')msg=s.lead?`相手が先手。${names[s.lead.suit]}を持っていれば出そう。`:'あなたが先手。どの札から出す？';if(reveal)msg=`${s.last.winner===0?'あなた':'相手'}の勝ち。${s.last.winner===0?'あなた':'相手'}が次の先手。`;if(s.phase==='result')msg=s.result==='success'?`予告ぴったり！ ${s.wins}勝で配達成功。`:`予告${s.bid}勝に対して${s.wins}勝。もう一度試そう。`;$('message').textContent=msg;$('message').className=s.phase==='result'?'result':'';
+$('bids').hidden=s.phase!=='bid';$('hint').textContent=s.phase==='play'?'明るい札を選ぶ':'';const hand=$('hand');hand.className=s.phase;hand.replaceChildren();const legal=E.legal(s.hands[0],s.lead);s.hands[0].forEach((c,i)=>{const b=button('',()=>{s=E.play(s,c.id);render();});b.innerHTML=card(c);b.className=c.suit;b.setAttribute('aria-label',`${i+1}番 ${names[c.suit]} ${c.value}`);b.disabled=s.phase!=='play'||!legal.includes(c.id);hand.append(b);});
+$('actions').replaceChildren();if(s.phase==='reveal')$('actions').append(button(s.trick===5?'結果を見る':'次の勝負へ',()=>{s=E.next(s);render();}));}
+for(let n=0;n<=5;n++)document.querySelector('.bid-row').append(button(String(n),()=>{s=E.bid(s,n);render();}));
+$('retry').onclick=()=>{s=E.create(seed);render();};$('new').onclick=()=>{seed++;s=E.create(seed);render();};$('help').onclick=()=>$('rules').showModal();$('close').onclick=()=>$('rules').close();document.addEventListener('keydown',e=>{if(e.repeat||$('rules').open||!/^\d$/.test(e.key)||s.phase!=='play')return;const c=s.hands[0][Number(e.key)-1];if(c){s=E.play(s,c.id);render();}});render();
