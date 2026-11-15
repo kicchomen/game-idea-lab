@@ -1,7 +1,7 @@
 'use strict';
 const E=ForestTricks,$=id=>document.getElementById(id);let seed=1511,s=E.create(seed),prediction=null;const names={leaf:'葉',water:'雫'},symbols={leaf:'♣',water:'◆'};
 const artwork={leaf:'<img src="../../assets/forest-tricks/leaf-icon.png" alt="" draggable="false">',water:'<img src="../../assets/forest-tricks/water-icon.png" alt="" draggable="false">'};
-function card(c){return `<span class="corner top"><b>${c.value}</b><i>${c.suit==='leaf'?'❧':'♦'}</i></span><span class="illustration">${artwork[c.suit]}</span><span class="corner bottom">${c.value}</span>`;}
+function card(c){return `<span class="corner top"><b>${c.value}</b><i>${artwork[c.suit]}</i></span><span class="illustration">${artwork[c.suit]}</span><span class="corner bottom">${c.value}</span>`;}
 function showSlot(id,c){const el=$(id);el.className='slot'+(c?' filled '+c.suit:'');el.innerHTML=c?`<div class="card">${card(c)}</div>`:'—';}
 function button(text,fn){const b=document.createElement('button');b.textContent=text;b.addEventListener('click',fn);return b;}
 function render(){ $('trump').textContent=`切り札：${symbols[s.trump]} ${names[s.trump]}`;$('progress').textContent=`${s.trick}/5回`;$('score').textContent=`勝ち ${s.wins} / 予告 ${s.bid===null?'?':s.bid}`;
