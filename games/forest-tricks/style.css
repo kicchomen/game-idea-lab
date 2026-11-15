@@ -8,3 +8,6 @@
 #actions button:before,#actions button:after{content:'';display:inline-block;width:.9em;height:1em;background:url('../../assets/forest-tricks/leaf-icon.png') center/contain no-repeat;vertical-align:middle;filter:sepia(.7) saturate(.6) brightness(1.6);transform:rotate(-25deg)}#actions button:after{transform:scaleX(-1) rotate(-25deg)}
 .corner i{display:block;width:23px;height:27px;line-height:1}.corner i img{width:100%;height:100%;object-fit:contain;display:block}.illustration{inset:20% 10% 10%}#hand .corner i{width:19px;height:22px}
 @media(max-width:500px){#table:before,#table:after{width:34px;height:85px}.corner i{width:18px;height:21px}#hand .corner i{width:14px;height:17px}}
+/* Allow the prediction grid to shrink below its intrinsic button widths. */
+#bids{min-width:0}.bid-row{min-width:0;flex:1 1 0}.bid-row button{min-width:0;width:100%;padding:0}
+@media(max-width:360px){#bids{padding:12px 10px;gap:5px}#bids label{flex:0 0 17%;font-size:17px;letter-spacing:0}.bid-row{gap:4px}.bid-row button{font-size:25px;border-radius:8px;min-height:40px}}
