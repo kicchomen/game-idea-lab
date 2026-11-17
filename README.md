@@ -536,3 +536,9 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 ## 森の切り札便 / Forest Tricks（2026-11-15）
 5枚の手札を見て勝つ回数を予告し、同色追随・切り札を使って5勝負の勝ち数をぴったり合わせる2人札勝負。固定方針の相手、同じ便の再挑戦、別の配り。対人・長期成長なし。
 ソース `games/forest-tricks/`、企画/PDCA `assets/forest-tricks/design-notes.md`。作者11エンジンテスト。ブラウザ・独立検査・配信と記事公開は別記録で確定する。
+
+
+## 路地のかくれんぼ / Alley Hide（2026-11-17）
+動く相手の古い足音の方向と巡回路を読んで先回りする8手の試作。生成UI設計を再現。独立solverで聞くあり7手・なし9手、11テスト合格。Chrome成功/失敗/再挑戦/キー、試遊と保存記事本文320/360/390px確認。実機・人初見・長期面白さ未検証。
+試遊: https://kicchomen.github.io/game-idea-lab/games/alley-hide/
+記事はBlogger下書き3778175470044186235に完成保存、公開操作は安全審査拒否により未完。公開URLと公開日時は未確定。記録 assets/alley-hide/publication.json。

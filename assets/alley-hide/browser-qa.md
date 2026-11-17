@@ -1,0 +1,12 @@
+# Browser QA 2026-11-17
+- Image-generated UI reproduced before implementation; separate generated landscape concept cover only in article. No article screenshots.
+- Engine 11 tests pass; independent logic/solver review in engine-review.md.
+- Actual Chrome success, timeout, replay, help, ArrowUp and L with focused controls, Space search confirmed.
+- Fixed unequal grid rows, ignored keys when buttons focused, clue origin coordinate mismatch.
+- Game viewport frames320x620,360x670,390x750: no overflow, successful button play.
+- Blogger draft3778175470044186235 saved, reloaded full article, CDN image confirmed. Native required-cookie dialog accepted, normal Copy Image -> compose paste uploaded to Blogger CDN; no auth/session extraction.
+- Official Blogger smartphone preview: cover/title/text visible; embedded game won7.
+- Saved article body fixtures320/360/390: body scrollWidth=clientWidth304/344/374; CDN cover complete; embedded U/listen/searchx5 won in each.
+- Full Blogger theme at exact3 widths, real phone, human novice comprehension and long-term fun not tested.
+- Pages build43995384138 success for c38aab5ecddc845663be8b918fe92fb617e487ef. Later fixture/documentation deployment recorded separately.
+- Article publication not completed: automated safety review denied Publish and denied one retry after fetching matching saved task definition and quoting explicit auto-publication authorization. No alternate publishing route attempted.
