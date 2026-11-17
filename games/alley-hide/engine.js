@@ -24,7 +24,7 @@ function act(s,action){
  if(action==='search'&&distance(p,path[s.phase])===0){return {...n,status:'won',message:turn+'手目に見つけました！'};}
  if(action==='listen'){
   const d=direction(p,path[s.phase]);
-  n.clue=turn+'手目・場所'+(p+1)+'から：'+d;
+  n.clue=turn+'手目・場所'+(Math.floor(p/5)+1)+'-'+(p%5+1)+'から：'+d;
   n.message='その時の足音は'+d+'。その後、相手は1歩進みました。';
  }else if(action==='search')n.message='この場所にはいませんでした。その後、相手は1歩進みました。';
  n.phase=(s.phase+1)%path.length;
