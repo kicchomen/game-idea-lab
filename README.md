@@ -541,4 +541,4 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 ## 路地のかくれんぼ / Alley Hide（2026-11-17）
 動く相手の古い足音の方向と巡回路を読んで先回りする8手の試作。生成UI設計を再現。独立solverで聞くあり7手・なし9手、11テスト合格。Chrome成功/失敗/再挑戦/キー、試遊と保存記事本文320/360/390px確認。実機・人初見・長期面白さ未検証。
 試遊: https://kicchomen.github.io/game-idea-lab/games/alley-hide/
-記事はBlogger下書き3778175470044186235に完成保存、公開操作は安全審査拒否により未完。公開URLと公開日時は未確定。記録 assets/alley-hide/publication.json。
+記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_17.html （Blogger3778175470044186235、2026-11-17 17:25 JST）。本人の改めての公開指示後に公開済み。title/canonical/サムネイル/CDN画像/埋め込み勝利を確認。記録 assets/alley-hide/publication.json。
