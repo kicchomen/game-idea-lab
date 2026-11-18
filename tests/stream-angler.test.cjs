@@ -1,0 +1,16 @@
+const test = require('node:test');
+const assert = require('node:assert/strict');
+const E = require('../games/stream-angler/engine.js');
+function run(policy) { let s=E.start(); while(s.phase==='playing') s=E.tick(s,policy(s)); return s; }
+test('initial state and retry are isolated',()=>{assert.deepEqual(E.start(),{...E.initial(),phase:'playing'});assert.notEqual(E.start(),E.start());});
+test('reel gains distance at a cost and release trades it back',()=>{let a=E.start();const b=E.tick(a,true),c=E.tick(a,false);assert.ok(b.distance<a.distance);assert.ok(b.tension>a.tension);assert.ok(c.distance>a.distance);assert.ok(c.tension<a.tension);assert.equal(a.time,0);});
+test('warning precedes every run and the cue is pure',()=>{for(const t of E.runs){assert.equal(E.activity(t-.001),'warning');assert.equal(E.activity(t-.9),'warning');assert.equal(E.activity(t),'running');assert.equal(E.activity(t+1.499),'running');assert.equal(E.activity(t+1.5),'calm');}});
+test('running reel loads the line faster than calm reel',()=>{const a=E.start(),b={...a,frame:E.runs[0]*E.HZ,time:E.runs[0]};assert.ok(E.tick(b,true).tension-b.tension>2*(E.tick(a,true).tension-a.tension));});
+test('holding from start breaks the line',()=>{const s=run(()=>true);assert.equal(s.phase,'lost');assert.equal(s.reason,'line');assert.equal(s.tension,100);assert.ok(s.distance>0);assert.ok(s.time<10);});
+test('never reeling reaches the actual deadline',()=>{const s=run(()=>false);assert.equal(s.phase,'lost');assert.equal(s.reason,'time');assert.equal(s.time,40);});
+test('visible cue and tension policy can win without hidden state',()=>{let reel=true;const s=run(s=>{if(s.cue!=='calm'||s.tension>62)reel=false;else if(s.tension<26)reel=true;return reel;});assert.equal(s.phase,'won');assert.equal(s.distance,0);assert.ok(s.time<40);assert.ok(s.time>8);});
+test('terminal and paused states freeze, resume is explicit',()=>{const won=run(s=>s.tension<65&&s.cue!=='running');assert.equal(won.phase,'won');assert.equal(E.tick(won,true),won);const p=E.pause(E.tick(E.start(),true));assert.equal(E.tick(p,true),p);assert.equal(E.resume(p).phase,'playing');assert.equal(E.resume(E.initial()).phase,'ready');});
+test('pause and resume preserve all progress and retry resets it',()=>{const s=E.tick(E.start(),true);assert.deepEqual(E.resume(E.pause(s)),s);assert.equal(s.phase,'playing');assert.deepEqual(E.initial(),{phase:'ready',frame:0,time:0,distance:65,tension:20,cue:'calm',reason:null});});
+test('cut line takes priority over landing on the same step',()=>{const s=E.tick({...E.start(),distance:.001,tension:99.99},true);assert.equal(s.phase,'lost');assert.equal(s.reason,'line');});
+test('landing on final allowed tick succeeds',()=>{const s=E.tick({...E.start(),frame:40*E.HZ-1,time:40-1/E.HZ,distance:.001,tension:20},true);assert.equal(s.phase,'won');assert.equal(s.time,40);});
+test('simulations replay exactly and boundaries stay finite',()=>{const policy=s=>s.tension<58&&s.cue==='calm';assert.deepEqual(run(policy),run(policy));let s=E.start();for(let i=0;i<2400&&s.phase==='playing';i++){s=E.tick(s,i%30<18);assert.ok(s.tension>=0&&s.tension<=100);assert.ok(s.distance>=0&&s.distance<=100);assert.ok(Number.isFinite(s.time));}});

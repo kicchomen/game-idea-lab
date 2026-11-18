@@ -1,0 +1,17 @@
+{
+  "date":"2026-11-18",
+  "title":"渓流の糸つかい｜巻くほど近づく。でも、糸は張っていく。",
+  "blogId":"3556407006374124911",
+  "postId":null,
+  "status":"prototype-reviewed-article-prepared",
+  "publicUrl":null,
+  "publishedAt":null,
+  "playUrl":"https://kicchomen.github.io/game-idea-lab/games/stream-angler/",
+  "baselineCommit":"3237e36",
+  "pagesCommit":null,
+  "pagesDeployment":null,
+  "independentReview":"independent-review.md",
+  "tests":{"author":20,"independent":"tests/stream-angler-independent.cjs","fullExistingSuite":"pass, compact runner, 10 seconds"},
+  "unverified":["physical smartphone","first-time human","other browsers","long-term fun","screen reader","axe"],
+  "blocker":null
+}

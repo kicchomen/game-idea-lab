@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>渓流の糸つかい — ゲームアイデア実験室</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main class="game" aria-label="渓流の糸つかい">
+  <header><h1><img src="art/title.jpg" alt="STREAM ANGLER 渓流の糸つかい" width="968" height="193"></h1><button id="help" aria-label="遊び方を開く">?</button></header>
+  <div class="hud"><span>距離 <strong id="distance">65</strong></span><span>残り <strong id="time">40</strong>秒</span></div>
+  <section class="river" aria-label="渓流の魚">
+    <div id="ripples" class="ripples" aria-hidden="true"></div>
+    <span class="cue-label" id="cue">おだやか</span>
+    <div class="overlay" id="overlay">
+      <h2 id="result-title">魚の走りに、手をゆるめる。</h2>
+      <p id="result-text">長押しで巻く、離して緩める。<br>糸の張り100%で切断。40秒で距離0へ。</p>
+      <button id="start">釣りをはじめる</button>
+      <button id="retry" class="secondary" hidden>最初から</button>
+    </div>
+  </section>
+  <section class="tension" aria-label="糸の張り">
+    <div class="gauge-title">糸の張り <strong id="tension">20%</strong><span>100%で切断</span></div>
+    <div id="meter" class="meter" role="meter" aria-label="糸の張り" aria-valuemin="0" aria-valuemax="100" aria-valuenow="20"><div class="scale"></div><span id="needle"></span></div>
+  </section>
+  <p class="message" id="message" role="status">おだやかな間は、離すと張りが下がる。</p>
+  <div class="controls"><button id="reel" disabled>長押しで巻く</button><button id="pause" disabled>停止</button></div>
+  <p class="keynote">離して緩める · PC: Space / R長押し · P停止</p>
+  <dialog id="instructions" aria-labelledby="help-title">
+    <h2 id="help-title">巻く、緩める。</h2>
+    <p>「長押しで巻く」で魚が近づき、糸の張りが増えます。離すと張りが下がりますが、魚は少し遠ざかります。</p>
+    <p>「走りそう…」のあと魚が走ります。走り中は巻いても近づきにくく、張りが急に増えます。離しても少し増えますが、巻くより抑えられます。手を緩めてやり過ごしましょう。</p>
+    <p>40秒で距離0へ。張り100%か期限で終了。同じ魚・同じ走りで再挑戦できます。距離はゲーム内の目安です。実際の釣りの再現ではありません。</p>
+    <p>PC: Space/Rを長押し、離して緩める。P/Escapeで停止。画面を離れると自動停止します。</p>
+    <button id="close-help">閉じる</button>
+  </dialog>
+</main>
+<script src="engine.js"></script><script src="app.js"></script>
+</body></html>

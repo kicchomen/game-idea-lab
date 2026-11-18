@@ -1,0 +1,98 @@
+{
+  "policies": [
+    {
+      "name": "always-reel",
+      "phase": "lost",
+      "reason": "line",
+      "time": 4.3,
+      "peak": 100,
+      "finalTension": 100,
+      "switches": 0
+    },
+    {
+      "name": "always-ease",
+      "phase": "lost",
+      "reason": "time",
+      "time": 40,
+      "peak": 20,
+      "finalTension": 0,
+      "switches": 0
+    },
+    {
+      "name": "blind-1s-period-50%-duty",
+      "phase": "won",
+      "reason": null,
+      "time": 20.2,
+      "peak": 93.10000000000015,
+      "finalTension": 68.89999999999957,
+      "switches": 40
+    },
+    {
+      "name": "blind-2s-period-50%-duty",
+      "phase": "lost",
+      "reason": "line",
+      "time": 16.933333333333334,
+      "peak": 100,
+      "finalTension": 100,
+      "switches": 16
+    },
+    {
+      "name": "blind-6s-period-50%-duty",
+      "phase": "won",
+      "reason": null,
+      "time": 13.8,
+      "peak": 78.50000000000051,
+      "finalTension": 78.20000000000026,
+      "switches": 4
+    },
+    {
+      "name": "tension-only-62/26",
+      "phase": "won",
+      "reason": null,
+      "time": 19.466666666666665,
+      "peak": 71.85000000000039,
+      "finalTension": 46.1500000000005,
+      "switches": 6
+    },
+    {
+      "name": "cue-only-calm",
+      "phase": "won",
+      "reason": null,
+      "time": 8.883333333333333,
+      "peak": 99.66666666666715,
+      "finalTension": 99.66666666666715,
+      "switches": 2
+    },
+    {
+      "name": "cue-only-avoid-running",
+      "phase": "lost",
+      "reason": "line",
+      "time": 6.466666666666667,
+      "peak": 100,
+      "finalTension": 100,
+      "switches": 2
+    },
+    {
+      "name": "cue-and-tension-62/26",
+      "phase": "won",
+      "reason": null,
+      "time": 18.716666666666665,
+      "peak": 62.100000000000506,
+      "finalTension": 56.733333333334414,
+      "switches": 6
+    }
+  ],
+  "boundaries": "pass: line>landing>deadline, terminal freeze, state immutability",
+  "controller": {
+    "spaceReadyDefaultPrevented": false,
+    "remainingAliasStillHeld": true,
+    "remainingPointerStillHeld": true,
+    "after300ms": {
+      "time": 40,
+      "distance": 62
+    },
+    "blurPauseClearsHeld": true,
+    "longGapPauses": true,
+    "successTensionDisplay": "99%"
+  }
+}

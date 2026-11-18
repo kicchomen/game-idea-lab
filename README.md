@@ -542,3 +542,8 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 動く相手の古い足音の方向と巡回路を読んで先回りする8手の試作。生成UI設計を再現。独立solverで聞くあり7手・なし9手、11テスト合格。Chrome成功/失敗/再挑戦/キー、試遊と保存記事本文320/360/390px確認。実機・人初見・長期面白さ未検証。
 試遊: https://kicchomen.github.io/game-idea-lab/games/alley-hide/
 記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_17.html （Blogger3778175470044186235、2026-11-17 17:25 JST）。本人の改めての公開指示後に公開済み。title/canonical/サムネイル/CDN画像/埋め込み勝利を確認。記録 assets/alley-hide/publication.json。
+
+## 渓流の糸つかい / Stream Angler（2026-11-18）
+魚の走りの前兆と糸の張りを見て、巻く／緩めるを切り替える連続操作の試作。40秒で距離0へ、張り100%で切断。固定1匹、同じ走りで再挑戦。魚種・流れ・道具は構想のみ。実際の釣りの再現ではない。
+試遊: https://kicchomen.github.io/game-idea-lab/games/stream-angler/
+生成UIを先に目視し、タイトル帯・川の絵・和紙/深緑/朱の配色と配置を再現。作者20テスト、独立方策/VM/境界検査、全既存テスト合格。単純周期でも勝てるため前兆必須や長期深さは主張しない。実ブラウザ成功・切断・期限・再挑戦・停止/再開、320/360/390px確認。Blogger保存/公開とPagesの当該commit配信は `assets/stream-angler/publication.json` に確定後記録。
