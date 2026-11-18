@@ -3,16 +3,17 @@
   "title": "渓流の糸つかい｜巻くほど近づく。でも、糸は張っていく。",
   "blogId": "3556407006374124911",
   "postId": "2815275345010982805",
-  "status": "saved-draft-verified",
-  "publicUrl": null,
-  "publishedAt": null,
-  "playUrl": "https://kicchomen.github.io/game-idea-lab/games/stream-angler/",
+  "status": "published-verified",
+  "publicUrl": "https://game-idea-lab.blogspot.com/2026/11/blog-post_18.html",
+  "publishedAt": "2026-11-18T10:31:56.222+09:00",
+  "playUrl": "https://kicchomen.github.io/game-idea-lab/games/stream-angler/?v=20261118b",
   "baselineCommit": "3237e36",
-  "pagesCommit": "c53b7c8318f9ac5e5a7dd6c3d0a2c5ecd9f35e3a",
+  "pagesCommit": "81d51a1d250892e611feada3a14b9b72d21f6d1c",
   "pagesDeployment": {
     "status": "built",
-    "updatedAt": "2026-11-18T01:21:34Z",
-    "source": "GitHub Pages builds/latest"
+    "updatedAt": "2026-11-18T01:37:11Z",
+    "source": "GitHub Pages builds/latest",
+    "scope": "final game HTML including help autofocus; later documentation commit is checked separately"
   },
   "independentReview": "independent-review.md",
   "tests": {
@@ -83,5 +84,88 @@
     }
   ],
   "officialBloggerSmartphonePreview": "CDN cover and entire article displayed; embedded keyboard R changed distance100 to79 / tension0 to24, P paused. Not exact320/360/390.",
-  "environment": "Dot/cloud browser was not exposed in this child environment; used local Codex checkout and CUA Chromium/native Chrome. No scheduling changes."
+  "environment": "Dot/cloud browser was not exposed in this child environment; used local Codex checkout and CUA Chromium/native Chrome. No scheduling changes.",
+  "updatedAt": "2026-11-18T10:41:12.040+09:00",
+  "publicBodyMatchesSource": true,
+  "publicBodyImageCount": 1,
+  "publicBodyIframeCount": 1,
+  "publicTitleVerified": true,
+  "canonicalVerified": true,
+  "thumbnailVerified": true,
+  "thumbnailHttpStatus": 200,
+  "publicPostCounts": {
+    "all": 45,
+    "published": 42,
+    "drafts": 3,
+    "scheduled": 0
+  },
+  "articleScreenshots": false,
+  "generatedUiComparedToImplementation": true,
+  "cleanup": "Saved own Blogger editor and preview tabs closed; IAB verification tab closed; viewport reset. Existing Chrome, initial Search Console/new tab and preexisting TextEdit preserved. Local server stopped after final repository verification.",
+  "publicResponsiveFinal": [
+    {
+      "viewport": [
+        320,
+        720
+      ],
+      "docClientAndScrollWidths": [
+        305,
+        305
+      ],
+      "iframeClientAndScroll": [
+        273,
+        620
+      ],
+      "result": "success 9.3s; all game controls fit",
+      "help": {
+        "scrollTop": 0,
+        "headingTop": 34,
+        "focus": "help-title",
+        "reopenScrollTop": 0
+      }
+    },
+    {
+      "viewport": [
+        360,
+        720
+      ],
+      "docClientAndScrollWidths": [
+        345,
+        345
+      ],
+      "iframeClientAndScroll": [
+        313,
+        620
+      ],
+      "result": "line failure; Space retry; R distance65 to56/tension20 to31; P pause",
+      "help": {
+        "scrollTop": 0,
+        "headingTop": 60.2734375,
+        "focus": "help-title"
+      }
+    },
+    {
+      "viewport": [
+        390,
+        750
+      ],
+      "docClientAndScrollWidths": [
+        375,
+        375
+      ],
+      "iframeClientAndScroll": [
+        343,
+        620
+      ],
+      "result": "success 9.3s; all game controls fit",
+      "help": {
+        "scrollTop": 0,
+        "headingTop": 60.2734375,
+        "focus": "help-title"
+      }
+    }
+  ],
+  "publicResponsiveNote": "Final actual Blogger theme and versioned public iframe, not only saved-body fixture. 15px desktop scrollbar accounts for narrower client widths. CDN cover decoded at all three widths. Browser narrow-screen simulation, not physical phone.",
+  "publicationVerification": "Blogger normal UI Publish->Confirm; list public42/draft3; public feed exact post ID/published timestamp; live title/canonical/og:image/CDN cover/one iframe/standalone link and real embedded success/failure/retry/pause; final article HTML byte-identical to public feed.",
+  "postPublicationFix": "Help autofocus verified independently and in273x620 public iframe; original browser cached old HTML so article iframe and standalone URL updated to?v=20261118b on same post ID. Temporary duplicate body from editor insertion detected and corrected before final readback; final public body exactly matches source with one image/one iframe."
 }

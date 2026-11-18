@@ -26,3 +26,14 @@
 - 保存本文と同じarticle-qa.html（Bloggerテーマを含まないローカル検査fixture）: viewport320×720ではdoc幅305/scroll幅305・iframe289×620、360×720では345/345・329×620、390×750では375/375・359×620。縦スクロールバー15pxと本文余白を含む。全iframeでscrollWidth/Height=clientWidth/Height。CDN画像1000×562を全幅でデコード確認。
 - 320/390本文内で通常長押し/解放から9.3秒成功。360本文内で切断→Space再挑戦→R入力で距離65→56・張り20→31→P停止。画像/文/操作領域を目視。完全なBloggerテーマのexact3幅は公開後に検査予定。
 - Pages c53b7c8318f9ac5e5a7dd6c3d0a2c5ecd9f35e3a built（2026-11-18T01:21:34Z）。公開7ファイルがローカルとbyte一致。pages-file-verification.json。
+
+## 公開後の最終検査（修正版）
+- 記事 https://game-idea-lab.blogspot.com/2026/11/blog-post_18.html 、投稿2815275345010982805、公開2026-11-18T10:31:56.222+09:00。同ID更新2026-11-18T10:41:12.040+09:00。Blogger公開42・下書き3、予約0、新規は今回の1本のみ。
+- public feedの本文とarticle.htmlが完全一致。CDN画像1枚、iframe1個、冒頭文1組。埋込と単独リンクは?v=20261118b。title/canonical/og:image確認、CDN画像1000×562デコード、feedサムネイルHTTP200 image/jpeg。
+- 実Bloggerテーマの最終320×720: doc client/scroll幅305/305、iframe273×620のclient/scroll同寸。正常入力9.3秒成功。ヘルプscrollTop0/見出しy34/初期focus help-title、閉じる後の再表示も0。
+- 実テーマ360×720: doc345/345、iframe313×620のclient/scroll同寸。巻き続け切断→Space再挑戦→Rで距離65→56・張り20→31→P停止。ヘルプscrollTop0/見出しy60.273/focus help-title。
+- 実テーマ390×750: doc375/375、iframe343×620のclient/scroll同寸。正常入力9.3秒成功。ヘルプscrollTop0/見出しy60.273/focus help-title。全幅で画像と主要操作が収まり、ゲーム内の縦横スクロール不要。
+- 新しいhelp HTML配信後もブラウザに旧HTMLが残ったため、同じBlogger投稿のiframe/単独リンクへ版番号を付与。公開DOMでautofocus属性と実際の先頭フォーカスを確認。更新時に一時的な本文二重挿入を検出し、全体を正本1組に戻して同ID保存。最終public feedとのbyte一致・画像1・iframe1を確認済み。
+- 最初のiframe読み込み直後、スクリプト読み込み前のクリックが反映されない場合があり、document.readyState completeを確認して再実行。画面更新中断による自動停止は明示再開で続行。これらを成功扱いにせず、最終操作完了を確認した。
+- 81d51a1d250892e611feada3a14b9b72d21f6d1cのPages built（01:37:11Z）を確認。普通のURLと版番号URLのHTMLが修正ソースに一致（SHA256 f1f7794cdb12674a12fceb4d29aca67d982c71aeb7e2aead13680216fb403b8e）。最終文書commitの配信は完了報告でも別途照合。
+- 全ブラウザ操作はCUA。自分の保存済みBlogger編集/previewタブとIAB検査タブを閉じ、viewport指定解除。既存Chrome/他者タブ/既存TextEditは保持。
