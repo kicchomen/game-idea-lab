@@ -1,0 +1,44 @@
+[
+  {
+    "path": "games/stream-angler/index.html",
+    "bytes": 2877,
+    "sha256": "76f36b9d071b7ee02efa0013d10bb3acab1e9caf9c8a01ac0e16dfdb2bed1fa8",
+    "matchesLocal": true
+  },
+  {
+    "path": "games/stream-angler/app.js",
+    "bytes": 4993,
+    "sha256": "698699eeab6b86e6f391595df55062dc34e15c079f7e166751713033118cd430",
+    "matchesLocal": true
+  },
+  {
+    "path": "games/stream-angler/engine.js",
+    "bytes": 1773,
+    "sha256": "cae0e2c3a79a19697e6b82da5178b552dd1ecf09de228b5e300f58f4352e8682",
+    "matchesLocal": true
+  },
+  {
+    "path": "games/stream-angler/style.css",
+    "bytes": 5288,
+    "sha256": "dacae5293967bedddb51b1a6a59b7f64192be6d633714577f52d3dd0e41ed518",
+    "matchesLocal": true
+  },
+  {
+    "path": "games/stream-angler/art/title.jpg",
+    "bytes": 88260,
+    "sha256": "3b5c9b962bed698cca5a1521547d4d119e1ae30d98371bd5450c54e9d0c2442d",
+    "matchesLocal": true
+  },
+  {
+    "path": "games/stream-angler/art/river.jpg",
+    "bytes": 332230,
+    "sha256": "d9f5cb09ca6aa57b10aa41b679e7d4134520e0ca302347c1800850efe50a2d10",
+    "matchesLocal": true
+  },
+  {
+    "path": "games/stream-angler/art/paper.jpg",
+    "bytes": 1219,
+    "sha256": "9a0bd5a29baa8d4dc7ea7a988674f17836c3fd2505c6eb6ffe6f534f3cd9efa5",
+    "matchesLocal": true
+  }
+]

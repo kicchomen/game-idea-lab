@@ -1,17 +1,87 @@
 {
-  "date":"2026-11-18",
-  "title":"渓流の糸つかい｜巻くほど近づく。でも、糸は張っていく。",
-  "blogId":"3556407006374124911",
-  "postId":null,
-  "status":"prototype-reviewed-article-prepared",
-  "publicUrl":null,
-  "publishedAt":null,
-  "playUrl":"https://kicchomen.github.io/game-idea-lab/games/stream-angler/",
-  "baselineCommit":"3237e36",
-  "pagesCommit":null,
-  "pagesDeployment":null,
-  "independentReview":"independent-review.md",
-  "tests":{"author":20,"independent":"tests/stream-angler-independent.cjs","fullExistingSuite":"pass, compact runner, 10 seconds"},
-  "unverified":["physical smartphone","first-time human","other browsers","long-term fun","screen reader","axe"],
-  "blocker":null
+  "date": "2026-11-18",
+  "title": "渓流の糸つかい｜巻くほど近づく。でも、糸は張っていく。",
+  "blogId": "3556407006374124911",
+  "postId": "2815275345010982805",
+  "status": "saved-draft-verified",
+  "publicUrl": null,
+  "publishedAt": null,
+  "playUrl": "https://kicchomen.github.io/game-idea-lab/games/stream-angler/",
+  "baselineCommit": "3237e36",
+  "pagesCommit": "c53b7c8318f9ac5e5a7dd6c3d0a2c5ecd9f35e3a",
+  "pagesDeployment": {
+    "status": "built",
+    "updatedAt": "2026-11-18T01:21:34Z",
+    "source": "GitHub Pages builds/latest"
+  },
+  "independentReview": "independent-review.md",
+  "tests": {
+    "author": 20,
+    "independent": "tests/stream-angler-independent.cjs",
+    "fullExistingSuite": "pass, compact runner, 10 seconds"
+  },
+  "unverified": [
+    "physical smartphone",
+    "first-time human",
+    "other browsers",
+    "long-term fun",
+    "screen reader",
+    "axe"
+  ],
+  "blocker": null,
+  "draftUrl": "https://www.blogger.com/blog/post/edit/3556407006374124911/2815275345010982805",
+  "coverCdn": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjQJhPQHtiegld5nd26j2Q9ZU006Kf0oKErifKLxjwqmSU9s7PdUQyQSXhJPOSWsEl9_Q-f4k_eI0KBVuwZ_cw8j3vijq42zG2XD6a-gJ0DWnNO1LZIjLYFsar2KUZ6bquH5sy_RjsaMW_yvemwQtb7t1HSFy4Ss1c0pzWV0a2eEnAuRxkIckjnZoIqs8U/s1600/concept-cover.jpg",
+  "savedReadback": "Full HTML content read through Blogger editor accessibility after saved indicator and reload; title, one CDN image, iframe, standalone URL, controls and limits retained. No byte equality claimed for accessibility rendering.",
+  "articleWidths": [
+    {
+      "viewport": [
+        320,
+        720
+      ],
+      "documentWidths": [
+        305,
+        305
+      ],
+      "iframe": [
+        289,
+        620
+      ],
+      "overflow": false,
+      "action": "normal input success 9.3s"
+    },
+    {
+      "viewport": [
+        360,
+        720
+      ],
+      "documentWidths": [
+        345,
+        345
+      ],
+      "iframe": [
+        329,
+        620
+      ],
+      "overflow": false,
+      "action": "line failure, Space retry, R reel, P pause"
+    },
+    {
+      "viewport": [
+        390,
+        750
+      ],
+      "documentWidths": [
+        375,
+        375
+      ],
+      "iframe": [
+        359,
+        620
+      ],
+      "overflow": false,
+      "action": "normal input success 9.3s"
+    }
+  ],
+  "officialBloggerSmartphonePreview": "CDN cover and entire article displayed; embedded keyboard R changed distance100 to79 / tension0 to24, P paused. Not exact320/360/390.",
+  "environment": "Dot/cloud browser was not exposed in this child environment; used local Codex checkout and CUA Chromium/native Chrome. No scheduling changes."
 }
