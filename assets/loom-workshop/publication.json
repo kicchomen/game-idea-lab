@@ -3,16 +3,30 @@
   "title": "からくり織り工房｜次の段を読んで、糸の色を切り替える",
   "blogId": "3556407006374124911",
   "postId": "8517880071514811592",
-  "status": "draft-saved-deployment-denied",
+  "status": "published-verified",
   "draftUrl": "https://www.blogger.com/blog/post/edit/3556407006374124911/8517880071514811592",
-  "publicUrl": null,
-  "publishedAt": null,
+  "publicUrl": "https://game-idea-lab.blogspot.com/2026/11/blog-post_19.html",
+  "publishedAt": "2026-11-19T10:25:56.076+09:00",
   "playUrl": "https://kicchomen.github.io/game-idea-lab/games/loom-workshop/",
   "prototypeCommit": "7fe9c312bdbe3867b090f443ced18cf15ea22b0c",
-  "observedRemoteMain": "90b5688af30e26dbab5380806ceecf802b80ff7c",
   "pagesDeployment": {
-    "status": "not-deployed",
-    "observedHttpStatus": 404
+    "status": "built",
+    "commit": "b62f8ddce129c3e3a52d5592989bd93b91692cc7",
+    "updatedAt": "2026-11-19T01:22:14Z",
+    "checkedHttpStatus": 200,
+    "byteMatches": {
+      "game": [
+        "index.html",
+        "style.css",
+        "app.js",
+        "engine.js"
+      ],
+      "assets": [
+        "cover.jpg",
+        "weave-choice.jpg",
+        "article.html"
+      ]
+    }
   },
   "savedArticle": {
     "source": "article.html",
@@ -20,14 +34,87 @@
     "cdnImageCount": 2,
     "iframeCount": 1,
     "standaloneLinkCount": 1,
-    "bloggerPreview": ["desktop", "smartphone"],
-    "fixtureViewportCssPx": [[320, 640], [360, 720], [390, 760], [1280, 720]]
+    "bloggerPreview": [
+      "desktop",
+      "smartphone"
+    ],
+    "fixtureViewportCssPx": [
+      [
+        320,
+        640
+      ],
+      [
+        360,
+        720
+      ],
+      [
+        390,
+        760
+      ],
+      [
+        1280,
+        720
+      ]
+    ]
   },
-  "blocker": {
-    "action": "git push origin HEAD:refs/heads/main",
-    "target": "kicchomen/game-idea-lab",
-    "outcome": "rejected-before-execution",
-    "reason": "Automatic approval review did not accept authorization for public deployment through GitHub Pages.",
-    "bloggerPublishAttempted": false
+  "blocker": null,
+  "publishedChecks": {
+    "titleTag": true,
+    "canonical": true,
+    "contentMatchesSource": true,
+    "thumbnail": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgEvwp1l-Q-FcveNOKcpsqaIuTx-hFnUvgTdYz1N5WOP91RdgMjnmoWMyg9-zguzGvpmw_Kzv6Z36hYGrxyykbyFy25r3dlsY9Hn-g12KH6cX8DiBkcgViJ6OoGNs3TOk0SyvIq_VKzqnhufGSEAlD8woDrASCldH1BQUsgqMWR-pkywW_3QunEkH7UjiQ/s72-c/cover.jpg",
+    "thumbnailMatchesOpenGraphCover": true,
+    "thumbnailHttpStatus": 200,
+    "articleImagesDecoded": 2,
+    "bloggerListCounts": {
+      "published": 43,
+      "drafts": 3,
+      "scheduled": 0
+    },
+    "directAndEmbeddedViewportCssPx": [
+      [
+        320,
+        640
+      ],
+      [
+        360,
+        720
+      ],
+      [
+        390,
+        760
+      ],
+      [
+        1280,
+        720
+      ]
+    ],
+    "embeddedIframeCssPx": [
+      [
+        288,
+        558
+      ],
+      [
+        328,
+        558
+      ],
+      [
+        358,
+        558
+      ],
+      [
+        810,
+        558
+      ]
+    ],
+    "embeddedFlow": [
+      "start",
+      "sample-mismatch",
+      "float-failure",
+      "win",
+      "retry",
+      "repeated-input",
+      "reset"
+    ]
   }
 }

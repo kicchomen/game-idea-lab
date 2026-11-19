@@ -552,3 +552,4 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 見本の指定色を守りながら、4種の織り方で布を上から1段ずつ織るパズル。空欄は自由。同じ列で同じ色が4段続くと失敗するので、次の見本も見て色を切り替える。固定の見本1枚・8段。
 - 試遊: https://kicchomen.github.io/game-idea-lab/games/loom-workshop/
 - 企画・PDCA・検証: `assets/loom-workshop/design-notes.md`、`assets/loom-workshop/browser-qa.md`、`assets/loom-workshop/independent-review.md`
+- 公開記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_19.html （Blogger 8517880071514811592、2026-11-19T10:25:56.076+09:00）。公開台帳は `assets/loom-workshop/publication.json`。
