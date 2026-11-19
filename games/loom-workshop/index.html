@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#351e38">
+  <title>からくり織り工房｜試遊</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="engine.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="workshop" aria-labelledby="title">
+    <header class="title-band">
+      <h1 id="title">からくり織り工房</h1>
+      <button id="help-open" class="help" type="button" aria-label="遊び方">？</button>
+    </header>
+    <div class="meter" aria-label="進捗">
+      <div class="progress">
+        <span id="row-count">0 / 8 段</span>
+        <div id="progress-dots" class="progress-dots" aria-hidden="true"></div>
+      </div>
+      <div id="float-meter" class="float-meter">
+        <span>糸の浮き</span> <strong id="float-count">0 / 4</strong>
+      </div>
+    </div>
+
+    <div class="boards">
+      <section class="panel sample-panel" aria-labelledby="sample-label">
+        <h2 id="sample-label">見本</h2>
+        <div id="sample-board" class="board"></div>
+      </section>
+      <section class="panel cloth-panel" aria-labelledby="cloth-label">
+        <h2 id="cloth-label">織り布</h2>
+        <div id="cloth-board" class="board loom"></div>
+      </section>
+    </div>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <div class="actions">
+      <button id="start" class="start" type="button">織り始める</button>
+      <div id="choices" class="choices" hidden></div>
+    </div>
+    <footer class="tools">
+      <span>見本の「・」は自由</span>
+      <button id="reset" type="button" hidden>最初から</button>
+    </footer>
+  </main>
+
+  <dialog id="instructions" aria-labelledby="help-title">
+    <h2 id="help-title">織り方</h2>
+    <p>見本の色が付いたマスに合わせ、上から8段を織ります。「・」はどちらの色でも構いません。</p>
+    <p>同じ列で同じ色が3段続くと、該当するマスに「!」が出ます。4段続くと糸が浮いて失敗です。必要な色を守りながら、途中で色を切り替えてください。</p>
+    <p>タップで織り方を選びます。キーボードは 1 交互、2 逆交互、3 山、4 谷です。</p>
+    <form method="dialog"><button type="submit" autofocus>とじる</button></form>
+  </dialog>
+</body>
+</html>

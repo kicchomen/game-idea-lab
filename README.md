@@ -547,3 +547,8 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 魚の走りの前兆と糸の張りを見て、巻く／緩めるを切り替える連続操作の試作。40秒で距離0へ、張り100%で切断。固定1匹、同じ走りで再挑戦。魚種・流れ・道具は構想のみ。実際の釣りの再現ではない。
 試遊: https://kicchomen.github.io/game-idea-lab/games/stream-angler/?v=20261118b
 生成UIを先に目視し、タイトル帯・川の絵・和紙/深緑/朱の配色と配置を再現。作者20テスト、独立方策/VM/境界検査、全既存テスト合格。単純周期でも勝てるため前兆必須や長期深さは主張しない。実ブラウザ成功・切断・期限・再挑戦・停止/再開、320/360/390px確認。公開記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_18.html （Blogger2815275345010982805、2026-11-18T10:31:56.222+09:00）。公開テーマ320/360/390pxとヘルプ先頭表示を再検査。Pagesで最終ゲーム81d51a1配信成功。詳細は `assets/stream-angler/publication.json`。
+
+## からくり織り工房 / Loom Workshop（2026-11-19）
+見本の指定色を守りながら、4種の織り方で布を上から1段ずつ織るパズル。空欄は自由。同じ列で同じ色が4段続くと失敗するので、次の見本も見て色を切り替える。固定の見本1枚・8段。
+- 試遊: https://kicchomen.github.io/game-idea-lab/games/loom-workshop/
+- 企画・PDCA・検証: `assets/loom-workshop/design-notes.md`、`assets/loom-workshop/browser-qa.md`、`assets/loom-workshop/independent-review.md`
