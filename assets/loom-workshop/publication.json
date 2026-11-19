@@ -1,0 +1,33 @@
+{
+  "date": "2026-11-19",
+  "title": "からくり織り工房｜次の段を読んで、糸の色を切り替える",
+  "blogId": "3556407006374124911",
+  "postId": "8517880071514811592",
+  "status": "draft-saved-deployment-denied",
+  "draftUrl": "https://www.blogger.com/blog/post/edit/3556407006374124911/8517880071514811592",
+  "publicUrl": null,
+  "publishedAt": null,
+  "playUrl": "https://kicchomen.github.io/game-idea-lab/games/loom-workshop/",
+  "prototypeCommit": "7fe9c312bdbe3867b090f443ced18cf15ea22b0c",
+  "observedRemoteMain": "90b5688af30e26dbab5380806ceecf802b80ff7c",
+  "pagesDeployment": {
+    "status": "not-deployed",
+    "observedHttpStatus": 404
+  },
+  "savedArticle": {
+    "source": "article.html",
+    "comparedAfterReload": true,
+    "cdnImageCount": 2,
+    "iframeCount": 1,
+    "standaloneLinkCount": 1,
+    "bloggerPreview": ["desktop", "smartphone"],
+    "fixtureViewportCssPx": [[320, 640], [360, 720], [390, 760], [1280, 720]]
+  },
+  "blocker": {
+    "action": "git push origin HEAD:refs/heads/main",
+    "target": "kicchomen/game-idea-lab",
+    "outcome": "rejected-before-execution",
+    "reason": "Automatic approval review did not accept authorization for public deployment through GitHub Pages.",
+    "bloggerPublishAttempted": false
+  }
+}
