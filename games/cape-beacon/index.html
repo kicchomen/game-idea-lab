@@ -1,0 +1,19 @@
+<!DOCTYPE html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>岬の灯台守</title><link href="style.css" rel="stylesheet"></head>
+<body><main><header><p>GAME IDEA LAB · 試作</p><h1>岬の灯台守</h1><p class="intro">下の船が「合図待ち」になったら、同じ印の浮標へ。</p></header>
+<div class="sea">
+<svg viewBox="0 0 360 242" aria-hidden="true">
+<defs><linearGradient id="wave" x2="0" y2="1"><stop stop-color="#154557"/><stop offset="1" stop-color="#092637"/></linearGradient><radialGradient id="beamGlow" gradientUnits="userSpaceOnUse" cx="180" cy="213" r="190"><stop stop-color="#ffda87" stop-opacity=".8"/><stop offset="1" stop-color="#ffd385" stop-opacity=".13"/></radialGradient></defs>
+<rect width="360" height="242" fill="url(#wave)"/>
+<path d="M0 92q25-9 50 0m212-45q27-9 53 0M96 36q22-7 43 0m163 82q28-8 54 0M11 211q23-7 45 0m247 1q25-8 48 0" fill="none" stroke="#48818b" stroke-opacity=".68"/>
+<path d="M79 242l22-13 34-3 21-15 23-14 17 15 38 19 48 11z" fill="#575b50"/>
+<path d="M79 242l22-13 34-3 21-15 23-14 17 15 38 19 48 11" fill="none" stroke="#b3a47f" stroke-width="2"/>
+<g id="routeLines"></g><path id="light" fill="url(#beamGlow)"/>
+<g id="boats"></g>
+<path d="m170 216 4-32h12l4 32z" fill="#f4e1b3"/><path d="m170 185 10-8 10 8z" fill="#c87050"/><path d="M176 187h8v7h-8z" fill="#ffd173"/>
+</svg>
+<div id="markers"></div>
+</div>
+<div class="readouts" id="readouts"></div>
+<p class="status" id="status" aria-live="polite">灯りは一つ。破線が付いた浮標に1.7秒当てよう。</p>
+<div class="actions"><button id="start">航路を開始</button><button id="pause" disabled>一時停止</button></div>
+</main><script type="module" src="app.js"></script></body></html>
