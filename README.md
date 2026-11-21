@@ -560,3 +560,10 @@ Published 2026-11-05 10:46 JST: https://game-idea-lab.blogspot.com/2026/11/blog-
 - 企画・PDCA: `assets/cape-beacon/design-notes.md`
 - ルール検査: `node --test tests/cape-beacon.test.cjs`
 - 記事台帳: `assets/cape-beacon/publication.json`
+
+## 朝市の雪かき番 / Market Snowplow（2026-11-21）
+38秒以内に除雪車を走らせ、荷台4枠を管理しながら13マスの雪を回収し、排雪口へ運ぶミニゲーム。
+- 試遊: https://kicchomen.github.io/game-idea-lab/games/market-snowplow/
+- 公開記事: https://game-idea-lab.blogspot.com/2026/11/blog-post_21.html
+- 生成UI原本・検査: `assets/market-snowplow/generated-ui-reference.png`、`assets/market-snowplow/ui-v2-verification.md`
+- 公開台帳と本文控え: `assets/market-snowplow/publication.json`、`assets/market-snowplow/article.html`

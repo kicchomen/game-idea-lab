@@ -1,0 +1,80 @@
+{
+  "date": "2026-11-21",
+  "title": "発案＆試遊｜朝市の雪かき番",
+  "blogId": "3556407006374124911",
+  "postId": "5921136980469302833",
+  "status": "published-verified",
+  "publicUrl": "https://game-idea-lab.blogspot.com/2026/11/blog-post_21.html",
+  "publishedAt": "2026-11-21T11:29:36.430+09:00",
+  "playUrl": "https://kicchomen.github.io/game-idea-lab/games/market-snowplow/",
+  "prototypeCommit": "a8b7b976e100f8402d038635582df9a552b2da9f",
+  "pagesDeployment": {
+    "status": "success",
+    "workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/44853062641",
+    "verifiedPublicGameAndAssetsByteMatched": true
+  },
+  "publishedArticle": {
+    "exactArchive": "article.html",
+    "publicFeedSha256": "2656b7eb82ea3ecb483727c0b4f1eb5aada91cc76ccdce72d4a549e356a888e4",
+    "titleAndCanonicalVerified": true,
+    "coverCdn": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgKlhIH62GxN2Pm8dMRqVsJZMpT055BocaTxpNElaZ67utb9qNph5Y5j6jbHbdvrpAd2zJ1v2saizd02ywjejOs9SAKxztgvUH-hAVvkNPCMThyphenhyphen4D_oum7h3Byvu1zH214PlOBgMkq0xXjFh1QXoRhe2cPGuwu4vHg-ajaZT-T_AgVYd6PM8olA5XEN2A8/s1280/morning-market-snow-blogger.jpg",
+    "coverHttpStatus": 200,
+    "iframeHttpStatus": 200,
+    "standaloneHttpStatus": 200,
+    "iframeCount": 1,
+    "standaloneLinkCount": 1
+  },
+  "checks": {
+    "nativeBloggerResponsiveWidthsCssPx": [
+      320,
+      360,
+      390
+    ],
+    "nativeBloggerCommonFlow": [
+      "start",
+      "right×3: remaining snow 13→12; cargo 0→1",
+      "pause",
+      "reset"
+    ],
+    "nativeBlogger320Only": [
+      "natural timeout",
+      "retry"
+    ],
+    "localV2Browser": {
+      "desktopCssPx": [
+        1363,
+        936
+      ],
+      "desktop": [
+        "full win",
+        "natural 38s timeout",
+        "retry"
+      ],
+      "fixedIframeCssPx": [
+        [
+          288,
+          560
+        ],
+        [
+          328,
+          560
+        ],
+        [
+          358,
+          560
+        ]
+      ],
+      "fixedIframeFlow": [
+        "full win",
+        "retry"
+      ]
+    },
+    "qaNotes": "ui-v2-verification.md",
+    "unverified": [
+      "physical smartphone",
+      "full win inside Blogger article",
+      "independent first-time human play",
+      "other browsers"
+    ]
+  }
+}
