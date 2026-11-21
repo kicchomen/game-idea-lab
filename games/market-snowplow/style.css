@@ -1,0 +1,44 @@
+:root{color-scheme:dark;font-family:system-ui,"Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;background:#0c262d;color:#f3f9f6;font-synthesis:none}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0}
+.game{width:min(100%,420px);margin:auto;padding:7px 8px 5px}
+header{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-bottom:5px}
+.kicker{display:block;font-size:10px;font-weight:800;letter-spacing:.12em;color:#90c8d1;line-height:1.1}
+h1{font-size:22px;line-height:1.15;margin:2px 0 0;letter-spacing:.03em}
+button{font:inherit;font-weight:760;color:#e9faf8;background:#20454c;border:1px solid #4f737a;border-radius:8px;cursor:pointer;touch-action:manipulation;user-select:none;-webkit-user-select:none}
+button:focus-visible{outline:3px solid #ffe3a0;outline-offset:2px} 
+button:active,button.held{background:#577c79}
+button[disabled]{opacity:.45;cursor:default}
+[hidden]{display:none!important}
+#pause{width:44px;height:44px;flex:none}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin-bottom:5px;text-align:center}
+.stats div{padding:4px 2px;background:#17373f;border-radius:7px}
+.stats small{display:block;font-size:11px;color:#b0d5dc;line-height:1.1}
+.stats strong{font-variant-numeric:tabular-nums;font-size:18px;line-height:1.15}
+.stats strong small{display:inline;margin-left:2px}
+.playfield{position:relative;width:min(100%,calc(100svh - 175px));margin:auto;background:#16474d;border-radius:10px;border:1px solid #4b6975;overflow:hidden}
+canvas{display:block;width:100%;aspect-ratio:1}
+.overlay{position:absolute;inset:0;display:grid;place-items:center;background:#10363d8f}
+.card{width:min(92%,290px);background:#152f35f5;padding:12px 14px;border:1px solid #65939c;border-radius:12px;text-align:center;box-shadow:0 10px 24px #08191e8f}
+.card h2{margin:0;font-size:21px;line-height:1.1}
+.card p{font-size:13px;margin:7px 0;line-height:1.4}
+.card .eyebrow{color:#9bd3d0;font-size:11px;font-weight:800;letter-spacing:.08em;margin:0 0 4px}
+.card button{min-height:44px;padding:0 13px;margin-top:3px}
+#primary,#dump{background:#ffbf79;color:#172c31;border-color:#ffe0a7}
+#primary:active,#dump:active{background:#ffe1a9}
+#secondary{background:#254b54}
+.key,.feedback{text-align:center;margin:3px 0 4px;font-size:12px;color:#c5e0e4;line-height:1.25}
+.key span{padding-left:4px}
+.thin{color:#e4f6ff}.deep{color:#abdfff}.grate{color:#83dced}
+.controls{display:grid;grid-template-columns:repeat(4,minmax(44px,1fr)) minmax(53px,1.3fr);gap:5px}
+.controls button{height:44px;min-width:44px;font-size:19px;padding:0;touch-action:none}
+.controls #dump{font-size:14px}
+.feedback{min-height:15px;margin-bottom:1px}
+@media(max-height:400px){.card{padding:7px}.card h2{font-size:17px}.card p{margin:4px 0;font-size:12px}}
+@media (orientation:landscape) and (max-height:430px) and (min-width:540px){
+ .game{width:min(100%,680px);display:grid;grid-template-columns:minmax(255px,1fr) minmax(220px,1.4fr);grid-template-rows:auto auto auto 1fr;column-gap:12px}
+ header,.stats,.controls,.feedback{grid-column:1}
+ header{grid-row:1}.stats{grid-row:2}.controls{grid-row:3}.feedback{grid-row:4}
+ .playfield{grid-area:1/2/span 4/3;width:min(100%,calc(100svh - 42px));margin:0 auto}
+ .key{grid-column:2;grid-row:5}
+}
