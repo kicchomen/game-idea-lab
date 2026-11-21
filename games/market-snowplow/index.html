@@ -11,11 +11,11 @@
 </head>
 <body>
 <main class="game">
-<header><div><span class="kicker">ゲームアイデア実験室 / PLAYABLE</span><h1>朝市の雪かき番</h1></div><button id="pause" type="button" aria-label="一時停止">Ⅱ</button></header>
+<header><div><span class="kicker">ゲームアイデア実験室 / PLAYABLE</span><h1>朝市の雪かき番</h1></div><button id="pause" type="button" aria-label="一時停止"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><rect x="4" y="3" width="6" height="18" rx="1.5"/><rect x="14" y="3" width="6" height="18" rx="1.5"/></svg></button></header>
 <section class="stats" aria-label="現在の状況">
-  <div><small>開店まで</small><strong id="time">38<small>秒</small></strong></div>
-  <div><small>残りの雪</small><strong id="remaining"></strong></div>
-  <div><small>荷台</small><strong id="cargo"></strong></div>
+  <div><svg class="hud-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="14" r="8"/><path d="M12 6V2m-3 0h6m3 5 2-2"/><path d="M12 14V7a7 7 0 0 1 7 7Z" fill="#f17c53" stroke="none"/></svg><small>開店まで</small><strong id="time">38<small>秒</small></strong></div>
+  <div><svg class="hud-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><path d="M12 2v20M3.3 7l17.4 10M3.3 17 20.7 7m-12-4 3.3 3 3.3-3m-6.6 18 3.3-3 3.3 3M3 11l4.5-1-1-4.3M21 13l-4.5 1 1 4.3M3 13l4.5 1-1 4.3M21 11l-4.5-1 1-4.3"/></svg><small>残りの雪</small><strong id="remaining"></strong></div>
+  <div><svg class="hud-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 9c1-3 4-4 5-3 2-4 6-4 8 0 2-1 4 1 4 3Z" fill="#d5eeff" stroke="none"/><path d="M2 9h20l-4 10H6Z M8 19v2m8-2v2"/></svg><small>荷台</small><strong id="cargo"></strong></div>
 </section>
 <section class="playfield" aria-label="朝市の通路">
   <canvas id="board" tabindex="-1" width="420" height="420" aria-label="見下ろしの朝市マップ"></canvas>
@@ -31,11 +31,11 @@
 </section>
 <div class="key" aria-hidden="true"><span class="thin">●</span> 薄雪1枠 <span class="deep">◆</span> 深雪2枠 <span class="grate">▤</span> 排雪口</div>
 <div class="controls" aria-label="操作">
-  <button type="button" data-dir="left" aria-label="左">←</button>
-  <button type="button" data-dir="up" aria-label="上">↑</button>
-  <button type="button" data-dir="down" aria-label="下">↓</button>
-  <button type="button" data-dir="right" aria-label="右">→</button>
-  <button type="button" id="dump">排雪</button>
+  <button type="button" data-dir="left" aria-label="左"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path transform="rotate(-90 12 12)" d="M12 2 22 12a1 1 0 0 1-1 1h-5v8a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-8H3a1 1 0 0 1-1-1Z"/></svg></button>
+  <button type="button" data-dir="up" aria-label="上"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path transform="rotate(0 12 12)" d="M12 2 22 12a1 1 0 0 1-1 1h-5v8a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-8H3a1 1 0 0 1-1-1Z"/></svg></button>
+  <button type="button" data-dir="down" aria-label="下"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path transform="rotate(180 12 12)" d="M12 2 22 12a1 1 0 0 1-1 1h-5v8a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-8H3a1 1 0 0 1-1-1Z"/></svg></button>
+  <button type="button" data-dir="right" aria-label="右"><svg viewBox="0 0 24 24" aria-hidden="true" fill="currentColor"><path transform="rotate(90 12 12)" d="M12 2 22 12a1 1 0 0 1-1 1h-5v8a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-8H3a1 1 0 0 1-1-1Z"/></svg></button>
+  <button type="button" id="dump"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" aria-hidden="true"><path d="M4 9c1-3 4-4 5-3 2-4 6-4 8 0 2-1 4 1 4 3Z" fill="#d5eeff" stroke="none"/><path d="M2 9h20l-4 10H6Z M8 19v2m8-2v2"/></svg><span>排雪</span></button>
 </div>
 <p id="feedback" class="feedback" role="status" aria-live="polite">PC：矢印 / WASD、排雪：E</p>
 </main>

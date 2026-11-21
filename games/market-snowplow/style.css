@@ -42,3 +42,36 @@ canvas{display:block;width:100%;aspect-ratio:1}
  .playfield{grid-area:1/2/span 4/3;width:min(100%,calc(100svh - 42px));margin:0 auto}
  .key{grid-column:2;grid-row:5}
 }
+
+/* Illustrated UI study: dark navy HUD over an icy, ink-outlined board. */
+:root{background:#0a2035;color:#fffaf0}
+.game{width:min(100%,440px);padding:7px 8px 8px;background:radial-gradient(ellipse at 55% 32%,#173650 0%,#0b233b 68%,#091e33 100%)}
+header{margin-bottom:7px}
+.kicker{display:none}
+h1{font-size:clamp(19px,6.1vw,27px);font-weight:900;letter-spacing:.025em;margin:0}
+#pause{background:#0d253b;border:2px solid #fff4da;border-radius:50%;color:#fff4da;font-size:25px;line-height:1}
+.stats{gap:5px;margin-bottom:8px}
+.stats div{position:relative;min-width:0;padding:4px 2px 4px 24px;min-height:36px;background:linear-gradient(135deg,#2a4967,#192f48);border:1px solid #41617f;border-radius:9px;text-align:left;color:#fff}
+.stats .hud-icon{position:absolute;left:5px;top:50%;width:16px;height:16px;transform:translateY(-50%);color:#fff4da}
+.stats small{font-size:9px;line-height:1.05;color:#e2ecf9}
+.stats strong{font-size:15px;white-space:nowrap}
+.playfield{width:min(100%,max(146px,calc(100svh - 247px)));background:#16455b;border:3px solid #c5faf7;border-radius:10px;padding:3px;box-shadow:inset 0 0 0 2px #15485c,0 0 0 1px #75b9ca}
+canvas{border-radius:3px;outline-offset:-3px}
+canvas:focus-visible{outline:2px solid #fff4da}
+.overlay{inset:3px;background:#081c31aa}
+.card{background:#152f47f5;border-color:#6495ae;color:#fffaf0}
+.card .eyebrow{color:#d2fafa}
+.key,.feedback{color:#d5eaf7}
+.controls{grid-template-columns:repeat(3,minmax(44px,1fr)) minmax(86px,2.8fr);grid-template-rows:repeat(2,44px);width:min(95%,356px);gap:4px;margin:0 auto}
+.controls button{height:44px;display:grid;place-items:center;background:linear-gradient(145deg,#385571,#263e58);border:2px solid #597797;border-radius:9px;color:#fff3d7}
+.controls button:active,.controls button.held{background:#526f8e}
+.controls button svg{width:25px;height:25px;pointer-events:none}
+.controls [data-dir=up]{grid-area:1/2}
+.controls [data-dir=left]{grid-area:2/1}
+.controls [data-dir=down]{grid-area:2/2}
+.controls [data-dir=right]{grid-area:2/3}
+.controls #dump{grid-area:1/4/3/5;align-self:center;height:62px;display:flex;justify-content:center;gap:4px;background:linear-gradient(135deg,#e9781e,#b94a04);border:2px solid #ffa949;box-shadow:0 3px #873403;color:#fff7e7;font-size:clamp(14px,5.2vw,23px);margin-left:3px;white-space:nowrap}
+.controls #dump svg{width:23px;height:23px}
+.controls #dump:active{background:#9e3c06}
+.feedback{min-height:15px}
+@media(max-height:430px){.playfield{width:min(100%,max(190px,calc(100svh - 219px)))}}
