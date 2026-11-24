@@ -1,0 +1,69 @@
+{
+  "date": "2026-11-24",
+  "title": "発案＆試遊｜天井走りの点検ロボ",
+  "blogId": "3556407006374124911",
+  "postId": "1865509559013293501",
+  "status": "published-verified",
+  "publicUrl": "https://game-idea-lab.blogspot.com/2026/11/blog-post_24.html",
+  "publishedAt": "2026-11-24T17:32:25.891+09:00",
+  "playUrl": "https://kicchomen.github.io/game-idea-lab/games/ceiling-runner/",
+  "publishedArticle": {
+    "exactArchive": "article.html",
+    "publicFeedSha256": "dc359777ad2ac333650e89b70eb7ad853726b45a353f3754dd96c90b9ed4526d",
+    "titleAndCanonicalVerified": true,
+    "imageCdn": [
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhFqi_wGdGtKzRxLyMdyCAebpOJkh7ldwwE4oPNRLxivj_lx9AntPzQAyQwTO-zfHgSL0BnPphr46-VBav-bKgp-1rz_cDhPlIYT2hFePWVQ6krChPT5RjqdZYr8wG6wRyNJ0QhGnqhDpmqLjKrjgilat6YKhFBuJ_m15G3y4dCOc5e5LU4j6pXlcWdzLw/s1200/cover.jpg",
+      "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEitN_xapTwGGYgANu49rbpjZ-Z9iD6-hc54_cUpe5KrjqSPgdhlTPxYGtbVrS8iQwAkWTrkzmzbuByDSXkWfneRLbZyyBHT01b86Kd-thPcyj_cZoOBBNqSOy9V99Jn9CMyZmUKBard20B7ywYlRFl8Z2JbQrIWrqUgE0XE6hwL2xqhdlHcKvxUxxw7mIs/s1200/mechanic.jpg"
+    ],
+    "imageStatus": [
+      200,
+      200
+    ],
+    "iframeCount": 1,
+    "standaloneLinkCount": 1
+  },
+  "prototypeCommit": "65f9d42918e91ec8ec74c2f89670464a5e68bb5b",
+  "pagesDeployment": {
+    "status": "success",
+    "workflow": "https://github.com/kicchomen/game-idea-lab/actions/runs/45355652041",
+    "deploymentId": 8022456465,
+    "verifiedPublicGameAndAssetsByteMatched": true
+  },
+  "verification": {
+    "nodeRegression": {
+      "passed": 1215,
+      "failed": 0
+    },
+    "browserStandalone": "Actual browser 900×650 and native live click, keyboard and retry",
+    "browserHarnessCssPx": [
+      900,
+      320,
+      360,
+      390
+    ],
+    "browserHarnessRoutes": [
+      "collision and retry",
+      "pause and resume",
+      "shortage 3/6",
+      "full win 6/6",
+      "minimum win 4/6"
+    ],
+    "nativeBloggerPreview": [
+      "desktop",
+      "smartphone preset"
+    ],
+    "exactSavedBodyMirrorCssPx": [
+      320,
+      360,
+      390
+    ],
+    "exactSavedBodyMirrorIframeCssPx": [
+      304,
+      344,
+      374
+    ],
+    "publishedUi": "Actual article click start, Space flips gravity, collision and retry restart running.",
+    "physicalPhoneTested": false,
+    "publicCoverVerified": true
+  }
+}
