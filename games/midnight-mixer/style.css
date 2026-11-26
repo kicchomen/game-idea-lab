@@ -25,3 +25,16 @@ button{font:inherit;touch-action:manipulation;cursor:pointer;-webkit-tap-highlig
 @media(max-height:475px){body{padding:4px}.deck{gap:6px}.studio{min-height:71px}.cuebox{min-height:92px}.readouts{min-height:30px}.channel{padding-top:5px;padding-bottom:5px}.foot{min-height:19px}}
 @media(prefers-reduced-motion:reduce){*,*::before,*::after{scroll-behavior:auto!important;transition:none!important}}
 .deck:not([data-phase=play]) .air{color:var(--gold);border-color:#bb9b65;opacity:1;box-shadow:none;background:#181d29}.deck:not([data-phase=play]) .air span{box-shadow:none}.air b{font:inherit}
+/* Blogger's 320px theme leaves a 288px content column. Do not let the
+   title and live badge set the minimum size of the instrument grid. */
+.deck{grid-template-columns:minmax(0,1fr);min-width:0}
+.deck>*{min-width:0}
+@media(max-width:310px){
+ .studio{display:block;min-height:99px}
+ .studio-copy{min-width:0}
+ .studio .air{position:absolute;right:8px;top:8px}
+ h1{white-space:normal;overflow-wrap:anywhere;font-size:17px;margin-top:12px}
+ .chlabel{gap:3px;font-size:12px}
+ .chlabel svg{width:15px;height:15px}
+ .foot{gap:6px}
+}
