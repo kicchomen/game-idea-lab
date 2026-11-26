@@ -1,0 +1,10 @@
+const E=require('../games/midnight-mixer/engine.js'),{test}=require('node:test'),a=require('node:assert/strict');
+const game=()=>{const s=E.create();E.start(s);return s;};
+function segment(s,n=1/90){const i=s.i;while(s.i===i&&s.phase==='play')E.tick(s,n);}
+test('ordered cues sum to 28 seconds without hidden inputs',()=>{a.equal(E.plan.reduce((t,[,d])=>t+d,0),28);a.deepEqual(E.plan.map(x=>x[0]),[0,1,2,1,0,2]);});
+test('correct source from every visible cue wins on multiple frame rates',()=>{for(const rate of [30,60,90,120,144]){const s=game();while(s.phase==='play'){E.select(s,E.view(s).target);segment(s,1/rate);}a.equal(s.phase,'won');a.deepEqual(s.results,Array(6).fill(true));a.equal(s.time,28);}});
+test('no actions lose with two music cues',()=>{const s=game();E.tick(s,28);a.equal(s.phase,'lost');a.equal(E.view(s).score,2);});
+test('one miss is recoverable while two miss fail',()=>{for(const misses of [[2],[2,4]]){const s=game();while(s.phase==='play'){const t=E.view(s).target;E.select(s,misses.includes(s.i)?(t+1)%3:t);segment(s);}a.equal(s.phase,misses.length===1?'won':'lost');a.equal(E.view(s).score,6-misses.length);}});
+test('too-early and late choices affect actual monitored mix',()=>{const s=game();E.tick(s,.20);E.select(s,1);segment(s);a.equal(s.results[0],false);E.select(s,0);E.tick(s,4.9);E.select(s,1);segment(s);a.equal(s.results[1],false);});
+test('gains transition continuously, normalize, and repeated choice does not reset',()=>{const s=game();E.select(s,1);E.tick(s,.08);a.ok(s.gain[1]>.15&&s.gain[1]<.5);a.ok(Math.abs(s.gain.reduce((a,b)=>a+b)-1)<1e-10);a.equal(E.select(s,1),false);E.tick(s,.6);a.ok(s.gain[1]>.9);});
+test('pause, resume, invalid input, finish, and fresh retry',()=>{const s=game();E.tick(s,1);E.pause(s);a.equal(E.select(s,2),false);E.tick(s,30);a.ok(Math.abs(s.time-1)<1e-9);E.pause(s);a.equal(E.select(s,3),false);a.equal(E.select(s,NaN),false);E.tick(s,30);a.equal(E.select(s,1),false);a.deepEqual(E.create().results,[]);a.deepEqual(E.create().gain,[1,0,0]);});

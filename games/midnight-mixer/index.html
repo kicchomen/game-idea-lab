@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><meta name="description" content="深夜のラジオ局で、3つの音を切り替えて6つのキューをつなぐ小さな試遊。"><title>深夜ラジオのミキサー</title><link rel="stylesheet" href="./style.css"></head>
+<body><main class="deck" data-phase="ready" aria-labelledby="title">
+<header class="studio"><div class="studio-copy"><div class="station">MIDNIGHT FM</div><h1 id="title">深夜ラジオのミキサー</h1></div><div class="air"><span></span><b id="badge">STANDBY</b></div></header>
+<div class="readouts" aria-label="放送の進行状況"><div id="cue">キュー 1 / 6</div><div id="score">成功 0</div><div id="time">残り 28 秒</div></div>
+<section class="cuebox" aria-label="オンエアの合図"><div class="cuewords"><span class="tag">切替先</span><h2 id="target" aria-live="polite" aria-atomic="true">音楽</h2><p class="next" id="next">次：トーク</p></div>
+<div class="signal"><div id="wave" aria-hidden="true"></div><div class="timeline" id="timeline" aria-label="6つのキュー"></div></div><span class="clock" id="clock"></span></section>
+<div class="channels" id="meters" aria-label="実際に流れている音のレベル"></div>
+<div class="pads"><button class="pad music" data-channel="0" disabled><span>1</span> 音楽</button><button class="pad talk" data-channel="1" disabled><span>2</span> トーク</button><button class="pad jingle" data-channel="2" disabled><span>3</span> ジングル</button></div>
+<div class="toolbar"><button id="start" class="secondary primary">放送開始</button><button id="restart" class="secondary" hidden>やり直す</button><button id="pause" class="secondary tiny" hidden>休止</button><button id="audio" class="secondary tiny" aria-pressed="false">音：オフ</button></div>
+<p class="foot" id="hint" aria-live="polite">合図に合わせて音を切り替える。6つのうち5つで成功。</p>
+</main><script src="./engine.js"></script><script src="./app.js"></script></body></html>
