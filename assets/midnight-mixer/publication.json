@@ -1,0 +1,86 @@
+{
+  "title": "発案＆試遊｜深夜ラジオのミキサー",
+  "status": "published_verified",
+  "blogger_blog_id": "3556407006374124911",
+  "blogger_post_id": "1459107153998114195",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_26.html",
+  "published_at_jst": "2026-11-26T10:16:01.329+09:00",
+  "published_at_source": "public Blogger Atom entry",
+  "article_html": "assets/midnight-mixer/article.html",
+  "article_html_sha256": "d959e8971edf36a1269381430b1bcf7fd7dfe2a6e4ee689be47a33341b3a1fc1",
+  "article_html_scope": "exact HTML read in Blogger editor directly before final save; public document visually and via accessibility verified, not bytewise Atom comparison",
+  "play_url": "https://kicchomen.github.io/game-idea-lab/games/midnight-mixer/?v=2",
+  "initial_commit": "128136fd06e2f97e99a811af962d6eedcd90a746",
+  "runtime_commit": "b5b74dcf5fce325ac817e63ad02126804a7df8c0",
+  "pages_verified": "native Chrome independently loaded deployed app and operated version 2 from exact public Blogger iframe; exact remote blobs verified on branch, direct Pages CI log/bytes not retrieved",
+  "article_check": {
+    "two_cdn_images": true,
+    "thumbnail_visible_on_blogger_index": true,
+    "existing_post_only": true,
+    "preview_real_browser_controls": true,
+    "public_chrome_viewports": [
+      [
+        320,
+        812
+      ],
+      [
+        360,
+        812
+      ],
+      [
+        390,
+        812
+      ]
+    ],
+    "physical_phone_test": false
+  },
+  "ui_verification": {
+    "generated_before_implementation": true,
+    "side_by_side_reference": "assets/midnight-mixer/ui-design-reference.jpg",
+    "real_standby_screen": "assets/midnight-mixer/guide.jpg",
+    "local_final_viewports": [
+      [
+        1120,
+        740
+      ],
+      [
+        320,
+        568
+      ],
+      [
+        360,
+        640
+      ],
+      [
+        390,
+        700
+      ],
+      [
+        288,
+        570
+      ],
+      [
+        328,
+        570
+      ],
+      [
+        358,
+        570
+      ]
+    ],
+    "local_round_checks": [
+      "start",
+      "pause",
+      "resume",
+      "win 6/6",
+      "natural fail 2/6",
+      "retry twice"
+    ],
+    "independent_review": "engine and controller DOM mocks; distinction of cue/output, status badges, ARIA cue and crop corrected; visual comparison by production operator",
+    "known_limits": [
+      "single 28-second fixed rundown",
+      "talk is a synthesized cue sound, not dialogue",
+      "no physical phone or novice-human playtest"
+    ]
+  }
+}
