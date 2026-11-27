@@ -1,0 +1,64 @@
+{
+  "title": "発案＆試遊｜雨の日の写真暗室",
+  "status": "published_verified",
+  "blogger_blog_id": "3556407006374124911",
+  "blogger_post_id": "3387515907892146233",
+  "public_url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_27.html",
+  "published_at": "2026-11-27T10:13:00+09:00",
+  "timestamp_source": "public article <time> minute precision",
+  "article_html": "assets/rain-darkroom/article.html",
+  "article_html_scope": "saved editor input, content visually and structurally verified after reload and on public article; no Atom byte comparison",
+  "play_url": "https://kicchomen.github.io/game-idea-lab/games/rain-darkroom/",
+  "game_commit": "9590cb5ae648bd6a5da72846f76d6aa2b93f52fc",
+  "pages_run": "https://github.com/kicchomen/game-idea-lab/actions/runs/45920981118",
+  "pages_status": "success, exact game commit",
+  "design": "reviewed generated UI before implementation; local rendered CSS widths PC / 320 / 360 / 390 compared side by side",
+  "public_blogger_checks": {
+    "canonical": true,
+    "cover_og_image": true,
+    "inline_images": [
+      {
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhOVkDn9M1JuMOHmORPo1KvOLVkRzCLBMOW45y2VW_akbKvKPGx_RxWsYAQUlLSSx0ABCIt8AYFMt2DvCzHcgLac1LmeQ_KaEtj6iJrlTq0T4CDlYI0vUABEwvgb7PN8bisP8z0Ab3-BmDoI954WJKBFXal-wpokY6xfk4f4osnpMJFUTDrAO2oAbiSLP0/s1600/clipboard.jpeg",
+        "width": 1200,
+        "height": 675
+      },
+      {
+        "url": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiYA5xwOyAYD1aO1zqWrxUvJpug6sG6dMDmt3kp921b8Hy4NoMDhbipdIbhN5ywAGkls7yFLPUQrG67MmM4eXFLY44JiqKV2qzSXYZ1Hj7d2iKGhgcG4Kx80TyXN2D2vdgLGEDm6c5t9zMtWcU1sDTKQwvnIBd2Ep6BVzDz-fJfBb2HO9j9WejDHOwneMg/s1600/clipboard.jpeg",
+        "width": 545,
+        "height": 676
+      }
+    ],
+    "widths": [
+      320,
+      360,
+      390
+    ],
+    "document_widths_no_overflow": [
+      305,
+      345,
+      375
+    ],
+    "game_frame_widths": [
+      273,
+      313,
+      343
+    ],
+    "game_frame_heights": [
+      548,
+      573,
+      592
+    ],
+    "game_content_heights": [
+      456,
+      480,
+      503
+    ],
+    "start_loss_retry_3_widths": true,
+    "successful_run_on_public_embed": true
+  },
+  "not_tested": [
+    "physical phones",
+    "human first-time play",
+    "long-term appeal"
+  ]
+}
