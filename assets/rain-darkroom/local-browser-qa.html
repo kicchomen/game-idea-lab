@@ -1,0 +1,14 @@
+<!doctype html><meta charset=utf-8><title>Rain Darkroom QA</title><style>body{background:#272024;color:wheat;font:14px system-ui;margin:8px}button{min-height:42px}section{display:flex;gap:10px;flex-wrap:wrap}iframe{border:1px solid wheat}img{object-fit:contain}pre{white-space:pre-wrap}</style><h1>雨の日の写真暗室：ローカル検査</h1><button id=run>操作試験を実行</button><pre id=results>待機</pre><section id=stage><img src="ui-design-reference.jpg" alt="生成UI原本" width="320" height="568"></section><script>
+const matrix=[[320,568],[360,640],[390,700],[545,720],[288,540],[328,540],[358,540]];
+const frames=matrix.map(([w,h])=>{let f=document.createElement('iframe');f.title=w+' × '+h;f.width=w;f.height=h;f.src='../../games/rain-darkroom/';stage.append(f);return f});
+const sleep=t=>new Promise(r=>setTimeout(r,t));const assert=(x,m)=>{if(!x)throw Error(m)};
+function measure(f){const d=f.contentDocument,z=d.documentElement,b=d.querySelector('.cabinet');return [z.clientWidth,z.scrollWidth,z.clientHeight,z.scrollHeight,Math.round(b.getBoundingClientRect().height)]}
+async function scenario(f){
+  const d=f.contentDocument,$=id=>d.getElementById(id), click=id=>$(id).click(), result=()=>$('result').textContent;
+  const bounds=()=>{const a=measure(f);assert(a[0]===a[1]&&a[2]===a[3],JSON.stringify(a));return a};
+  const ready=bounds(); click('expose');await sleep(400);click('fix');assert(result()==='要再挑戦',result());const loss=bounds();click('fix');assert($('time').textContent==='18.0','reset');
+  click('expose');await sleep(3250);click('mask-a');await sleep(2900);click('mask-b');await sleep(3290);click('mask-c');click('fix');assert(result()==='成功',result());const win=bounds();
+  click('fix');click('expose');return {viewport:f.title,ready,loss,win,retry:$('time').textContent};
+}
+run.onclick=async()=>{run.disabled=true;results.textContent='実行中';const res=await Promise.allSettled(frames.map(scenario));results.textContent=JSON.stringify(res.map(x=>x.status==='fulfilled'?x.value:{error:String(x.reason)}),null,2);run.disabled=false;};
+</script>

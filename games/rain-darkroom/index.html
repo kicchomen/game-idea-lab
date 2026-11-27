@@ -1,0 +1,9 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>雨の日の写真暗室</title><link rel="stylesheet" href="style.css"></head><body><main class="cabinet">
+<header><h1>雨の日の写真暗室</h1><span>DARKROOM PRINT</span><img src="lamp.webp" alt="" width="162" height="144"></header>
+<div class="stats"><div>TIME <b id="time">18.0</b></div><div>FRAME <b>01</b></div><div>RESULT <b id="result">--</b></div></div>
+<div class="print" role="img" aria-label="雨の町。左に写真店、中央に路面電車、右に濡れた通り"><span class="shade"></span><span class="shade"></span><span class="shade"></span></div>
+<div id="meters" class="meters" aria-label="エリア別の露光計"></div>
+<div class="actions"><button id="expose" aria-pressed="false">照射</button><button id="fix" disabled>焼き止め</button></div>
+<div class="maskrow"><span>マスク</span><button id="mask-a" aria-pressed="false" aria-label="マスク A">A</button><button id="mask-b" aria-pressed="false" aria-label="マスク B">B</button><button id="mask-c" aria-pressed="false" aria-label="マスク C">C</button></div>
+<p id="help" aria-live="polite">照射で開始。バーが白い印に来たら、その区画をマスク。3つ揃えて焼き止め。</p>
+</main><script src="engine.js"></script><script src="app.js"></script></body></html>
