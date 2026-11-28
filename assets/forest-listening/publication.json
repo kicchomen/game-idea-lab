@@ -1,0 +1,72 @@
+{
+  "game_title": "夜の森の音さがし",
+  "article_title": "発案＆試遊｜夜の森の音さがし",
+  "date_jst": "2026-11-28",
+  "blogger_post_id": "7819620091836345279",
+  "article_url": "https://game-idea-lab.blogspot.com/2026/11/blog-post_28.html",
+  "game_url": "https://kicchomen.github.io/game-idea-lab/games/forest-listening/?v=20261128a",
+  "verified_at": "2026-11-28T01:20:44.601Z",
+  "verification_time_note": "UTC verification time; exact publication time not exposed",
+  "code_commit": "2488a29376532652009b8e0ad7c4c1e6f2b4bbdc",
+  "checks": {
+    "generated_actual_game_ui_before_implementation": true,
+    "images_cdn": {
+      "cover": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjC3LFVxIHEGYYpJz022cRPaw7Wy4AwrJxAvxFiPlpW-QdPGLkz2oeD-5ZvF6w6_H4CrEU5LVdZ7u4ZjhWun8wmxdU4KRUvhazJ0iriUNJxA9RZZRaFr1ut1ygEIoy_8tbzISsT_yA_aguB0_aJCg20SFNMHtBIt5tprHyqAI70n-8YVeen9zwUUSUinPQ/s1200/forest-cover.jpg",
+      "ui": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhcA-bPbcMkGnSpvjGGAaiWtWGHFDbxQjXhwYJBzF1PgJPJ4oET9BA_ngRrxuOw9LUjmKuzFoXgSpvBrkGrS93K3oM_ijiqFzMAWAhrNnirIX95BnwirdADvNwFAFOl6ujK0jG83_mkljdnx08bZ8unOsTTOTkiZO6_KYzJRcQtfkzTKplGsnsnigHCXkU/s1020/forest-ui.jpg"
+    },
+    "html_exact_after_reload": true,
+    "og_cover": true,
+    "local_chrome_viewports": [
+      [
+        320,
+        445
+      ],
+      [
+        360,
+        445
+      ],
+      [
+        390,
+        445
+      ],
+      [
+        900,
+        650
+      ]
+    ],
+    "all_widths_compared_to_generated_design": true,
+    "standalone_game_success_failure_retry_pause_resume": true,
+    "published_iframe_start_turn_verified": true,
+    "blogger_preview_article_widths": [
+      320,
+      360,
+      390
+    ],
+    "blogger_preview_inner_game_widths": [
+      288,
+      328,
+      358
+    ],
+    "live_browser_viewport_widths": [
+      320,
+      360,
+      390
+    ],
+    "live_article_content_widths": [
+      305,
+      345,
+      375
+    ],
+    "live_iframe_widths": [
+      273,
+      313,
+      343
+    ],
+    "all_iframe_heights": 445,
+    "unexpected_scroll": false,
+    "physical_mobile_test": false,
+    "first_time_human_test": false,
+    "game_audio": "none"
+  },
+  "pdca": "保持回転、20秒×2、視覚メーター。モバイルの埋め込み高さを445pxに固定し、見た目の円を保ちつつ盤面だけ少し小さくして端の操作を常に出した。ゲーム機能と装飾について、画像に焼かれたUIを貼り付けず再実装。"
+}
